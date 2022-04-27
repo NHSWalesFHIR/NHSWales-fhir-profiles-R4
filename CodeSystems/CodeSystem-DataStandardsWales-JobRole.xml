@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="CodeSystem-DataStandardsWales-JobRole"/>	
+	<url value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole"/>
+	<version value="1.0.0"/>
+	<name value="DataStandardsWalesJobRole"/>
+	<title value="Data Standards Wales Job Role"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2021-08-04T00:00:00+01:00"/>
+	<publisher value="NHS Wales"/>
+	<contact>
+		<name value="Data Standards"/>	
+		<telecom>
+			<system value="email"/>
+			<value value="data.standards@wales.nhs.uk"/>
+			<use value="work"/>
+		</telecom>
+	</contact>	
+	<description value="The job role of a clinician"/>
+	<copyright value="&#169; 2021 NHS Wales."/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="1005"/>
+		<display value="Consultant"/>
+	</concept>
+	<concept>
+		<code value="01W001"/>
+		<display value="Doctor (CT1)"/>
+	</concept>
+	<concept>
+		<code value="01W002"/>
+		<display value="Doctor (CT2)"/>
+	</concept>
+	<concept>
+		<code value="01W003"/>
+		<display value="Doctor (CT3)"/>
+	</concept>
+	<concept>
+		<code value="1033"/>
+		<display value="Foundation Year 1"/>
+	</concept>
+	<concept>
+		<code value="1034"/>
+		<display value="Foundation Year 2"/>
+	</concept>
+	<concept>
+		<code value="01W004"/>
+		<display value="Doctor (FP3)"/>
+	</concept>
+	<concept>
+		<code value="01W005"/>
+		<display value="Doctor (Non-Training)"/>
+	</concept>
+	<concept>
+		<code value="01W006"/>
+		<display value="Doctor (Other)"/>
+	</concept>
+	<concept>
+		<code value="01W007"/>
+		<display value="Doctor (ST1)"/>
+	</concept>
+	<concept>
+		<code value="01W008"/>
+		<display value="Doctor (ST2)"/>
+	</concept>
+	<concept>
+		<code value="01W009"/>
+		<display value="Doctor (ST3)"/>
+	</concept>
+	<concept>
+		<code value="01W010"/>
+		<display value="Doctor (ST4)"/>
+	</concept>
+	<concept>
+		<code value="01W011"/>
+		<display value="Doctor (ST5)"/>
+	</concept>
+	<concept>
+		<code value="01W012"/>
+		<display value="Doctor (ST6)"/>
+	</concept>
+	<concept>
+		<code value="1025"/>
+		<display value="General Medical Practitioner"/>
+	</concept>
+	<concept>
+		<code value="01W013"/>
+		<display value="Medical Examiner"/>
+	</concept>
+	<concept>
+		<code value="03W004"/>
+		<display value="ACCP Advanced Critical Care practitioners "/>
+	</concept>
+	<concept>
+		<code value="3002"/>
+		<display value="Nurse Consultant"/>
+	</concept>
+	<concept>
+		<code value="03W001"/>
+		<display value="Deputy Sister"/>
+	</concept>
+	<concept>
+		<code value="3013"/>
+		<display value="Midwife"/>
+	</concept>
+	<concept>
+		<code value="3008"/>
+		<display value="Enrolled Nurse"/>
+	</concept>
+	<concept>
+		<code value="3005"/>
+		<display value="Specialist Nurse Practitioner"/>
+	</concept>
+	<concept>
+		<code value="03W002"/>
+		<display value="Clinical Nurse Specialist"/>
+	</concept>
+	<concept>
+		<code value="3016"/>
+		<display value="Advanced Practitioner"/>
+	</concept>
+	<concept>
+		<code value="7047"/>
+		<display value="Nursing Associate"/>
+	</concept>
+	<concept>
+		<code value="3006"/>
+		<display value="Sister/Charge Nurse"/>
+	</concept>
+	<concept>
+		<code value="7001"/>
+		<display value="Health Care Support Worker"/>
+	</concept>
+	<concept>
+		<code value="08W008"/>
+		<display value="Bed Manager"/>
+	</concept>
+	<concept>
+		<code value="03W005"/>
+		<display value="Site Practitioner"/>
+	</concept>
+	<concept>
+		<code value="4040"/>
+		<display value="Paramedic Specialist Practitioner"/>
+	</concept>
+	<concept>
+		<code value="07W001"/>
+		<display value="Emergency medical Technician"/>
+	</concept>
+	<concept>
+		<code value="03W006"/>
+		<display value="Clinical Call Operator"/>
+	</concept>
+	<concept>
+		<code value="5003"/>
+		<display value="Pharmacist"/>
+	</concept>
+	<concept>
+		<code value="05W001"/>
+		<display value="Pharmacy Technician"/>
+	</concept>
+	<concept>
+		<code value="01W014"/>
+		<display value="Dentist"/>
+	</concept>
+	<concept>
+		<code value="1029"/>
+		<display value="Dental Officer"/>
+	</concept>
+	<concept>
+		<code value="1030"/>
+		<display value="Senior Dental Officer"/>
+	</concept>
+	<concept>
+		<code value="1031"/>
+		<display value="Salaried Dental Practitioner"/>
+	</concept>
+	<concept>
+		<code value="4042"/>
+		<display value="Physiotherapist Consultant"/>
+	</concept>
+	<concept>
+		<code value="6001"/>
+		<display value="Clinical Scientist"/>
+	</concept>
+	<concept>
+		<code value="05W003"/>
+		<display value="Theatre Assistant"/>
+	</concept>
+	<concept>
+		<code value="5005"/>
+		<display value="Clinical Psychologist"/>
+	</concept>
+	<concept>
+		<code value="5002"/>
+		<display value="Optometrist"/>
+	</concept>
+	<concept>
+		<code value="05W004"/>
+		<display value="Physiologist"/>
+	</concept>
+	<concept>
+		<code value="5019"/>
+		<display value="Operating Department Practitioner"/>
+	</concept>
+	<concept>
+		<code value="8000"/>
+		<display value="Administrative and Clerical"/>
+	</concept>
+	<concept>
+		<code value="08W001"/>
+		<display value="Administration &amp; Health Records"/>
+	</concept>
+	<concept>
+		<code value="08W002"/>
+		<display value="Clinical Coder"/>
+	</concept>
+	<concept>
+		<code value="08W003"/>
+		<display value="Other Role (not listed)"/>
+	</concept>
+	<concept>
+		<code value="8003"/>
+		<display value="Secretary"/>
+	</concept>
+	<concept>
+		<code value="08W004"/>
+		<display value="Ward Clerk"/>
+	</concept>
+	<concept>
+		<code value="08W005"/>
+		<display value="Ward Manager"/>
+	</concept>
+	<concept>
+		<code value="08W006"/>
+		<display value="MDT Coordinator"/>
+	</concept>
+	<concept>
+		<code value="8005"/>
+		<display value="Medical Secretary"/>
+	</concept>
+	<concept>
+		<code value="08W007"/>
+		<display value="Booking Clerk"/>
+	</concept>
+	<concept>
+		<code value="4041"/>
+		<display value="Physiotherapist"/>
+	</concept>
+	<concept>
+		<code value="4025"/>
+		<display value="Occupational Therapist"/>
+	</concept>
+	<concept>
+		<code value="4057"/>
+		<display value="Speech and Language Therapist"/>
+	</concept>
+	<concept>
+		<code value="4005"/>
+		<display value="Chiropodist/Podiatrist"/>
+	</concept>
+	<concept>
+		<code value="4009"/>
+		<display value="Dietitian"/>
+	</concept>
+	<concept>
+		<code value="4029"/>
+		<display value="Orthoptist"/>
+	</concept>
+	<concept>
+		<code value="4033"/>
+		<display value="Orthotist"/>
+	</concept>
+	<concept>
+		<code value="4045"/>
+		<display value="Prosthetist"/>
+	</concept>
+	<concept>
+		<code value="4001"/>
+		<display value="Art Therapist"/>
+	</concept>
+	<concept>
+		<code value="04W003"/>
+		<display value="Practitioner psychologist"/>
+	</concept>
+	<concept>
+		<code value="04W001"/>
+		<display value="Radiographer"/>
+	</concept>
+	<concept>
+		<code value="04W002"/>
+		<display value="Hearing aid dispenser"/>
+	</concept>
+	<concept>
+		<code value="6003"/>
+		<display value="Biomedical Scientist"/>
+	</concept>
+	<concept>
+		<code value="4037"/>
+		<display value="Paramedic"/>
+	</concept>
+</CodeSystem>

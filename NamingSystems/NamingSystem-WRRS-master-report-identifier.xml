@@ -1,0 +1,23 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+    <id value="DataStandardsWales-WRRS-Master-Report-identifier" />
+    <name value="WRRS Master Report Identifier" />
+    <status value="draft" />
+    <kind value="identifier" />
+    <date value="2021-11-10" />
+    <publisher value="NHS Wales" />
+    <contact>
+        <name value="Data Standards" />
+        <telecom>
+            <system value="email" />
+            <value value="data.standards@wales.nhs.uk" />
+            <use value="work" />
+        </telecom>
+    </contact>
+    <responsible value="Digital Health and Care Wales" />
+    <usage value="This namespace indicates an NHS Wales WRRS Master Report Id" />
+    <uniqueId>
+        <type value="uri" />
+        <value value="https://fhir.nhs.wales/Id/wrrs-master-report-identifier" />
+        <preferred value="true" />
+    </uniqueId>
+</NamingSystem>

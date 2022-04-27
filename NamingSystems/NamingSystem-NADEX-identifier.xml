@@ -1,0 +1,23 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+    <id value="DataStandardsWales-NADEX-identifier"/> 
+    <name value="NADEX Identifier"/> 
+    <status value="draft"/> 
+    <kind value="identifier"/> 
+    <date value="2020-12-08"/> 
+    <publisher value="NHS Wales"/>
+    <contact>
+	  	<name value="Data Standards"/>	
+      <telecom>
+        <system value="email"/>
+        <value value="data.standards@wales.nhs.uk"/>
+        <use value="work"/>
+      </telecom>
+    </contact>	
+    <responsible value="NHS Wales Informatics Service"/> 
+    <usage value="This namespace indicates an NHS Wales NADEX user id"/> 
+    <uniqueId> 
+      <type value="uri"/> 
+      <value value="https://fhir.nhs.wales/Id/nadex-identifier"/> 
+      <preferred value="true"/> 
+    </uniqueId>
+  </NamingSystem> 

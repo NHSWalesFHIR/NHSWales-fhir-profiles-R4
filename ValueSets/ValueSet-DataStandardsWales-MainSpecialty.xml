@@ -1,0 +1,28 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="ValueSet-DataStandardsWales-MainSpecialty"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/valueset-sourceReference">
+		<valueUri value="http://www.nwisinformationstandards.wales.nhs.uk/sitesplus/documents/299/20171222-DSCN%202017%2011-Core%20Ref%20Data%20Standards-v1.0.pdf"/>
+	</extension>
+	<url value="https://fhir.standards.wales/ValueSet/MainSpecialty"/>
+	<version value="1.0.1"/>
+    <name value="DataStandardsWalesMainSpecialty"/>
+	<title value="Data Standards Wales Main Specialty"/>
+	<status value="draft"/>
+	<date value="2020-12-08T00:00:00+01:00"/>
+	<publisher value="NHS Wales"/>
+	<contact>
+		<name value="Data Standards"/>
+		<telecom>
+			<system value="email"/>
+			<value value="data.standards@wales.nhs.uk"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A unique code identifying each Main Specialty designated by Royal Colleges"/>
+	<copyright value="© 2020 NHS Wales."/>
+	<compose>
+		<include>
+			<system value="https://data.standards.wales/CodeSystem/MainSpecialty"/>
+		</include>
+	</compose>
+</ValueSet>

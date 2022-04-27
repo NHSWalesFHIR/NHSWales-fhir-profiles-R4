@@ -1,0 +1,16 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="DataStandardsWales-GPCluster-Code"/> 
+  <name value="GP Cluster Code"/> 
+  <status value="draft"/> 
+  <kind value="identifier"/> 
+  <date value="2020-12-08"/> 
+  <publisher value="NHS Wales"/>
+  <responsible value="NHS Wales Informatics Service"/> 
+  <description value="This namespace indicates a Wales GP Cluster code"/> 
+  <usage value="Organization identity"/> 
+  <uniqueId> 
+    <type value="uri"/> 
+    <value value="https://fhir.nhs.wales/Id/gpcluster-code"/> 
+    <preferred value="true"/> 
+  </uniqueId>
+</NamingSystem>   

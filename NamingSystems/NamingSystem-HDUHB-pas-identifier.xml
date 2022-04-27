@@ -1,0 +1,20 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="DataStandardsWales-HDUHB-PAS-Identifier"/> 
+  <name value="HDUHB PAS Identifier"/> 
+  <status value="active"/> 
+  <kind value="identifier"/> 
+  <date value="2020-04-12"/> 
+  <publisher value="NHS Wales"/>
+  <responsible value="Hywel Dda University Health Board"/> 
+  <description value="This namespace indicates a Hywel Dda University Health Board PAS patient identifier"/> 
+  <usage value="Patient identity"/> 
+  <uniqueId> 
+    <type value="uri"/> 
+    <value value="https://fhir.hduhb.nhs.wales/Id/pas-identifier"/> 
+    <preferred value="true"/> 
+  </uniqueId>
+  <uniqueId> 
+    <type value="oid"/> 
+    <value value="2.16.840.1.113883.2.1.8.1.5.149"/>     
+  </uniqueId>   
+</NamingSystem> 

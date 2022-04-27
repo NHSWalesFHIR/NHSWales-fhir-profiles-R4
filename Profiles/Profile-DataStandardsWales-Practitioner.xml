@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
+  <name value="DataStandardsWalesPractitioner" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Practitioner" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Practitioner.identifier">
+      <path value="Practitioner.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <max value="1" />
+    </element>
+    <element id="Practitioner.identifier:gdcNumber">
+      <path value="Practitioner.identifier" />
+      <sliceName value="gdcNumber" />
+      <short value="General Dental Council (GDC) number" />
+      <definition value="General Dental Council (GDC) number" />
+      <max value="1" />
+    </element>
+    <element id="Practitioner.identifier:gdcNumber.system">
+      <path value="Practitioner.identifier.system" />
+      <fixedUri value="https://fhir.hl7.org.uk/Id/gdc-number" />
+    </element>
+    <element id="Practitioner.identifier:gmcNumber">
+      <path value="Practitioner.identifier" />
+      <sliceName value="gmcNumber" />
+      <short value="General Medical Council (GMC) number" />
+      <definition value="General Medical Council (GMC) number" />
+      <max value="1" />
+    </element>
+    <element id="Practitioner.identifier:gmcNumber.system">
+      <path value="Practitioner.identifier.system" />
+      <fixedUri value="https://fhir.hl7.org.uk/Id/gmc-number" />
+    </element>
+    <element id="Practitioner.identifier:gmpNumber">
+      <path value="Practitioner.identifier" />
+      <sliceName value="gmpNumber" />
+      <short value="General Practitioner (GMP) number" />
+      <definition value="General Practitioner (GMP) number" />
+      <max value="1" />
+    </element>
+    <element id="Practitioner.identifier:gmpNumber.system">
+      <path value="Practitioner.identifier.system" />
+      <fixedUri value="https://fhir.hl7.org.uk/Id/gmp-number" />
+    </element>
+    <element id="Practitioner.identifier:hcpcNumber">
+      <path value="Practitioner.identifier" />
+      <sliceName value="hcpcNumber" />
+      <short value="Health and Care Professions Council (HCPC) number" />
+      <definition value="Health and Care Professions Council (HCPC) number" />
+      <max value="1" />
+    </element>
+    <element id="Practitioner.identifier:hcpcNumber.system">
+      <path value="Practitioner.identifier.system" />
+      <fixedUri value="https://fhir.hl7.org.uk/Id/hcpc-number" />
+    </element>
+    <element id="Practitioner.identifier:nmcNumber">
+      <path value="Practitioner.identifier" />
+      <sliceName value="nmcNumber" />
+      <short value="Nursing and Midwifery Council (NMC) number" />
+      <definition value="Nursing and Midwifery Council (NMC) number" />
+      <max value="1" />
+    </element>
+    <element id="Practitioner.identifier:nmcNumber.system">
+      <path value="Practitioner.identifier.system" />
+      <fixedUri value="https://fhir.hl7.org.uk/Id/nmc-number" />
+    </element>
+    <element id="Practitioner.identifier:nadexIdentifier">
+      <path value="Practitioner.identifier" />
+      <sliceName value="nadexIdentifier" />
+      <short value="NHS Wales NADEX user id" />
+      <definition value="NHS Wales NADEX user id" />
+      <max value="1" />
+    </element>
+    <element id="Practitioner.identifier:nadexIdentifier.system">
+      <path value="Practitioner.identifier.system" />
+      <fixedUri value="https://fhir.nhs.wales/Id/nadex-identifier" />
+    </element>
+  </differential>
+</StructureDefinition>

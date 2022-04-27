@@ -1,0 +1,25 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="ValueSet-DataStandardsWales-JobRole"/>
+	<url value="https://fhir.standards.wales/ValueSet/JobRole"/>
+	<version value="1.0"/>
+    <name value="DataStandardsWalesJobRole"/>
+	<title value="Data Standards Wales Job Role"/>
+	<status value="draft"/>
+	<date value="2021-08-04T00:00:00+01:00"/>
+	<publisher value="NHS Wales"/>
+	<contact>
+		<name value="Data Standards"/>
+		<telecom>
+			<system value="email"/>
+			<value value="data.standards@wales.nhs.uk"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="The job role of a clinician."/>
+	<copyright value="© 2021 NHS Wales."/>
+	<compose>
+		<include>
+			<system value="https://fhir.standards.wales/CodeSystem/JobRole"/>
+		</include>
+	</compose>
+</ValueSet>
