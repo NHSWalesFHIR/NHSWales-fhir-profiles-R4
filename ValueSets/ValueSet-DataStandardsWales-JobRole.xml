@@ -19,7 +19,7 @@
 	<copyright value="© 2021 NHS Wales."/>
 	<compose>
 		<include>
-			<system value="https://fhir.standards.wales/CodeSystem/JobRole"/>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole"/>
 		</include>
 	</compose>
 </ValueSet>

@@ -20,7 +20,7 @@
 	<copyright value="© 2020 NHS Wales."/>
 	<compose>
 		<include>
-			<system value="https://fhir.standards.wales/CodeSystem/HospitalClassification"/>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-HospitalClassification"/>
 		</include>
 	</compose>
 </ValueSet>
