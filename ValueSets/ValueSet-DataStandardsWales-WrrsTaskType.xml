@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="ValueSet-DataStandardsWales-WrrsTaskType"/>
-	<url value="https://fhir.standards.wales/ValueSet/WrrsTaskType"/>
+	<url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-WrrsTaskType"/>
 	<version value="1.0.0"/>
     <name value="WrrsTaskType"/>
 	<title value="WRRS Task Type"/>
