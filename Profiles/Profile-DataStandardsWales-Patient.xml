@@ -158,21 +158,6 @@
       <path value="Patient.identifier.value" />
       <min value="1" />
     </element>
-    <element id="Patient.identifier:limsIdentifier">
-      <path value="Patient.identifier" />
-      <sliceName value="limsIdentifier" />
-      <short value="NHS Wales LIMS patient identifier" />
-      <definition value="NHS Wales Laboratory Information Management System (LIMS) identifier" />
-    </element>
-    <element id="Patient.identifier:limsIdentifier.system">
-      <path value="Patient.identifier.system" />
-      <min value="1" />
-      <fixedUri value="https://fhir.nhs.wales/Id/lims-identifier" />
-    </element>
-    <element id="Patient.identifier:limsIdentifier.value">
-      <path value="Patient.identifier.value" />
-      <min value="1" />
-    </element>
     <element id="Patient.generalPractitioner">
       <path value="Patient.generalPractitioner" />
       <type>
