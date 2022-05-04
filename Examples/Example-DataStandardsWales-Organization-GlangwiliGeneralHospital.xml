@@ -32,7 +32,7 @@
         <postalCode value="SA31 2AF" />
     </address>
     <partOf>
-        <reference value="Organization/Example-DataStandardsWales-Organization-HywelDda" />
+        <reference value="Example-DataStandardsWales-Organization-HywelDda" />
         <display value="Hywel Dda University Local Health Board" />
     </partOf>
 </Organization>
