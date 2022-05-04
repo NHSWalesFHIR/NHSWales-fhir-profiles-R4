@@ -1,0 +1,38 @@
+<Organization xmlns="http://hl7.org/fhir">
+    <id value="Example-DataStandardsWales-Organization-GlangwiliGeneralHospital" />
+    <meta>
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
+    </meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Glangwili General Hospital</div>
+    </text>     
+    <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EffectivePeriod">
+        <valuePeriod>
+            <start value="2009-10-01" />
+        </valuePeriod>
+    </extension>
+    <extension url="https://fhir.standards.wales/StructureDefinition/Extension-HospitalClassification">
+        <valueCoding>
+            <system value="https://fhir.standards.wales/CodeSystem/HospitalClassification" />
+            <code value="B" />
+            <display value="Major acute hospital" />
+        </valueCoding>
+    </extension>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+        <value value="7A2AG" />
+    </identifier>
+    <active value="true" />
+    <name value="Glangwili General Hospital" />
+    <address>
+        <line value="Dolgwili Road" />
+        <city value="Carmarthen" />
+        <district value="Dyfed" />
+        <postalCode value="SA31 2AF" />
+    </address>
+    <partOf>
+        <reference value="Organization/Example-DataStandardsWales-Organization-HywelDda" />
+        <display value="Hywel Dda University Local Health Board" />
+    </partOf>
+</Organization>
