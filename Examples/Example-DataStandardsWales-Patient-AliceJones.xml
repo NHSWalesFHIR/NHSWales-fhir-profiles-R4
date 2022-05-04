@@ -10,7 +10,7 @@
     <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex">
         <valueCode value="F" />
     </extension>      
-    <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EthnicCategory">
+    <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
         <valueCodeableConcept>
             <coding>
                 <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales" />
@@ -29,11 +29,11 @@
         </valueCodeableConcept>
     </extension>
     <identifier>
-        <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
             <valueCodeableConcept>
                 <coding>
-                    <system value="https://fhir.nhs.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
-                    <code value="01" />
+                    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+                    <code value="number-present-and-verified" />
                     <display value="Number present and verified" />
                 </coding>
             </valueCodeableConcept>
