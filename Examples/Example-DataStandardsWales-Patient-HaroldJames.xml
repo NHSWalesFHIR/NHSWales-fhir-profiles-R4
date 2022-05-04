@@ -7,7 +7,7 @@
         <status value="generated" />
         <div xmlns="http://www.w3.org/1999/xhtml">JAMES, Harold (NHS: 3795624165)</div>
     </text>     
-    <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EthnicCategory">
+    <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
         <valueCodeableConcept>
             <coding>
                 <system value="https://fhir.standards.wales/CodeSystem/Ethnicity" />
@@ -26,6 +26,15 @@
         </valueCodeableConcept>
     </extension>
     <identifier>
+        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+                    <code value="number-present-and-verified" />
+                    <display value="Number present and verified" />
+                </coding>
+            </valueCodeableConcept>
+        </extension>
         <system value="https://fhir.nhs.uk/Id/nhs-number" />
         <value value="3795624165" />
     </identifier> 
