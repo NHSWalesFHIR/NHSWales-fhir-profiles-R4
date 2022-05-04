@@ -1,0 +1,24 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+	<id value="Example-DataStandardsWales-Practitioner-Consultant" />
+	<meta>
+		<profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
+	</meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Dr Dhiren Patel (GMC: 9630333)</div>
+    </text> 	
+	<identifier>
+		<system value="https://fhir.nhs.wales/Id/nadex-identifier" />
+		<value value="dh000567" />
+	</identifier>
+	<identifier>
+		<system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+		<value value="9630333" />
+	</identifier>
+	<name>
+		<family value="Patel" />
+		<given value="Dhiren" />
+		<prefix value="Dr" />
+	</name>
+	<gender value="male" />
+</Practitioner>

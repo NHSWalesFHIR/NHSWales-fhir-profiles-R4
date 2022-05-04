@@ -1,0 +1,33 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+	<id value="Example-DataStandardsWales-Practitioner-PrescribingNurse" />
+	<meta>
+		<profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
+	</meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Sandra Huggins (NMC: 99D1234E)</div>
+    </text> 		
+	<identifier>
+		<system value="https://fhir.nhs.wales/Id/nadex-identifier" />
+		<value value="sa234567" />
+	</identifier>
+	<identifier>
+		<system value="https://fhir.hl7.org.uk/Id/nmc-number" />
+		<value value="99D1234E" />
+	</identifier>
+	<identifier>
+		<!-- namespace for non medical presciber identifiers is required --> 
+		<system value="https://fhir.nhs.wales/Id/prescriber-code" />		
+		<value value="J222233" />
+	</identifier>
+	<name>
+		<family value="Huggins" />
+		<given value="Sandra" />
+	</name>
+	<telecom>
+		<system value="phone" />
+		<value value="01446 323211" />
+		<use value="work" />
+	</telecom>
+	<gender value="female" />
+</Practitioner>
