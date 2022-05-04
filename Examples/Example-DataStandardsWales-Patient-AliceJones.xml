@@ -1,0 +1,106 @@
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="Example-DataStandardsWales-Patient-AliceJones" />
+    <meta>
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+    </meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">JONES, Alice (NHS: 9912003444)</div>
+    </text>     
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex">
+        <valueCode value="F" />
+    </extension>      
+    <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EthnicCategory">
+        <valueCodeableConcept>
+            <coding>
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-EthnicCategoryWales" />
+                <code value="G" />
+                <display value="Any other mixed background / multiple ethnic background " />
+            </coding>
+        </valueCodeableConcept>
+    </extension>    
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-religion">
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation" />
+                <code value="1021" />
+                <display value="Humanism" />
+            </coding>
+        </valueCodeableConcept>
+    </extension>
+    <identifier>
+        <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+                    <code value="01" />
+                    <display value="Number present and verified" />
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+        <system value="https://fhir.nhs.uk/Id/nhs-number" />
+        <value value="9912003444" />
+    </identifier>
+    <identifier>
+        <system value="https://fhir.cavuhb.nhs.wales/Id/pas-identifier" />
+        <value value="E101067" />
+    </identifier>    
+    <identifier>
+        <system value="https://fhir.sbuhb.nhs.wales/Id/pas-identifier" />
+        <value value="A901067" />
+    </identifier>
+    <identifier>
+        <system value="https://fhir.abuhb.nhs.wales/Id/pas-identifier" />
+        <value value="E5779097" />
+    </identifier>	
+    <identifier>
+        <system value="https://fhir.bcuhb.nhs.wales/Id/central-pas-identifier" />
+        <value value="0987889" />
+    </identifier>
+    <identifier>
+        <system value="https://fhir.bcuhb.nhs.wales/Id/west-pas-identifier" />
+        <value value="W45689" />
+    </identifier>	
+    <name>
+        <use value="official" />
+        <family value="Jones" />
+        <given value="Alice" />
+    </name>
+    <telecom>
+        <system value="phone" />
+        <value value="01446231234" />
+    </telecom>
+    <gender value="female" />
+    <birthDate value="1980-09-13" />
+    <address>
+        <line value="14 Western Way" />
+        <line value="BARRY" />
+        <postalCode value="CF62 9AZ" />
+    </address>
+    <maritalStatus>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" />
+            <code value="M" />
+            <display value="Married" />
+        </coding>    
+    </maritalStatus>
+    <communication>
+        <language>
+            <coding>
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage" />
+                <code value="cy" />
+                <display value="Welsh" />
+            </coding>
+        </language>
+        <preferred value="true" />
+    </communication>
+    <communication>
+        <language>
+            <coding>
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage" />
+                <code value="en" />
+                <display value="English" />
+            </coding>
+        </language>
+    </communication>       
+</Patient>

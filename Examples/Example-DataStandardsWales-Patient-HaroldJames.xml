@@ -1,0 +1,64 @@
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="Example-DataStandardsWales-Patient-HaroldJames" />
+    <meta>
+        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+    </meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">JAMES, Harold (NHS: 3795624165)</div>
+    </text>     
+    <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-EthnicCategory">
+        <valueCodeableConcept>
+            <coding>
+                <system value="https://fhir.standards.wales/CodeSystem/Ethnicity" />
+                <code value="A" />
+                <display value="Any White Background, including Welsh, English, Scottish, Northern Irish, British, Irish" />
+            </coding>
+        </valueCodeableConcept>
+    </extension>  
+    <extension url="http://hl7.org/fhir/StructureDefinition/patient-religion">
+        <valueCodeableConcept>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation" />
+                <code value="1041" />
+                <display value="Roman Catholic Church" />
+            </coding>
+        </valueCodeableConcept>
+    </extension>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/nhs-number" />
+        <value value="3795624165" />
+    </identifier> 
+    <identifier>
+        <system value="https://fhir.sbuhb.nhs.wales/Id/pas-identifier" />
+        <value value="E100054" />
+    </identifier>
+    <name>
+        <use value="official" />
+        <family value="Harold" />
+        <given value="James" />
+        <prefix value="Mr" />
+    </name>
+    <telecom>
+        <system value="phone" />
+        <value value="01446231234" />
+    </telecom>
+    <gender value="male" />
+    <birthDate value="1965-10-10" />
+    <address>
+        <line value="36 Ely Street"/>
+        <line value="Bettws"/>
+        <city value="Carmarthenshire"/>
+        <district value="Carmarthen"/>
+        <postalCode value="SA31 4EL"/>        
+     </address>
+    <communication>
+        <language>
+            <coding>
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage" />
+                <code value="en" />
+                <display value="English" />
+            </coding>
+        </language>
+    </communication>       
+</Patient>
