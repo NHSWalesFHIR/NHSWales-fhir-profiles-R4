@@ -1,0 +1,19 @@
+<Location xmlns="http://hl7.org/fhir">
+    <id value="Example-DataStandardsWales-Location-CadogWard(GGH)" />
+    <meta>
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
+    </meta>
+    <identifier>
+        <system value="https://fhir.nhs.wales/Id/wrds-location-identifier" />
+        <value value="7A2AGCADOG" />
+    </identifier>    
+    <identifier>
+        <system value="https://fhir.hduhb.nhs.wales/Id/pas-location-identifier" />
+        <value value="21057" />
+    </identifier>
+    <name value="GGH Cadog Ward" />	
+    <managingOrganization>
+        <reference value="Organization/Example-DataStandardsWales-Organization-GlangwiliGeneralHospital" />
+        <display value="Glangwili General Hospital" />
+    </managingOrganization>
+</Location>
