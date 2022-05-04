@@ -1,5 +1,5 @@
 <Location xmlns="http://hl7.org/fhir">
-    <id value="Example-DataStandardsWales-Location-CadogWard(GGH)" />
+    <id value="Example-DataStandardsWales-Location-CadogWard" />
     <meta>
         <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
     </meta>
