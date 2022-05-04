@@ -1,0 +1,24 @@
+<PractitionerRole xmlns="http://hl7.org/fhir">
+    <id value="Example-DataStandardsWales-PractitionerRole-PrescribingNurse" />
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+    </meta>
+    <practitioner>
+        <reference value="Practitioner/DataStandardsWales-Practitioner-PrescribingNurse-Example" />
+    </practitioner>
+    <organization>
+        <reference value="Organization/DataStandardsWales-Organization-GPSurgery-Example" />
+    </organization>
+    <code>
+        <coding>
+            <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+            <code value="3005" />
+            <display value="Specialist Nurse Practitioner" />
+        </coding>
+    </code>
+	<telecom>
+		<system value="phone" />
+		<value value="01446 323211" />
+		<use value="work" />
+	</telecom>
+</PractitionerRole>

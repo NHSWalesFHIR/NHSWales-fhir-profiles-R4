@@ -1,0 +1,24 @@
+<PractitionerRole xmlns="http://hl7.org/fhir">
+    <id value="Example-DataStandardsWales-PractitionerRole-Physiotherapist" />
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+    </meta>
+    <practitioner>
+        <reference value="Practitioner/DataStandardsWales-Practitioner-Physiotherapist-Example" />
+    </practitioner>
+    <organization>
+        <reference value="Organization/DataStandardsWales-Organization-HealthBoard-Example" />
+    </organization>
+    <code>
+        <coding>
+            <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+            <code value="4041" />
+            <display value="Physiotherapist" />
+        </coding>
+    </code>
+	<telecom>
+		<system value="phone" />
+		<value value="01446 111223" />
+		<use value="work" />
+	</telecom>
+</PractitionerRole>

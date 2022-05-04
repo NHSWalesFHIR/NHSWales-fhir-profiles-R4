@@ -21,7 +21,7 @@
       <path value="PractitionerRole.code" />
       <definition value="Roles which this practitioner is authorized to perform for the organization as defined by Data Satndards Wales" />
       <binding>
-        <strength value="required" />
+        <strength value="extensible" />
         <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-JobRole" />
       </binding>
     </element>

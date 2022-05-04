@@ -1,0 +1,26 @@
+<PractitionerRole xmlns="http://hl7.org/fhir">
+    <id value="Example-DataStandardsWales-PractitionerRole-Consultant" />
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
+    </meta>
+    <practitioner>
+        <reference value="Practitioner/Example-DataStandardsWales-Practitioner-Consultant" />
+    </practitioner>
+    <organization>
+        <reference value="Organization/Example-DataStandardsWales-Organization-SwanseaBay" />
+    </organization>
+    <code>
+        <coding>
+            <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+            <code value="1005" />
+            <display value="Consultant" />
+        </coding>
+    </code>
+    <specialty>
+        <coding>
+            <system value="https://data.standards.wales/CodeSystem/MainSpecialty" />
+            <code value="430" />
+            <display value="Geriatric Medicine" />
+        </coding>
+    </specialty>    
+</PractitionerRole>
