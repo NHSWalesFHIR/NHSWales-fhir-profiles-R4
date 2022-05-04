@@ -19,7 +19,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <max value="1" />
     </element>
     <element id="Practitioner.identifier:gdcNumber">
       <path value="Practitioner.identifier" />
