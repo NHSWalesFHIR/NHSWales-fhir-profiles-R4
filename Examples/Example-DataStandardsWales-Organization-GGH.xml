@@ -1,5 +1,5 @@
 <Organization xmlns="http://hl7.org/fhir">
-    <id value="Example-DataStandardsWales-Organization-GlangwiliGeneralHospital" />
+    <id value="Example-DataStandardsWales-Organization-GGH" />
     <meta>
         <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
     </meta>
