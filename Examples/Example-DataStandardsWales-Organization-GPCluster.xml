@@ -1,0 +1,26 @@
+<Organization xmlns="http://hl7.org/fhir">
+    <id value="Example-DataStandardsWales-Organization-GPCluster" />
+    <meta>
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
+    </meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Amman/Gwendraeth GP Cluster</div>
+    </text>       
+    <extension url="http://hl7.org/fhir/StructureDefinition/organization-period">
+		<valuePeriod>
+			<start value="2018-01-01" />
+		</valuePeriod>
+	</extension>	
+    <identifier>
+        <use value="official" />
+        <system value="https://fhir.nhs.wales/Id/gp-clustercode" />
+        <value value="CC201" />
+    </identifier>
+    <active value="true" />    
+    <name value="Amman/Gwendraeth GP Cluster" />
+    <partOf>
+        <reference value="Organization/Example-DataStandardsWales-Organization-HywelDda" />
+        <display value="Hywel Dda University Local Health Board" />
+    </partOf>
+</Organization>

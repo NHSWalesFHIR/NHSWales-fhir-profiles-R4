@@ -1,0 +1,36 @@
+<Organization xmlns="http://hl7.org/fhir">
+    <id value="Example-DataStandardsWales-Organization-GPPractice" />
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+    </meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Amman Tawe Partnership</div>
+    </text>    
+    <extension url="http://hl7.org/fhir/StructureDefinition/organization-period">
+		<valuePeriod>
+			<start value="2014-09-01" />
+		</valuePeriod>
+	</extension>	
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+        <value value="W00142" />
+    </identifier>
+    <active value="true" />    
+    <name value="Amman Tawe Partnership" />
+    <telecom>
+        <system value="phone" />
+        <value value="01269 822231" />
+    </telecom>
+    <address>
+        <line value="Graig Road" />
+        <line value="Gwaun Cea Gurwen" />
+        <city value="Ammanford" />
+        <district value="Dyfed" />
+        <postalCode value="SA18 1EG" />        
+    </address>    
+    <partOf>
+        <reference value="Organization/Example-DataStandardsWales-Organization-GPCluster" />
+        <display value="Amman/Gwendraeth GP Cluster" />
+    </partOf>
+</Organization>
