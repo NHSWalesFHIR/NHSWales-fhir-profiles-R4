@@ -3,12 +3,17 @@
     <meta>
         <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
     </meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Ward E (Neath Port Talbot Hospital)</div>
+    </text>      
     <identifier>
         <system value="https://fhir.sbuhb.nhs.wales/Id/pas-location-identifier" />
         <value value="60138" />
     </identifier>
-    <name value="Ward E (NPT)" />	
+    <name value="Ward E" />	
     <managingOrganization>
         <reference value="Organization/Example-DataStandardsWales-Organization-NeathPortTalbotHospital" />
+        <display value="Neath Port Talbot Hospital" />
     </managingOrganization>
 </Location>
