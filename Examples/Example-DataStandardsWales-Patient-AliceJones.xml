@@ -29,10 +29,10 @@
         </valueCodeableConcept>
     </extension>
     <identifier>
-        <extension url="https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+        <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
             <valueCodeableConcept>
                 <coding>
-                    <system value="https://fhir.nhs.uk/R4/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+                    <system value="https://fhir.nhs.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
                     <code value="01" />
                     <display value="Number present and verified" />
                 </coding>
