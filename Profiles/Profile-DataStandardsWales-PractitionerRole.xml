@@ -17,6 +17,14 @@
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
       </type>
     </element>
+    <element id="PractitionerRole.code">
+      <path value="PractitionerRole.code" />
+      <definition value="Roles which this practitioner is authorized to perform for the organization as defined by Data Satndards Wales" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-JobRole" />
+      </binding>
+    </element>
     <element id="PractitionerRole.specialty">
       <path value="PractitionerRole.specialty" />
       <short value="A unique code identifying each Main Specialty designated by Royal Colleges" />
