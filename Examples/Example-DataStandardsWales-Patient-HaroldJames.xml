@@ -1,7 +1,7 @@
 <Patient xmlns="http://hl7.org/fhir">
     <id value="Example-DataStandardsWales-Patient-HaroldJames" />
     <meta>
-        <profile value="https://fhir.nhs.uk/R4/StructureDefinition/UKCore-Patient" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
     </meta>
     <text>
         <status value="generated" />
