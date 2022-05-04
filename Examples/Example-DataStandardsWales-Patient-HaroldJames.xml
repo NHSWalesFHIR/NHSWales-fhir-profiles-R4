@@ -26,6 +26,15 @@
         </valueCodeableConcept>
     </extension>
     <identifier>
+        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+                    <code value="number-present-and-verified" />
+                    <display value="Number present and verified" />
+                </coding>
+            </valueCodeableConcept>
+        </extension>
         <system value="https://fhir.nhs.uk/Id/nhs-number" />
         <value value="3795624165" />
     </identifier> 
