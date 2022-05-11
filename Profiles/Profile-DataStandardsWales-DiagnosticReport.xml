@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.standards.wales/StructureDefinition/DataStandardsWales-DiagnosticReport" />
+  <name value="DataStandardsWalesDiagnosticReport" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="DiagnosticReport" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="DiagnosticReport.subject">
+      <path value="DiagnosticReport.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
