@@ -59,11 +59,6 @@
       <comment value="Identifiers for the organisation SHOULD be populated if the data exists" />
       <mustSupport value="true" />
     </element>
-    <element id="Organization.identifier:odsOrganisationCode">
-      <path value="Organization.identifier" />
-      <sliceName value="odsOrganisationCode" />
-      <mustSupport value="true" />
-    </element>
     <element id="Organization.identifier:odsSiteCode">
       <path value="Organization.identifier" />
       <sliceName value="odsSiteCode" />
@@ -74,7 +69,6 @@
       <sliceName value="gpClusterCode" />
       <short value="Identifies a Wales GP Cluster organization across multiple systems" />
       <definition value="Identifier for a Wales GP Cluster organization that is used to identify the organization across multiple disparate systems." />
-      <mustSupport value="true" />
     </element>
     <element id="Organization.identifier:gpClusterCode.system">
       <path value="Organization.identifier.system" />
