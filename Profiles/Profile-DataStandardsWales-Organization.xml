@@ -59,5 +59,9 @@
       <sliceName value="odsSiteCode" />
       <max value="0" />
     </element>
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <mustSupport value="true" />
+    </element>
   </differential>
 </StructureDefinition>
