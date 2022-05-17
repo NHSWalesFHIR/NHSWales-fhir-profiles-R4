@@ -56,6 +56,7 @@
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
+      <comment value="Identifiers for the organisation should be populated if the data exists" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.identifier:odsSiteCode">
@@ -65,12 +66,9 @@
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />
-      <comment value="Organization name SHALL be populated if the data exists. If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches." />
+      <comment value="Organization name SHALL be populated. If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches." />
+      <min value="1" />
       <mustSupport value="true" />
-    </element>
-    <element id="Organization.alias">
-      <path value="Organization.alias" />
-      <mustSupport value="false" />
     </element>
   </differential>
 </StructureDefinition>
