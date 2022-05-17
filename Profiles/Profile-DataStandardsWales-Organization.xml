@@ -54,6 +54,10 @@
         <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-HospitalClassification" />
       </type>
     </element>
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <mustSupport value="true" />
+    </element>
     <element id="Organization.identifier:odsSiteCode">
       <path value="Organization.identifier" />
       <sliceName value="odsSiteCode" />
@@ -61,7 +65,12 @@
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />
+      <comment value="Organization name SHALL be populated if the data exists. If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches." />
       <mustSupport value="true" />
+    </element>
+    <element id="Organization.alias">
+      <path value="Organization.alias" />
+      <mustSupport value="false" />
     </element>
   </differential>
 </StructureDefinition>
