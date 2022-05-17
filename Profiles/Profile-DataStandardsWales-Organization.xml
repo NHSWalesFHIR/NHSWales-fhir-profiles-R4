@@ -59,10 +59,31 @@
       <comment value="Identifiers for the organisation SHOULD be populated if the data exists" />
       <mustSupport value="true" />
     </element>
+    <element id="Organization.identifier:odsOrganisationCode">
+      <path value="Organization.identifier" />
+      <sliceName value="odsOrganisationCode" />
+      <mustSupport value="true" />
+    </element>
     <element id="Organization.identifier:odsSiteCode">
       <path value="Organization.identifier" />
       <sliceName value="odsSiteCode" />
       <max value="0" />
+    </element>
+    <element id="Organization.identifier:gpClusterCode">
+      <path value="Organization.identifier" />
+      <sliceName value="gpClusterCode" />
+      <short value="Identifies a Wales GP Cluster organization across multiple systems" />
+      <definition value="Identifier for a Wales GP Cluster organization that is used to identify the organization across multiple disparate systems." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.identifier:gpClusterCode.system">
+      <path value="Organization.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.wales/Id/gpcluster-code" />
+    </element>
+    <element id="Organization.identifier:gpClusterCode.value">
+      <path value="Organization.identifier.value" />
+      <min value="1" />
     </element>
     <element id="Organization.active">
       <path value="Organization.active" />
