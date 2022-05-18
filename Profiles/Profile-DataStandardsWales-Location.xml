@@ -47,6 +47,7 @@
       <path value="Location.name" />
       <comment value="Location name SHALL be populated. If the name of a location changes, consider putting the old name in the alias column so that it can still be located through searches." />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Location.managingOrganization">
       <path value="Location.managingOrganization" />
