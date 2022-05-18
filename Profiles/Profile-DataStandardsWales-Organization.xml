@@ -56,7 +56,7 @@
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
-      <comment value="Identifiers for the organisation SHOULD be populated if the data exists" />
+      <comment value="Identifiers for the organization SHOULD be populated if the data exists" />
       <mustSupport value="true" />
     </element>
     <element id="Organization.identifier:odsSiteCode">

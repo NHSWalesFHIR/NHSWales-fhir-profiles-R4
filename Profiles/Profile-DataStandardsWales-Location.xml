@@ -12,7 +12,9 @@
   <differential>
     <element id="Location.identifier">
       <path value="Location.identifier" />
+      <comment value="Identifiers for the location SHOULD be populated if the data exists" />
       <requirements value="Different location identities will apply which are managed by different registries" />
+      <mustSupport value="true" />
     </element>
     <element id="Location.identifier:odsSiteCode">
       <path value="Location.identifier" />
@@ -34,6 +36,16 @@
     </element>
     <element id="Location.identifier:wrdsLocationIdentifier.value">
       <path value="Location.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Location.status">
+      <path value="Location.status" />
+      <comment value="The status of the location (i.e., whether it is active, suspended or inactive) SHOULD be populated if the data exists." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Location.name">
+      <path value="Location.name" />
+      <comment value="Location name SHALL be populated. If the name of a location changes, consider putting the old name in the alias column so that it can still be located through searches." />
       <min value="1" />
     </element>
     <element id="Location.managingOrganization">
