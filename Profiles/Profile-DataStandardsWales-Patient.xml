@@ -10,6 +10,12 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
   <derivation value="constraint" />
   <differential>
+    <element id="Patient.identifier">
+      <path value="Patient.identifier" />
+      <requirements value="At least one idenifier is required to uniquely identify the patient" />
+      <min value="1" />
+      <max value="1" />
+    </element>
     <element id="Patient.identifier:abhbPasIdentifier">
       <path value="Patient.identifier" />
       <sliceName value="abhbPasIdentifier" />
