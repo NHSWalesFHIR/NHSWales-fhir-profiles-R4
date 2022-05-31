@@ -10,16 +10,36 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
   <derivation value="constraint" />
   <differential>
+    <element id="PractitionerRole.active">
+      <path value="PractitionerRole.active" />
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.period">
+      <path value="PractitionerRole.period" />
+      <mustSupport value="true" />
+    </element>
     <element id="PractitionerRole.practitioner">
       <path value="PractitionerRole.practitioner" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="PractitionerRole.organization">
+      <path value="PractitionerRole.organization" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
+      </type>
+      <mustSupport value="true" />
     </element>
     <element id="PractitionerRole.code">
       <path value="PractitionerRole.code" />
       <definition value="Roles which this practitioner is authorized to perform for the organization as defined by Data Satndards Wales" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
         <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-JobRole" />
@@ -29,6 +49,7 @@
       <path value="PractitionerRole.specialty" />
       <short value="A unique code identifying each Main Specialty designated by Royal Colleges" />
       <definition value="A unique code identifying each Main Specialty designated by Royal Colleges" />
+      <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-MainSpecialty" />
