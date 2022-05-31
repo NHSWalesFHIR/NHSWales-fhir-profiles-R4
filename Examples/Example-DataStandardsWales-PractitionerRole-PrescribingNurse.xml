@@ -4,10 +4,10 @@
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
     </meta>
     <practitioner>
-        <reference value="Practitioner/DataStandardsWales-Practitioner-PrescribingNurse-Example" />
+        <reference value="Practitioner/Example-DataStandardsWales-Practitioner-PrescribingNurse" />
     </practitioner>
     <organization>
-        <reference value="Organization/DataStandardsWales-Organization-GPSurgery-Example" />
+        <reference value="Organization/Example-DataStandardsWales-Organization-GPSurgery" />
     </organization>
     <code>
         <coding>
