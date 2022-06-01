@@ -197,6 +197,10 @@
       <path value="Patient.identifier.value" />
       <min value="1" />
     </element>
+    <element id="Patient.active">
+      <path value="Patient.active" />
+      <mustSupport value="true" />
+    </element>
     <element id="Patient.name">
       <path value="Patient.name" />
       <mustSupport value="true" />
