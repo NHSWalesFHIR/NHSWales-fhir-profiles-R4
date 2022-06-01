@@ -42,8 +42,6 @@
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
       <requirements value="To be compliant, at least one identifier shall be provided to uniquely identify the patient." />
-      <min value="1" />
-      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.identifier:nhsNumber">
@@ -198,10 +196,6 @@
     <element id="Patient.identifier:vunhstCaniscIdentifier.value">
       <path value="Patient.identifier.value" />
       <min value="1" />
-    </element>
-    <element id="Patient.active">
-      <path value="Patient.active" />
-      <mustSupport value="true" />
     </element>
     <element id="Patient.name">
       <path value="Patient.name" />
