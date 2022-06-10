@@ -22,7 +22,7 @@
 	<copyright value="© 2020 NHS Wales."/>
 	<compose>
 		<include>
-			<system value="https://fhir.standards.wales/CodeSystem/GenderIdentity"/>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-GenderIdentity"/>
 		</include>
 	</compose>
 </ValueSet>
