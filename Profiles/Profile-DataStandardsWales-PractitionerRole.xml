@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="DataStandardsWales-PractitionerRole" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-PractitionerRole" />
   <name value="DataStandardsWalesPractitionerRole" />
   <status value="draft" />

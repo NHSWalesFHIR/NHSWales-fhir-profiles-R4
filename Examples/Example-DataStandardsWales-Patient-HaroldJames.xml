@@ -10,7 +10,7 @@
     <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-UKCore-EthnicCategory">
         <valueCodeableConcept>
             <coding>
-                <system value="https://fhir.standards.wales/CodeSystem/Ethnicity" />
+                <system value="https://fhir.nhs.wales/CodeSystem/Ethnicity" />
                 <code value="A" />
                 <display value="Any White Background, including Welsh, English, Scottish, Northern Irish, British, Irish" />
             </coding>

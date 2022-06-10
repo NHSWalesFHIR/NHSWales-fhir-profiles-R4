@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="DataStandardsWales-Patient" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
   <name value="DataStandardsWalesPatient" />
   <status value="draft" />
@@ -241,14 +242,14 @@
       <path value="Patient.generalPractitioner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.standards.wales/StructureDefinition/Organization" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
       </type>
     </element>
     <element id="Patient.managingOrganization">
       <path value="Patient.managingOrganization" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.standards.wales/StructureDefinition/Organization" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
       </type>
     </element>
   </differential>

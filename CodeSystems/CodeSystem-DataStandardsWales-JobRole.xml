@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="CodeSystem-DataStandardsWales-JobRole"/>	
+	<id value="DataStandardsWales-JobRole"/>	
 	<url value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole"/>
 	<version value="1.0.0"/>
 	<name value="DataStandardsWalesJobRole"/>

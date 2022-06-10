@@ -12,9 +12,9 @@
             <start value="2009-10-01" />
         </valuePeriod>
     </extension>
-    <extension url="https://fhir.standards.wales/StructureDefinition/Extension-HospitalClassification">
+    <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-HospitalClassification">
         <valueCoding>
-            <system value="https://fhir.standards.wales/CodeSystem/HospitalClassification" />
+            <system value="https://fhir.nhs.wales/CodeSystem/HospitalClassification" />
             <code value="B" />
             <display value="Major acute hospital" />
         </valueCoding>

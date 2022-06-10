@@ -1,5 +1,8 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="DataStandardsWales-HospitalClassification"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/valueset-sourceReference">
+		<valueUri value="http://www.nwisinformationstandards.wales.nhs.uk/sitesplus/documents/299/20171222-DSCN%202017%2011-Core%20Ref%20Data%20Standards-v1.0.pdf"/>
+	</extension>	
 	<url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-HospitalClassification"/>
 	<version value="1.0.1"/>
     <name value="DataStandardsWalesHospitalClassification"/>

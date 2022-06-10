@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-    <id value="CodeSystem-DataStandardsWales-GenderIdentity"/>
-	<extension url="http://hl7.org/fhir/StructureDefinition/codesystem-sourceReference">
-		<valueUri value="http://www.nwisinformationstandards.wales.nhs.uk/sitesplus/documents/299/20200622-DSCN%202020%2006-Core%20Reference%20Data-d2-2.pdf"/>
-	</extension>
-    <url value="https://fhir.standards.wales/CodeSystem/GenderIdentity"/>	
+    <id value="DataStandardsWales-GenderIdentity"/>
+    <url value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-GenderIdentity"/>	
     <version value="1.0.0"/>
     <name value="DataStandardsWalesGenderIdentity"/>
 	<title value="Data Standards Wales Gender Identity"/>
