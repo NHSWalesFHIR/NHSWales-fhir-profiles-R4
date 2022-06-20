@@ -26,4 +26,67 @@
 			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-HospitalClassification"/>
 		</include>
 	</compose>
+    <expansion>
+        <timestamp value="2022-06-20T15:13:46+01:00" />
+        <total value="10" />
+        <offset value="0" />
+        <parameter>
+            <name value="version" />
+            <valueUri value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-HospitalClassification|1.0.0" />
+        </parameter>
+        <parameter>
+            <name value="offset" />
+            <valueInteger value="0" />
+		</parameter>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-HospitalClassification" />
+			<code value="B"/>
+			<display value="Major acute hospital"/>
+		</contains>	
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-HospitalClassification" />
+			<code value="A"/>
+			<display value="Acute Hospital"/>
+		</contains>	
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-HospitalClassification" />
+			<code value="D"/>
+			<display value="Specialist Acute Hospital"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-HospitalClassification" />
+			<code value="E"/>
+			<display value="Community Hospital"/>
+		</contains>	
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-HospitalClassification" />
+			<code value="G"/>
+			<display value="Community (Geriatric) hospital"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-HospitalClassification" />
+			<code value="F"/>
+			<display value="Psychiatric hospital: Mental Illness"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-HospitalClassification" />
+			<code value="H"/>
+			<display value="Psychiatric hospital: Learning Disability"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-HospitalClassification" />
+			<code value="K"/>
+			<display value="Psychiatric hospital: Mental Illness/Learning Disability"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-HospitalClassification" />
+			<code value="Y"/>
+			<display value="Private Hospital - COVID-19"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-HospitalClassification" />
+			<code value="Z"/>
+			<display value="Field Hospital - COVID-19"/>
+		</contains>
+	</expansion>	
 </ValueSet>
