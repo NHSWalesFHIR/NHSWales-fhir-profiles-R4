@@ -2,7 +2,7 @@
 	<id value="DataStandardsWales-JobRole"/>
 	<url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-JobRole"/>
 	<version value="1.0"/>
-    <name value="DataStandardsWalesJobRole"/>
+	<name value="DataStandardsWalesJobRole"/>
 	<title value="Data Standards Wales Job Role"/>
 	<status value="draft"/>
 	<date value="2021-08-04T00:00:00+01:00"/>
@@ -22,4 +22,363 @@
 			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole"/>
 		</include>
 	</compose>
+	<expansion>
+		<timestamp value="2022-06-20T15:13:47+01:00" />
+		<total value="70" />
+		<offset value="0" />
+		<parameter>
+			<name value="version" />
+			<valueUri value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole|1.0.0" />
+		</parameter>	
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="1005"/>
+			<display value="Consultant"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="01W001"/>
+			<display value="Doctor (CT1)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="01W002"/>
+			<display value="Doctor (CT2)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="01W003"/>
+			<display value="Doctor (CT3)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="1033"/>
+			<display value="Foundation Year 1"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="1034"/>
+			<display value="Foundation Year 2"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="01W004"/>
+			<display value="Doctor (FP3)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="01W005"/>
+			<display value="Doctor (Non-Training)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="01W006"/>
+			<display value="Doctor (Other)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="01W007"/>
+			<display value="Doctor (ST1)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="01W008"/>
+			<display value="Doctor (ST2)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="01W009"/>
+			<display value="Doctor (ST3)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="01W010"/>
+			<display value="Doctor (ST4)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="01W011"/>
+			<display value="Doctor (ST5)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="01W012"/>
+			<display value="Doctor (ST6)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="1025"/>
+			<display value="General Medical Practitioner"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="01W013"/>
+			<display value="Medical Examiner"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="03W004"/>
+			<display value="ACCP Advanced Critical Care practitioners "/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="3002"/>
+			<display value="Nurse Consultant"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="03W001"/>
+			<display value="Deputy Sister"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="3013"/>
+			<display value="Midwife"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="3008"/>
+			<display value="Enrolled Nurse"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="3005"/>
+			<display value="Specialist Nurse Practitioner"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="03W002"/>
+			<display value="Clinical Nurse Specialist"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="3016"/>
+			<display value="Advanced Practitioner"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="7047"/>
+			<display value="Nursing Associate"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="3006"/>
+			<display value="Sister/Charge Nurse"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="7001"/>
+			<display value="Health Care Support Worker"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="08W008"/>
+			<display value="Bed Manager"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="03W005"/>
+			<display value="Site Practitioner"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="4040"/>
+			<display value="Paramedic Specialist Practitioner"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="07W001"/>
+			<display value="Emergency medical Technician"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="03W006"/>
+			<display value="Clinical Call Operator"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="5003"/>
+			<display value="Pharmacist"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="05W001"/>
+			<display value="Pharmacy Technician"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="01W014"/>
+			<display value="Dentist"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="1029"/>
+			<display value="Dental Officer"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="1030"/>
+			<display value="Senior Dental Officer"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="1031"/>
+			<display value="Salaried Dental Practitioner"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="4042"/>
+			<display value="Physiotherapist Consultant"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="6001"/>
+			<display value="Clinical Scientist"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="05W003"/>
+			<display value="Theatre Assistant"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="5005"/>
+			<display value="Clinical Psychologist"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="5002"/>
+			<display value="Optometrist"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="05W004"/>
+			<display value="Physiologist"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="5019"/>
+			<display value="Operating Department Practitioner"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="8000"/>
+			<display value="Administrative and Clerical"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="08W001"/>
+			<display value="Administration &amp; Health Records"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="08W002"/>
+			<display value="Clinical Coder"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="08W003"/>
+			<display value="Other Role (not listed)"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="8003"/>
+			<display value="Secretary"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="08W004"/>
+			<display value="Ward Clerk"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="08W005"/>
+			<display value="Ward Manager"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="08W006"/>
+			<display value="MDT Coordinator"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="8005"/>
+			<display value="Medical Secretary"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="08W007"/>
+			<display value="Booking Clerk"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="4041"/>
+			<display value="Physiotherapist"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="4025"/>
+			<display value="Occupational Therapist"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="4057"/>
+			<display value="Speech and Language Therapist"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="4005"/>
+			<display value="Chiropodist/Podiatrist"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="4009"/>
+			<display value="Dietitian"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="4029"/>
+			<display value="Orthoptist"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="4033"/>
+			<display value="Orthotist"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="4045"/>
+			<display value="Prosthetist"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="4001"/>
+			<display value="Art Therapist"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="04W003"/>
+			<display value="Practitioner psychologist"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="04W001"/>
+			<display value="Radiographer"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="04W002"/>
+			<display value="Hearing aid dispenser"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="6003"/>
+			<display value="Biomedical Scientist"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
+			<code value="4037"/>
+			<display value="Paramedic"/>
+		</contains>		
+	</expansion>
 </ValueSet>

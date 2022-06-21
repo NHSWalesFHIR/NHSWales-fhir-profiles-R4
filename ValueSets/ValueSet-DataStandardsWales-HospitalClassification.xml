@@ -34,10 +34,6 @@
             <name value="version" />
             <valueUri value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-HospitalClassification|1.0.0" />
         </parameter>
-        <parameter>
-            <name value="offset" />
-            <valueInteger value="0" />
-		</parameter>
 		<contains>
 			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-HospitalClassification" />
 			<code value="B"/>
