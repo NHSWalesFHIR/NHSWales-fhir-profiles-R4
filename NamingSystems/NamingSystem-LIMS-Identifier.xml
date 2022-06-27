@@ -1,6 +1,6 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
-    <id value="DataStandardsWales-Lims-identifier" />
-    <name value="LIMS Identifier" />
+    <id value="DataStandardsWales-LIMS-identifier" />
+    <name value="DataStandardsWales LIMS Identifier" />
     <status value="draft" />
     <kind value="identifier" />
     <date value="2021-11-10" />

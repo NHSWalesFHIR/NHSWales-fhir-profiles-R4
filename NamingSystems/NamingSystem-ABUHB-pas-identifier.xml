@@ -1,5 +1,5 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
-  <id value="DataStandardsWales-ABUHB-PAS-Identifier"/> 
+  <id value="DataStandardsWales-ABUHB-PAS-PatientIdentifier"/> 
   <name value="ABUHB PAS Patient Identifier"/> 
   <status value="active"/> 
   <kind value="identifier"/> 
