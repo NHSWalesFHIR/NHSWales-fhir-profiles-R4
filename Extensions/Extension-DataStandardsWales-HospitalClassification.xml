@@ -18,8 +18,8 @@
       <rank value="1" />
     </telecom>
   </contact>
-  <description value="An extension to support the hospital classification codes maintained by the Welsh Reference Data Service (WRDS)" />
-  <purpose value="This extension supports the hospital classification codes maintained by the Welsh Reference Data Service (WRDS)" />
+  <description value="An extension to support the hospital classification codes maintained by the Welsh Reference Data and Terminology Service (WRTS)" />
+  <purpose value="This extension supports the hospital classification codes maintained by the Welsh Reference Data and Terminology Service (WRTS)" />
   <copyright value="© 2020 NHS Wales." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
@@ -34,8 +34,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="An extension to support the hospital classification codes maintained by WRDS" />
-      <definition value="An extension to support the hospital classification codes maintained by the Welsh Reference Data Service (WRDS)" />
+      <short value="An extension to support the hospital classification codes maintained by WRTS" />
+      <definition value="An extension to support the hospital classification codes maintained by the Welsh Reference Data and Terminology Service (WRTS)" />
       <max value="1" />
     </element>
     <element id="Extension.url">
@@ -45,7 +45,7 @@
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <short value="The hospital classification code" />
-      <definition value="The hospital classification code as maintained by the Welsh Reference Data Service (WRDS)" />
+      <definition value="The hospital classification code as maintained by the Welsh Reference Data and Terminology Service (WRTS)" />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />

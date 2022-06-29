@@ -10,25 +10,25 @@
 	<date value="2022-06-20T15:30:00+01:00"/>
 	<publisher value="NHS Wales"/>
 	<contact>
-		<name value="Data Standards"/>	
+		<name value="Data Standards"/>
 		<telecom>
 			<system value="email"/>
 			<value value="data.standards@wales.nhs.uk"/>
 			<use value="work"/>
 		</telecom>
-	</contact>	
-	<description value="Hospital classification codes maintained by the Welsh Reference Data Service (WRDS)"/>
+	</contact>
+	<description value="Hospital classification codes maintained by the Welsh Reference Data and Terminology Service (WRTS)"/>
 	<copyright value="&#169; 2020 NHS Wales."/>
 	<caseSensitive value="true"/>
 	<content value="complete"/>
 	<concept>
 		<code value="B"/>
 		<display value="Major acute hospital"/>
-	</concept>	
+	</concept>
 	<concept>
 		<code value="A"/>
 		<display value="Acute Hospital"/>
-	</concept>	
+	</concept>
 	<concept>
 		<code value="D"/>
 		<display value="Specialist Acute Hospital"/>
@@ -36,7 +36,7 @@
 	<concept>
 		<code value="E"/>
 		<display value="Community Hospital"/>
-	</concept>	
+	</concept>
 	<concept>
 		<code value="G"/>
 		<display value="Community (Geriatric) hospital"/>
