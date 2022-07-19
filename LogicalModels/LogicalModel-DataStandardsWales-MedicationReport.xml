@@ -150,7 +150,7 @@
       <path value="MedicationReport.ReportedMedications.Medication.AMP_VMP" />
       <label value="MHE1.3" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <type>
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
@@ -160,7 +160,7 @@
       <path value="MedicationReport.ReportedMedications.Medication.Formulation" />
       <label value="MHE1.3" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <type>
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
@@ -173,7 +173,7 @@
     <element id="MedicationReport.ReportedMedications.Medication.RouteOfAdministration">
       <path value="MedicationReport.ReportedMedications.Medication.RouteOfAdministration" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <type>
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
@@ -182,6 +182,16 @@
         <strength value="extensible" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" />
       </binding>
+    </element>
+    <element id="MedicationReport.ReportedMedications.Medication.Frequency">
+      <path value="MedicationReport.ReportedMedications.Medication.Frequency" />
+      <label value="MHE1.3" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Timing" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Timing" />
+      </type>
     </element>
     <element id="MedicationReport.Recorded">
       <path value="MedicationReport.Recorded" />
