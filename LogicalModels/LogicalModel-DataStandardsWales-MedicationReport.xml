@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir/wales.nhs/StructureDefinition/LogicalModel-DataStandardsWales-MedicationReport" />
+  <name value="DataStandardsWales-MedicationReport" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="https://fhir/wales.nhs/StructureDefinition/MedicationReport" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="MedicationReport">
+      <path value="MedicationReport" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element id="MedicationReport.Patient">
+      <path value="MedicationReport.Patient" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="MedicationReport.Patient.Name">
+      <path value="MedicationReport.Patient.Name" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="HumanName" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/HumanName" />
+      </type>
+    </element>
+    <element id="MedicationReport.Patient.Address">
+      <path value="MedicationReport.Patient.Address" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Address" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Address" />
+      </type>
+    </element>
+    <element id="MedicationReport.Patient.Identifier">
+      <path value="MedicationReport.Patient.Identifier" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus" />
+      </type>
+    </element>
+    <element id="MedicationReport.Patient.BirthDate">
+      <path value="MedicationReport.Patient.BirthDate" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="date" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/date" />
+      </type>
+    </element>
+    <element id="MedicationReport.Patient.Gender">
+      <path value="MedicationReport.Patient.Gender" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender" />
+      </binding>
+    </element>
+    <element id="MedicationReport.ResponsibleClinician">
+      <path value="MedicationReport.ResponsibleClinician" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="MedicationReport.ResponsibleOrganisation">
+      <path value="MedicationReport.ResponsibleOrganisation" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="MedicationReport.ReportedMedication">
+      <path value="MedicationReport.ReportedMedication" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="MedicationReport.ReportedMedication.Medication">
+      <path value="MedicationReport.ReportedMedication.Medication" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
