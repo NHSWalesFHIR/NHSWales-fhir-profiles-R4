@@ -130,24 +130,24 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
       </type>
     </element>
-    <element id="MedicationReport.ReportedMedication">
-      <path value="MedicationReport.ReportedMedication" />
+    <element id="MedicationReport.ReportedMedications">
+      <path value="MedicationReport.ReportedMedications" />
       <min value="1" />
       <max value="1" />
       <type>
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="MedicationReport.ReportedMedication.Medication">
-      <path value="MedicationReport.ReportedMedication.Medication" />
+    <element id="MedicationReport.ReportedMedications.Medication">
+      <path value="MedicationReport.ReportedMedications.Medication" />
       <min value="1" />
       <max value="*" />
       <type>
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="MedicationReport.ReportedMedication.Medication.AMP_VMP">
-      <path value="MedicationReport.ReportedMedication.Medication.AMP_VMP" />
+    <element id="MedicationReport.ReportedMedications.Medication.AMP_VMP">
+      <path value="MedicationReport.ReportedMedications.Medication.AMP_VMP" />
       <label value="MHE1.3" />
       <min value="0" />
       <max value="*" />
@@ -156,8 +156,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
       </type>
     </element>
-    <element id="MedicationReport.ReportedMedication.Medication.Formulation">
-      <path value="MedicationReport.ReportedMedication.Medication.Formulation" />
+    <element id="MedicationReport.ReportedMedications.Medication.Formulation">
+      <path value="MedicationReport.ReportedMedications.Medication.Formulation" />
       <label value="MHE1.3" />
       <min value="0" />
       <max value="*" />
@@ -170,8 +170,8 @@
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationForm" />
       </binding>
     </element>
-    <element id="MedicationReport.ReportedMedication.Medication.RouteOfAdministration">
-      <path value="MedicationReport.ReportedMedication.Medication.RouteOfAdministration" />
+    <element id="MedicationReport.ReportedMedications.Medication.RouteOfAdministration">
+      <path value="MedicationReport.ReportedMedications.Medication.RouteOfAdministration" />
       <min value="0" />
       <max value="*" />
       <type>
