@@ -149,7 +149,7 @@
     <element id="MedicationReport.ReportedMedications.Medication.AMP_VMP">
       <path value="MedicationReport.ReportedMedications.Medication.AMP_VMP" />
       <label value="MHE1.3" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="CodeableConcept" />
@@ -187,7 +187,18 @@
       <path value="MedicationReport.ReportedMedications.Medication.Frequency" />
       <label value="MHE1.3" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
+      <type>
+        <code value="Timing" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Timing" />
+      </type>
+    </element>
+    <element id="MedicationReport.ReportedMedications.Medication.RemainingCourseLength">
+      <path value="MedicationReport.ReportedMedications.Medication.RemainingCourseLength" />
+      <label value="MHE1.3" />
+      <comment value="Can be represented in dosage.timing.&#xA;Could accommodate this in the dosage instructions &amp; text" />
+      <min value="0" />
+      <max value="1" />
       <type>
         <code value="Timing" />
         <profile value="http://hl7.org/fhir/StructureDefinition/Timing" />
