@@ -146,10 +146,42 @@
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="MedicationReport.ReportedMedication.Medication.element">
-      <path value="MedicationReport.ReportedMedication.Medication.element" />
+    <element id="MedicationReport.ReportedMedication.Medication.AMP_VMP">
+      <path value="MedicationReport.ReportedMedication.Medication.AMP_VMP" />
+      <label value="MHE1.3" />
       <min value="0" />
       <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="MedicationReport.ReportedMedication.Medication.Formulation">
+      <path value="MedicationReport.ReportedMedication.Medication.Formulation" />
+      <label value="MHE1.3" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationForm" />
+      </binding>
+    </element>
+    <element id="MedicationReport.ReportedMedication.Medication.RouteOfAdministration">
+      <path value="MedicationReport.ReportedMedication.Medication.RouteOfAdministration" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" />
+      </binding>
     </element>
     <element id="MedicationReport.Recorded">
       <path value="MedicationReport.Recorded" />
