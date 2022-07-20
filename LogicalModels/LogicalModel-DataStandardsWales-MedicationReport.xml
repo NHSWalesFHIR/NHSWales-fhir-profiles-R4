@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir/wales.nhs/StructureDefinition/LogicalModel-DataStandardsWales-MedicationReport" />
+  <url value="https://fhir.wales.nhs/StructureDefinition/LogicalModel-DataStandardsWales-MedicationReport" />
   <name value="DataStandardsWales-MedicationReport" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
