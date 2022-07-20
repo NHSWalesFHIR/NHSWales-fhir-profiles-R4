@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.wales.nhs/StructureDefinition/DataStandardsWales-MedicationList" />
+  <name value="DataStandardsWalesMedicationList" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="List" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-List" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="List.code">
+      <path value="List.code" />
+      <min value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/list-example-use-codes" />
+          <code value="medications" />
+          <display value="Medication List" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
+    <element id="List.entry.item">
+      <path value="List.entry.item" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DataStandardsWales-MedicationStatement" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
