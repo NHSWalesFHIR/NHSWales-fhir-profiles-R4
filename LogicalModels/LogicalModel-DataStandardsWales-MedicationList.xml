@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.nhs.wales/StructureDefinition/LogicalModel-DataStandardsWales-MedicationList" />
+  <name value="LogicalModel-DataStandardsWales-MedicationList" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="https://fhir.nhs.wales/StructureDefinition/LogicalModel-DataStandardsWales-MedicationList" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="LogicalModel-DataStandardsWales-MedicationList">
+      <path value="LogicalModel-DataStandardsWales-MedicationList" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element id="LogicalModel-DataStandardsWales-MedicationList.MedicationList">
+      <path value="LogicalModel-DataStandardsWales-MedicationList.MedicationList" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="LogicalModel-DataStandardsWales-MedicationList.MedicationList.status">
+      <path value="LogicalModel-DataStandardsWales-MedicationList.MedicationList.status" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <fixedCode value="current" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/list-status" />
+      </binding>
+    </element>
+    <element id="LogicalModel-DataStandardsWales-MedicationList.MedicationList.mode">
+      <path value="LogicalModel-DataStandardsWales-MedicationList.MedicationList.mode" />
+      <short value="Snapshot List" />
+      <definition value="This list was prepared as a snapshot. It should not be assumed to be current." />
+      <comment value="'snapshot' definition: This list was prepared as a snapshot. It should not be assumed to be current. &#xD;&#xA;vs&#xD;&#xA;'working' definition: This list is the master list, maintained in an ongoing fashion with regular updates as the real world list it is tracking changes." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <fixedCode value="snapshot" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/list-mode" />
+      </binding>
+    </element>
+    <element id="LogicalModel-DataStandardsWales-MedicationList.MedicationList.subject">
+      <path value="LogicalModel-DataStandardsWales-MedicationList.MedicationList.subject" />
+      <definition value="The patient" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
+      </type>
+    </element>
+    <element id="LogicalModel-DataStandardsWales-MedicationList.MedicationList.encounter">
+      <path value="LogicalModel-DataStandardsWales-MedicationList.MedicationList.encounter" />
+      <definition value="Context in which list created" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Encounter" />
+      </type>
+    </element>
+    <element id="LogicalModel-DataStandardsWales-MedicationList.MedicationList.date">
+      <path value="LogicalModel-DataStandardsWales-MedicationList.MedicationList.date" />
+      <definition value="When the list was prepared" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="LogicalModel-DataStandardsWales-MedicationList.MedicationList.entry">
+      <path value="LogicalModel-DataStandardsWales-MedicationList.MedicationList.entry" />
+      <min value="1" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="LogicalModel-DataStandardsWales-MedicationList.MedicationList.entry.Medication">
+      <path value="LogicalModel-DataStandardsWales-MedicationList.MedicationList.entry.Medication" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
