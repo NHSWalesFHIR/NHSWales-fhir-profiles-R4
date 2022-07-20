@@ -57,6 +57,18 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/list-mode" />
       </binding>
     </element>
+    <element id="LogicalModel-DataStandardsWales-MedicationList.MedicationList.code">
+      <path value="LogicalModel-DataStandardsWales-MedicationList.MedicationList.code" />
+      <label value="R#1.4" />
+      <comment value="Could also be a SNOMED code - see example in FHRI specification https://www.hl7.org/fhir/list-example-medlist.xml.html" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+      <fixedCode value="medications" />
+    </element>
     <element id="LogicalModel-DataStandardsWales-MedicationList.MedicationList.subject">
       <path value="LogicalModel-DataStandardsWales-MedicationList.MedicationList.subject" />
       <definition value="The patient is reference as the list subject, as well as being referenced in each MedicationStatement" />
