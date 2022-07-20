@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.wales.nhs/StructureDefinition/DataStandardsWales-Medication" />
+  <name value="DataStandardsWalesMedication" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Medication" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Medication.manufacturer">
+      <path value="Medication.manufacturer" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
