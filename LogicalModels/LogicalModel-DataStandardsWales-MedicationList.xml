@@ -59,7 +59,7 @@
     </element>
     <element id="LogicalModel-DataStandardsWales-MedicationList.MedicationList.subject">
       <path value="LogicalModel-DataStandardsWales-MedicationList.MedicationList.subject" />
-      <definition value="The patient" />
+      <definition value="The patient is reference as the list subject, as well as being referenced in each MedicationStatement" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -85,6 +85,17 @@
       <type>
         <code value="dateTime" />
         <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="LogicalModel-DataStandardsWales-MedicationList.MedicationList.extension-Organization">
+      <path value="LogicalModel-DataStandardsWales-MedicationList.MedicationList.extension-Organization" />
+      <definition value="The responsible organization" />
+      <comment value="this might be captured as part of the Encounter reference?" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
       </type>
     </element>
     <element id="LogicalModel-DataStandardsWales-MedicationList.MedicationList.entry">
