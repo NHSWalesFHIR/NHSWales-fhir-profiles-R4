@@ -8,6 +8,6 @@
 			<system value="http://snomed.info/sct" />
 			<code value="222311000001102" />
 			<display value="Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)" />
-		</coding>
+        </coding>
 	</code>
 </Medication>
