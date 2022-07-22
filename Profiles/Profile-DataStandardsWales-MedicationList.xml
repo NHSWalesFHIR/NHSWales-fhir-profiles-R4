@@ -10,30 +10,23 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-List" />
   <derivation value="constraint" />
   <differential>
-    <element id="List.extension">
-      <path value="List.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
+    <element id="List.status">
+      <path value="List.status" />
+      <mustSupport value="true" />
     </element>
-    <element id="List.extension:medicationListOrganization">
-      <path value="List.extension" />
-      <sliceName value="medicationListOrganization" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationListOrganization" />
-      </type>
-      <isModifier value="false" />
+    <element id="List.mode">
+      <path value="List.mode" />
+      <mustSupport value="true" />
     </element>
     <element id="List.code">
       <path value="List.code" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="coding.code" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <min value="1" />
       <fixedCodeableConcept>
         <coding>
@@ -42,6 +35,37 @@
           <display value="Medication List" />
         </coding>
       </fixedCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="List.code:medicationListCode">
+      <path value="List.code" />
+      <sliceName value="medicationListCode" />
+      <min value="1" />
+    </element>
+    <element id="List.code:medicationListCode.coding.system">
+      <path value="List.code.coding.system" />
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/list-example-use-codes" />
+        <code value="medications" />
+        <display value="Medication List" />
+      </code>
+    </element>
+    <element id="List.subject">
+      <path value="List.subject" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.encounter">
+      <path value="List.encounter" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.source">
+      <path value="List.source" />
+      <mustSupport value="true" />
+    </element>
+    <element id="List.entry">
+      <path value="List.entry" />
+      <mustSupport value="true" />
     </element>
     <element id="List.entry.item">
       <path value="List.entry.item" />
