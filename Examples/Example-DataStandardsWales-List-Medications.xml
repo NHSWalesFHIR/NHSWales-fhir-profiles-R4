@@ -9,7 +9,6 @@
 			<display value="Medication List"/> 
 		</coding>
 	</code> 
-	<date value="2022-07-22T10:46:25Z"/> 
 	<subject> 
 		<reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper" />
 		<display value="PIPER, Peter (NHS: 1192335566)" />
@@ -18,43 +17,21 @@
 		<reference value="Encounter/Example-Encounter-Inpatient" />
 		<display value="In-progress Emergency Admission" />    
     </encounter>
-	<!--   
-      in a real medications list, we'd actually have medication resources.
-      but this an example to demonstrate a changes list, so we'll just use 
-      display   -->
+	<date value="2022-07-22T10:46:25Z"/> 
+    <source>
+		<reference value="Practitioner/Example-DataStandardsWales-Practitioner-Doctor" />
+		<display value="Dr Sally Foster (GMC: 9830222)" />    
+    </source>
 	<entry> 
-		<!--   patient was prescribed hydroxocobalamin. the flag marks this 
-       as a prescription. Note that healthcare workers will now get into
-       a long debate the exact implication of "prescribed". That's why the
-       spec doesn't fix the flag values   -->
-		<flag> 
-			<coding> 
-				<system value="http://nehta.gov.au/codes/medications/changetype"/> 
-				<code value="01"/> 
-				<display value="Prescribed"/> 
-			</coding> 
-		</flag> 
 		<item>  
-			<display value="hydroxocobalamin"/> 
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Paracetamol" />
+            <display value="Paracetamol 500mg tablets" />
 		</item> 
-	</entry>   
-	<!--  
-     on this one, we record that the patient was taken off morphine sulfate.
-     because not every system knows the flags, and the ensure there's no confusion,
-     if the flag implies that something was removed from the list, then the
-     deleted element must also be set 
-    -->  
-	<entry> 
-		<flag> 
-			<coding> 
-				<system value="http://nehta.gov.au/codes/medications/changetype"/> 
-				<code value="02"/> 
-				<display value="Cancelled"/> 
-			</coding> 
-		</flag> 
-		<deleted value="true"/> 
+	</entry>	
+    <entry> 
 		<item>  
-			<display value="Morphine Sulfate"/> 
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Ventolin" />
+            <display value="Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)" />
 		</item> 
-	</entry>   
+	</entry>  
 </List> 
