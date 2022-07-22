@@ -1,5 +1,5 @@
 <Encounter xmlns="http://hl7.org/fhir">
-    <id value="Example-DataStandardsWales-Encounter-InProgressEmergecyAdmission" />
+    <id value="Example-DataStandardsWales-Encounter-InProgressEmergencyAdmission" />
     <meta>
         <profile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Encounter" />
     </meta>
