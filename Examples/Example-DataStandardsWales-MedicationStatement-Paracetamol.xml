@@ -19,6 +19,10 @@
 		<reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper" />
 		<display value="PIPER, Peter (NHS: 1192335566)" />
 	</subject>
+	<context>
+		<reference value="Encounter/Example-Encounter-Inpatient" />
+		<display value="In-progress Emergency Admission" />
+	</context>	
 	<dateAsserted value="2022-07-22T10:46:25Z" />
 	<informationSource>
 		<reference value="Practitioner/Example-DataStandardsWales-Practitioner-Doctor" />
