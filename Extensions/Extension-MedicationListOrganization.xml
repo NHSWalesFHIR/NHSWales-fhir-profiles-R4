@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-DataStandardsWales-MedicationListOrganization" />
+  <url value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationListOrganization" />
+  <version value="1.0.0" />
+  <name value="ExtensionDataStandardsWalesMedicationListOrganization" />
+  <title value="Extension Data Standards Wales Medication List Organization" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2022-07-20" />
+  <publisher value="NHS Wales" />
+  <contact>
+    <name value="Data Standards Wales" />
+    <telecom>
+      <system value="email" />
+      <value value="data.standards@wales.nhs.uk" />
+      <use value="work" />
+    </telecom>
+  </contact>
+  <description value="An extension to record the NHS Wales organisation responsible for the medication list" />
+  <purpose value="This extension records the NHS Wales organisation responsible for the medication list" />
+  <copyright value="© 2022 NHS Wales." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="List" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="An extension to record the NHS Wales organisation responsible for the medication list" />
+      <definition value="An extension to record the NHS Wales organisation responsible for the medication list" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationListOrganization" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+    <element id="Extension.value[x].reference">
+      <path value="Extension.value[x].reference" />
+      <type>
+        <code value="string" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
+      </type>
+    </element>
+    <element id="Extension.value[x].reference.identifier">
+      <path value="Extension.value[x].reference.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <ordered value="false" />
+        <rules value="open" />
+      </slicing>
+    </element>
+  </differential>
+</StructureDefinition>

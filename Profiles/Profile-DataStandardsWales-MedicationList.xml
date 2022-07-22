@@ -10,6 +10,28 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-List" />
   <derivation value="constraint" />
   <differential>
+    <element id="List.extension">
+      <path value="List.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="List.extension:medicationListOrganization">
+      <path value="List.extension" />
+      <sliceName value="medicationListOrganization" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationListOrganization" />
+      </type>
+      <isModifier value="false" />
+    </element>
     <element id="List.code">
       <path value="List.code" />
       <min value="1" />

@@ -1,0 +1,13 @@
+<Medication>
+	<id value="Example-DataStandardsWales-Medication-Diazepam" />
+    <meta>
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Medication" />
+    </meta>	
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<code value="48546005" />
+			<display value="Diazepam" />
+		</coding>
+	</code>
+</Medication>

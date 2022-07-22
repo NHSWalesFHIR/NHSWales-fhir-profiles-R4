@@ -1,0 +1,13 @@
+<Medication>
+	<id value="Example-DataStandardsWales-Medication-Ventolin" />
+    <meta>
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Medication" />
+    </meta>		
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<code value="222311000001102" />
+			<display value="Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)" />
+		</coding>
+	</code>
+</Medication>
