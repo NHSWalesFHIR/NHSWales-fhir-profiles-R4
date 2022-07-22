@@ -1,0 +1,52 @@
+<MedicationStatement>
+	<id value="Example-DataStandardsWales-MedicationStatement-Paracetamol" />
+    <meta>
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Medication" />
+    </meta>		
+	<status value="active" />
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/medication-request-category" />
+			<code value="patientspecified" />
+			<display value="patientspecified" />
+		</coding>
+	</category>
+	<medicationReference>
+		<reference value="Medication/Example-DataStandardsWales-Medication-Paracetamol" />
+		<display value="Paracetamol 500mg tablets" />
+	</medicationReference>
+	<subject>
+		<reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper" />
+		<display value="PIPER, Peter (NHS: 1192335566)" />
+	</subject>
+	<dateAsserted value="2022-07-22T10:46:25Z" />
+	<informationSource>
+		<reference value="Practitioner/Example-DataStandardsWales-Practitioner-Doctor" />
+		<display value="Dr Sally Foster (GMC: 9830222)" />
+	</informationSource>
+	<dosage>
+		<timing>
+			<repeat>
+				<frequencyMax value="4" />
+				<period value="1" />
+				<periodUnit value="d" />
+			</repeat>
+		</timing>
+		<asNeededBoolean value="true" />
+		<route>
+			<coding>
+				<system value="http://snomed.info/sct" />
+				<code value="26643006" />
+				<display value="oral" />
+			</coding>
+		</route>
+		<doseAndRate>
+			<doseQuantity>
+				<value value="2" />
+				<unit value="tablet" />
+				<system value="http://snomed.info/sct" />
+				<code value="428673006" />
+			</doseQuantity>
+		</doseAndRate>
+	</dosage>
+</MedicationStatement>

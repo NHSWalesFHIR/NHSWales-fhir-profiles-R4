@@ -1,0 +1,34 @@
+<Patient xmlns="http://hl7.org/fhir">
+    <id value="Example-DataStandardsWales-Patient-PeterPiper" />
+    <meta>
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
+    </meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">PIPER, Peter (NHS: 1192335566)</div>
+    </text>         
+    <identifier>
+        <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+                    <code value="number-present-and-verified" />
+                    <display value="Number present and verified" />
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+        <system value="https://fhir.nhs.uk/Id/nhs-number" />
+        <value value="1192335566" />
+    </identifier>	
+    <name>
+        <family value="Piper" />
+        <given value="Peter" />
+    </name>
+    <gender value="male" />
+    <birthDate value="1981-07-03" />
+    <address>
+        <line value="14 Semore View" />
+        <line value="Porthcawl" />
+        <postalCode value="CF32 0AY" />
+    </address>     
+</Patient>

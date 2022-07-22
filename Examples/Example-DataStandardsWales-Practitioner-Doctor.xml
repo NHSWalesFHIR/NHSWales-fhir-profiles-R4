@@ -1,0 +1,19 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+	<id value="Example-DataStandardsWales-Practitioner-Doctor" />
+	<meta>
+		<profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
+	</meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Dr Sally Foster (GMC: 9830222)</div>
+    </text> 	
+	<identifier>
+		<system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+		<value value="9830222" />
+	</identifier>
+	<name>
+		<family value="Foster" />
+		<given value="Sally" />
+		<prefix value="Dr" />
+	</name>
+</Practitioner>
