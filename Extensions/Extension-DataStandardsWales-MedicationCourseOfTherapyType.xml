@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-DataStandardsWales-MedicationCourseOfTherapyType" />
+  <url value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType" />
+  <version value="1.0.0" />
+  <name value="ExtensionDataStandardsWalesMedicationCourseOfTherapyType" />
+  <title value="Extension Data Standards Wales Medication Course Of Therapy Type" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2022-08-02" />
+  <publisher value="NHS Wales" />
+  <contact>
+    <name value="Data Standards" />
+    <telecom>
+      <system value="email" />
+      <value value="data.standards@wales.nhs.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="An extension to carry an indicator of the overall pattern of medication administration at the MedicationStatement level." />
+  <purpose value="This extension carries an indicator of the overall pattern of medication administration at the MedicationStatement level - e.g. Repeat, Acute etc" />
+  <copyright value="© 2022 NHS Wales." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicationStatement" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Pattern of medication administration" />
+      <definition value="An extension to support communication of the pattern of medication administration at the MedicationStatement level." />
+      <max value="1" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-HospitalClassification" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="Medication course of therapy type" />
+      <definition value="A code to represent the medication course of therapy type" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Medication course of therapy type" />
+        <valueSet value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
