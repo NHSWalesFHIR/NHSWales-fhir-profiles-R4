@@ -25,7 +25,7 @@
     <entry>
         <item>
             <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Enbrel-Outpatient" />
-            <display value="Enbrel 50mg/1ml solution for injection pre-filled syringes (Pfizer Ltd)" />
+            <display value="Enbrel 50mg/1ml solution for injection pre-filled syringes (Pfizer Ltd) - Inject 50mg subcutaneously once a week" />
         </item>
     </entry>
 </List>

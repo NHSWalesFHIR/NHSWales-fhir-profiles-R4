@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+    <id value="Example-DataStandardsWales-MedicationStatement-Ibuprofen-Patient"/>
+    <meta>
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Ibuprofen 200mg tablets, 2-3 tablets three times a day</div>
+    </text>
+    <status value="active"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+            <code value="community"/>
+            <display value="Community"/>
+        </coding>
+    </category>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="https://dmd.nhs.uk" />
+            <code value="329652003" />
+            <display value="Ibuprofen 200 mg tablets"/>
+        </coding>
+        <text value="Ibuprofen 200 mg tablets"/>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper"/>
+        <display value="PIPER, Peter (NHS: 1192335566)"/>
+    </subject>
+    <dateAsserted value="2022-01-10T10:00:00Z"/>
+    <informationSource>
+        <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper"/>
+        <display value="PIPER, Peter (NHS: 1192335566)"/>
+    </informationSource>
+    <dosage>
+        <timing>
+            <repeat>
+                <frequency value="2"/>
+                <frequencyMax value="3"/>
+                <period value="1"/>
+                <periodUnit value="d"/>
+            </repeat>
+        </timing>
+        <asNeededBoolean value="true"/>
+        <route>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="26643006"/>
+                <display value="Oral"/>
+            </coding>
+        </route>
+        <doseAndRate>
+            <doseQuantity>
+                <value value="2"/>
+                <unit value="tablet"/>
+            </doseQuantity>
+        </doseAndRate>
+    </dosage>
+</MedicationStatement>
