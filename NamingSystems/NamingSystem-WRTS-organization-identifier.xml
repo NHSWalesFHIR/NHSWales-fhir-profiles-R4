@@ -1,0 +1,15 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="DataStandardsWales-WRTS-Organization-Identifier"/>
+  <name value="WRTS Organization Identifier"/>
+  <status value="retired"/>
+  <kind value="identifier"/>
+  <date value="2020-04-12"/>
+  <publisher value="NHS Wales"/>
+  <responsible value="NHS Wales Informatics Service"/>
+  <usage value="Do not use"/>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="https://fhir.nhs.wales/Id/wrts-organization-identifier"/>
+    <preferred value="true"/>
+  </uniqueId>
+</NamingSystem> 

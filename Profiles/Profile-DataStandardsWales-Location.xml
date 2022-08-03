@@ -22,20 +22,20 @@
       <sliceName value="odsSiteCode" />
       <max value="0" />
     </element>
-    <element id="Location.identifier:wrdsLocationIdentifier">
+    <element id="Location.identifier:wrtsLocationIdentifier">
       <path value="Location.identifier" />
-      <sliceName value="wrdsLocationIdentifier" />
-      <short value="The WRDS identifier for the location" />
+      <sliceName value="wrtsLocationIdentifier" />
+      <short value="The WRTS identifier for the location" />
       <definition value="The Welsh Reference Data Servcie identifier for the location" />
       <max value="1" />
     </element>
-    <element id="Location.identifier:wrdsLocationIdentifier.system">
+    <element id="Location.identifier:wrtsLocationIdentifier.system">
       <path value="Location.identifier.system" />
-      <short value="WRDS location identifier" />
+      <short value="WRTS location identifier" />
       <min value="1" />
-      <fixedUri value="https://fhir.nhs.wales/Id/wrds-location-identifier" />
+      <fixedUri value="https://fhir.nhs.wales/Id/wrts-location-identifier" />
     </element>
-    <element id="Location.identifier:wrdsLocationIdentifier.value">
+    <element id="Location.identifier:wrtsLocationIdentifier.value">
       <path value="Location.identifier.value" />
       <min value="1" />
     </element>
