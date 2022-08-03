@@ -1,0 +1,31 @@
+<List xmlns="http://hl7.org/fhir">
+    <id value="Example-MedicationList-Rheumatology" />
+    <status value="current" />
+    <mode value="snapshot" />
+    <code>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/list-example-use-codes" />
+            <code value="medications" />
+            <display value="Medication List" />
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper" />
+        <display value="PIPER, Peter (NHS: 1192335566)" />
+    </subject>
+    <encounter>
+        <reference value="Encounter/Example-Outpatient" />
+        <display value="..." />
+    </encounter>
+    <date value="2022-02-20T15:00:00Z" />
+    <source>
+        <reference value="Practitioner/Rheumatology-Doctor" />
+        <display value="..." />
+    </source>   
+    <entry>
+        <item>
+            <reference value="Example-MedicationStatement-Enbrel-Outpatient" />
+            <display value="Enbrel 50mg/1ml solution for injection pre-filled syringes (Pfizer Ltd)" />
+        </item>
+    </entry>
+</List>
