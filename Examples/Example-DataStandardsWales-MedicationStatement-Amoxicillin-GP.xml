@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+    <id value="Example-MedicationStatement-Amoxicillin-GP" />
+    <meta>
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
+    </meta>
+    <text>
+        <status value="generated"></status>
+        <!-- Text to be provided -->
+        <div xmlns="http://www.w3.org/1999/xhtml"></div>
+    </text>
+    <status value="active" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category" />
+            <code value="community" />
+            <display value="Community" />
+        </coding>
+    </category>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="https://dmd.nhs.uk" />
+            <code value="39732411000001106"> </code>
+            <display value="Amoxicillin 500mg capsules"></display>
+        </coding>      
+        <text value="Amoxicillin 500mg capsules" />
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper" />
+        <display value="PIPER, Peter (NHS: 1192335566)" />
+    </subject>
+    <context>
+        <reference value="Encounter/Encounter-GP" />
+        <display value="..." />
+    </context>
+    <dateAsserted value="2021-06-04T14:00:00Z" />
+    <informationSource>
+        <reference value="Practitioner/Practitioner-GP" />
+        <display value="..." />
+    </informationSource>
+    <dosage>
+        <text value="Amoxicillin 500mg capsules, one capsule three times a day for 7 days"></text>
+    </dosage>
+</MedicationStatement>
