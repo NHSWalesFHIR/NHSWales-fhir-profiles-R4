@@ -1,5 +1,5 @@
 <List xmlns="http://hl7.org/fhir">
-    <id value="Example-MedicationList-GP"/>
+    <id value="Example-DataStandardsWales-List-Medications-GP"/>
     <status value="current"/>
     <mode value="snapshot"/>
     <code>
