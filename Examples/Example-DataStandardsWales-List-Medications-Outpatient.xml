@@ -24,7 +24,7 @@
     </source>   
     <entry>
         <item>
-            <reference value="Example-MedicationStatement-Enbrel-Outpatient" />
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Enbrel-Outpatient" />
             <display value="Enbrel 50mg/1ml solution for injection pre-filled syringes (Pfizer Ltd)" />
         </item>
     </entry>
