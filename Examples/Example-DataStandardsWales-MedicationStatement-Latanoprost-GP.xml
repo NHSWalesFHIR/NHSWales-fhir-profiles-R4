@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-    <id value="Example-MedicationStatement-Latanoprost-GP" />
+    <id value="Example-DataStandardsWales-MedicationStatement-Latanoprost-GP" />
     <meta>
         <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
     </meta>
     <text>
-        <status value="generated"></status>
-        <!-- Text to be provided -->
-        <div xmlns="http://www.w3.org/1999/xhtml"></div>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Latanoprost 50micrograms/ml eye drops 0.2ml unit dose preservative free - Instil one drop into the left eye at night</div>
     </text>
+    <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType">
+        <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
+            <code value="continuous" />
+            <display value="Continuous long term therapy" />
+        </valueCoding>
+    </extension>
     <status value="active" />
     <category>
         <coding>
@@ -20,9 +25,9 @@
     <medicationCodeableConcept>
         <coding>
             <system value="https://dmd.nhs.uk" />
-            <code value="22154311000001107"> </code>
-            <display value="Latanoprost 50micrograms/ml eye drops 0.2ml unit dose preservative free"></display>
-        </coding>      
+            <code value="22154311000001107" />
+            <display value="Latanoprost 50micrograms/ml eye drops 0.2ml unit dose preservative free" />
+        </coding>
         <text value="Latanoprost 50micrograms/ml eye drops 0.2ml unit dose preservative free" />
     </medicationCodeableConcept>
     <subject>
@@ -37,7 +42,8 @@
     <informationSource>
         <reference value="Practitioner/Practitioner-GP" />
         <display value="..." />
-    </informationSource>    <dosage>
-        <text value="Latanoprost 50micrograms/ml eye drops 0.2ml unit dose preservative free – Instil one drop into the left eye at night "></text>
+    </informationSource>
+    <dosage>
+        <text value="Latanoprost 50micrograms/ml eye drops 0.2ml unit dose preservative free - Instil one drop into the left eye at night" />
     </dosage>
 </MedicationStatement>

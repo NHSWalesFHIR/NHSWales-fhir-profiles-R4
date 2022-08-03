@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-    <id value="Example-MedicationStatement-Atorvastatin-GP" />
+    <id value="Example-DataStandardsWales-MedicationStatement-Atorvastatin-GP" />
     <meta>
         <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
     </meta>
     <text>
-        <status value="generated"></status>
-        <!-- Text to be provided -->
-        <div xmlns="http://www.w3.org/1999/xhtml"></div>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Atorvastatin 20mg tablet - 1 tablet at night</div>
     </text>
+    <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType">
+        <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
+            <code value="continuous" />
+            <display value="Continuous long term therapy" />
+        </valueCoding>
+    </extension>
     <status value="active" />
     <category>
         <coding>
@@ -20,9 +25,9 @@
     <medicationCodeableConcept>
         <coding>
             <system value="https://dmd.nhs.uk" />
-            <code value="39733011000001106"> </code>
-            <display value="Atorvastatin 20mg tablets"></display>
-        </coding>      
+            <code value="39733011000001106" />
+            <display value="Atorvastatin 20mg tablets" />
+        </coding>
         <text value="Atorvastatin 20mg tablets" />
     </medicationCodeableConcept>
     <subject>
@@ -39,6 +44,6 @@
         <display value="..." />
     </informationSource>
     <dosage>
-        <text value="Atorvastatin 20mg tablet – 1 tablet at night"></text>
+        <text value="Atorvastatin 20mg tablet - 1 tablet at night" />
     </dosage>
 </MedicationStatement>

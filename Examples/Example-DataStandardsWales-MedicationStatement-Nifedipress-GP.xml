@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-    <id value="Example-MedicationStatement-Nifedipress-GP" />
+    <id value="Example-DataStandardsWales-MedicationStatement-Nifedipress-GP" />
     <meta>
         <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
     </meta>
     <text>
-        <status value="generated"></status>
-        <!-- Text to be provided -->
-        <div xmlns="http://www.w3.org/1999/xhtml"></div>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Nifedipress MR 20mg tablet 1 tablet twice a day</div>
     </text>
+    <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType">
+        <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
+            <code value="continuous" />
+            <display value="Continuous long term therapy" />
+        </valueCoding>
+    </extension>    
     <status value="active" />
     <category>
         <coding>
@@ -20,8 +25,8 @@
     <medicationCodeableConcept>
         <coding>
             <system value="https://dmd.nhs.uk" />
-            <code value="619111000001101"> </code>
-            <display value="Nifedipress MR 20 tablets"></display>
+            <code value="619111000001101" />
+            <display value="Nifedipress MR 20 tablets" />
         </coding>      
         <text value="Nifedipress MR 20 tablets" />
     </medicationCodeableConcept>
@@ -38,6 +43,6 @@
         <reference value="Practitioner/Practitioner-GP" />
         <display value="..." />
     </informationSource>    <dosage>
-        <text value="Nifedipress MR 20mg tablet 1 tablet twice a day"></text>
+        <text value="Nifedipress MR 20mg tablet 1 tablet twice a day" />
     </dosage>
 </MedicationStatement>

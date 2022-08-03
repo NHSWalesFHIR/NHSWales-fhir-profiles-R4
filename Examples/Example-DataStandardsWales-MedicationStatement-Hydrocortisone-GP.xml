@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-    <id value="Example-MedicationStatement-Hydrocortisone-GP" />
+    <id value="Example-DataStandardsWales-MedicationStatement-Hydrocortisone-GP" />
     <meta>
         <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
     </meta>
     <text>
-        <status value="generated"></status>
-        <!-- Text to be provided -->
-        <div xmlns="http://www.w3.org/1999/xhtml"></div>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Hydrocortisone 1% Cream - Apply to the affected area twice a day</div>
     </text>
+    <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType">
+        <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
+            <code value="continuous" />
+            <display value="Continuous long term therapy" />
+        </valueCoding>
+    </extension>    
     <status value="active" />
     <category>
         <coding>
@@ -20,8 +25,8 @@
     <medicationCodeableConcept>
         <coding>
             <system value="https://dmd.nhs.uk" />
-            <code value="346992009"> </code>
-            <display value="Hydrocortisone 1% cream"></display>
+            <code value="346992009" />
+            <display value="Hydrocortisone 1% cream" />
         </coding>      
         <text value="Hydrocortisone 1% cream" />
     </medicationCodeableConcept>
@@ -39,6 +44,6 @@
         <display value="..." />
     </informationSource>
     <dosage>
-        <text value="Hydrocortisone 1% Cream – Apply to the affected area twice a day"></text>
+        <text value="Hydrocortisone 1% Cream - Apply to the affected area twice a day" />
     </dosage>
 </MedicationStatement>

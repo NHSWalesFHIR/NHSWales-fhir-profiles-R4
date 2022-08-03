@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-    <id value="Example-MedicationStatement-Bendroflumethiazide-GP" />
+    <id value="Example-DataStandardsWales-MedicationStatement-Bendroflumethiazide-GP" />
     <meta>
         <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
     </meta>
     <text>
-        <status value="generated"></status>
-        <!-- Text to be provided -->
-        <div xmlns="http://www.w3.org/1999/xhtml"></div>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Bendroflumethazide 2.5mg tablets - 1 tablet every morning</div>
     </text>
+    <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType">
+        <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
+            <code value="continuous" />
+            <display value="Continuous long term therapy" />
+        </valueCoding>
+    </extension>    
     <status value="active" />
     <category>
         <coding>
@@ -21,7 +26,7 @@
         <coding>
             <system value="https://dmd.nhs.uk" />
             <code value="317919004"> </code>
-            <display value="Bendroflumethiazide 2.5mg tablets"></display>
+            <display value="Bendroflumethiazide 2.5mg tablets" />
         </coding>      
         <text value="Bendroflumethiazide 2.5mg tablets" />
     </medicationCodeableConcept>
@@ -39,6 +44,6 @@
         <display value="..." />
     </informationSource>
     <dosage>
-        <text value="Bendroflumethazide 2.5mg tablets – 1 tablet every morning"></text>
+        <text value="Bendroflumethazide 2.5mg tablets - 1 tablet every morning" />
     </dosage>
 </MedicationStatement>

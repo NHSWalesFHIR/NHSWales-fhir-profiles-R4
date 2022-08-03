@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-    <id value="Example-MedicationStatement-Amoxicillin-GP" />
+    <id value="Example-DataStandardsWales-MedicationStatement-Amoxicillin-GP" />
     <meta>
         <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
     </meta>
     <text>
-        <status value="generated"></status>
-        <!-- Text to be provided -->
-        <div xmlns="http://www.w3.org/1999/xhtml"></div>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Amoxicillin 500mg capsules, one capsule three times a day for 7 days</div>
     </text>
+    <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType">
+        <valueCoding>
+            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
+            <code value="acute" />
+            <display value="Short course (acute) therapy" />
+        </valueCoding>
+    </extension>
     <status value="active" />
     <category>
         <coding>
@@ -20,9 +25,9 @@
     <medicationCodeableConcept>
         <coding>
             <system value="https://dmd.nhs.uk" />
-            <code value="39732411000001106"> </code>
-            <display value="Amoxicillin 500mg capsules"></display>
-        </coding>      
+            <code value="39732411000001106" />
+            <display value="Amoxicillin 500mg capsules" />
+        </coding>
         <text value="Amoxicillin 500mg capsules" />
     </medicationCodeableConcept>
     <subject>
@@ -39,6 +44,6 @@
         <display value="..." />
     </informationSource>
     <dosage>
-        <text value="Amoxicillin 500mg capsules, one capsule three times a day for 7 days"></text>
+        <text value="Amoxicillin 500mg capsules, one capsule three times a day for 7 days" />
     </dosage>
 </MedicationStatement>

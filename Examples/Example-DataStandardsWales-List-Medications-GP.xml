@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <List xmlns="http://hl7.org/fhir">
     <id value="Example-MedicationList-GP"/>
     <status value="current"/>
@@ -25,56 +24,56 @@
     </source>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Bendroflumethiazide-GP"/>
-            <display value="..."/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Bendroflumethiazide-GP"/>
+            <display value="Bendroflumethazide 2.5mg tablets - 1 tablet every morning"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Bisoprolol-GP"/>
-            <display value="..."/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Bisoprolol-GP"/>
+            <display value="Bisoprolol 1.25mg tablets - 1 tablet every morning"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Nifedipress-GP"/>
-            <display value="..."/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Nifedipress-GP"/>
+            <display value="Nifedipress MR 20mg tablet 1 tablet twice a day"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Ramipril-GP"/>
-            <display value="..."/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Ramipril-GP"/>
+            <display value="Ramipril 2.5mg tablet - 1 tablet in the morning"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Atorvastatin-GP"/>
-            <display value="..."/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Atorvastatin-GP"/>
+            <display value="Atorvastatin 20mg tablet - 1 tablet at night"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Fentanyl-GP"/>
-            <display value="..."/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Fentanyl-GP"/>
+            <display value="Fentanyl 25microgram/hour patch - Apply one patch every 72 hours"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Hydrocortisone-GP"/>
-            <display value="..."/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Hydrocortisone-GP"/>
+            <display value="Hydrocortisone 1% Cream - Apply to the affected area twice a day"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Latanoprost-GP"/>
-            <display value="..."/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Latanoprost-GP"/>
+            <display value="Latanoprost 50micrograms/ml eye drops 0.2ml unit dose preservative free - Instil one drop into the left eye at night"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Amoxicillin-GP"/>
-            <display value="..."/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Amoxicillin-GP"/>
+            <display value="Amoxicillin 500mg capsules, one capsule three times a day for 7 days"/>
         </item>
     </entry>
 </List>
