@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+    <id value="Example-MedicationStatement-Nifedipress-Inpatient"/>
+    <meta>
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Nifedipress MR 20mg tablet 1 tablet twice a day</div>
+    </text>
+    <status value="active"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+        </coding>
+    </category>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="https://dmd.nhs.uk" />
+            <code value="619111000001101" />
+            <display value="Nifedipress MR 20 tablets" />
+        </coding>
+        <text value="Nifedipress MR 20 tablets"/>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper" />
+        <display value="PIPER, Peter (NHS: 1192335566)"/>
+    </subject>
+    <context>
+        <reference value="Encounter/Encounter-Inpatient"/>
+        <display value="..."/>
+    </context>
+    <dateAsserted value="2022-07-12T11:00:00Z"/>
+    <informationSource>
+        <reference value="Practitioner/Hospital-Doctor"/>
+        <display value="..."/>
+    </informationSource>
+    <dosage>
+        <text value="Nifedipress MR 20mg tablet 1 tablet twice a day"/>
+        <timing>
+            <repeat>
+                <frequency value="2"/>
+                <period value="1"/>
+                <periodUnit value="d"/>
+            </repeat>
+        </timing>
+        <route>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="26643006" />
+                <display value="Oral" />
+            </coding>
+        </route>
+        <doseAndRate>
+            <doseQuantity>
+                <value value="1" />
+                <unit value="tablet" />
+                <system value="http://snomed.info/sct" />
+                <code value=" 428673006" />
+            </doseQuantity>
+        </doseAndRate>
+    </dosage>
+</MedicationStatement>

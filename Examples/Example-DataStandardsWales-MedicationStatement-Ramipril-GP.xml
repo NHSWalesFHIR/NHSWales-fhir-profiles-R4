@@ -5,7 +5,7 @@
     </meta>
     <text>
         <status value="generated" />
-        <div xmlns="http://www.w3.org/1999/xhtml">Ramipril 2.5mg tablet – 1 tablet in the morning</div>
+        <div xmlns="http://www.w3.org/1999/xhtml">Ramipril 2.5mg tablet - 1 tablet in the morning</div>
     </text>
     <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType">
         <valueCoding>
@@ -44,6 +44,6 @@
         <display value="..." />
     </informationSource>
     <dosage>
-        <text value="Ramipril 2.5mg tablet – 1 tablet in the morning" />
+        <text value="Ramipril 2.5mg tablet - 1 tablet in the morning" />
     </dosage>
 </MedicationStatement>

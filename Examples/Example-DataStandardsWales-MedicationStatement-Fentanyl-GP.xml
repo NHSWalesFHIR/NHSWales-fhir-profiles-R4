@@ -5,7 +5,7 @@
     </meta>
     <text>
         <status value="generated" />
-        <div xmlns="http://www.w3.org/1999/xhtml">Fentanyl 25 microgram/hour patch – Apply one patch every 72 hours</div>
+        <div xmlns="http://www.w3.org/1999/xhtml">Fentanyl 25 microgram/hour patch - Apply one patch every 72 hours</div>
     </text>
     <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType">
         <valueCoding>
@@ -43,6 +43,6 @@
         <reference value="Practitioner/Practitioner-GP" />
         <display value="..." />
     </informationSource>    <dosage>
-        <text value="Fentanyl 25 microgram/hour patch – Apply one patch every 72 hours" />
+        <text value="Fentanyl 25 microgram/hour patch - Apply one patch every 72 hours" />
     </dosage>
 </MedicationStatement>

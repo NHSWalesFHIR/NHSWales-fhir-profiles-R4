@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+    <id value="Example-DataStandardsWales-MedicationStatement-Enbrel-Inpatient" />
+    <meta>
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
+    </meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Enbrel 50mg/1ml solution for injection pre-filled syringes (Pfizer Ltd) - Inject 50mg subcutaneously once a week</div>
+    </text>
+    <status value="active" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category" />
+            <code value="inpatient" />
+            <display value="Inpatient" />
+        </coding>
+    </category>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="https://dmd.nhs.uk"/>
+            <code value="10967711000001103"> </code>
+            <display value="Enbrel 50mg/1ml solution for injection pre-filled syringes (Pfizer Ltd)" />
+        </coding>      
+        <text value="Enbrel 50mg/1ml solution for injection pre-filled syringes (Pfizer Ltd)" />
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper" />
+        <display value="PIPER, Peter (NHS: 1192335566)" />
+    </subject>
+    <context>
+        <reference value="Encounter/Encounter-Inpatient" />
+        <display value="..." />
+    </context>
+    <dateAsserted value="2022-07-12T11:00:00Z"/>
+    <informationSource>
+        <reference value="Practitioner/Hospital-Doctor" />
+        <display value="..." />
+    </informationSource>
+    <note>
+        <text value="Rheumatology Outpatient medication" />
+    </note>
+    <dosage>
+        <timing>
+            <repeat>
+                <period value="1" />
+                <periodUnit value="wk" />
+            </repeat>
+        </timing>
+        <route>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="34206005" />
+                <display value="subcutaneous" />
+            </coding>
+        </route>
+        <method>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="129326001"/>
+                <display value="Injection"/>
+            </coding>
+        </method>       
+        <doseAndRate>
+            <doseQuantity>
+                <value value="1" />
+            </doseQuantity>
+        </doseAndRate>
+    </dosage>
+</MedicationStatement>

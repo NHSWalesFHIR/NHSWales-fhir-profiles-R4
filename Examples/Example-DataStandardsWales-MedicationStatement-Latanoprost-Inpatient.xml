@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+    <id value="Example-DataStandardsWales-MedicationStatement-Latanoprost-Inpatient"/>
+    <meta>
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Latanoprost 50micrograms/ml eye drops 0.2ml unit dose preservative free - Instil one drop into the left eye at night</div>
+    </text>
+    <status value="active"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+        </coding>
+    </category>
+    <medicationCodeableConcept>
+        <coding>
+            <system value="https://dmd.nhs.uk"/>
+            <code value="22154311000001107" />
+            <display value="Latanoprost 50micrograms/ml eye drops 0.2ml unit dose preservative free" />
+        </coding>
+        <text value="Latanoprost 50micrograms/ml eye drops 0.2ml unit dose preservative free"/>
+    </medicationCodeableConcept>
+    <subject>
+        <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper"/>
+        <display value="PIPER, Peter (NHS: 1192335566)"/>
+    </subject>
+    <context>
+        <reference value="Encounter/Encounter-Inpatient"/>
+        <display value="..."/>
+    </context>
+    <dateAsserted value="2022-07-12T11:00:00Z"/>
+    <informationSource>
+        <reference value="Practitioner/Hospital-Doctor"/>
+        <display value="..."/>
+    </informationSource>
+    <dosage>
+        <timing>
+            <repeat>
+                <frequency value="1" />
+                <period value="1" />
+                <periodUnit value="d" />
+                <when value="EVE.late" />
+            </repeat>
+        </timing>
+        <site>
+            <coding>
+                <system value="http://snomed.info/sct" />
+                <code value="8966001 "/>
+                <display value="Left eye"/>
+            </coding>
+        </site>
+        <doseAndRate>
+            <doseQuantity>
+                <value value="1"/>
+                <unit value="drop"/>
+                <system value="http://snomed.info/sct" />
+                <code value="404218003" />
+            </doseQuantity>
+        </doseAndRate>
+    </dosage>
+</MedicationStatement>
