@@ -1,93 +1,79 @@
 <List xmlns="http://hl7.org/fhir">
-    <!-- Scenario: Peter Piper's medicines list just after Ibruprofen is stopped during his impatient stay -->
-    <id value="Example-DataStandardsWales-List-Medications-GP" />
-    <status value="current" />
-    <mode value="snapshot" />
+    <id value="Example-DataStandardsWales-List-Medications-GP"/>
+    <status value="current"/>
+    <mode value="snapshot"/>
     <code>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/list-example-use-codes" />
-            <code value="medications" />
-            <display value="Medication List" />
+            <system value="http://terminology.hl7.org/CodeSystem/list-example-use-codes"/>
+            <code value="medications"/>
+            <display value="Medication List"/>
         </coding>
     </code>
     <subject>
-        <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper" />
-        <display value="PIPER, Peter (NHS: 1192335566)" />
+        <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper"/>
+        <display value="PIPER, Peter (NHS: 1192335566)"/>
     </subject>
     <encounter>
-        <reference value="Encounter/Example-Inpatient"/>
+        <reference value="Encounter/Encounter-GP"/>
         <display value="..."/>
     </encounter>
-    <date value="2022-07-12T11:00:00Z"/>
+    <date value="2022-01-10T10:00:00Z"/>
     <source>
-        <!-- Practitioner asserting the list as 'inpatient meds' -->
-        <reference value="Practitioner/Example-Inpatient" />
+        <reference value="Practitioner/Practitioner-GP" />
         <display value="..." />
     </source>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Bendroflumethiazide-Inpatient"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Bendroflumethiazide-GP"/>
             <display value="Bendroflumethazide 2.5mg tablets - 1 tablet every morning"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Bisoprolol-Inpatient"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Bisoprolol-GP"/>
             <display value="Bisoprolol 1.25mg tablets - 1 tablet every morning"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Nifedipress-Inpatient"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Nifedipress-GP"/>
             <display value="Nifedipress MR 20mg tablet 1 tablet twice a day"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Ramipril-Inpatient"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Ramipril-GP"/>
             <display value="Ramipril 2.5mg tablet - 1 tablet in the morning"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Atorvastatin-Inpatient"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Atorvastatin-GP"/>
             <display value="Atorvastatin 20mg tablet - 1 tablet at night"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Fentanyl-Inpatient"/>
-            <display value="Fentanyl 25 microgram/hour patch - Apply one patch every 72 hours"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Fentanyl-GP"/>
+            <display value="Fentanyl 25microgram/hour patch - Apply one patch every 72 hours"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Hydrocortisone-Inpatient"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Hydrocortisone-GP"/>
             <display value="Hydrocortisone 1% Cream - Apply to the affected area twice a day"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Latanoprost-Inpatient"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Latanoprost-GP"/>
             <display value="Latanoprost 50micrograms/ml eye drops 0.2ml unit dose preservative free - Instil one drop into the left eye at night"/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Enbrel-Inpatient"/>
-            <display value="Enbrel 50mg/1ml solution for injection pre-filled syringes (Pfizer Ltd) - Inject 50mg subcutaneously once a week"/>
-        </item>
-    </entry>
-    <entry>
-        <item>
-            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Ibuprofen-Inpatient"/>
-            <display value="Ibuprofen 200mg tablets, 2-3 tablets three times a day"/>
-        </item>
-    </entry>
-    <entry>
-        <item>
-            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Paracetamol-Inpatient"/>
-            <display value="Paracetamol 500mg tablets 2 tablets four times a day"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Amoxicillin-GP"/>
+            <display value="Amoxicillin 500mg capsules, one capsule three times a day for 7 days"/>
         </item>
     </entry>
 </List>
