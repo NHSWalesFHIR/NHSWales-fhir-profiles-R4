@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-    <id value="Example-MedicationStatement-Atorvastatin-Discharge" />
+    <id value="Example-DataStandardsWales-MedicationStatement-Fentanyl-Discharge" />
     <meta>
         <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
     </meta>
     <text>
-        <status value="generated"></status>
-        <!-- Text to be provided -->
-        <div xmlns="http://www.w3.org/1999/xhtml"></div>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Fentanyl 25 microgram/hour patch - Apply one patch every 72 hours</div>
     </text>
     <status value="active" />
     <category>
@@ -20,10 +18,10 @@
     <medicationCodeableConcept>
         <coding>
             <system value="https://dmd.nhs.uk"/>
-            <code value="39733011000001106"> </code>
-            <display value="Atorvastatin 20mg tablets"></display>
+            <code value="36120011000001101"> </code>
+            <display value="Fentanyl 25micrograms/hour transdermal patches" />
         </coding>      
-        <text value="Atorvastatin 20mg tablets" />
+        <text value="Fentanyl 25micrograms/hour transdermal patches" />
     </medicationCodeableConcept>
     <subject>
         <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper" />
@@ -41,25 +39,23 @@
     <dosage>
         <timing>
             <repeat>
-                <frequency value="1" />                  
-                <period value="1"></period>
-                <periodUnit value="d"></periodUnit>
-                <when value="EVE.late"></when>
+                <period value="72" />
+                <periodUnit value="h" />
             </repeat>
         </timing>
         <route>
             <coding>
                 <system value="http://snomed.info/sct" />
-                <code value="26643006" />
-                <display value="Oral" />
+                <code value="45890007" />
+                <display value="Transdermal" />
             </coding>
         </route>
         <doseAndRate>
             <doseQuantity>
-                <value value="1"></value>
-                <unit value="tablet"></unit>
+                <value value="1" />
+                <unit value="patch" />
                 <system value="http://snomed.info/sct" />
-                <code value=" 428673006" />
+                <code value="19702001" />
             </doseQuantity>
         </doseAndRate>
     </dosage>

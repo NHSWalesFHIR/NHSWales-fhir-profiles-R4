@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-    <id value="Example-MedicationStatement-Latanoprost-Discharge"/>
+    <id value="Example-DataStandardsWales-MedicationStatement-Hydrocortisone-Discharge"/>
     <meta>
-        <profile
-            value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement"
-        />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
     </meta>
     <text>
         <status value="generated"/>
-        <!-- Text to be provided -->
-        <div xmlns="http://www.w3.org/1999/xhtml"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Hydrocortisone 1% Cream - Apply to the affected area twice a day</div>
     </text>
     <status value="active"/>
     <category>
@@ -22,11 +18,10 @@
     <medicationCodeableConcept>
         <coding>
             <system value="https://dmd.nhs.uk"/>
-            <code value="22154311000001107"> </code>
-            <display value="Latanoprost 50micrograms/ml eye drops 0.2ml unit dose preservative free"
-            />
+            <code value="346992009" />
+            <display value="Hydrocortisone 1% cream"/>
         </coding>
-        <text value="Latanoprost 50micrograms/ml eye drops 0.2ml unit dose preservative free"/>
+        <text value="Hydrocortisone 1% cream"/>
     </medicationCodeableConcept>
     <subject>
         <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper"/>
@@ -42,29 +37,15 @@
         <display value="..." />
     </informationSource>
     <dosage>
+        <additionalInstruction>
+            <text value="Apply to the affected area"/>
+        </additionalInstruction>
         <timing>
             <repeat>
-                <frequency value="1"/>
+                <frequency value="2"/>
                 <period value="1"/>
                 <periodUnit value="d"/>
-                <when value="EVE.late"/>
             </repeat>
         </timing>
-        <site>
-            <coding> 
-                <system value="http://snomed.info/sct"/>
-                <code value="8966001 "></code>
-                <display value="Left eye"></display>
-            </coding>
-        </site>
-        
-       <doseAndRate>
-           <doseQuantity>
-               <value value="1"></value>
-               <unit value="drop"></unit>
-               <system value="http://snomed.info/sct"/>
-               <code value="404218003"></code>
-           </doseQuantity>
-       </doseAndRate>
     </dosage>
 </MedicationStatement>

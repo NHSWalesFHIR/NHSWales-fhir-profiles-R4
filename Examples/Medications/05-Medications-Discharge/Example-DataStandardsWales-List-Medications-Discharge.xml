@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <List xmlns="http://hl7.org/fhir">
     <!-- Scenario: Peter Piper's medicines list on discharge, including stopped Ibuprofen -->
-    <id value="Example-MedicationList-Discharge" />
+    <id value="Example-DataStandardsWales-MedicationList-Discharge" />
     <status value="current" />
     <mode value="snapshot" />
     <code>
@@ -27,67 +26,67 @@
     </source>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Bendroflumethiazide-Discharge"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Bendroflumethiazide-Discharge"/>
             <display value="..."/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Bisoprolol-Discharge"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Bisoprolol-Discharge"/>
             <display value="..."/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Nifedipress-Discharge"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Nifedipress-Discharge"/>
             <display value="..."/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Ramipril-Discharge"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Ramipril-Discharge"/>
             <display value="..."/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Atorvastatin-Discharge"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Atorvastatin-Discharge"/>
             <display value="..."/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Fentanyl-Discharge"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Fentanyl-Discharge"/>
             <display value="..."/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Hydrocortisone-Discharge"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Hydrocortisone-Discharge"/>
             <display value="..."/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Latanoprost-Discharge"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Latanoprost-Discharge"/>
             <display value="..."/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Enbrel-Discharge"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Enbrel-Discharge"/>
             <display value="..."/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Ibuprofen-Discharge"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Ibuprofen-Discharge"/>
             <display value="..."/>
         </item>
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-MedicationStatement-Paracetamol-Discharge"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Paracetamol-Discharge"/>
             <display value="..."/>
         </item>
     </entry>

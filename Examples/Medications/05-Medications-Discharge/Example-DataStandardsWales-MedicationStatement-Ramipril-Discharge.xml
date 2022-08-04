@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-    <id value="Example-MedicationStatement-Ramipril-Discharge"/>
+    <id value="Example-DataStandardsWales-MedicationStatement-Ramipril-Discharge"/>
     <meta>
-        <profile
-            value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement"
-        />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
     </meta>
     <text>
         <status value="generated"/>
-        <!-- Text to be provided -->
-        <div xmlns="http://www.w3.org/1999/xhtml"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Ramipril 2.5mg tablet - 1 tablet in the morning</div>
     </text>
     <status value="active"/>
     <category>
@@ -22,7 +18,7 @@
     <medicationCodeableConcept>
         <coding>
             <system value="https://dmd.nhs.uk"/>
-            <code value="408050008"> </code>
+            <code value="408050008"/>
             <display value="Ramipril 2.5mg tablets"/>
         </coding>
         <text value="Ramipril 2.5mg tablets"/>
@@ -43,10 +39,10 @@
     <dosage>
         <timing>
             <repeat>
-                <frequency value="1" />                  
-                <period value="1"></period>
-                <periodUnit value="d"></periodUnit>
-                <when value="MORN"></when>
+                <frequency value="1" />
+                <period value="1" />
+                <periodUnit value="d" />
+                <when value="MORN" />
             </repeat>
         </timing>
         <route>
@@ -58,8 +54,8 @@
         </route>
         <doseAndRate>
             <doseQuantity>
-                <value value="1"></value>
-                <unit value="tablet"></unit>
+                <value value="1" />
+                <unit value="tablet" />
                 <system value="http://snomed.info/sct" />
                 <code value=" 428673006" />
             </doseQuantity>

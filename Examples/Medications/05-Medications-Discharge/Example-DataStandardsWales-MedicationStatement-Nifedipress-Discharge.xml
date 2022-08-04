@@ -1,39 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-    <id value="Example-MedicationStatement-Ibuprofen-Inpatient"/>
+    <id value="Example-DataStandardsWales-MedicationStatement-Nifedipress-Discharge"/>
     <meta>
-        <profile
-            value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement"
-        />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
     </meta>
     <text>
         <status value="generated"/>
-        <!-- Text to be provided -->
-        <div xmlns="http://www.w3.org/1999/xhtml"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Nifedipress MR 20mg tablet 1 tablet twice a day</div>
     </text>
-    <status value="stopped"/>
-    <!-- Note "stopped" is correct on desk-check but fails schema-validation - i.e. not accepted by fhir 4.0.1 schema suite -->
-    <statusReason>
-        <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="74474003"/>
-            <display value="Gastrointestinal hemorrhage"/>
-        </coding>
-    </statusReason>
+    <status value="active"/>
     <category>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category" />
-            <code value="discharge" />
-            <display value="Discharge" />
+            <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+            <code value="discharge"/>
+            <display value="Discharge"/>
         </coding>
     </category>
     <medicationCodeableConcept>
         <coding>
             <system value="https://dmd.nhs.uk"/>
-            <code value="38268001"> </code>
-            <display value="Ibuprofen"/>
+            <code value="619111000001101"/>
+            <display value="Nifedipress MR 20 tablets"/>
         </coding>
-        <text value="Ibuprofen"/>
+        <text value="Nifedipress MR 20 tablets"/>
     </medicationCodeableConcept>
     <subject>
         <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper"/>
@@ -43,21 +31,19 @@
         <reference value="Encounter/Encounter-Inpatient"/>
         <display value="..."/>
     </context>
-    <dateAsserted value="2022-07-12T11:00:00Z"/>
+    <dateAsserted value="2022-07-14T09:00:00Z"/>
     <informationSource>
-        <reference value="Practitioner/Hospital-Doctor"/>
+        <reference value="Practitioner/Practitioner-Discharging"/>
         <display value="..."/>
     </informationSource>
     <dosage>
         <timing>
             <repeat>
                 <frequency value="2"/>
-                <frequencyMax value="3"/>
                 <period value="1"/>
                 <periodUnit value="d"/>
             </repeat>
         </timing>
-        <asNeededBoolean value="true"/>
         <route>
             <coding>
                 <system value="http://snomed.info/sct"/>
@@ -67,11 +53,11 @@
         </route>
         <doseAndRate>
             <doseQuantity>
-                <value value="2"/>
+                <value value="1"/>
                 <unit value="tablet"/>
                 <system value="http://snomed.info/sct" />
                 <code value=" 428673006" />
             </doseQuantity>
-        </doseAndRate>    </dosage>
-
+        </doseAndRate>
+    </dosage>
 </MedicationStatement>

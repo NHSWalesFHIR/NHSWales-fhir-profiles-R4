@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-    <id value="Example-MedicationStatement-Nifedipress-Discharge"/>
+    <id value="Example-DataStandardsWales-MedicationStatement-Bendroflumethiazide-Discharge"/>
     <meta>
-        <profile
-            value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement"
-        />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
     </meta>
     <text>
-        <status value="generated"/>
-        <!-- Text to be provided -->
-        <div xmlns="http://www.w3.org/1999/xhtml"/>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Bendroflumethazide 2.5mg tablets - 1 tablet every morning</div>
     </text>
     <status value="active"/>
     <category>
@@ -22,10 +18,10 @@
     <medicationCodeableConcept>
         <coding>
             <system value="https://dmd.nhs.uk"/>
-            <code value="619111000001101"> </code>
-            <display value="Nifedipress MR 20 tablets"/>
+            <code value="317919004"></code>
+            <display value="Bendroflumethiazide 2.5mg tablets"/>
         </coding>
-        <text value="Nifedipress MR 20 tablets"/>
+        <text value="Bendroflumethiazide 2.5mg tablets"/>
     </medicationCodeableConcept>
     <subject>
         <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper"/>
@@ -43,22 +39,23 @@
     <dosage>
         <timing>
             <repeat>
-                <frequency value="2"/>
-                <period value="1"/>
-                <periodUnit value="d"/>
+                <frequency value="1" />
+                <period value="1" />
+                <periodUnit value="d" />
+                <when value="MORN" />
             </repeat>
         </timing>
         <route>
             <coding>
-                <system value="http://snomed.info/sct"/>
-                <code value="26643006"/>
-                <display value="Oral"/>
+                <system value="http://snomed.info/sct" />
+                <code value="26643006" />
+                <display value="Oral" />
             </coding>
         </route>
         <doseAndRate>
             <doseQuantity>
-                <value value="1"/>
-                <unit value="tablet"/>
+                <value value="1" />
+                <unit value="tablet" />
                 <system value="http://snomed.info/sct" />
                 <code value=" 428673006" />
             </doseQuantity>

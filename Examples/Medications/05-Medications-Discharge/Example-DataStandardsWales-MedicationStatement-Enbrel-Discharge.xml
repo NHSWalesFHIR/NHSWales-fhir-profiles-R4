@@ -1,28 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-    <id value="Example-DataStandardsWales-MedicationStatement-Bendroflumethiazide-Inpatient" />
+    <id value="Example-DataStandardsWales-MedicationStatement-Enbrel-Discharge" />
     <meta>
         <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
     </meta>
     <text>
         <status value="generated" />
-        <div xmlns="http://www.w3.org/1999/xhtml">Bendroflumethazide 2.5mg tablets - 1 tablet every morning</div>
+        <div xmlns="http://www.w3.org/1999/xhtml">Enbrel 50mg/1ml solution for injection pre-filled syringes (Pfizer Ltd) - Inject 50mg subcutaneously once a week</div>
     </text>
     <status value="active" />
     <category>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category" />
-            <code value="inpatient" />
-            <display value="Inpatient" />
+            <code value="discharge" />
+            <display value="Discharge" />
         </coding>
     </category>
     <medicationCodeableConcept>
         <coding>
             <system value="https://dmd.nhs.uk" />
-            <code value="91135008 "> </code>
-            <display value="Bendroflumethiazide" />
+            <code value="10967711000001103" />
+            <display value="Enbrel 50mg/1ml solution for injection pre-filled syringes (Pfizer Ltd)" />
         </coding>      
-        <text value="Bendroflumethiazide" />
+        <text value="Enbrel 50mg/1ml solution for injection pre-filled syringes (Pfizer Ltd)" />
     </medicationCodeableConcept>
     <subject>
         <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper" />
@@ -32,32 +31,39 @@
         <reference value="Encounter/Encounter-Inpatient" />
         <display value="..." />
     </context>
-    <dateAsserted value="2022-07-12T11:00:00Z"/>
+    <dateAsserted value="2022-07-14T09:00:00Z" />
     <informationSource>
-        <reference value="Practitioner/Hospital-Doctor" />
+        <reference value="Practitioner/Practitioner-Discharging" />
         <display value="..." />
     </informationSource>
+    <note>
+        <text value="Rheumatology Outpatient medication" />
+    </note>
     <dosage>
         <timing>
             <repeat>
                 <period value="1" />
-                <periodUnit value="d" />
-                <when value="MORN" />
+                <periodUnit value="wk" />
             </repeat>
         </timing>
         <route>
             <coding>
                 <system value="http://snomed.info/sct" />
-                <code value="26643006" />
-                <display value="Oral" />
+                <code value="34206005" />
+                <display value="subcutaneous" />
             </coding>
         </route>
+        <method>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="129326001"/>
+                <display value="Injection"/>
+            </coding>
+        </method>
         <doseAndRate>
             <doseQuantity>
-                <value value="2.5" />
-                <unit value="milligram" />
-                <system value="http://unitsofmeasure.org" />
-                <code value="mg" />
+                <value value="1" />
+                <unit value="unit" />
             </doseQuantity>
         </doseAndRate>
     </dosage>

@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-    <id value="Example-MedicationStatement-Paracetamol-Discharge"/>
+    <id value="Example-DataStandardsWales-MedicationStatement-Latanoprost-Discharge"/>
     <meta>
-        <profile
-            value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement"
-        />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
     </meta>
     <text>
         <status value="generated"/>
-        <!-- Text to be provided -->
-        <div xmlns="http://www.w3.org/1999/xhtml"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">Latanoprost 50micrograms/ml eye drops 0.2ml unit dose preservative free - Instil one drop into the left eye at night</div>
     </text>
     <status value="active"/>
     <category>
@@ -21,11 +17,11 @@
     </category>
     <medicationCodeableConcept>
         <coding>
-            <system value="https://dmd.nhs.uk"/>
-            <code value="322236009"> </code>
-            <display value="	Paracetamol 500mg tablets"></display>
-        </coding>      
-        <text value="	Paracetamol 500mg tablets" />
+            <system value="https://dmd.nhs.uk" />
+            <code value="22154311000001107" />
+            <display value="Latanoprost 50micrograms/ml eye drops 0.2ml unit dose preservative free" />
+        </coding>
+        <text value="Latanoprost 50micrograms/ml eye drops 0.2ml unit dose preservative free"/>
     </medicationCodeableConcept>
     <subject>
         <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper"/>
@@ -43,25 +39,26 @@
     <dosage>
         <timing>
             <repeat>
-                <frequencyMax value="4" />
-                <period value="1" />
-                <periodUnit value="d" />
+                <frequency value="1"/>
+                <period value="1"/>
+                <periodUnit value="d"/>
+                <when value="EVE.late"/>
             </repeat>
         </timing>
-        <asNeededBoolean value="true" />
-        <route>
+        <site>
             <coding>
-                <system value="http://snomed.info/sct" />
-                <code value="26643006" />
-                <display value="Oral" />
+                <system value="http://snomed.info/sct"/>
+                <code value="8966001 "></code>
+                <display value="Left eye"></display>
             </coding>
-        </route>
+        </site>
+
         <doseAndRate>
             <doseQuantity>
-                <value value="2" />
-                <unit value="tablet" />
-                <system value="http://snomed.info/sct" />
-                <code value=" 428673006" />
+                <value value="1"></value>
+                <unit value="drop"></unit>
+                <system value="http://snomed.info/sct"/>
+                <code value="404218003"></code>
             </doseQuantity>
         </doseAndRate>
     </dosage>
