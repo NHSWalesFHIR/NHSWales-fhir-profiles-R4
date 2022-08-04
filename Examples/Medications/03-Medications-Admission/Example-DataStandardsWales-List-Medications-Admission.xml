@@ -1,7 +1,7 @@
 <List xmlns="http://hl7.org/fhir">
     <!-- Scenario: Peter Piper's medicines on admission - lists the MedicationStatements  
         from the various sources -->
-    <id value="Example-MedicationList-OnAdmission"/>
+    <id value="Example-MedicationList-Admission"/>
     <status value="current"/>
     <mode value="snapshot"/>
     <code>
@@ -22,7 +22,7 @@
     <date value="2022-07-10T14:00:00Z"/>
     <source>
         <!-- Practitioner asserting the list as 'on admission' -->
-        <reference value="Practitioner/Example-OnAdmission"/>
+        <reference value="Practitioner/Example-Admission"/>
         <display value="..."/>
     </source>
     <!-- From GP meds list -->
