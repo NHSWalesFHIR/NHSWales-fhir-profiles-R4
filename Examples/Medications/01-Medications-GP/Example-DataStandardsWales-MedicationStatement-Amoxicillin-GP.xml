@@ -31,7 +31,7 @@
         <text value="Amoxicillin 500mg capsules" />
     </medicationCodeableConcept>
     <subject>
-        <reference value="Example-DataStandardsWales-Patient-PeterPiper" />
+        <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper" />
         <display value="PIPER, Peter (NHS: 1192335566)" />
     </subject>
     <context>
