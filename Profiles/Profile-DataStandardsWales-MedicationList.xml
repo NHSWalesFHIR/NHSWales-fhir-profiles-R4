@@ -20,35 +20,15 @@
     </element>
     <element id="List.code">
       <path value="List.code" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.code" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="1" />
       <fixedCodeableConcept>
         <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/list-example-use-codes" />
-          <code value="medications" />
-          <display value="Medication List" />
+          <system value="http://snomed.info/sct" />
+          <code value="933361000000108" />
+          <display value="Medications and medical devices" />
         </coding>
       </fixedCodeableConcept>
       <mustSupport value="true" />
-    </element>
-    <element id="List.code:medicationListCode">
-      <path value="List.code" />
-      <sliceName value="medicationListCode" />
-      <min value="1" />
-    </element>
-    <element id="List.code:medicationListCode.coding.system">
-      <path value="List.code.coding.system" />
-      <code>
-        <system value="http://snomed.info/sct" />
-        <code value="933361000000108" />
-        <display value="Medications and medical devices" />
-      </code>
     </element>
     <element id="List.subject">
       <path value="List.subject" />
