@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationList" />
-  <name value="DataStandardsWalesMedicationList" />
+  <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-AllergyList" />
+  <name value="DataStandardsWalesAllergyList" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -20,12 +20,11 @@
     </element>
     <element id="List.code">
       <path value="List.code" />
-      <min value="1" />
       <fixedCodeableConcept>
         <coding>
           <system value="http://snomed.info/sct" />
-          <code value="933361000000108" />
-          <display value="Medications and medical devices" />
+          <code value="886921000000105" />
+          <display value="Allergies and adverse reactions" />
         </coding>
       </fixedCodeableConcept>
       <mustSupport value="true" />
@@ -49,25 +48,15 @@
     </element>
     <element id="List.source">
       <path value="List.source" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
-        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
-        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-PractitionerRole" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="List.entry">
-      <path value="List.entry" />
       <mustSupport value="true" />
     </element>
     <element id="List.entry.item">
       <path value="List.entry.item" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DataStandardsWales-MedicationStatement" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-AllergyIntolerance" />
       </type>
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
