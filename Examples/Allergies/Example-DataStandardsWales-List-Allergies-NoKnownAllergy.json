@@ -1,0 +1,38 @@
+{
+	"resourceType": "List",
+	"id": "Example-DataStandardsWales-List-Allergies-NoKnownAllergy",
+	"meta": {
+		"profile": [
+			"https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-AllergyList"
+		]
+	},
+	"status": "current",
+	"mode": "snapshot",
+	"code": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "886921000000105",
+				"display": "Allergies and adverse reactions"
+			}
+		]
+	},
+	"subject": {
+		"reference": "Patient/Example-DataStandardsWales-Patient-AliceJones",
+		"display": "JONES, Alice"
+	},
+
+	"date": "2001-01-01T23:59:00+00:00",
+	"source": {
+		"reference": "Practitioner/Example-DataStandardsWales-Practitioner-Consultant",
+		"display": "PATEL, Dhiren (GMC:9630333), consultant, Geriatric Medicine"
+	},
+	"entry": [
+		{
+			"item": {
+				"reference": "AllergyIntolerance/Example-DataStandardsWales-AllergyIntolerance-NoKnownAllergy",
+				"display": "No Known Allergy"
+			}
+		}
+	]
+}
