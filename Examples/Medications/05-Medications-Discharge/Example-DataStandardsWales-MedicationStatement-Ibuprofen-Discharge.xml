@@ -1,5 +1,5 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
-    <id value="Example-DataStandardsWales-MedicationStatement-Ibuprofen-Inpatient"/>
+    <id value="Example-DataStandardsWales-MedicationStatement-Ibuprofen-Discharge"/>
     <meta>
         <profile
             value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement"
@@ -7,7 +7,7 @@
     </meta>
     <text>
         <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml">Ibuprofen 200mg tablets, 2-3 tablets three times a day</div>
+        <div xmlns="http://www.w3.org/1999/xhtml">Ibuprofen 400mg oral, three times a day - STOPPED due to GI bleed</div>
     </text>
     <status value="stopped"/>
     <!-- Note "stopped" is correct on desk-check but fails schema-validation - i.e. not accepted by fhir 4.0.1 schema suite -->
