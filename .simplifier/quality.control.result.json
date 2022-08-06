@@ -1,0 +1,20 @@
+{
+  "Timestamp": "2022-08-06T09:20:49.2109247+00:00",
+  "Series": "free",
+  "Files": [
+    {
+      "Issues": [
+        {
+          "Location": null,
+          "Severity": 1,
+          "System": "https://simplifier.net/qc/errors/evaluation",
+          "Code": "CLAIM",
+          "Message": "This project has no canonical claims."
+        }
+      ],
+      "Length": 0,
+      "Hash": null,
+      "FilePath": null
+    }
+  ]
+}
