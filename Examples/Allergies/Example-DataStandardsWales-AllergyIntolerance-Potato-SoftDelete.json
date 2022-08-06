@@ -24,7 +24,7 @@
 			}
 		]
 	},
-	"note":"wrong patient- similar name",
+	"note":{"text":"wrong patient- similar name"},
 	"type": "allergy",
 	"category": [
 		"food"
