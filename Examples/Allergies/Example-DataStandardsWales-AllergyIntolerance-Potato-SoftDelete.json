@@ -29,13 +29,14 @@
 	"category": [
 		"food"
 	],
+	"code": {
 	"coding": [
 		{
 			"system": "http://snomed.info/sct",
 			"code": "735053000",
 			"display": "Potato"
 		}
-	],
+	]},
 	"patient": {
 		"reference": "Patient/Example-DataStandardsWales-Patient-AliceJones",
 		"display": "JONES, Alice"
