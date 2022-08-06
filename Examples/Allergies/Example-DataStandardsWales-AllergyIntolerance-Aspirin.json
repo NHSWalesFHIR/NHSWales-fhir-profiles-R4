@@ -28,6 +28,15 @@
   "category": [
     "medication"
   ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "7947003",
+        "display": "Aspirin"
+      }
+    ]
+  },
   "patient": {
     "reference": "Patient/Example-DataStandardsWales-Patient-AliceJones",
     "display": "JONES, Alice"
