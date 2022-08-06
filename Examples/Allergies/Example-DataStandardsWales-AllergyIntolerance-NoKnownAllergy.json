@@ -1,45 +1,45 @@
 {
-	"resourceType": "AllergyIntolerance",
-	"id": "Example-DataStandardsWales-AllergyIntolerance-NoKnownAllergy",
-	"meta": {
-		"profile": [
-			"https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-AllergyIntolerance"
-		]
-	},
-	"clinicalStatus": {
-		"coding": [
-			{
-				"system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-				"code": "active",
-				"display": "Active"
-			}
-		]
-	},
-	"verificationStatus": {
-		"coding": [
-			{
-				"system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
-				"code": "unconfirmed",
-				"display": "Unconfirmed"
-			}
-		]
-	},
-	"code": {
-		"coding": [
-			{
-				"system": "http://snomed.info/sct",
-				"code": "716186003",
-				"display": "No known allergy (situation)"
-			}
-		]
-	},
-	"patient": {
-		"reference": "Patient/Example-DataStandardsWales-Patient-AliceJones",
-		"display": "JONES, Alice"
-	},
-	"recorder": {
-		"reference": "Practitioner/Example-DataStandardsWales-Practitioner-Consultant",
-		"display": "PATEL, Dhiren (GMC:9630333), consultant, Geriatric Medicine"
-	},
-	"recordedDate": "2001-01-01T23:59:00+00:00"
+  "resourceType": "AllergyIntolerance",
+  "id": "Example-DataStandardsWales-AllergyIntolerance-NoKnownAllergy",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-AllergyIntolerance"
+    ]
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+        "code": "unconfirmed",
+        "display": "Unconfirmed"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "716186003",
+        "display": "No known allergy (situation)"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/Example-DataStandardsWales-Patient-AliceJones",
+    "display": "JONES, Alice"
+  },
+  "recordedDate": "2001-01-01T23:59:00+00:00",
+  "recorder": {
+    "reference": "Practitioner/Example-DataStandardsWales-Practitioner-Consultant",
+    "display": "PATEL, Dhiren (GMC:9630333), consultant, Geriatric Medicine"
+  }
 }
