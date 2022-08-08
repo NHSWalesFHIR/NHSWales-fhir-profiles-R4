@@ -222,7 +222,7 @@
             {
               "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
               "code": "active",
-              "display": "active"
+              "display": "Active"
             }
           ]
         },
@@ -231,19 +231,20 @@
             {
               "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
               "code": "unconfirmed",
-              "display": "unconfirmed"
+              "display": "Unconfirmed"
             }
           ]
         },
         "type": "allergy",
         "category": ["food"],
+        "code": {
         "coding": [
           {
             "system": "http://snomed.info/sct",
             "code": "735053000",
             "display": "Potato"
           }
-        ],
+        ]},
         "patient": {
           "reference": "Patient/Example-DataStandardsWales-Patient-AliceJones",
           "display": "JONES, Alice"
