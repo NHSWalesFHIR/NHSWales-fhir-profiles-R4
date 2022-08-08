@@ -67,7 +67,8 @@
           "url": "AllergyIntolerance"
       }
     },
-    {"resource":{
+    {
+      "resource":{
         "resourceType": "AllergyIntolerance",
         "id": "Example-DataStandardsWales-AllergyIntolerance-Aspirin",
         "meta": {
@@ -210,6 +211,10 @@
             "severity": "mild"
           }
         ]
+      },
+      "request": {
+          "method": "PUT",
+          "url": "AllergyIntolerance"
       }
     },
     {
