@@ -1,0 +1,86 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "Example-DataStandardsWales-AllergyIntolerance-MorphineOramorphDegraded",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-AllergyIntolerance"
+    ]
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+        "code": "active",
+        "display": "Active"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+        "code": "confirmed",
+        "display": "Confirmed"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "373529000",
+        "display": "Morphine"
+      }
+    ]
+  },
+  "reaction": [
+		{
+			
+			"substance": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "9291801000001101 ",
+            "display": "Oramorph"
+          }
+        ]
+      },
+      "manifestation": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "80495009",
+              "display": "Sleepwalking"
+            }
+          ]
+        },
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "130987000",
+              "display": "Acute confusion"
+            }
+          ]
+        },
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "7011001",
+              "display": "Hallucinations"
+            }
+          ]
+        }
+      ],
+      "severity": "mild"
+		}
+	],
+  "patient": {
+    "reference": "Patient/Example-DataStandardsWales-Patient-AliceJones",
+    "display": "JONES, Alice"
+  },
+  "recordedDate": "2001-01-01T23:59:00+00:00"
+  
+}
