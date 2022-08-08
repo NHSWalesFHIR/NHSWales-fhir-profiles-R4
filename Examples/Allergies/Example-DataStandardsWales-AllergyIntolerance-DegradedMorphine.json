@@ -1,6 +1,6 @@
 {
   "resourceType": "AllergyIntolerance",
-  "id": "Example-DataStandardsWales-AllergyIntolerance-MorphineOramorphDegraded",
+  "id": "Example-DataStandardsWales-AllergyIntolerance-DegradedMorphine",
   "meta": {
     "profile": [
       "https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-AllergyIntolerance"
