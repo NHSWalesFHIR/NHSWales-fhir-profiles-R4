@@ -30,8 +30,8 @@
     </context>
     <dateAsserted value="2021-06-04T14:00:00Z"/>
     <informationSource>
-        <reference value="Practitioner/Practitioner-hospital-doctor"/>
-        <display value="..."/>
+        <reference value="Practitioner/Example-DataStandardsWales-Practitioner-Doctor"/>
+        <display value="Dr Sally Foster (GMC: 9830222)"/>
     </informationSource>
     <dosage>
         <additionalInstruction>
