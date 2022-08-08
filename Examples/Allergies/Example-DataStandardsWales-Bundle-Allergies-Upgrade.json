@@ -61,6 +61,10 @@
         },
         "recordedDate": "2001-01-01T23:59:00+00:00"
        
+      },
+      "request": {
+          "method": "PUT",
+          "url": "AllergyIntolerance"
       }
     },
     {"resource":{
@@ -128,6 +132,10 @@
             "severity": "mild"
           }
         ]
+      },
+      "request": {
+          "method": "PUT",
+          "url": "AllergyIntolerance"
       }
     },
     {
@@ -287,7 +295,11 @@
           "patient": {
             "reference": "Patient/Example-DataStandardsWales-Patient-AliceJones",
             "display": "JONES, Alice"
-          }}
+          }},
+          "request": {
+              "method": "PUT",
+              "url": "AllergyIntolerance"
+          }
     },
     {
       "resource": {
@@ -356,6 +368,10 @@
           "display": "JONES, Alice"
         },
         "recordedDate": "2001-01-01T23:59:00+00:00"
+      },
+      "request": {
+          "method": "PUT",
+          "url": "AllergyIntolerance"
       }
     }
   ]
