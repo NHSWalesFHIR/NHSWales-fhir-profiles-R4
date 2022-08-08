@@ -5,7 +5,7 @@
     </meta>
     <text>
         <status value="generated" />
-        <div xmlns="http://www.w3.org/1999/xhtml">Nifedipress MR 20mg tablet 1 tablet twice a day</div>
+        <div xmlns="http://www.w3.org/1999/xhtml">Nifedipress MR 20mg tablet - 1 tablet twice a day</div>
     </text>
     <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType">
         <valueCoding>
@@ -43,6 +43,6 @@
         <reference value="Practitioner/Practitioner-GP" />
         <display value="..." />
     </informationSource>    <dosage>
-        <text value="Nifedipress MR 20mg tablet 1 tablet twice a day" />
+        <text value="Nifedipress MR 20mg tablet - 1 tablet twice a day" />
     </dosage>
 </MedicationStatement>

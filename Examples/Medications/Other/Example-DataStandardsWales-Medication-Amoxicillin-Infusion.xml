@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication xmlns="http://hl7.org/fhir">
+    <id value="Example-DataStandardsWales-Medication-Amoxicillin-Infusion"/>
+    <meta>
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Medication"/>
+    </meta>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="27658006"/>
+            <display value="Amoxicillin"/>
+        </coding>
+    </code>
+    <ingredient>
+        <itemCodeableConcept>
+            <coding>
+                <system value="https://dmd.nhs.uk"/>
+                <code value="4898311000001108"/>
+                <display value="Sodium chloride 0.9% infusion 100ml bags"/>
+            </coding>
+        </itemCodeableConcept>
+    </ingredient>
+</Medication>

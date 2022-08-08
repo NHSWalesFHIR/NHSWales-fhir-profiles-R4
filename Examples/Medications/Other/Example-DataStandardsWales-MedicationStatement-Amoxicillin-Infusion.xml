@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MedicationStatement xmlns="http://hl7.org/fhir">
+    <id value="Example-DataStandardsWales-MedicationStatement-Amoxicillin-Infusion"/>
+    <meta>
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
+    </meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Amoxicillin infusion</div>
+    </text>
+    <status value="active"/>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/medication-statement-category"/>
+            <code value="inpatient"/>
+            <display value="Inpatient"/>
+        </coding>
+    </category>
+    <!-- This needs to use a Medication reference -->
+    <medicationReference>
+        <reference value="Medication/Example-DataStandardsWales-Medication-Amoxicillin-Infusion"/>
+    </medicationReference>
+    <subject>
+        <reference value="Patient/Example-DataStandardsWales-Patient-AliceJones"/>
+        <display value="JONES, Alice (NHS: 9912003444)"/>
+    </subject>
+    <context>
+        <reference value="Encounter/Encounter-Inpatient-2"/>
+        <display value="..."/>
+    </context>
+    <dateAsserted value="2021-06-04T14:00:00Z"/>
+    <informationSource>
+        <reference value="Practitioner/Example-DataStandardsWales-Practitioner-Doctor"/>
+        <display value="Dr Sally Foster (GMC: 9830222)"/>
+    </informationSource>
+    <dosage>
+        <additionalInstruction>
+            <text value="Review after 48 hours"/>
+        </additionalInstruction>
+        <timing>
+            <repeat>
+                <duration value="5"/>
+                <durationUnit value="d"/>
+                <frequency value="3"/>
+                <period value="1"/>
+                <periodUnit value="d"/>
+            </repeat>
+        </timing>
+        <method>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="13283701000001109"/>
+                <display value="Infusion"/>
+            </coding>
+        </method>
+        <doseAndRate>
+            <doseQuantity>
+                <value value="1"/>
+                <unit value="gram"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="g"/>
+            </doseQuantity>
+        </doseAndRate>
+    </dosage>
+</MedicationStatement>

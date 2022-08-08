@@ -44,6 +44,6 @@
         <display value="..." />
     </informationSource>
     <dosage>
-        <text value="Amoxicillin 500mg capsules, one capsule three times a day for 7 days" />
+        <text value="Amoxicillin 500mg capsules - one capsule three times a day for 7 days" />
     </dosage>
 </MedicationStatement>
