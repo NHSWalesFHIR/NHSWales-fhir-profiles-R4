@@ -1,6 +1,6 @@
 {
   "resourceType": "AllergyIntolerance",
-  "id": "Example-DataStandardsWales-AllergyIntolerance-AsprinIbuprofenDegraded",
+  "id": "Example-DataStandardsWales-AllergyIntolerance-Ibuprofen",
   "meta": {
     "profile": [
       "https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-AllergyIntolerance"

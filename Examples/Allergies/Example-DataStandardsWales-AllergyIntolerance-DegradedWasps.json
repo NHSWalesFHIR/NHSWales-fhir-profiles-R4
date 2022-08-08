@@ -1,6 +1,6 @@
 {
   "resourceType": "AllergyIntolerance",
-  "id": "Example-DataStandardsWales-AllergyIntolerance-WaspsDegraded",
+  "id": "Example-DataStandardsWales-AllergyIntolerance-DegradedWasps",
   "meta": {
     "profile": [
       "https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-AllergyIntolerance"
