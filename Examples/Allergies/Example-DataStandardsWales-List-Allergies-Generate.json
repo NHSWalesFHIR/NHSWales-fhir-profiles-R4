@@ -36,6 +36,12 @@
 		},
 		{
 			"item": {
+				"reference": "AllergyIntolerance/Example-DataStandardsWales-AllergyIntolerance-Ibuprofen",
+				"display": "Ibuprofen (Vomiting)"
+			}
+		},
+		{
+			"item": {
 				"reference": "AllergyIntolerance/Example-DataStandardsWales-AllergyIntolerance-Morphine",
 				"display": "Morphine (Sleep walking, acute confusion, hallucination)"
 			}
