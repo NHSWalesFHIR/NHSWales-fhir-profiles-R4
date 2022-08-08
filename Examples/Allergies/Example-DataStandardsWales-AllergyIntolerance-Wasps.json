@@ -32,12 +32,15 @@
         "display": "Wasp"
       }
     ]
-  }
-  ,
+  },
+  "patient": {
+    "reference": "Patient/Example-DataStandardsWales-Patient-AliceJones",
+    "display": "JONES, Alice"
+  },
+  "recordedDate": "2001-01-01T23:59:00+00:00",
   "reaction": [
-		{
-			
-			"substance": {
+    {
+      "substance": {
         "coding": [
           {
             "system": "http://snomed.info/sct",
@@ -58,12 +61,6 @@
         }
       ],
       "severity": "severe"
-		}
-	],
-  "patient": {
-    "reference": "Patient/Example-DataStandardsWales-Patient-AliceJones",
-    "display": "JONES, Alice"
-  },
-  "recordedDate": "2001-01-01T23:59:00+00:00"
-  
+    }
+  ]
 }
