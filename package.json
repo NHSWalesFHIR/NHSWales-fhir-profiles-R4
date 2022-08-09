@@ -2,9 +2,7 @@
   "name": "NHSWalesfhirprofilesR",
   "version": "0.1.0",
   "description": "Put a description here",
-  "dependencies": {
-    "fhir.r4.ukcore.stu1": "0.5.1"
-  },
+  "dependencies": {},
   "fhirVersions": [
     "4.0.0"
   ]
