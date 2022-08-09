@@ -21,9 +21,9 @@
       </slicing>
       <min value="1" />
     </element>
-    <element id="Encounter.extension:admissionMethod">
+    <element id="Encounter.extension:dischargeMethod">
       <path value="Encounter.extension" />
-      <sliceName value="admissionMethod" />
+      <sliceName value="dischargeMethod" />
       <min value="1" />
     </element>
     <element id="Encounter.subject">
