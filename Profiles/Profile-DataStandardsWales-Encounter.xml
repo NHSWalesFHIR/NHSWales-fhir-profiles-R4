@@ -10,6 +10,22 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
   <derivation value="constraint" />
   <differential>
+    <element id="Encounter.extension">
+      <path value="Encounter.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Encounter.extension:admissionMethod">
+      <path value="Encounter.extension" />
+      <sliceName value="admissionMethod" />
+      <min value="1" />
+    </element>
     <element id="Encounter.subject">
       <path value="Encounter.subject" />
       <type>
