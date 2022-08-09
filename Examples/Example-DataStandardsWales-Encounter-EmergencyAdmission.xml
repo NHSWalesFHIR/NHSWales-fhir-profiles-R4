@@ -1,0 +1,67 @@
+<Encounter xmlns="http://hl7.org/fhir">
+    <id value="Example-DataStandardsWales-Encounter-InProgressEmergencyAdmission" />
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Encounter" />
+    </meta>
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AdmissionMethod">
+        <valueCodeableConcept>
+            <coding>
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AdmissionMethodWales" />
+                <code value="27" />
+                <display value="Emergency Admission: Via NHS Direct Services" />
+            </coding>
+        </valueCodeableConcept>
+    </extension>
+    <status value="in-progress" />
+    <class>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+        <code value="IMP" />
+        <display value="inpatient encounter" />
+    </class>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="185212007" />
+            <display value="Seen in hospital ward" />
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper" />
+        <display value="PIPER, Peter (NHS: 1192335566)" />
+    </subject>
+    <participant>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType" />
+                <code value="ATND" />
+                <display value="attender" />
+            </coding>
+        </type>
+        <individual>
+            <reference value="Practitioner/Example-DataStandardsWales-Practitioner-Doctor" />
+            <display value="Dr Sally Foster (GMC: 9830222)" />
+        </individual>
+    </participant>
+    <period>
+        <start value="2022-07-22T13:09:37+00:00" />
+    </period>
+    <hospitalization>
+        <admitSource>
+            <coding>
+                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-SourceOfAdmissionWales" />
+                <code value="19" />
+                <display value="Own Home" />
+            </coding>
+        </admitSource>
+    </hospitalization>
+    <location>
+        <location>
+            <reference value="Location/Example-DataStandardsWales-Location-WardE" />
+            <display value="Ward E (Neath Port Talbot Hospital)" />
+        </location>
+    </location>
+    <serviceProvider>
+        <reference value="Organization/Example-DataStandardsWales-Organization-SBUHB" />
+        <display value="Example-DataStandardsWales-Organization-SBUHB" />
+    </serviceProvider>
+</Encounter>
