@@ -19,12 +19,31 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
+      <min value="0" />
+    </element>
+    <element id="Encounter.extension:admissionMethod">
+      <path value="Encounter.extension" />
+      <sliceName value="admissionMethod" />
+      <min value="0" />
+      <mustSupport value="true" />
     </element>
     <element id="Encounter.extension:dischargeMethod">
       <path value="Encounter.extension" />
       <sliceName value="dischargeMethod" />
-      <min value="1" />
+      <min value="0" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.extension:emergencyCareDischargeStatus">
+      <path value="Encounter.extension" />
+      <sliceName value="emergencyCareDischargeStatus" />
+      <min value="0" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.extension:OutcomeOfAttendance">
+      <path value="Encounter.extension" />
+      <sliceName value="OutcomeOfAttendance" />
+      <min value="0" />
+      <mustSupport value="true" />
     </element>
     <element id="Encounter.subject">
       <path value="Encounter.subject" />
