@@ -20,16 +20,7 @@
                 <display value="Patient discharged on clinical advice or with clinical consent" />
             </coding>
         </valueCodeableConcept>
-    </extension>
-    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OutcomeOfAttendance">
-        <valueCodeableConcept>
-            <coding>
-                <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OutcomeOfAttendanceWales" />
-                <code value="6" />
-                <display value="Referral to Treatment Continuation of Status" />
-            </coding>
-        </valueCodeableConcept>
-    </extension>         
+    </extension>        
     <status value="finished" />
     <class>
         <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
