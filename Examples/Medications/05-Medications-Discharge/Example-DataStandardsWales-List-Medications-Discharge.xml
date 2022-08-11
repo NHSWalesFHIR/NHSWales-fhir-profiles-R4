@@ -5,9 +5,9 @@
     <mode value="snapshot" />
     <code>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/list-example-use-codes" />
-            <code value="medications" />
-            <display value="Medication List" />
+            <system value="http://snomed.info/sct"/>
+            <code value="933361000000108"/>
+            <display value="Medications and medical devices"/>
         </coding>
     </code>
     <subject>
