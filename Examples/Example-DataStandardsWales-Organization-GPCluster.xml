@@ -14,7 +14,7 @@
 	</extension>	
     <identifier>
         <use value="official" />
-        <system value="https://fhir.nhs.wales/Id/gp-clustercode" />
+        <system value="https://fhir.nhs.wales/Id/gpcluster-code" />
         <value value="CC201" />
     </identifier>
     <active value="true" />    
