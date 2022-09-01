@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="DataStandardsWales-ImagingStudy" />
+  <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-ImagingStudy" />
+  <name value="DataStandardsWalesImagingStudy" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ImagingStudy" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ImagingStudy" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ImagingStudy.subject">
+      <path value="ImagingStudy.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
+      </type>
+    </element>
+    <element id="ImagingStudy.encounter">
+      <path value="ImagingStudy.encounter" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Encounter" />
+      </type>
+    </element>
+    <element id="ImagingStudy.basedOn">
+      <path value="ImagingStudy.basedOn" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Appointment" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/AppointmentResponse" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Task" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-ServiceRequest" />
+      </type>
+    </element>
+    <element id="ImagingStudy.referrer">
+      <path value="ImagingStudy.referrer" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-PractitionerRole" />
+      </type>
+    </element>
+    <element id="ImagingStudy.interpreter">
+      <path value="ImagingStudy.interpreter" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-PractitionerRole" />
+      </type>
+    </element>
+    <element id="ImagingStudy.endpoint">
+      <path value="ImagingStudy.endpoint" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Endpoint" />
+      </type>
+    </element>
+    <element id="ImagingStudy.location">
+      <path value="ImagingStudy.location" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
+      </type>
+    </element>
+    <element id="ImagingStudy.reasonReference">
+      <path value="ImagingStudy.reasonReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Media" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-DiagnosticReport" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="DataStandardsWales-Endpoint" />
+  <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Endpoint" />
+  <name value="DataStandardsWalesEndpoint" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Endpoint" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Endpoint" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Endpoint.managingOrganization">
+      <path value="Endpoint.managingOrganization" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
