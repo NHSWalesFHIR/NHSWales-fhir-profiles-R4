@@ -1,0 +1,53 @@
+<ServiceRequest 
+  xmlns="http://hl7.org/fhir">
+  <id value="Example-DataStandardsWales-ServiceRequest-RadiologyOrder" />
+  <meta>
+    <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-ServiceRequest" />
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
+      <code value="N" />
+      <display value="Normal" />
+    </security>
+  </meta>
+  <text>
+    <status value="generated" />
+    <div 
+      xmlns="http://www.w3.org/1999/xhtml">CT Abdomen</div>
+  </text>
+  <identifier>
+    <system value="https://fhir.nhs.wales/Id/Radis-procedure-identifier" />
+    <value value="CABDO" />
+  </identifier>
+  <requisition>
+    <system value="https://fhir.nhs.wales/Id/wrrs-request-identifier" />
+    <value value="1000003" />
+  </requisition>
+  <status value="active" />
+  <intent value="order" />
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/servicerequest-category" />
+      <code value="363679005" />
+      <display value="Imaging" />
+    </coding>
+    <text value="Imaging" />
+  </category>
+  <priority value="routine" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="721964003" />
+      <display value="Radiology order" />
+    </coding>
+    <text value="Radiology order" />
+  </code>
+  <subject>
+		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
+		<display value="JONES, Alice (NHS: 9912003444)" />
+  </subject>
+  <authoredOn value="2021-09-29T09:25:57.773+00:00" />
+  <requester>
+    <reference value="Practitioner/C4115638" />
+    <display value="ALI, MOHAMMAD F (Dr) (C4115638) (General Medicine)" />
+  </requester>
+</ServiceRequest>

@@ -1,0 +1,42 @@
+<ImagingStudy xmlns="http://hl7.org/fhir">
+  <id value="Example-DataStandardsWales-ImagingStudy-CTAbdomen" />
+  <meta>
+    <versionId value="3" />
+    <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-ImagingStudy" />
+  </meta>
+  <text>
+    <status value="additional"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">CT Abdomen[A]  [Reported, signed by radiology]; ALLI, DELE (NHS: 2333211008); Accession: HDD633125; Performed: 19 05 2021</div>
+  </text>
+  <identifier>
+    <system value="https://fhir.hduhb.nhs.wales/Id/pacs-accession-number" />
+    <value value="HDD633125" />
+  </identifier>
+  <subject>
+		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
+		<display value="JONES, Alice (NHS: 9912003444)" />
+  </subject>
+  <referrer>
+    <reference value="Practitioner/Example-DataStandardsWales-Practitioner-Consultant" />
+    <display value="..." />
+  </referrer>
+  <interpreter>
+    <display value="MR EXAMPLE INTERPRETER (nadex)" />
+  </interpreter>
+  <endpoint>
+    <reference value="Endpoint/Example-DataStandardsWales-Endpoint-Dicom"/>
+    <display value="https://example-datastandardswales.cymru.nhs.uk/launch?DicomRepository=DicomExample&amp;amp;AccessionNumber={}"/>
+  </endpoint>
+  <note>
+    <time value="2021-05-19T11:25:38+00:00"/>
+    <text value="Example note"/>
+  </note>
+  <note>
+    <time value="2021-05-19T11:25:38+00:00"/>
+    <text value="Authored by: MR EXAMPLE INTERPRETER (nadex) on 19/05/2021 at 11:25"/>
+  </note>
+  <note>
+    <time value="2021-05-19T11:25:38+00:00"/>
+    <text value="Validated by: MR EXAMPLE INTERPRETER (nadex) on 19/05/2021 at 11:25"/>
+  </note>
+</ImagingStudy>

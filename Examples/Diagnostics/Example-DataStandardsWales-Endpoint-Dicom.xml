@@ -1,0 +1,35 @@
+<Endpoint>
+    <id value="Example-DataStandardsWales-Endpoint-Dicom" />
+    <meta>
+        <versionId value="1" />
+        <lastUpdated value="2022-09-02T10:09:29.468+00:00" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Endpoint" />
+    </meta>
+    <text>
+        <status value="generated" />
+        <div 
+        xmlns="http://www.w3.org/1999/xhtml">SiteCode: RGH
+        <br />DepartmentCode:RAD 
+        <br />Address: https://example-datastandardswales.cymru.nhs.uk/launch?DicomRepository=DicomExample&amp;AccessionNumber={}
+        </div>
+    </text>
+    <identifier>
+        <system value="https://fhir.nhs.wales/Id/wrts-serviceendpoint-identifier" />
+        <value value="c74cf781-30e2-465a-8321-3e85604db221" />
+    </identifier>
+    <identifier>
+        <system value="https://fhir.nhs.wales/Id/wrts-serviceendpoint-site-code" />
+        <value value="RGH-RAD" />
+    </identifier>
+    <status value="active" />
+    <connectionType>
+        <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type" />
+        <code value="dicom-wado-rs" />
+        <display value="DICOM WADO-RS" />
+    </connectionType>
+    <payloadType>
+        <text value="DICOM WADO-RS" />
+    </payloadType>
+    <payloadMimeType value="application/dicom" />
+    <address value="https://example-datastandardswales.cymru.nhs.uk/launch?DicomRepository=DicomExample&amp;amp;AccessionNumber={}" />
+</Endpoint>

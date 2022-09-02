@@ -1,0 +1,88 @@
+<Observation 
+  xmlns="http://hl7.org/fhir">
+  <id value="Example-DataStandardsWales-ObservationGroup-LFT" />
+  <meta>
+    <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation" />
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
+      <code value="N" />
+      <display value="Normal" />
+    </security>
+  </meta>
+  <text>
+    <status value="generated" />
+    <div 
+      xmlns="http://www.w3.org/1999/xhtml">Liver function test</div>
+  </text>
+  <identifier>
+    <system value="https://fhir.nhs.wales/Id/wrrs-obr-identifier" />
+    <value value="1000423" />
+  </identifier>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="https://fhir.nhs.wales/Id/wrrs-procedure-code" />
+      <code value="LFT" />
+      <display value="Liver function test" />
+    </coding>
+    <coding>
+      <system value="https://fhir.nhs.wales/Id/lims-procedure-code" />
+      <code value="B3062" />
+      <display value="Liver function test" />
+    </coding>
+    <coding>
+      <system value="http://read.info/readv2" />
+      <code value="44D6." />
+      <display value="Liver function test" />
+    </coding>
+    <coding>
+      <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescId">
+        <extension url="descriptionId">
+          <valueId value="2572661000000117" />
+        </extension>
+        <extension url="descriptionDisplay">
+          <valueString value="Liver function test" />
+        </extension>
+      </extension>
+      <system value="http://snomed.info/sct" />
+      <code value="997531000000108" />
+      <display value="Liver function test" />
+    </coding>
+    <text value="Liver function test" />
+  </code>
+  <subject>
+		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
+		<display value="JONES, Alice (NHS: 9912003444)" />
+  </subject>
+  <effectiveDateTime value="2022-05-10T10:29:00+00:00" />
+  <note>
+    <text value="&lt;OBR.C&gt;&lt;OBR.C.1&gt;Test performed using Roche Cobas method&lt;/OBR.C.1&gt;&lt;OBR.C.1&gt;Please note change in AFP reference range from 24/11/14.&lt;/OBR.C.1&gt;&lt;/OBR.C&gt;" />
+  </note>
+  <specimen>
+    <reference value="Specimen/Example-DataStandardsWales-Specimen-Blood" />
+  </specimen>
+  <hasMember>
+    <reference value="Observation/Example-DataStandardsWales-ObservationResult-LFT_ALB" />
+    <display value="Albumin 35 g/L" />
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/Example-DataStandardsWales-ObservationResult-LFT_ALP" />
+    <display value="Alkaline phosphatase 30 U/L" />
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/Example-DataStandardsWales-ObservationResult-LFT_ALT" />
+    <display value="Alanine transaminase 34 U/L" />
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/Example-DataStandardsWales-ObservationResult-LFT_BILI" />
+    <display value="Bilirubin 20 umol/L" />
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/Example-DataStandardsWales-ObservationResult-LFT_GLOB" />
+    <display value="Globulin 46 g/L" />
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/Example-DataStandardsWales-ObservationResult-LFT_TP" />
+    <display value="Protein 81 g/L" />
+  </hasMember>
+</Observation>

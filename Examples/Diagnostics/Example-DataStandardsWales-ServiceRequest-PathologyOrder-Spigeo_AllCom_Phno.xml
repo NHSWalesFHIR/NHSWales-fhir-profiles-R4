@@ -1,0 +1,56 @@
+<ServiceRequest
+  xmlns="http://hl7.org/fhir">
+  <id value="Example-DataStandardsWales-ServiceRequest-PathologyOrder-Spigeo_AllCom_Phno" />
+  <meta>
+    <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-ServiceRequest" />
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
+      <code value="N" />
+      <display value="Normal" />
+    </security>
+  </meta>
+  <text>
+    <status value="generated" />
+    <div
+      xmlns="http://www.w3.org/1999/xhtml">Sp IgE to Other, Allergy Comment, Phenobarbital level</div>
+  </text>
+  <identifier>
+    <system value="https://fhir.nhs.wales/Id/wrrs-episode-number" />
+    <value value="5000152921" />
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/Example-DataStandardsWales-ServiceRequest-PathologyOrder" />
+    <display value="SPIGEO, ALLCOM, PHNO" />
+  </basedOn>
+  <requisition>
+    <system value="https://fhir.nhs.wales/Id/wrrs-request-identifier" />
+    <value value="111045337" />
+  </requisition>
+  <status value="completed" />
+  <intent value="filler-order" />
+  <priority value="routine" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="721966001" />
+      <display value="Pathology order" />
+    </coding>
+    <text value="Pathology order" />
+  </code>
+  <subject>
+		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
+		<display value="JONES, Alice (NHS: 9912003444)" />
+  </subject>
+  <authoredOn value="2021-11-10T09:47:09.283+00:00" />
+  <requester>
+    <reference value="Practitioner/C4115638" />
+    <display value="Dr M Faiz Ali" />
+  </requester>
+  <specimen>
+      <reference value="Specimen/Example-DataStandardsWales-Specimen-Serum" />
+      <display value="Serum" />
+  </specimen>
+  <note>
+    <text value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse faucibus interdum posuere lorem. Ipsum suspendisse ultrices gravida dictum fusce. Mattis ullamcorper 1111" />
+  </note>
+</ServiceRequest>

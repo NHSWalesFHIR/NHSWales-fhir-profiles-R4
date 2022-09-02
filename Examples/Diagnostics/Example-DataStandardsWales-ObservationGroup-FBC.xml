@@ -1,0 +1,91 @@
+<Observation xmlns="http://hl7.org/fhir">
+    <id value="Example-DataStandardsWales-ObservationGroup-FBC" />
+    <meta>
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation" />
+      <security>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
+        <code value="N" />
+        <display value="Normal" />
+      </security>
+    </meta>
+    <text>
+        <status value="generated" />
+        <div xmlns="http://www.w3.org/1999/xhtml">Full blood count</div>
+    </text>
+    <identifier>
+        <system value="https://fhir.nhs.wales/Id/wrrs-obr-identifier" />
+        <value value="1000178" />
+    </identifier>
+    <status value="final" />
+    <code>
+        <coding>
+            <system value="https://fhir.nhs.wales/Id/wrrs-procedure-code" />
+            <code value="FBC" />
+            <display value="Full blood count" />
+        </coding>
+        <coding>
+            <system value="https://fhir.nhs.wales/Id/lims-procedure-code" />
+            <code value="B0001" />
+            <display value="Full blood count" />
+        </coding>
+        <coding>
+            <system value="http://read.info/readv2" />
+            <code value="424.." />
+            <display value="Full blood count" />
+        </coding>
+        <coding>
+            <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescId">
+                <extension url="descriptionId">
+                    <valueId value="2566641000000111" />
+                </extension>
+                <extension url="descriptionDisplay">
+                    <valueString value="FBC - full blood count" />
+                </extension>
+            </extension>
+            <system value="http://snomed.info/sct" />
+            <code value="1022441000000101" />
+            <display value="FBC - full blood count" />
+        </coding>
+        <text value="Full blood count" />
+    </code>
+    <subject>
+		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
+		<display value="JONES, Alice (NHS: 9912003444)" />
+    </subject>
+    <effectiveDateTime value="2018-01-25T13:31:00+00:00" />
+    <specimen>
+        <reference value="Specimen/1000122" />
+    </specimen>
+    <hasMember>
+        <reference value="Observation/Example-DataStandardsWales-ObservationResult-FBC_HB" />
+        <display value="Haemoglobin (Hb) 115 g/L" />
+      </hasMember>
+      <hasMember>
+        <reference value="Observation/Example-DataStandardsWales-ObservationResult-FBC_HCT" />
+        <display value="Haematocrit (Hct) 0.37 L/L" />
+      </hasMember>
+      <hasMember>
+        <reference value="Observation/Example-DataStandardsWales-ObservationResult-FBC_MCH" />
+        <display value="Mean cell haemoglobin (MCH) 32.0 pg" />
+      </hasMember>
+      <hasMember>
+        <reference value="Observation/Example-DataStandardsWales-ObservationResult-FBC_MCV" />
+        <display value="Mean cell volume (MCV) 90 fL" />
+      </hasMember>
+      <hasMember>
+        <reference value="Observation/Example-DataStandardsWales-ObservationResult-FBC_PLTS" />
+        <display value="Platelet (PLT) count 150 x10^9/L" />
+      </hasMember>
+      <hasMember>
+        <reference value="Observation/Example-DataStandardsWales-ObservationResult-FBC_RBC" />
+        <display value="Red blood cell (RBC) count 3.80 x10^12/L" />
+      </hasMember>
+      <hasMember>
+        <reference value="Observation/Example-DataStandardsWales-ObservationResult-FBC_RDW-CV" />
+        <display value="Red cell distribution width (RDW) 13.0 %" />
+      </hasMember>
+      <hasMember>
+        <reference value="Observation/Example-DataStandardsWales-ObservationResult-FBC_WBC" />
+        <display value="White blood cell (WBC) count 10.0 x10^9/L" />
+      </hasMember>
+</Observation>

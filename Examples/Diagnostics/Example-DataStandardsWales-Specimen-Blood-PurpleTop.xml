@@ -1,0 +1,42 @@
+<Specimen 
+  xmlns="http://hl7.org/fhir">
+  <id value="Example-DataStandardsWales-Specimen-Blood-PurpleTop" />
+  <meta>
+    <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Specimen" />
+  </meta>
+  <text>
+    <status value="generated" />
+    <div 
+      xmlns="http://www.w3.org/1999/xhtml">Blood</div>
+  </text>
+  <identifier>
+    <system value="https://fhir.nhs.wales/Id/wrrs-episode-number" />
+    <value value="5000116116" />
+  </identifier>
+  <type>  
+    <coding>
+      <system value="https://fhir.nhs.wales/Id/wrrs-specimen-type-code" />
+      <code value="Blood" />
+      <display value="Blood" />
+    </coding>
+  </type>
+  <subject>
+		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
+		<display value="JONES, Alice (NHS: 9912003444)" />
+  </subject>
+  <request>
+    <reference value="ServiceRequest/Example-DataStandardsWales-ObservationGroup-CABDO" />
+  </request>
+  <collection>
+    <collectedDateTime value="2018-01-25T13:29:00+00:00" />
+  </collection>
+  <container>
+    <description value="Purple Top" />
+    <additiveCodeableConcept>
+      <coding>
+        <system value="https://fhir.nhs.wales/Id/wrrs-specimen-container-additive" />
+        <code value="EDTA" />
+      </coding>
+    </additiveCodeableConcept>
+  </container>
+</Specimen>

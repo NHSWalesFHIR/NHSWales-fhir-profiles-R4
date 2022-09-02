@@ -1,0 +1,62 @@
+<DiagnosticReport
+  xmlns="http://hl7.org/fhir">
+  <id value="Example-DataStandardsWales-DiagnosticReport-StressTest" />
+  <meta>
+    <versionId value="1" />
+    <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-DiagnosticReport" />
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
+      <code value="N" />
+      <display value="Normal" />
+    </security>
+  </meta>
+  <text>
+    <status value="additional" />
+    <div
+      xmlns="http://www.w3.org/1999/xhtml">Stress Test[A]</div>
+  </text>
+  <identifier>
+    <system value="https://fhir.nhs.wales/Id/wrrs-report-identifier" />
+    <value value="1000012" />
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/587895" />
+    <display value="Stress Test" />
+  </basedOn>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="https://fhir.nhs.wales/Id/wrrs-provider-type-code" />
+      <code value="C" />
+      <display value="CARDIOLOGY" />
+    </coding>
+    <text value="Cardiology" />
+  </category>
+  <code>
+    <coding>
+      <system value="https://fhir.nhs.wales/Id/wrrs-provider-system-code" />
+      <code value="ECHO-STRESS" />
+      <display value="Stress Test" />
+    </coding>
+    <text value="Stress Test" />
+  </code>
+  <subject>
+		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
+		<display value="JONES, Alice (NHS: 9912003444)" />
+  </subject>
+  <issued value="2021-08-31T10:52:14.13+00:00" />
+  <performer>
+    <reference value="Organization/Example-DataStandardsWales-Organization-Cardiology" />
+    <identifier>
+      <system value="https://fhir.nhs.wales/Id/wrrs-provider-department-identifier" />
+      <value value="CARD" />
+    </identifier>
+    <display value="Cardiology" />
+  </performer>
+  <presentedForm>
+    <contentType value="application/pdf" />
+    <language value="en" />
+    <data value="JVBERi0xLjQNCiW0tba --- We have skipped the base64 string for better readability of the resource ---" />
+    <title value="Stress Test[A]; WILLIAMS, GEORGE; Performed: 31 08 2021 10:52" />
+  </presentedForm>
+</DiagnosticReport>

@@ -1,0 +1,68 @@
+<ServiceRequest 
+  xmlns="http://hl7.org/fhir">
+  <id value="Example-DataStandardsWales-ServiceRequest-PathologyOrder" />
+  <meta>
+    <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-ServiceRequest" />
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
+      <code value="N" />
+      <display value="Normal" />
+    </security>
+  </meta>
+  <text>
+    <status value="generated" />
+    <div 
+      xmlns="http://www.w3.org/1999/xhtml">Carnitine Profile, Phenobarbitone , Glucose , Sp IgE to Other</div>
+  </text>
+  <identifier>
+    <system value="https://fhir.nhs.wales/Id/lims-procedure-code" />
+    <value value="CARP, PHNO, PFGLU, SPIGEO" />
+  </identifier>
+  <requisition>
+    <system value="https://fhir.nhs.wales/Id/wrrs-request-identifier" />
+    <value value="111045337" />
+  </requisition>
+  <status value="completed" />
+  <intent value="order" />
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/servicerequest-category" />
+      <code value="108252007" />
+      <display value="Laboratory procedure" />
+    </coding>
+    <text value="Laboratory procedure" />
+  </category>
+  <priority value="routine" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="721966001" />
+      <display value="Pathology order" />
+    </coding>
+    <text value="Pathology order" />
+  </code>
+  <subject>
+		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
+		<display value="JONES, Alice (NHS: 9912003444)" />
+  </subject>
+  <authoredOn value="2021-11-10T09:47:09.283+00:00" />
+  <requester>
+    <reference value="Practitioner/C4115638" />
+    <display value="Ali, Mohammad, Dr" />
+  </requester>
+  <specimen>
+    <reference value="Specimen/Example-DataStandardsWales-Specimen-Urine-GreenTop" />
+    <display value="Plasma" />
+  </specimen>
+  <specimen>
+    <reference value="Specimen/Example-DataStandardsWales-Specimen-Blood" />
+    <display value="Serum" />
+  </specimen>
+  <specimen>
+    <reference value="Specimen/Example-DataStandardsWales-Specimen-PlueralFluid" />
+    <display value="Pleural fluid" />
+  </specimen>
+  <note>
+    <text value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse faucibus interdum posuere lorem. Ipsum suspendisse ultrices gravida dictum fusce. Mattis ullamcorper 1111" />
+  </note>
+</ServiceRequest>

@@ -1,0 +1,56 @@
+<ServiceRequest
+  xmlns="http://hl7.org/fhir">
+  <id value="Example-DataStandardsWales-ServiceRequest-PathologyOrder-FBC" />
+  <meta>
+    <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-ServiceRequest" />
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
+      <code value="N" />
+      <display value="Normal" />
+    </security>
+  </meta>
+  <text>
+    <status value="generated" />
+    <div
+      xmlns="http://www.w3.org/1999/xhtml">Full blood count</div>
+  </text>
+  <identifier>
+    <system value="https://fhir.nhs.wales/Id/wrrs-episode-number" />
+    <value value="5000116116" />
+  </identifier>
+    <basedOn>
+      <reference value="ServiceRequest/5000116116-RVA" />
+      <display value="FBC" />
+  </basedOn>
+  <requisition>
+    <system value="https://fhir.nhs.wales/Id/wrrs-request-identifier" />
+    <value value="111019976" />
+  </requisition>
+  <status value="completed" />
+  <intent value="filler-order" />
+  <priority value="routine" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="721966001" />
+      <display value="Pathology order" />
+    </coding>
+    <text value="Pathology order" />
+  </code>
+  <subject>
+		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
+		<display value="JONES, Alice (NHS: 9912003444)" />
+  </subject>
+  <authoredOn value="2018-01-25T13:29:23.303+00:00" />
+  <requester>
+    <reference value="Practitioner/C0002631" />
+    <display value="Dr A T Axford" />
+  </requester>
+  <specimen>
+    <reference value="Specimen/Example-DataStandardsWales-Specimen-Blood-PurpleTop" />
+    <display value="Blood" />
+  </specimen>
+  <note>
+    <text value="test" />
+  </note>
+</ServiceRequest>

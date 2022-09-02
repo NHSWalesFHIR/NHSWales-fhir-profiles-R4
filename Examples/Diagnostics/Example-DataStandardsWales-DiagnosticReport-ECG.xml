@@ -1,0 +1,59 @@
+<DiagnosticReport 
+  xmlns="http://hl7.org/fhir">
+  <id value="Example-DataStandardsWales-DiagnosticReport-ECG" />
+  <meta>
+    <versionId value="1" />
+    <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-DiagnosticReport" />
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
+      <code value="N" />
+      <display value="Normal" />
+    </security>
+  </meta>
+  <text>
+    <status value="additional" />
+    <div 
+      xmlns="http://www.w3.org/1999/xhtml">12 Lead ECG[A]
+    </div>
+  </text>
+  <identifier>
+    <system value="https://fhir.nhs.wales/Id/wrrs-report-identifier" />
+    <value value="1000182" />
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/Example-DataStandardsWales-ServiceRequest-ECG" />
+    <display value="12 Lead ECG" />
+  </basedOn>
+  <status value="unknown" />
+  <category>
+    <coding>
+      <system value="https://fhir.nhs.wales/Id/wrrs-provider-type-code" />
+      <code value="C" />
+      <display value="CARDIOLOGY" />
+    </coding>
+    <text value="Cardiology" />
+  </category>
+  <code>
+    <coding>
+      <system value="https://fhir.nhs.wales/Id/wrrs-provider-type-code" />
+      <code value="C" />
+      <display value="CARDIOLOGY" />
+    </coding>
+    <text value="Cardiology" />
+  </code>
+  <subject>
+		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
+		<display value="JONES, Alice (NHS: 9912003444)" />
+  </subject>
+  <issued value="2018-04-01T11:11:11+01:00" />
+  <performer>
+    <reference value="Organization/Example-DataStandardsWales-Organization-Cardiology" />
+    <display value="Cardiology" />
+  </performer>
+  <presentedForm>
+    <contentType value="application/pdf" />
+    <language value="en" />
+    <data value="JVBERi0xLjMNJT8 --- We have skipped the base64 string for better readability of the resource ---" />
+    <title value="12 Lead ECG[A]; DOE, JOHN; Performed: 02 12 2021 12:57" />
+  </presentedForm>
+</DiagnosticReport>

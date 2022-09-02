@@ -1,0 +1,84 @@
+<Observation
+  xmlns="http://hl7.org/fhir">
+  <id value="Example-DataStandardsWales-ObservationResult-FBC_WBC" />
+  <meta>
+    <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation" />
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
+      <code value="N" />
+      <display value="Normal" />
+    </security>
+  </meta>
+  <text>
+    <status value="generated" />
+    <div
+      xmlns="http://www.w3.org/1999/xhtml">White blood cell (WBC) count</div>
+  </text>
+  <identifier>
+    <system value="https://fhir.nhs.wales/Id/wrrs-obx-identifier" />
+    <value value="1000485" />
+  </identifier>
+  <code>
+    <coding>
+      <system value="https://fhir.nhs.wales/Id/lims-test-code" />
+      <code value="B0300" />
+      <display value="White blood cell (WBC) count" />
+    </coding>
+    <coding>
+      <system value="http://read.info/readv2" />
+      <code value="42H.." />
+      <display value="White blood cell (WBC) count" />
+    </coding>
+    <coding>
+      <system value="https://fhir.nhs.wales/Id/wrrs-test-code" />
+      <code value="WBC" />
+      <display value="White blood cell (WBC) count" />
+    </coding>
+    <coding>
+      <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescId">
+        <extension url="descriptionId">
+          <valueId value="2566651000000114" />
+        </extension>
+        <extension url="descriptionDisplay">
+          <valueString value="Total white cell count" />
+        </extension>
+      </extension>
+      <system value="http://snomed.info/sct" />
+      <code value="1022541000000102" />
+      <display value="Total white cell count" />
+    </coding>
+    <text value="White blood cell (WBC) count" />
+  </code>
+  <subject>
+		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
+		<display value="JONES, Alice (NHS: 9912003444)" />
+  </subject>
+  <valueQuantity>
+    <value value="10.0" />
+    <unit value="x10^9/L" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="x10^9/L" />
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/observation-interpretation" />
+      <code value="N" />
+      <display value="Normal" />
+    </coding>
+    <text value="Normal" />
+  </interpretation>
+  <referenceRange>
+    <low>
+      <value value="4.0" />
+      <unit value="x10^9/L" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="x10^9/L" />
+    </low>
+    <high>
+      <value value="11.0" />
+      <unit value="x10^9/L" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="x10^9/L" />
+    </high>
+  </referenceRange>
+</Observation>

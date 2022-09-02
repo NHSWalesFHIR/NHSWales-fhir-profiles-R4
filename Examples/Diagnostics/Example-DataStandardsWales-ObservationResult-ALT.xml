@@ -1,0 +1,70 @@
+<Observation 
+  xmlns="http://hl7.org/fhir">
+  <id value="Example-DataStandardsWales-ObservationResult-ALT" />
+  <meta>
+    <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation" />
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
+      <code value="N" />
+      <display value="Normal" />
+    </security>
+  </meta>
+  <text>
+    <status value="generated" />
+    <div 
+      xmlns="http://www.w3.org/1999/xhtml">Alanine transaminase</div>
+  </text>
+  <identifier>
+    <system value="https://fhir.nhs.wales/Id/wrrs-obx-identifier" />
+    <value value="1001035" />
+  </identifier>
+  <code>
+    <coding>
+      <system value="https://fhir.nhs.wales/Id/lims-test-code" />
+      <code value="B3505" />
+      <display value="Alanine transaminase" />
+    </coding>
+    <coding>
+      <system value="http://read.info/readv2" />
+      <code value="44GB." />
+      <display value="Alanine transaminase" />
+    </coding>
+    <coding>
+      <system value="https://fhir.nhs.wales/Id/wrrs-test-code" />
+      <code value="ALT" />
+      <display value="Alanine transaminase" />
+    </coding>
+    <coding>
+      <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CodingSCTDescId">
+        <extension url="descriptionId">
+          <valueId value="2579431000000117" />
+        </extension>
+        <extension url="descriptionDisplay">
+          <valueString value="Serum alanine aminotransferase level" />
+        </extension>
+      </extension>
+      <system value="http://snomed.info/sct" />
+      <code value="1018251000000107" />
+      <display value="Serum alanine aminotransferase level" />
+    </coding>
+    <text value="Alanine transaminase" />
+  </code>
+  <subject>
+		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
+		<display value="JONES, Alice (NHS: 9912003444)" />
+  </subject>
+  <valueQuantity>
+    <value value="34" />
+    <unit value="U/L" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="U/L" />
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/observation-interpretation" />
+      <code value="H" />
+      <display value="High" />
+    </coding>
+    <text value="High" />
+  </interpretation>
+</Observation>

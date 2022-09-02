@@ -1,0 +1,56 @@
+<ServiceRequest 
+  xmlns="http://hl7.org/fhir">
+  <id value="Example-DataStandardsWales-ServiceRequest-PathologyOrder-LFT_ACE" />
+  <meta>
+    <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-ServiceRequest" />
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
+      <code value="N" />
+      <display value="Normal" />
+    </security>
+  </meta>
+  <text>
+    <status value="generated" />
+    <div 
+      xmlns="http://www.w3.org/1999/xhtml">Liver function test, ACE</div>
+  </text>
+  <identifier>
+    <system value="https://fhir.nhs.wales/Id/wrrs-episode-number" />
+    <value value="5000152679" />
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/5000152679-RVA" />
+    <display value="LFT, ACE" />
+  </basedOn>
+  <requisition>
+    <system value="https://fhir.nhs.wales/Id/wrrs-request-identifier" />
+    <value value="111045162" />
+  </requisition>
+  <status value="completed" />
+  <intent value="filler-order" />
+  <priority value="routine" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <code value="721966001" />
+      <display value="Pathology order" />
+    </coding>
+    <text value="Pathology order" />
+  </code>
+  <subject>
+		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
+		<display value="JONES, Alice (NHS: 9912003444)" />
+  </subject>
+  <authoredOn value="2021-10-20T07:25:11.507+00:00" />
+  <requester>
+    <reference value="Practitioner/C3311419" />
+    <display value="Dr Dirk G Wilson" />
+  </requester>
+  <specimen>
+      <reference value="Specimen/Example-DataStandardsWales-Specimen-Serum" />
+      <display value="Serum" />
+  </specimen>
+  <note>
+    <text value="ghgfhgfhfg" />
+  </note>
+</ServiceRequest>

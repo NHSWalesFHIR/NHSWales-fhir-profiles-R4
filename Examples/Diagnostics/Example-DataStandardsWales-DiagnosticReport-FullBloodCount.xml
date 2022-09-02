@@ -1,0 +1,74 @@
+﻿<DiagnosticReport 
+  xmlns="http://hl7.org/fhir">
+  <id value="Example-DataStandardsWales-DiagnosticReport-FullBloodCount" />
+  <meta>
+    <versionId value="1" />
+    <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-DiagnosticReport" />
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
+      <code value="N" />
+      <display value="Normal" />
+    </security>
+  </meta>
+  <text>
+    <status value="additional" />
+    <div xmlns="http://www.w3.org/1999/xhtml">Full blood count[A]</div>
+  </text>
+  <identifier>
+    <system value="https://fhir.nhs.wales/Id/wrrs-report-identifier" />
+    <value value="1000122" />
+  </identifier>
+  <basedOn>
+    <reference value="ServiceRequest/Example-DataStandardsWales-ObservationGroup-CABDO" />
+    <display value="Full blood count" />
+  </basedOn>
+  <status value="final" />
+  <category>
+    <coding>
+      <system value="https://fhir.nhs.wales/Id/wrrs-provider-type-code" />
+      <code value="P" />
+      <display value="PATHOLOGY" />
+    </coding>
+    <text value="Pathology" />
+  </category>
+  <code>
+    <coding>
+      <system value="https://fhir.nhs.wales/Id/wrrs-provider-system-code" />
+      <code value="FBC" />
+      <display value="Full blood count" />
+    </coding>
+    <text value="Full blood count" />
+  </code>
+  <subject>
+		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
+		<display value="JONES, Alice (NHS: 9912003444)" />
+  </subject>
+  <issued value="2018-01-25T13:31:57+00:00" />
+  <performer>
+    <reference value="Organization/Example-DataStandardsWales-Organization-BloodSciences" />
+    <identifier>
+      <system value="https://fhir.nhs.wales/Id/wrrs-provider-department-identifier" />
+      <value value="BSC" />
+    </identifier>
+    <display value="Blood Sciences" />
+  </performer>
+  <performer>
+    <reference value="Organization/Example-DataStandardsWales-Organization-YsbytyGlangwili" />
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+      <value value="7A2AG" />
+    </identifier>
+    <display value="Ysbyty Glangwili" />
+  </performer>
+  <resultsInterpreter>
+    <reference value="Organization/Example-DataStandardsWales-Organization-HywelDda" />
+    <display value="Hywel Dda" />
+  </resultsInterpreter>
+  <specimen>
+    <reference value="Specimen/Example-DataStandardsWales-Specimen-Blood-PurpleTop" />
+  </specimen>
+  <result>
+    <reference value="Observation/Example-DataStandardsWales-ObservationGroup-FBC" />
+    <display value="Full blood count" />
+  </result>
+</DiagnosticReport>
