@@ -43,8 +43,8 @@
   </subject>
   <authoredOn value="2021-11-10T09:47:09.283+00:00" />
   <requester>
-    <reference value="Practitioner/C4115638" />
-    <display value="Dr M Faiz Ali" />
+    <reference value="Practitioner/Example-DataStandardsWales-Practitioner-Consultant" />
+    <display value="..." />
   </requester>
   <specimen>
       <reference value="Specimen/Example-DataStandardsWales-Specimen-Serum" />

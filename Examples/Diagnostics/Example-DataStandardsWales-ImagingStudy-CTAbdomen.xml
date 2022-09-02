@@ -6,7 +6,7 @@
   </meta>
   <text>
     <status value="additional"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">CT Abdomen[A]  [Reported, signed by radiology]; ALLI, DELE (NHS: 2333211008); Accession: HDD633125; Performed: 19 05 2021</div>
+    <div xmlns="http://www.w3.org/1999/xhtml">CT Abdomen[A]  [Reported, signed by radiology]; JONES, Alice (NHS: 9912003444); Accession: HDD633125; Performed: 19 05 2021</div>
   </text>
   <identifier>
     <system value="https://fhir.hduhb.nhs.wales/Id/pacs-accession-number" />

@@ -43,8 +43,8 @@
   </subject>
   <authoredOn value="2018-01-25T13:29:23.303+00:00" />
   <requester>
-    <reference value="Practitioner/C0002631" />
-    <display value="Dr A T Axford" />
+    <reference value="Practitioner/Example-DataStandardsWales-Practitioner-Consultant" />
+    <display value="..." />
   </requester>
   <specimen>
     <reference value="Specimen/Example-DataStandardsWales-Specimen-Blood-PurpleTop" />

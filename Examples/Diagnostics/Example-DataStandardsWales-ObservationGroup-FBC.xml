@@ -54,7 +54,7 @@
     </subject>
     <effectiveDateTime value="2018-01-25T13:31:00+00:00" />
     <specimen>
-        <reference value="Specimen/1000122" />
+        <reference value="Specimen/Example-DataStandardsWales-Specimen-Blood" />
     </specimen>
     <hasMember>
         <reference value="Observation/Example-DataStandardsWales-ObservationResult-FBC_HB" />

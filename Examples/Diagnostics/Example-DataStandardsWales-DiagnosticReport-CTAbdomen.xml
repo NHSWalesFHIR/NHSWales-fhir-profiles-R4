@@ -58,6 +58,6 @@
   </resultsInterpreter>
 	<imagingStudy> 
 		<reference value="ImagingStudy/Example-DataStandardsWales-ImagingStudy-CTAbdomen" />
-		<display value="CT Abdomen[A]  [Reported, signed by radiology]; ALLI, DELE (NHS: 2333211008); Accession: HDD633125; Performed: 19 05 2021" />
+		<display value="CT Abdomen[A]  [Reported, signed by radiology]; JONES, Alice (NHS: 9912003444); Accession: HDD633125; Performed: 19 05 2021" />
 	</imagingStudy> 
 </DiagnosticReport>
