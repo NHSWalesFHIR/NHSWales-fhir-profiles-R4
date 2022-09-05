@@ -1,6 +1,6 @@
 <Specimen 
   xmlns="http://hl7.org/fhir">
-  <id value="Example-DataStandardsWales-Specimen-Urine-GreenTop" />
+  <id value="Example-DataStandardsWales-Specimen-Urine-Additive" />
   <meta>
     <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Specimen" />
   </meta>

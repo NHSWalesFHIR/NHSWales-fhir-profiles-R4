@@ -19,7 +19,7 @@
     <value value="5000116116" />
   </identifier>
     <basedOn>
-      <reference value="ServiceRequest/5000116116-RVA" />
+      <reference value="Example-DataStandardsWales-ServiceRequest-PathologyOrder-ParentOrder" />
       <display value="FBC" />
   </basedOn>
   <requisition>

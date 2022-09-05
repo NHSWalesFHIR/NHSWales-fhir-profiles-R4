@@ -25,7 +25,7 @@
 		<display value="JONES, Alice (NHS: 9912003444)" />
   </subject>
   <request>
-    <reference value="ServiceRequest/Example-DataStandardsWales-Specimen-Blood-LilacTop" />
+    <reference value="ServiceRequest/Example-DataStandardsWales-ServiceRequest-PathologyOrder-FBC" />
   </request>
   <collection>
     <collectedDateTime value="2022-04-25T10:26:00+00:00" />

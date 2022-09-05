@@ -20,7 +20,7 @@
     <value value="1000012" />
   </identifier>
   <basedOn>
-    <reference value="ServiceRequest/587895" />
+    <reference value="ServiceRequest/Example-DataStandardsWales-ServiceRequest-StressTest" />
     <display value="Stress Test" />
   </basedOn>
   <status value="final" />

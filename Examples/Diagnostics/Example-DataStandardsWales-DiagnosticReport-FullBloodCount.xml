@@ -65,7 +65,7 @@
     <display value="Hywel Dda" />
   </resultsInterpreter>
   <specimen>
-    <reference value="Specimen/Example-DataStandardsWales-Specimen-Blood-PurpleTop" />
+    <reference value="Specimen/Example-DataStandardsWales-Specimen-Blood" />
   </specimen>
   <result>
     <reference value="Observation/Example-DataStandardsWales-ObservationGroup-FBC" />
