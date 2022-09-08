@@ -11,6 +11,10 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-ServiceRequest" />
   <derivation value="constraint" />
   <differential>
+    <element id="ServiceRequest.identifier">
+      <path value="ServiceRequest.identifier" />
+      <mustSupport value="true" />
+    </element>
     <element id="ServiceRequest.basedOn">
       <path value="ServiceRequest.basedOn" />
       <type>
@@ -27,6 +31,26 @@
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-ServiceRequest" />
       </type>
     </element>
+    <element id="ServiceRequest.status">
+      <path value="ServiceRequest.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.intent">
+      <path value="ServiceRequest.intent" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.category">
+      <path value="ServiceRequest.category" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.priority">
+      <path value="ServiceRequest.priority" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ServiceRequest.code">
+      <path value="ServiceRequest.code" />
+      <mustSupport value="true" />
+    </element>
     <element id="ServiceRequest.subject">
       <path value="ServiceRequest.subject" />
       <type>
@@ -36,6 +60,7 @@
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.encounter">
       <path value="ServiceRequest.encounter" />
@@ -43,6 +68,10 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Encounter" />
       </type>
+    </element>
+    <element id="ServiceRequest.authoredOn">
+      <path value="ServiceRequest.authoredOn" />
+      <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.requester">
       <path value="ServiceRequest.requester" />
@@ -55,6 +84,7 @@
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-PractitionerRole" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="ServiceRequest.performer">
       <path value="ServiceRequest.performer" />
@@ -93,6 +123,7 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Specimen" />
       </type>
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

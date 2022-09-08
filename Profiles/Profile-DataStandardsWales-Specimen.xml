@@ -11,6 +11,14 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Specimen" />
   <derivation value="constraint" />
   <differential>
+    <element id="Specimen.identifier">
+      <path value="Specimen.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.type">
+      <path value="Specimen.type" />
+      <mustSupport value="true" />
+    </element>
     <element id="Specimen.subject">
       <path value="Specimen.subject" />
       <type>
@@ -21,6 +29,11 @@
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.receivedTime">
+      <path value="Specimen.receivedTime" />
+      <mustSupport value="true" />
     </element>
     <element id="Specimen.parent">
       <path value="Specimen.parent" />
@@ -35,6 +48,19 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-ServiceRequest" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.collection.collected[x]">
+      <path value="Specimen.collection.collected[x]" />
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Specimen.container">
+      <path value="Specimen.container" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

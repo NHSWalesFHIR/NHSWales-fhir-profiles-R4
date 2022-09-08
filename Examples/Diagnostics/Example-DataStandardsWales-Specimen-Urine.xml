@@ -25,7 +25,7 @@
 		<display value="JONES, Alice (NHS: 9912003444)" />
   </subject>
   <request>
-    <reference value="ServiceRequest/Example-DataStandardsWales-Specimen-Urine" />
+    <reference value="ServiceRequest/Example-DataStandardsWales-ServiceRequest-PathologyOrder" />
   </request>
   <collection>
     <collectedDateTime value="2018-06-15T08:54:00+00:00" />

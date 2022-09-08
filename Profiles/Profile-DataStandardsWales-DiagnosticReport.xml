@@ -11,6 +11,10 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
   <derivation value="constraint" />
   <differential>
+    <element id="DiagnosticReport.identifier">
+      <path value="DiagnosticReport.identifier" />
+      <mustSupport value="true" />
+    </element>
     <element id="DiagnosticReport.basedOn">
       <path value="DiagnosticReport.basedOn" />
       <type>
@@ -30,6 +34,7 @@
       <path value="DiagnosticReport.category" />
       <min value="1" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.code">
       <path value="DiagnosticReport.code" />
@@ -53,6 +58,11 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Encounter" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.effective[x]">
+      <path value="DiagnosticReport.effective[x]" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.issued">
       <path value="DiagnosticReport.issued" />
@@ -83,6 +93,7 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Specimen" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.result">
       <path value="DiagnosticReport.result" />
@@ -90,6 +101,7 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.imagingStudy">
       <path value="DiagnosticReport.imagingStudy" />
@@ -97,6 +109,11 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-ImagingStudy" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.presentedForm">
+      <path value="DiagnosticReport.presentedForm" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

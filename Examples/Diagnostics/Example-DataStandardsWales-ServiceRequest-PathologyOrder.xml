@@ -51,7 +51,7 @@
     <display value="..." />
   </requester>
   <specimen>
-    <reference value="Specimen/Example-DataStandardsWales-Specimen-Urine-GreenTop" />
+    <reference value="Specimen/Example-DataStandardsWales-Specimen-Urine" />
     <display value="Plasma" />
   </specimen>
   <specimen>

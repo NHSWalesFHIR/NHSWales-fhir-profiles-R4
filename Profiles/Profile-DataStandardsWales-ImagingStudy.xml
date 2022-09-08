@@ -11,6 +11,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ImagingStudy" />
   <derivation value="constraint" />
   <differential>
+    <element id="ImagingStudy.identifier">
+      <path value="ImagingStudy.identifier" />
+      <mustSupport value="true" />
+    </element>
     <element id="ImagingStudy.subject">
       <path value="ImagingStudy.subject" />
       <type>
@@ -58,6 +62,7 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Endpoint" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="ImagingStudy.location">
       <path value="ImagingStudy.location" />
