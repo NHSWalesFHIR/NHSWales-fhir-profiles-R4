@@ -45,6 +45,9 @@
 		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
 		<display value="JONES, Alice (NHS: 9912003444)" />
   </subject>
+  <encounter>
+    <reference value="Encounter/Example-DataStandardsWales-Encounter-EmergencyAdmission"/>
+  </encounter>
   <issued value="2018-04-01T11:11:11+01:00" />
   <performer>
     <reference value="Organization/Example-DataStandardsWales-Organization-Cardiology" />
