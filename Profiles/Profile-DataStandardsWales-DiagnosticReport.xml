@@ -32,8 +32,6 @@
     </element>
     <element id="DiagnosticReport.category">
       <path value="DiagnosticReport.category" />
-      <min value="1" />
-      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.code">
@@ -66,7 +64,6 @@
     </element>
     <element id="DiagnosticReport.issued">
       <path value="DiagnosticReport.issued" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.performer">

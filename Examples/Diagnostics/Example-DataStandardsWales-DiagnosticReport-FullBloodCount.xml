@@ -19,7 +19,7 @@
     <value value="1000122" />
   </identifier>
   <basedOn>
-    <reference value="ServiceRequest/Example-DataStandardsWales-ObservationGroup-CABDO" />
+    <reference value="ServiceRequest/Example-DataStandardsWales-ServiceRequest-PathologyOrder-FBC" />
     <display value="Full blood count" />
   </basedOn>
   <status value="final" />
