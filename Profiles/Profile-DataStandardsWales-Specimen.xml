@@ -17,10 +17,12 @@
     </element>
     <element id="Specimen.type">
       <path value="Specimen.type" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Specimen.subject">
       <path value="Specimen.subject" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
