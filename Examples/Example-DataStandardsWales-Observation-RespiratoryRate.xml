@@ -1,0 +1,39 @@
+<Observation>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Observation" />
+	</meta>
+	<status value="final" />
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+			<code value="vital-signs" />
+			<display value="Vital Signs" />
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct" />
+			<code value="86290005" />
+			<display value="Respiratory rate" />
+		</coding>
+		<coding>
+			<system value="http://loinc.org" />
+			<code value="9279-1" />
+			<display value="Respiratory Rate" />
+		</coding>
+	</code>
+    <subject>
+        <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper" />
+        <display value="PIPER, Peter (NHS: 1192335566)" />
+    </subject>
+	<effectiveDateTime value="2022-10-11T14:17:59+01:00" />
+	<performer>
+		<reference value="Performer/Example-DataStandardsWales-Practitioner-PrescribingNurse" />
+	</performer>
+	<valueQuantity>
+		<value value="21" />
+		<unit value="Breaths / minute" />
+		<system value="http://unitsofmeasure.org" />
+		<code value="{Breaths}/min" />
+	</valueQuantity>
+</Observation>

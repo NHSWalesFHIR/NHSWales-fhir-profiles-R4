@@ -1,0 +1,39 @@
+<Observation xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Observation" />
+    </meta>
+    <status value="final" />
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+            <code value="vital-signs" />
+            <display value="Vital Signs" />
+        </coding>
+    </category>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct" />
+            <code value="50373000" />
+            <display value="Body height measure" />
+        </coding>
+        <coding>
+            <system value="http://loinc.org" />
+            <code value="8302-2" />
+            <display value="Body height" />
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper" />
+        <display value="PIPER, Peter (NHS: 1192335566)" />
+    </subject>
+	<effectiveDateTime value="2022-10-11T14:17:59+01:00" />
+	<performer>
+		<reference value="Performer/Example-DataStandardsWales-Practitioner-PrescribingNurse" />
+	</performer>
+    <valueQuantity>
+        <value value="124" />
+        <unit value="centimeter" />
+        <system value="http://unitsofmeasure.org" />
+        <code value="cm" />
+    </valueQuantity>
+</Observation>
