@@ -97,7 +97,7 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Specimen" />
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="false" />
     </element>
     <element id="Observation.hasMember">
       <path value="Observation.hasMember" />
