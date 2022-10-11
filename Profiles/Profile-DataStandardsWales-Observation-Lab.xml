@@ -13,6 +13,18 @@
   <differential>
     <element id="Observation.category">
       <path value="Observation.category" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Observation.category:LaboratorySlice">
+      <path value="Observation.category" />
+      <sliceName value="LaboratorySlice" />
       <min value="1" />
       <max value="1" />
       <fixedCodeableConcept>

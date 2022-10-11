@@ -11,6 +11,31 @@
   <baseDefinition value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-DiagnosticReport" />
   <derivation value="constraint" />
   <differential>
+    <element id="DiagnosticReport.category">
+      <path value="DiagnosticReport.category" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.category:LaboratorySlice">
+      <path value="DiagnosticReport.category" />
+      <sliceName value="LaboratorySlice" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0074" />
+          <version value="2.5.0" />
+          <code value="LAB" />
+          <display value="Laboratory" />
+        </coding>
+      </fixedCodeableConcept>
+    </element>
     <element id="DiagnosticReport.result">
       <path value="DiagnosticReport.result" />
       <min value="1" />
