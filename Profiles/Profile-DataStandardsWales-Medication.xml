@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Medication" />
   <name value="DataStandardsWalesMedication" />
+  <title value="Data Standards Wales Medication Profile" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />

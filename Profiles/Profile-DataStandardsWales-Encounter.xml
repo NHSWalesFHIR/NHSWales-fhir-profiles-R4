@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Encounter" />
   <name value="DataStandardsWalesEncounter" />
+  <title value="Data Standards Wales Encounter Profile" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />

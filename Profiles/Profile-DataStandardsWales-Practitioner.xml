@@ -3,6 +3,7 @@
   <id value="DataStandardsWales-Practitioner" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
   <name value="DataStandardsWalesPractitioner" />
+  <title value="Data Standards Wales Practitioner Profile" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />

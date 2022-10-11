@@ -3,6 +3,7 @@
   <id value="DataStandardsWales-Location" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
   <name value="DataStandardsWalesLocation" />
+  <title value="Data Standards Wales Location Profile" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />

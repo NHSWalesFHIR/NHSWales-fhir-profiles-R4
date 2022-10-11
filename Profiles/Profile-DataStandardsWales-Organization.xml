@@ -3,6 +3,7 @@
   <id value="DataStandardsWales-Organization" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
   <name value="DataStandardsWalesOrganization" />
+  <title value="Data Standards Wales Organization Profile" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
