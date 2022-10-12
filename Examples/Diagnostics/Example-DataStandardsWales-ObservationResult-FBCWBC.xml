@@ -2,7 +2,7 @@
   xmlns="http://hl7.org/fhir">
   <id value="Example-DataStandardsWales-ObservationResult-FBC_WBC" />
   <meta>
-    <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation" />
+    <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation-Lab" />
     <security>
       <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
       <code value="N" />

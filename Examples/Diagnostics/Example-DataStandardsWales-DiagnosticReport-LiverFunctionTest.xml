@@ -3,7 +3,7 @@
   <id value="Example-DataStandardsWales-DiagnosticReport-LiverFunctionTest" />
   <meta>
     <versionId value="3" />
-    <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-DiagnosticReport" />
+    <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-DiagnosticReport-Lab" />
     <security>
       <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality" />
       <code value="N" />
