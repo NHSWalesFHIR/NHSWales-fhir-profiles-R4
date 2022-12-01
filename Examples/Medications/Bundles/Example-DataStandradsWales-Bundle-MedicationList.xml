@@ -1,6 +1,5 @@
 <Bundle xmlns="http://hl7.org/fhir">
 	<type value="transaction" />
-	<total value="6" />
 	<entry>
 		<fullUrl value="urn:uuid:2fbf6025-fb60-4573-94d4-a36cb892b165" />
 		<resource>
