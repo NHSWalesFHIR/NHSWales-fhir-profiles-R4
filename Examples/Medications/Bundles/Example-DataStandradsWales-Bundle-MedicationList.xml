@@ -1,0 +1,266 @@
+<Bundle xmlns="http://hl7.org/fhir">
+	<type value="transaction" />
+	<total value="6" />
+	<entry>
+		<fullUrl value="urn:uuid:2fbf6025-fb60-4573-94d4-a36cb892b165" />
+		<resource>
+			<Patient>			
+				<text>
+					<status value="generated" />
+					<div xmlns="http://www.w3.org/1999/xhtml">PIPER, Peter (NHS: 1192335566)</div>
+				</text>         
+				<identifier>
+					<extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
+								<code value="number-present-and-verified" />
+								<display value="Number present and verified" />
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<system value="https://fhir.nhs.uk/Id/nhs-number" />
+					<value value="1192335566" />
+				</identifier>	
+				<name>
+					<family value="Piper" />
+					<given value="Peter" />
+				</name>
+				<gender value="male" />
+				<birthDate value="1981-07-03" />
+				<address>
+					<line value="14 Seemore View" />
+					<line value="Porthcawl" />
+					<postalCode value="CF32 0AY" />
+				</address>
+			</Patient>
+		</resource>
+		<request>
+			<method value="POST" />
+			<url value="Patient" />
+			<ifNoneExist value="identifier=https://fhir.nhs.uk/Id/nhs-number|1192335566" />
+		</request>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:a87fd209-c426-45f4-92e1-dd5f77763b73" />
+		<resource>
+			<Practitioner xmlns="http://hl7.org/fhir">
+				<text>
+					<status value="generated" />
+					<div xmlns="http://www.w3.org/1999/xhtml">Dr Sally Foster (GMC: 9830222)</div>
+				</text> 	
+				<identifier>
+					<system value="https://fhir.hl7.org.uk/Id/gmc-number" />
+					<value value="9830222" />
+				</identifier>
+				<name>
+					<family value="Foster" />
+					<given value="Sally" />
+					<prefix value="Dr" />
+				</name>
+			</Practitioner>		
+		</resource>
+		<request>
+			<method value="POST" />
+			<url value="Practitioner" />
+			<ifNoneExist value="identifier=https://fhir.hl7.org.uk/Id/gmc-number|9830222" />
+		</request>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:cce2f843-29cb-4fea-b3c5-c925ed662d54" />
+		<resource>
+			<List xmlns="http://hl7.org/fhir">
+				<status value="current"/>
+				<mode value="snapshot"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="933361000000108"/>
+						<display value="Medications and medical devices"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:2fbf6025-fb60-4573-94d4-a36cb892b165" />
+					<display value="PIPER, Peter (NHS: 1192335566)"/>
+				</subject>
+				<date value="2022-01-10T10:00:00Z"/>
+				<source>
+					<reference value="urn:uuid:a87fd209-c426-45f4-92e1-dd5f77763b73" />
+					<display value="Dr Sally Foster (GMC: 9830222)" />
+				</source>
+				<entry>
+					<item>
+						<reference value="urn:uuid:9ddbc085-d95b-403e-9b9a-cd7dbf62b08d"/>
+						<display value="Atorvastatin 20mg tablet - 1 tablet at night"/>
+					</item>
+				</entry>
+				<entry>
+					<item>
+						<reference value="urn:uuid:33488624-f072-4d3b-9b25-bda7f03027b1"/>
+						<display value="Bisoprolol 1.25mg tablets - 1 tablet every morning"/>
+					</item>
+				</entry>
+				<entry>
+					<item>
+						<reference value="urn:uuid:93a211fd-8da8-417d-a7c1-f910434faee2"/>
+						<display value="Ramipril 2.5mg tablet - 1 tablet in the morning"/>
+					</item>
+				</entry>
+			</List>		
+		</resource>
+		<request>
+			<method value="POST" />
+			<url value="List" />		
+		</request>
+	</entry>	
+	<entry>
+		<fullUrl value="urn:uuid:9ddbc085-d95b-403e-9b9a-cd7dbf62b08d" />
+		<resource>
+			<MedicationStatement xmlns="http://hl7.org/fhir">
+				<text>
+					<status value="generated" />
+					<div xmlns="http://www.w3.org/1999/xhtml">Atorvastatin 20mg tablet - 1 tablet at night</div>
+				</text>
+				<extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType">
+					<valueCoding>
+						<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
+						<code value="continuous" />
+						<display value="Continuous long term therapy" />
+					</valueCoding>
+				</extension>
+				<status value="active" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/medication-statement-category" />
+						<code value="community" />
+						<display value="Community" />
+					</coding>
+				</category>
+				<medicationCodeableConcept>
+					<coding>
+						<system value="https://dmd.nhs.uk" />
+						<code value="39733011000001106" />
+						<display value="Atorvastatin 20mg tablets" />
+					</coding>
+					<text value="Atorvastatin 20mg tablets" />
+				</medicationCodeableConcept>
+				<subject>
+					<reference value="urn:uuid:2fbf6025-fb60-4573-94d4-a36cb892b165" />
+					<display value="PIPER, Peter (NHS: 1192335566)" />
+				</subject>
+				<dateAsserted value="2022-01-10T10:00:00Z" />
+				<informationSource>
+					<reference value="urn:uuid:a87fd209-c426-45f4-92e1-dd5f77763b73" />
+					<display value="Dr Sally Foster (GMC: 9830222)" />
+				</informationSource>
+				<dosage>
+					<text value="Atorvastatin 20mg tablet - 1 tablet at night" />
+				</dosage>
+			</MedicationStatement>		
+		</resource>
+		<request>
+			<method value="POST" />
+			<url value="MedicationStatement" />			
+		</request>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:33488624-f072-4d3b-9b25-bda7f03027b1" />
+		<resource>
+			<MedicationStatement xmlns="http://hl7.org/fhir">
+				<text>
+					<status value="generated" />
+					<div xmlns="http://www.w3.org/1999/xhtml">Bisoprolol 1.25mg tablets - 1 tablet every morning</div>
+				</text>
+				<extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType">
+					<valueCoding>
+						<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
+						<code value="continuous" />
+						<display value="Continuous long term therapy" />
+					</valueCoding>
+				</extension>    
+				<status value="active" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/medication-statement-category" />
+						<code value="community" />
+						<display value="Community" />
+					</coding>
+				</category>
+				<medicationCodeableConcept>
+					<coding>
+						<system value="https://dmd.nhs.uk" />
+						<code value="318604001" />
+						<display value="Bisoprolol 1.25mg tablets" />
+					</coding>
+					<text value="Bisoprolol 1.25mg tablets" />
+				</medicationCodeableConcept>
+				<subject>
+					<reference value="urn:uuid:2fbf6025-fb60-4573-94d4-a36cb892b165" />
+					<display value="PIPER, Peter (NHS: 1192335566)" />
+				</subject>
+				<dateAsserted value="2022-01-10T10:00:00Z" />
+				<informationSource>
+					<reference value="urn:uuid:a87fd209-c426-45f4-92e1-dd5f77763b73" />
+					<display value="Dr Sally Foster (GMC: 9830222)" />
+				</informationSource>
+				<dosage>
+					<text value="Bisoprolol 1.25mg tablets - 1 tablet every morning" />
+				</dosage>
+			</MedicationStatement>
+		</resource>
+		<request>
+			<method value="POST" />
+			<url value="MedicationStatement" />					
+		</request>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:93a211fd-8da8-417d-a7c1-f910434faee2" />
+		<resource>
+			<MedicationStatement xmlns="http://hl7.org/fhir">
+				<text>
+					<status value="generated" />
+					<div xmlns="http://www.w3.org/1999/xhtml">Ramipril 2.5mg tablet - 1 tablet in the morning</div>
+				</text>
+				<extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType">
+					<valueCoding>
+						<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
+						<code value="continuous" />
+						<display value="Continuous long term therapy" />
+					</valueCoding>
+				</extension>    
+				<status value="active" />
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/medication-statement-category" />
+						<code value="community" />
+						<display value="Community" />
+					</coding>
+				</category>
+				<medicationCodeableConcept>
+					<coding>
+						<system value="https://dmd.nhs.uk" />
+						<code value="408050008" />
+						<display value="Ramipril 2.5mg tablets" />
+					</coding>
+					<text value="Ramipril 2.5mg tablets" />
+				</medicationCodeableConcept>
+				<subject>
+					<reference value="urn:uuid:2fbf6025-fb60-4573-94d4-a36cb892b165" />
+					<display value="PIPER, Peter (NHS: 1192335566)" />
+				</subject>
+				<dateAsserted value="2022-01-10T10:00:00Z" />
+				<informationSource>
+					<reference value="urn:uuid:a87fd209-c426-45f4-92e1-dd5f77763b73" />
+					<display value="Dr Sally Foster (GMC: 9830222)" />
+				</informationSource>
+				<dosage>
+					<text value="Ramipril 2.5mg tablet - 1 tablet in the morning" />
+				</dosage>
+			</MedicationStatement>
+		</resource>
+		<request>
+			<method value="POST" />
+			<url value="MedicationStatement" />					
+		</request>
+	</entry>
+</Bundle>
