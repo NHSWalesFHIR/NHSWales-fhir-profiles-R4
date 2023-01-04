@@ -35,12 +35,6 @@
       <min value="0" />
       <mustSupport value="true" />
     </element>
-    <element id="Patient.extension:patientReligion">
-      <path value="Patient.extension" />
-      <sliceName value="patientReligion" />
-      <min value="0" />
-      <mustSupport value="true" />
-    </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
       <requirements value="To be compliant, at least one identifier shall be provided to uniquely identify the patient." />
