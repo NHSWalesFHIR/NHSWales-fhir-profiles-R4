@@ -11,6 +11,32 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement" />
   <derivation value="constraint" />
   <differential>
+    <element id="MedicationStatement.extension">
+      <path value="MedicationStatement.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="MedicationStatement.extension:medicationCourseOfTherapyType">
+      <path value="MedicationStatement.extension" />
+      <sliceName value="medicationCourseOfTherapyType" />
+      <short value="An indicator of the overall pattern of medication administration" />
+      <definition value="An extension to carry an indicator of the overall pattern of medication administration at the MedicationStatement level." />
+      <comment value="An extension to carry an indicator of the overall pattern of medication administration at the MedicationStatement level." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType" />
+      </type>
+      <mustSupport value="true" />
+      <isModifier value="false" />
+    </element>
     <element id="MedicationStatement.subject">
       <path value="MedicationStatement.subject" />
       <type>
