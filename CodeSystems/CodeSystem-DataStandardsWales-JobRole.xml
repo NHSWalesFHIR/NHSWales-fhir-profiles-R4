@@ -5,7 +5,7 @@
 	<version value="1.0.0"/>
 	<name value="DataStandardsWalesJobRole"/>
 	<title value="Data Standards Wales Job Role"/>
-	<status value="draft"/>
+	<status value="retired"/>
 	<experimental value="true"/>
 	<date value="2021-08-04T00:00:00+01:00"/>
 	<publisher value="NHS Wales"/>
