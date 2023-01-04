@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-DataStandardsWales-Religion" />
+  <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Religion" />
+  <version value="1.0.0" />
+  <name value="DataStandardsWalesReligion" />
+  <title value="Data Standards Wales Religion" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2023-01-04" />
+  <publisher value="NHS Wales" />
+  <contact>
+    <name value="Data Standards" />
+    <telecom>
+      <system value="email" />
+      <value value="data.standards@wales.nhs.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="An extension to carry a code to indicate the patient's religion." />
+  <purpose value="An extension to carry a SNOMED code used indicate the patient's religion." />
+  <copyright value="© 2023 NHS Wales." />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Patient" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Religion" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <short value="Patient religion code" />
+      <definition value="A SNOMED code to indicate the patient's religion" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <description value="Religion code" />
+        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-Religion" />
+      </binding>
+    </element>
+  </differential>
+</StructureDefinition>
