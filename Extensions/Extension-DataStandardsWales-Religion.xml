@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-DataStandardsWales-Religion" />
-  <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Religion" />
+  <url value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-Religion" />
   <version value="1.0.0" />
   <name value="DataStandardsWalesReligion" />
   <title value="Data Standards Wales Religion" />

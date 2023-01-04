@@ -38,17 +38,20 @@
     <element id="Patient.extension:religion">
       <path value="Patient.extension" />
       <sliceName value="religion" />
-      <short value="The patient's religion" />
+      <short value="Patient religion" />
       <definition value="A code to indicate the patient's religion" />
-      <comment value="This extension is used to carry a code to indicate the patient'e religion. This field will contain a SNOMED code as described in the Core Reference Data Standards DSCN." />
       <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Religion" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-Religion" />
       </type>
       <mustSupport value="true" />
       <isModifier value="false" />
+    </element>
+    <element id="Patient.extension:religion.value[x]">
+      <path value="Patient.extension.value[x]" />
+      <min value="1" />
     </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
