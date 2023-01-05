@@ -37,6 +37,18 @@
       <mustSupport value="true" />
       <isModifier value="false" />
     </element>
+    <element id="MedicationStatement.status">
+      <path value="MedicationStatement.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.category">
+      <path value="MedicationStatement.category" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.medication[x]">
+      <path value="MedicationStatement.medication[x]" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationStatement.subject">
       <path value="MedicationStatement.subject" />
       <type>
@@ -44,6 +56,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.context">
       <path value="MedicationStatement.context" />
@@ -52,6 +65,11 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-EpisodeOfCare" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Encounter" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dateAsserted">
+      <path value="MedicationStatement.dateAsserted" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.informationSource">
       <path value="MedicationStatement.informationSource" />
@@ -63,6 +81,11 @@
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-PractitionerRole" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage">
+      <path value="MedicationStatement.dosage" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
