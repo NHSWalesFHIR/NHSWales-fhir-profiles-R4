@@ -15,19 +15,9 @@
       <path value="Medication.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
       </type>
-    </element>
-    <element id="Medication.identifier.assigner.identifier">
-      <path value="Medication.identifier.assigner.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <ordered value="false" />
-        <rules value="open" />
-      </slicing>
     </element>
   </differential>
 </StructureDefinition>
