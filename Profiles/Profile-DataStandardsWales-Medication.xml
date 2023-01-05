@@ -11,11 +11,12 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
   <derivation value="constraint" />
   <differential>
-    <element id="Medication.manufacturer">
-      <path value="Medication.manufacturer" />
+    <element id="Medication.identifier.assigner">
+      <path value="Medication.identifier.assigner" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.wales.nhs/StructureDefinition/DataStandardsWales-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
       </type>
     </element>
   </differential>
