@@ -11,6 +11,10 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
   <derivation value="constraint" />
   <differential>
+    <element id="DiagnosticReport.status">
+      <path value="DiagnosticReport.status" />
+      <mustSupport value="true" />
+    </element>
     <element id="DiagnosticReport.category">
       <path value="DiagnosticReport.category" />
       <slicing>
@@ -35,11 +39,62 @@
           <display value="Laboratory" />
         </coding>
       </fixedCodeableConcept>
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.category:LaboratorySlice.coding">
+      <path value="DiagnosticReport.category.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="DiagnosticReport.code">
+      <path value="DiagnosticReport.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.subject">
+      <path value="DiagnosticReport.subject" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.encounter">
+      <path value="DiagnosticReport.encounter" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.effective[x]">
+      <path value="DiagnosticReport.effective[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.performer">
+      <path value="DiagnosticReport.performer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.specimen">
+      <path value="DiagnosticReport.specimen" />
+      <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.result">
       <path value="DiagnosticReport.result" />
       <min value="1" />
       <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation-Lab" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/UKCore-Observation" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.imagingStudy">
+      <path value="DiagnosticReport.imagingStudy" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.presentedForm">
+      <path value="DiagnosticReport.presentedForm" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
