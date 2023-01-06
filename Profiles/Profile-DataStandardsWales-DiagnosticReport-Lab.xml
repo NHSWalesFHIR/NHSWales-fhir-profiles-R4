@@ -4,6 +4,7 @@
   <name value="DataStandardsWalesDiagnosticReportLab" />
   <title value="Data Standards Wales DiagnosticReport Profile for Laboratory Results" />
   <status value="draft" />
+  <date value="2023-01-06" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -17,39 +18,23 @@
     </element>
     <element id="DiagnosticReport.category">
       <path value="DiagnosticReport.category" />
-      <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="$this" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
       <min value="1" />
     </element>
-    <element id="DiagnosticReport.category:LaboratorySlice">
-      <path value="DiagnosticReport.category" />
-      <sliceName value="LaboratorySlice" />
+    <element id="DiagnosticReport.category.coding">
+      <path value="DiagnosticReport.category.coding" />
+      <min value="1" />
+    </element>
+    <element id="DiagnosticReport.category.coding:laboratory">
+      <path value="DiagnosticReport.category.coding" />
+      <sliceName value="laboratory" />
       <min value="1" />
       <max value="1" />
-      <fixedCodeableConcept>
-        <coding>
-          <system value="http://terminology.hl7.org/CodeSystem/v2-0074" />
-          <version value="2.5.0" />
-          <code value="LAB" />
-          <display value="Laboratory" />
-        </coding>
-      </fixedCodeableConcept>
+      <fixedCoding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0074" />
+        <code value="LAB" />
+        <display value="Laboratory" />
+      </fixedCoding>
       <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.category:LaboratorySlice.coding">
-      <path value="DiagnosticReport.category.coding" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="DiagnosticReport.code">
       <path value="DiagnosticReport.code" />
@@ -57,11 +42,20 @@
     </element>
     <element id="DiagnosticReport.subject">
       <path value="DiagnosticReport.subject" />
+      <short value="The subject of the report - which is always a patient for Laboratory Reports" />
+      <definition value="The subject of the report - which is always a patient for Laboratory Reports." />
       <min value="1" />
-      <mustSupport value="true" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
+      </type>
     </element>
     <element id="DiagnosticReport.encounter">
       <path value="DiagnosticReport.encounter" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Encounter" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.effective[x]">
@@ -70,30 +64,22 @@
     </element>
     <element id="DiagnosticReport.performer">
       <path value="DiagnosticReport.performer" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.specimen">
-      <path value="DiagnosticReport.specimen" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-CareTeam" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-PractitionerRole" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.result">
       <path value="DiagnosticReport.result" />
-      <min value="1" />
-      <max value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation-Lab" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation" />
-        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/UKCore-Observation" />
       </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.imagingStudy">
-      <path value="DiagnosticReport.imagingStudy" />
-      <mustSupport value="true" />
-    </element>
-    <element id="DiagnosticReport.presentedForm">
-      <path value="DiagnosticReport.presentedForm" />
       <mustSupport value="true" />
     </element>
   </differential>
