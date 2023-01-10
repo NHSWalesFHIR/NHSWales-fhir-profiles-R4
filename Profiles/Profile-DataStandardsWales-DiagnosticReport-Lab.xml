@@ -12,6 +12,10 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
   <derivation value="constraint" />
   <differential>
+    <element id="DiagnosticReport.identifier">
+      <path value="DiagnosticReport.identifier" />
+      <mustSupport value="true" />
+    </element>
     <element id="DiagnosticReport.status">
       <path value="DiagnosticReport.status" />
       <mustSupport value="true" />
@@ -61,6 +65,10 @@
     </element>
     <element id="DiagnosticReport.effective[x]">
       <path value="DiagnosticReport.effective[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="DiagnosticReport.issued">
+      <path value="DiagnosticReport.issued" />
       <mustSupport value="true" />
     </element>
     <element id="DiagnosticReport.performer">
