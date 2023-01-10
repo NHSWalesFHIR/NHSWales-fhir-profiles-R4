@@ -17,7 +17,7 @@
 			<use value="work"/>
 		</telecom>
 	</contact>	
-    <description value="Gender Identity is a person's sense of identification with either the male or female sex, as manifested in appearance, behaviour, and other aspects of a person's life."/>
+    <description value="Gender identity is a person's sense of identification with either the male or female sex, as manifested in appearance, behaviour, and other aspects of a person's life."/>
     <copyright value="&#169; 2020 NHS Wales."/>
     <caseSensitive value="true"/>
     <content value="complete"/>
