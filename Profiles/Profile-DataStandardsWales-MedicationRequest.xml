@@ -5,7 +5,7 @@
   <name value="DataStandardsWalesMedicationRequest" />
   <title value="Data Standards Wales MedicationRequest" />
   <status value="draft" />
-  <experimental value="true" />
+  <experimental value="false" />
   <publisher value="NHS Wales" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
