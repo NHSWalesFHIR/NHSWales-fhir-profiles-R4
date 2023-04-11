@@ -23,12 +23,6 @@
       </slicing>
       <min value="0" />
     </element>
-    <element id="Patient.extension:birthSex">
-      <path value="Patient.extension" />
-      <sliceName value="birthSex" />
-      <min value="0" />
-      <mustSupport value="true" />
-    </element>
     <element id="Patient.extension:ethnicCategory">
       <path value="Patient.extension" />
       <sliceName value="ethnicCategory" />
@@ -52,6 +46,17 @@
     <element id="Patient.extension:religion.value[x]">
       <path value="Patient.extension.value[x]" />
       <min value="1" />
+    </element>
+    <element id="Patient.extension:occupation">
+      <path value="Patient.extension" />
+      <sliceName value="occupation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-Occupation" />
+      </type>
+      <isModifier value="false" />
     </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
