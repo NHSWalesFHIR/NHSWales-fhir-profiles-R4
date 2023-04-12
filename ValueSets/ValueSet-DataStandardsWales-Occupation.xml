@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-Occupation" />
+  <name value="DataStandardsWalesOccupation" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ValueSet" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ValueSet" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ValueSet.title">
+      <path value="ValueSet.title" />
+      <fixedString value="Data Standards Wales Occupation" />
+    </element>
+    <element id="ValueSet.publisher">
+      <path value="ValueSet.publisher" />
+      <fixedString value="NHS Wales" />
+    </element>
+    <element id="ValueSet.contact.name">
+      <path value="ValueSet.contact.name" />
+      <fixedString value="Data Standards" />
+    </element>
+    <element id="ValueSet.contact.telecom.system">
+      <path value="ValueSet.contact.telecom.system" />
+      <fixedCode value="email" />
+    </element>
+    <element id="ValueSet.contact.telecom.value">
+      <path value="ValueSet.contact.telecom.value" />
+      <fixedString value="data.standards@wales.nhs.uk" />
+    </element>
+    <element id="ValueSet.description">
+      <path value="ValueSet.description" />
+      <fixedMarkdown value="A SNOMED CT code used to describe a person's occupation." />
+    </element>
+    <element id="ValueSet.copyright">
+      <path value="ValueSet.copyright" />
+      <fixedMarkdown value="© 2023 NHS Wales." />
+    </element>
+    <element id="ValueSet.compose.include.system">
+      <path value="ValueSet.compose.include.system" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="ValueSet.compose.include.filter.property">
+      <path value="ValueSet.compose.include.filter.property" />
+      <fixedCode value="constraint" />
+    </element>
+    <element id="ValueSet.compose.include.filter.op">
+      <path value="ValueSet.compose.include.filter.op" />
+      <fixedCode value="=" />
+    </element>
+    <element id="ValueSet.compose.include.filter.value">
+      <path value="ValueSet.compose.include.filter.value" />
+      <fixedString value="memberOf 999001571000000109" />
+    </element>
+    <element id="ValueSet.expansion.extension">
+      <path value="ValueSet.expansion.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="ValueSet.expansion.extension:myExtension">
+      <path value="ValueSet.expansion.extension" />
+      <sliceName value="myExtension" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/valueset-unclosed" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="ValueSet.expansion.extension:myExtension.value[x]">
+      <path value="ValueSet.expansion.extension.value[x]" />
+      <fixedBoolean value="true" />
+    </element>
+    <element id="ValueSet.expansion.offset">
+      <path value="ValueSet.expansion.offset" />
+      <fixedInteger value="0" />
+    </element>
+    <element id="ValueSet.expansion.parameter.name">
+      <path value="ValueSet.expansion.parameter.name" />
+      <fixedString value="version" />
+    </element>
+    <element id="ValueSet.expansion.parameter.value[x]">
+      <path value="ValueSet.expansion.parameter.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+      <type>
+        <code value="boolean" />
+      </type>
+      <type>
+        <code value="integer" />
+      </type>
+      <type>
+        <code value="decimal" />
+      </type>
+      <type>
+        <code value="uri" />
+        <profile value="http://snomed.info/sct|http://snomed.info/sct/999001571000000109/version/20230315" />
+      </type>
+      <type>
+        <code value="code" />
+      </type>
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

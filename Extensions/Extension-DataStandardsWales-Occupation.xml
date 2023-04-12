@@ -35,18 +35,16 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <short value="Patient occupation code" />
-      <definition value="A SNOMED code to indicate the patient's occupation" />
+      <short value="Person's occupation code" />
+      <definition value="A SNOMED CT code to indicate the person's occupation" />
       <type>
         <code value="CodeableConcept" />
       </type>
-      <fixedCodeableConcept>
-        <coding>
-          <system value="http://snomed.info/sct" />
-          <code value="999001571000000109" />
-          <display value="Occupation simple reference set (foundation metadata concept)" />
-        </coding>
-      </fixedCodeableConcept>
+      <binding>
+        <strength value="required" />
+        <description value="Occupation code" />
+        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-Occupation" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
