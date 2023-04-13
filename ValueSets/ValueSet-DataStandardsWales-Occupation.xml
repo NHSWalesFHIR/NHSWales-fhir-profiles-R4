@@ -2,7 +2,7 @@
 	<id value="DataStandardsWales-Occupation"/>
 	<url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-Occupation"/>
 	<version value="0.0.1"/>
-	<name value="DataStandardsWalesReligion"/>
+	<name value="DataStandardsWalesOccupation"/>
 	<title value="Data Standards Wales Occupation"/>
 	<status value="draft"/>
 	<date value="2023-04-13T00:00:00"/>
