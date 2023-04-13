@@ -1,55 +1,42 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="DataStandardsWales-Occupation"/>
-	<language value="en-GB"/>
-	<text>
-		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">
-			<h2>Data Standards Wales Occupation</h2>
-			<tt>https://fhir.nhs.wales/ValueSet/DataStandardsWales-Occupation</tt>
-			<p>A SNOMED CT code used to describe a person's occupation.</p>
-		</div>
-	</text>
 	<url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-Occupation"/>
-	<name value="DataStandardsWalesOccupation"/>
+	<version value="0.0.1"/>
+	<name value="DataStandardsWalesReligion"/>
 	<title value="Data Standards Wales Occupation"/>
 	<status value="draft"/>
+	<date value="2023-04-13T00:00:00"/>
 	<publisher value="NHS Wales"/>
 	<contact>
 		<name value="Data Standards"/>
 		<telecom>
 			<system value="email"/>
 			<value value="data.standards@wales.nhs.uk"/>
+			<use value="work"/>
 		</telecom>
 	</contact>
-	<description value="A SNOMED CT code used to describe a person's occupation."/>
+	<description value="A SNOMED code used to describe a patient's occupation."/>
 	<copyright value="© 2023 NHS Wales."/>
 	<compose>
 		<include>
 			<system value="http://snomed.info/sct"/>
-			<version value="http://snomed.info/sct/83821000000107/version/20201223"/>
-			<valueSet value="http://snomed.info/sct/83821000000107/version/20201223?fhir_vs=ecl/MemberOf999001571000000109"/>
+			<filter>
+				<property value="constraint"/>
+				<op value="="/>
+				<value value="memberOf 999001571000000109"/>
+			</filter>
 		</include>
 	</compose>
 	<expansion>
-		<identifier value="a580fc3b-f1f6-42b9-836c-c060f3a0b4b9"/>
+		<extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+			<valueBoolean value="true"/>
+		</extension>
 		<timestamp value="2023-04-12T21:53:58+10:00"/>
 		<total value="3679"/>
 		<offset value="0"/>
 		<parameter>
 			<name value="version"/>
 			<valueUri value="http://snomed.info/sct|http://snomed.info/sct/83821000000107/version/20201223"/>
-		</parameter>
-		<parameter>
-			<name value="displayLanguage"/>
-			<valueCode value="en-GB,en;q=0.9,en-US;q=0.8"/>
-		</parameter>
-		<parameter>
-			<name value="count"/>
-			<valueInteger value="2147483647"/>
-		</parameter>
-		<parameter>
-			<name value="offset"/>
-			<valueInteger value="0"/>
 		</parameter>
 		<contains>
 			<system value="http://snomed.info/sct"/>
