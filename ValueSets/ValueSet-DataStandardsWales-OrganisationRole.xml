@@ -1,0 +1,39 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="DataStandardsWales-OrganisationRole"/>
+	<url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-OrganisationRole"/>
+	<version value="0.0.1"/>
+    <name value="DataStandardsWalesOrganisationRole"/>
+	<title value="Data Standards Wales Organisation Role"/>
+	<status value="draft"/>
+	<date value="2023-04-13T00:00:00+01:00"/>
+	<publisher value="NHS Wales"/>
+	<contact>
+		<name value="Data Standards"/>
+		<telecom>
+			<system value="email"/>
+			<value value="data.standards@wales.nhs.uk"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="Organisation Role is the group type given to a particular set of institues."/>
+	<copyright value="© 2023 NHS Wales."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-OrganisationRole"/>
+		</include>
+	</compose>
+    <expansion>
+        <timestamp value="2022-06-20T14:49:00+01:00" />
+        <total value="1" />
+        <offset value="0" />
+        <parameter>
+            <name value="version" />
+            <valueUri value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-OrganisationRole|0.0.1" />
+        </parameter>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-OrganisationRole" />
+			<code value="0"/>
+			<display value="UNDER DEVELOPMENT"/>
+		</contains>	
+	</expansion>
+</ValueSet>
