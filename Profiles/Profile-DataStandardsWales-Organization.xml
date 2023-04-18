@@ -96,7 +96,7 @@
       <path value="Organization.type.coding.system" />
       <type>
         <code value="uri" />
-        <profile value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-OrganisationRole" />
+        <profile value="https://fhir.nhs.wales/CodeSystem/CodeSystem-DataStandardsWales-OrganisationRole" />
       </type>
     </element>
     <element id="Organization.name">

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="DataStandardsWales-OrganisationRole"/>
+	<url value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-OrganisationRole"/>
+	<version value="1.0.0"/>
+	<name value="DataStandardsWalesOrganisationRole"/>
+	<title value="Data Standards Wales Organisation Role"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2022-06-20T15:30:00+01:00"/>
+	<publisher value="NHS Wales"/>
+	<contact>
+		<name value="Data Standards"/>
+		<telecom>
+			<system value="email"/>
+			<value value="data.standards@wales.nhs.uk"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="Organisation role codes maintained by the Welsh Reference Data and Terminology Service (WRTS)"/>
+	<copyright value="&#169; 2020 NHS Wales."/>
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="A"/>
+		<display value="TO BE DEVELOPED"/>
+	</concept>
+</CodeSystem>
