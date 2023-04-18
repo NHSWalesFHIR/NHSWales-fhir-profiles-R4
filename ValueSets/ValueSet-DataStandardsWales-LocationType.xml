@@ -1,0 +1,26 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="DataStandardsWales-LocationType"/>
+	<url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-LocationType"/>
+	<version value="0.0.1"/>
+    <name value="LocationType"/>
+	<title value="Location Type"/>
+	<status value="draft"/>
+	<experimental value="true" />
+	<date value="2023-04-18T00:00:00"/>
+	<publisher value="NHS Wales"/>
+	<contact>
+		<name value="Data Standards"/>
+		<telecom>
+			<system value="email"/>
+			<value value="data.standards@wales.nhs.uk"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A set of location type codes"/>
+	<copyright value="&#169; 2020 NHS Wales."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-LocationType"/>
+		</include>
+	</compose>
+</ValueSet>
