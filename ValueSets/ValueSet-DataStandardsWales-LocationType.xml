@@ -17,10 +17,24 @@
 		</telecom>
 	</contact>
 	<description value="A set of location type codes"/>
-	<copyright value="&#169; 2020 NHS Wales."/>
+	<copyright value="&#169; 2023 NHS Wales."/>
 	<compose>
 		<include>
 			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-LocationType"/>
 		</include>
 	</compose>
+    <expansion>
+        <timestamp value="2023-14-18T00:00:00" />
+        <total value="1" />
+        <offset value="0" />
+        <parameter>
+            <name value="version" />
+            <valueUri value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-LocationType|0.0.1" />
+        </parameter>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-LocationType" />
+			<code value="TODO"/>
+			<display value="TODO TO BE POPULATED"/>
+		</contains>	
+	</expansion>
 </ValueSet>

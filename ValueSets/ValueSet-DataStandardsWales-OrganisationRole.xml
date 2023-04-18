@@ -23,4 +23,18 @@
 			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-OrganisationRole"/>
 		</include>
 	</compose>
+    <expansion>
+        <timestamp value="2023-14-18T00:00:00" />
+        <total value="1" />
+        <offset value="0" />
+        <parameter>
+            <name value="version" />
+            <valueUri value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-OrganisationRole|0.0.1" />
+        </parameter>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-OrganisationRole" />
+			<code value="TODO"/>
+			<display value="TODO TO BE POPULATED"/>
+		</contains>	
+	</expansion>
 </ValueSet>
