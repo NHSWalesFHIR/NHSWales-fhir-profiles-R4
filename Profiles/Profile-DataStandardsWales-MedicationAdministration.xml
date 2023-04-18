@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-MedicationAdministration" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationAdministration" />
@@ -13,6 +14,18 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
   <derivation value="constraint" />
   <differential>
+    <element id="MedicationAdministration.identifier">
+      <path value="MedicationAdministration.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.identifier.system">
+      <path value="MedicationAdministration.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationAdministration.identifier.value">
+      <path value="MedicationAdministration.identifier.value" />
+      <min value="1" />
+    </element>
     <element id="MedicationAdministration.identifier.assigner">
       <path value="MedicationAdministration.identifier.assigner" />
       <type>
@@ -24,7 +37,7 @@
       <path value="MedicationAdministration.partOf" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-MedicationAdministration" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
       </type>
     </element>
@@ -35,12 +48,36 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+    <element id="MedicationAdministration.status">
+      <path value="MedicationAdministration.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.statusReason">
+      <path value="MedicationAdministration.statusReason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.statusReason.coding.system">
+      <path value="MedicationAdministration.statusReason.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationAdministration.statusReason.coding.code">
+      <path value="MedicationAdministration.statusReason.coding.code" />
+      <min value="1" />
+    </element>
     <element id="MedicationAdministration.category">
       <path value="MedicationAdministration.category" />
       <binding>
         <strength value="extensible" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationAdministrationCategory" />
       </binding>
+    </element>
+    <element id="MedicationAdministration.category.coding.system">
+      <path value="MedicationAdministration.category.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationAdministration.category.coding.code">
+      <path value="MedicationAdministration.category.coding.code" />
+      <min value="1" />
     </element>
     <element id="MedicationAdministration.medication[x]">
       <path value="MedicationAdministration.medication[x]" />
@@ -49,8 +86,9 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Medication" />
       </type>
+      <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
@@ -60,9 +98,19 @@
       <path value="MedicationAdministration.subject" />
       <type>
         <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Patient" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.subject.identifier.system">
+      <path value="MedicationAdministration.subject.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/Id/nhs-number" />
+    </element>
+    <element id="MedicationAdministration.subject.identifier.value">
+      <path value="MedicationAdministration.subject.identifier.value" />
+      <min value="1" />
     </element>
     <element id="MedicationAdministration.subject.identifier.assigner">
       <path value="MedicationAdministration.subject.identifier.assigner" />
@@ -75,7 +123,7 @@
       <path value="MedicationAdministration.context" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Encounter" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-EpisodeOfCare" />
       </type>
     </element>
@@ -93,16 +141,38 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
     </element>
+    <element id="MedicationAdministration.effective[x]">
+      <path value="MedicationAdministration.effective[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.performer">
+      <path value="MedicationAdministration.performer" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationAdministration.performer.actor">
       <path value="MedicationAdministration.performer.actor" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-PractitionerRole" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Patient" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
       </type>
+    </element>
+    <element id="MedicationAdministration.performer.actor.reference">
+      <path value="MedicationAdministration.performer.actor.reference" />
+      <min value="1" />
+    </element>
+    <element id="MedicationAdministration.performer.actor.identifier.system">
+      <path value="MedicationAdministration.performer.actor.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationAdministration.performer.actor.identifier.value">
+      <path value="MedicationAdministration.performer.actor.identifier.value" />
+      <min value="1" />
     </element>
     <element id="MedicationAdministration.performer.actor.identifier.assigner">
       <path value="MedicationAdministration.performer.actor.identifier.assigner" />
@@ -115,9 +185,9 @@
       <path value="MedicationAdministration.reasonReference" />
       <type>
         <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-DiagnosticReport" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
       </type>
     </element>
     <element id="MedicationAdministration.reasonReference.identifier.assigner">
@@ -131,8 +201,9 @@
       <path value="MedicationAdministration.request" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-MedicationRequest" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.request.identifier.assigner">
       <path value="MedicationAdministration.request.identifier.assigner" />
@@ -159,14 +230,18 @@
       <path value="MedicationAdministration.note.author[x]" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Organization" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
       </type>
       <type>
         <code value="string" />
       </type>
+    </element>
+    <element id="MedicationAdministration.dosage">
+      <path value="MedicationAdministration.dosage" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.site">
       <path value="MedicationAdministration.dosage.site" />
