@@ -1,0 +1,40 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="DataStandardsWales-MedicationRequestStatusReason"/>
+	<url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-MedicationRequestStatusReason"/>
+	<version value="0.0.1"/>
+    <name value="MedicationRequestStatusReason"/>
+	<title value="Medication Request Status Reason"/>
+	<status value="draft"/>
+	<date value="2023-04-18T00:00:00"/>
+	<experimental value="true"/>
+	<publisher value="NHS Wales"/>
+	<contact>
+		<name value="Data Standards Wales"/>
+		<telecom>
+			<system value="email"/>
+			<value value="data.standards@wales.nhs.uk"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A set of Vaccine codes"/>
+	<copyright value="&#169; 2023 NHS Wales."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MedicationRequestStatusReason"/>
+		</include>
+	</compose>
+   <expansion>
+        <timestamp value="2023-04-18T00:00:00" />
+        <total value="1" />
+        <offset value="0" />
+        <parameter>
+            <name value="version" />
+            <valueUri value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MedicationRequestStatusReason|0.0.1" />
+        </parameter>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MedicationRequestStatusReason" />
+			<code value="TODO"/>
+			<display value="TODO TO BE POPULATED"/>
+		</contains>	
+	</expansion>
+</ValueSet>

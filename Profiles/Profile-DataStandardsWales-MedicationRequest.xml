@@ -48,11 +48,33 @@
     </element>
     <element id="MedicationRequest.status">
       <path value="MedicationRequest.status" />
+      <short value="active | cancelled | stopped" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.statusReason">
       <path value="MedicationRequest.statusReason" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-MedicationRequestStatusReason" />
+      </binding>
+    </element>
+    <element id="MedicationRequest.statusReason.coding">
+      <path value="MedicationRequest.statusReason.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="MedicationRequest.statusReason.coding.system">
+      <path value="MedicationRequest.statusReason.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.statusReason.coding.code">
+      <path value="MedicationRequest.statusReason.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.statusReason.coding.display">
+      <path value="MedicationRequest.statusReason.coding.display" />
+      <min value="1" />
     </element>
     <element id="MedicationRequest.intent">
       <path value="MedicationRequest.intent" />
@@ -60,6 +82,8 @@
     </element>
     <element id="MedicationRequest.category">
       <path value="MedicationRequest.category" />
+      <min value="1" />
+      <max value="1" />
       <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
@@ -88,6 +112,7 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Medication" />
+        <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
       <binding>
@@ -103,6 +128,19 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.subject.reference">
+      <path value="MedicationRequest.subject.reference" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.subject.identifier.system">
+      <path value="MedicationRequest.subject.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.uk/Id/nhs-number" />
+    </element>
+    <element id="MedicationRequest.subject.identifier.value">
+      <path value="MedicationRequest.subject.identifier.value" />
+      <min value="1" />
     </element>
     <element id="MedicationRequest.subject.identifier.assigner">
       <path value="MedicationRequest.subject.identifier.assigner" />
@@ -134,10 +172,12 @@
     </element>
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.requester">
       <path value="MedicationRequest.requester" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
@@ -148,6 +188,10 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.requester.reference">
+      <path value="MedicationRequest.requester.reference" />
+      <min value="1" />
     </element>
     <element id="MedicationRequest.requester.identifier.assigner">
       <path value="MedicationRequest.requester.identifier.assigner" />
@@ -246,9 +290,22 @@
       <definition value="The description of the course of therapy for a medication request." />
       <mustSupport value="true" />
       <binding>
-        <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCourseOfTherapy" />
+        <strength value="required" />
+        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-MedicationRequestCourseOfTherapyType" />
       </binding>
+    </element>
+    <element id="MedicationRequest.courseOfTherapyType.coding">
+      <path value="MedicationRequest.courseOfTherapyType.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="MedicationRequest.courseOfTherapyType.coding.system">
+      <path value="MedicationRequest.courseOfTherapyType.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationRequest.courseOfTherapyType.coding.code">
+      <path value="MedicationRequest.courseOfTherapyType.coding.code" />
+      <min value="1" />
     </element>
     <element id="MedicationRequest.insurance.identifier.assigner">
       <path value="MedicationRequest.insurance.identifier.assigner" />
@@ -277,38 +334,17 @@
     </element>
     <element id="MedicationRequest.dosageInstruction">
       <path value="MedicationRequest.dosageInstruction" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Dosage" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Dosage" />
+      </type>
       <mustSupport value="true" />
-    </element>
-    <element id="MedicationRequest.dosageInstruction.asNeeded[x]">
-      <path value="MedicationRequest.dosageInstruction.asNeeded[x]" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationPrecondition" />
-      </binding>
-    </element>
-    <element id="MedicationRequest.dosageInstruction.site">
-      <path value="MedicationRequest.dosageInstruction.site" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
-      </binding>
-    </element>
-    <element id="MedicationRequest.dosageInstruction.route">
-      <path value="MedicationRequest.dosageInstruction.route" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" />
-      </binding>
-    </element>
-    <element id="MedicationRequest.dosageInstruction.method">
-      <path value="MedicationRequest.dosageInstruction.method" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod" />
-      </binding>
     </element>
     <element id="MedicationRequest.dispenseRequest">
       <path value="MedicationRequest.dispenseRequest" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.dispenseRequest.performer">

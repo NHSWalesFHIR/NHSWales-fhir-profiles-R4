@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
-	<id value="DataStandardsWales-ImmunizationExplanationReason"/>
-	<url value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-ImmunizationExplanationReason"/>
+	<id value="DataStandardsWales-MedicationDispenseType"/>
+	<url value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MedicationDispenseType"/>
 	<version value="0.0.1"/>
-	<name value="DataStandardsWalesImmunizationExplanationReason"/>
-	<title value="Data Standards Wales Immunization Explanation Reason"/>
+	<name value="DataStandardsWalesMedicationDispenseType"/>
+	<title value="Data Standards Wales Medication Dispense Type"/>
 	<status value="draft"/>
 	<experimental value="true"/>
 	<date value="2023-04-18T00:00:00"/>

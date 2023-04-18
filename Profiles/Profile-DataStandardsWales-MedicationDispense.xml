@@ -16,7 +16,17 @@
   <differential>
     <element id="MedicationDispense.identifier">
       <path value="MedicationDispense.identifier" />
+      <min value="1" />
+      <max value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.identifier.system">
+      <path value="MedicationDispense.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.identifier.value">
+      <path value="MedicationDispense.identifier.value" />
+      <min value="1" />
     </element>
     <element id="MedicationDispense.identifier.assigner">
       <path value="MedicationDispense.identifier.assigner" />
@@ -45,7 +55,26 @@
     </element>
     <element id="MedicationDispense.statusReason[x]">
       <path value="MedicationDispense.statusReason[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
       <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.statusReason[x].coding.system">
+      <path value="MedicationDispense.statusReason[x].coding.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.statusReason[x].coding.code">
+      <path value="MedicationDispense.statusReason[x].coding.code" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.category.coding.system">
+      <path value="MedicationDispense.category.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.category.coding.code">
+      <path value="MedicationDispense.category.coding.code" />
+      <min value="1" />
     </element>
     <element id="MedicationDispense.medication[x]">
       <path value="MedicationDispense.medication[x]" />
@@ -64,12 +93,21 @@
     </element>
     <element id="MedicationDispense.subject">
       <path value="MedicationDispense.subject" />
+      <min value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.subject.identifier.system">
+      <path value="MedicationDispense.subject.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.subject.identifier.value">
+      <path value="MedicationDispense.subject.identifier.value" />
+      <min value="1" />
     </element>
     <element id="MedicationDispense.subject.identifier.assigner">
       <path value="MedicationDispense.subject.identifier.assigner" />
@@ -102,6 +140,8 @@
     </element>
     <element id="MedicationDispense.performer">
       <path value="MedicationDispense.performer" />
+      <min value="1" />
+      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.performer.actor">
@@ -115,6 +155,18 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
       </type>
+    </element>
+    <element id="MedicationDispense.performer.actor.reference">
+      <path value="MedicationDispense.performer.actor.reference" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.performer.actor.identifier.system">
+      <path value="MedicationDispense.performer.actor.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.performer.actor.identifier.value">
+      <path value="MedicationDispense.performer.actor.identifier.value" />
+      <min value="1" />
     </element>
     <element id="MedicationDispense.performer.actor.identifier.assigner">
       <path value="MedicationDispense.performer.actor.identifier.assigner" />
@@ -130,6 +182,14 @@
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
       </type>
     </element>
+    <element id="MedicationDispense.location.identifier.system">
+      <path value="MedicationDispense.location.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.location.identifier.value">
+      <path value="MedicationDispense.location.identifier.value" />
+      <min value="1" />
+    </element>
     <element id="MedicationDispense.location.identifier.assigner">
       <path value="MedicationDispense.location.identifier.assigner" />
       <type>
@@ -137,13 +197,25 @@
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
       </type>
     </element>
+    <element id="MedicationDispense.location.display">
+      <path value="MedicationDispense.location.display" />
+      <min value="1" />
+    </element>
     <element id="MedicationDispense.authorizingPrescription">
       <path value="MedicationDispense.authorizingPrescription" />
+      <min value="1" />
+      <max value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationRequest" />
+        <aggregation value="contained" />
+        <aggregation value="referenced" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.authorizingPrescription.reference">
+      <path value="MedicationDispense.authorizingPrescription.reference" />
+      <min value="1" />
     </element>
     <element id="MedicationDispense.authorizingPrescription.identifier.assigner">
       <path value="MedicationDispense.authorizingPrescription.identifier.assigner" />
@@ -156,13 +228,38 @@
       <path value="MedicationDispense.type" />
       <mustSupport value="true" />
       <binding>
-        <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationSupplyType" />
+        <strength value="required" />
+        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-MedicationDispenseType" />
       </binding>
+    </element>
+    <element id="MedicationDispense.type.coding.system">
+      <path value="MedicationDispense.type.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.type.coding.code">
+      <path value="MedicationDispense.type.coding.code" />
+      <min value="1" />
     </element>
     <element id="MedicationDispense.quantity">
       <path value="MedicationDispense.quantity" />
+      <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="MedicationDispense.quantity.value">
+      <path value="MedicationDispense.quantity.value" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.quantity.unit">
+      <path value="MedicationDispense.quantity.unit" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.quantity.system">
+      <path value="MedicationDispense.quantity.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.quantity.code">
+      <path value="MedicationDispense.quantity.code" />
+      <min value="1" />
     </element>
     <element id="MedicationDispense.daysSupply">
       <path value="MedicationDispense.daysSupply" />
@@ -192,6 +289,8 @@
     </element>
     <element id="MedicationDispense.receiver">
       <path value="MedicationDispense.receiver" />
+      <min value="1" />
+      <max value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
