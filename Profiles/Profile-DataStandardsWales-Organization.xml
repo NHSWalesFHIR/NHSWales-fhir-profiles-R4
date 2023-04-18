@@ -92,13 +92,6 @@
         <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-OrganisationRole" />
       </binding>
     </element>
-    <element id="Organization.type.coding.system">
-      <path value="Organization.type.coding.system" />
-      <type>
-        <code value="uri" />
-        <profile value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-OrganisationRole" />
-      </type>
-    </element>
     <element id="Organization.name">
       <path value="Organization.name" />
       <definition value="A name associated with the organization (e.g. ODS name)." />
