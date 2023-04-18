@@ -1,15 +1,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
 	<id value="DataStandardsWales-ReasonImmunizationNotAdministered"/>
 	<url value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-ReasonImmunizationNotAdministered"/>
-	<version value="1.0.0"/>
+	<version value="0.0.1"/>
 	<name value="DataStandardsWalesReasonImmunizationNotAdministered"/>
 	<title value="Data Standards Wales Reason Immunization Not Administered"/>
 	<status value="draft"/>
 	<experimental value="true"/>
-	<date value="2022-03-10T10:41:00"/>
+	<date value="2023-04-18T00:00:00"/>
 	<publisher value="NHS Wales"/>
 	<contact>
-		<name value="Data Standards"/>	
+		<name value="Data Standards Wales"/>	
 		<telecom>
 			<system value="email"/>
 			<value value="data.standards@wales.nhs.uk"/>

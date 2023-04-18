@@ -1,14 +1,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
 	<id value="DataStandardsWales-ReasonImmunizationNotAdministered"/>
 	<url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-ReasonImmunizationNotAdministered"/>
-	<version value="1.0.0"/>
+	<version value="0.0.1"/>
     <name value="ReasonImmunizationNotAdministered"/>
 	<title value="Reason Immunization Not Administered"/>
 	<status value="draft"/>
-	<date value="2022-03-10T10:41:00"/>
+	<experimental value="true"/>
+	<date value="2023-04-18T00:00:00"/>
 	<publisher value="NHS Wales"/>
 	<contact>
-		<name value="Data Standards"/>
+		<name value="Data Standards Wales"/>
 		<telecom>
 			<system value="email"/>
 			<value value="data.standards@wales.nhs.uk"/>
@@ -16,10 +17,24 @@
 		</telecom>
 	</contact>
 	<description value="A set of ReasonImmunizationNotAdministered codes"/>
-	<copyright value="&#169; 2020 NHS Wales."/>
+	<copyright value="&#169; 2023 NHS Wales."/>
 	<compose>
 		<include>
 			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-ReasonImmunizationNotAdministered"/>
 		</include>
 	</compose>
+   <expansion>
+        <timestamp value="2023-04-18T00:00:00" />
+        <total value="1" />
+        <offset value="0" />
+        <parameter>
+            <name value="version" />
+            <valueUri value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-ReasonImmunizationNotAdministered|0.0.1" />
+        </parameter>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-ReasonImmunizationNotAdministered" />
+			<code value="TODO"/>
+			<display value="TODO TO BE POPULATED"/>
+		</contains>	
+	</expansion>
 </ValueSet>
