@@ -1,0 +1,143 @@
+{
+  "resourceType": "ValueSet",
+  "id": "DataStandardsWales-Title",
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2023-04-19T11:20:37.627+00:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Data Standards Wales Title</h2><tt>https://fhir.nhs.wales/ValueSet/DataStandardsWalesTitle</tt></div>"
+  },
+  "url": "https://fhir.nhs.wales/ValueSet/DataStandardsWalesTitle",
+  "version": "1.0",
+  "name": "DataStandardsWalesTitle",
+  "title": "Data Standards Wales Title",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title",
+        "version": "3.0",
+        "concept": [
+          {
+            "code": "Admr",
+            "display": "Admiral"
+          },
+          {
+            "code": "Baron",
+            "display": "Baron"
+          },
+          {
+            "code": "Brig",
+            "display": "Brigadier"
+          },
+          {
+            "code": "Bshp",
+            "display": "Bishop"
+          },
+          {
+            "code": "Can",
+            "display": "Canon"
+          },
+          {
+            "code": "Capt",
+            "display": "Captain"
+          },
+          {
+            "code": "Col",
+            "display": "Colonel"
+          },
+          {
+            "code": "Dame",
+            "display": "Dame"
+          },
+          {
+            "code": "Dr",
+            "display": "Doctor"
+          },
+          {
+            "code": "Ftr",
+            "display": "Father"
+          },
+          {
+            "code": "Lady",
+            "display": "Lady"
+          },
+          {
+            "code": "Lord",
+            "display": "Lord"
+          },
+          {
+            "code": "Miss",
+            "display": "Miss"
+          },
+          {
+            "code": "Mjr",
+            "display": "Major"
+          },
+          {
+            "code": "Mr",
+            "display": "Mr"
+          },
+          {
+            "code": "Mrs",
+            "display": "Mrs"
+          },
+          {
+            "code": "Ms",
+            "display": "Ms"
+          },
+          {
+            "code": "Mstr",
+            "display": "Master"
+          },
+          {
+            "code": "Mx",
+            "display": "Mx"
+          },
+          {
+            "code": "Prof",
+            "display": "Professor"
+          },
+          {
+            "code": "Rev",
+            "display": "Reverend"
+          },
+          {
+            "code": "Sgt",
+            "display": "Sergeant"
+          },
+          {
+            "code": "Sir",
+            "display": "Sir"
+          },
+          {
+            "code": "Sstr",
+            "display": "Sister"
+          }
+        ]
+      },
+      {
+        "system": "https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title",
+        "version": "3.0",
+        "filter": [
+          {
+            "property": "Status",
+            "op": "=",
+            "value": "active"
+          }
+        ]
+      }
+    ]
+  }
+}
