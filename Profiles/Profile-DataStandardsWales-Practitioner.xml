@@ -78,6 +78,20 @@
       <path value="Practitioner.identifier.system" />
       <fixedUri value="https://fhir.hl7.org.uk/Id/nmc-number" />
     </element>
+    <element id="Practitioner.identifier:gphcCode">
+      <path value="Practitioner.identifier" />
+      <sliceName value="gphcCode" />
+      <short value="GPhC Code" />
+      <definition value="General Pharmaceutical Council identifier code" />
+      <max value="1" />
+    </element>
+    <element id="Practitioner.identifier:sdsUserId">
+      <path value="Practitioner.identifier" />
+      <sliceName value="sdsUserId" />
+      <short value="SDS User ID" />
+      <definition value="Spine Directory Service User ID" />
+      <max value="1" />
+    </element>
     <element id="Practitioner.identifier:nadexIdentifier">
       <path value="Practitioner.identifier" />
       <sliceName value="nadexIdentifier" />
