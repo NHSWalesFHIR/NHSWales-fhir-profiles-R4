@@ -85,12 +85,30 @@
       <definition value="General Pharmaceutical Council identifier code" />
       <max value="1" />
     </element>
+    <element id="Practitioner.identifier:gphcCode.system">
+      <path value="Practitioner.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.hl7.org.uk/Id/gphc-number" />
+    </element>
+    <element id="Practitioner.identifier:gphcCode.value">
+      <path value="Practitioner.identifier.value" />
+      <min value="1" />
+    </element>
     <element id="Practitioner.identifier:sdsUserId">
       <path value="Practitioner.identifier" />
       <sliceName value="sdsUserId" />
       <short value="SDS User ID" />
       <definition value="Spine Directory Service User ID" />
       <max value="1" />
+    </element>
+    <element id="Practitioner.identifier:sdsUserId.system">
+      <path value="Practitioner.identifier.system" />
+      <min value="1" />
+      <fixedUri value="&quot;https://fhir.nhs.uk/Id/sds-user-id&quot;" />
+    </element>
+    <element id="Practitioner.identifier:sdsUserId.value">
+      <path value="Practitioner.identifier.value" />
+      <min value="1" />
     </element>
     <element id="Practitioner.identifier:nadexIdentifier">
       <path value="Practitioner.identifier" />
