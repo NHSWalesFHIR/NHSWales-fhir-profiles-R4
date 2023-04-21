@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="DataStandardsWales-Dosage" />
+  <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Dosage" />
+  <name value="DataStandardsWalesDosage" />
+  <status value="draft" />
+  <experimental value="true" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <type value="Dosage" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Dosage" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Dosage.sequence">
+      <path value="Dosage.sequence" />
+      <short value="Multi-sequence dosage instructions." />
+      <definition value="TBD" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Dosage.text">
+      <path value="Dosage.text" />
+      <short value="The complete dosage instruction as a human readable string." />
+      <definition value="TBD" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Dosage.additionalInstruction">
+      <path value="Dosage.additionalInstruction" />
+      <short value="Additional dosage instructions that can be either SNOMED-CT coded terms or free-text instructions." />
+      <definition value="TBD" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Dosage.patientInstruction">
+      <path value="Dosage.patientInstruction" />
+      <definition value="TBD" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Dosage.timing">
+      <path value="Dosage.timing" />
+      <definition value="TBD" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Dosage.timing.repeat.bounds[x]">
+      <path value="Dosage.timing.repeat.bounds[x]" />
+      <type>
+        <code value="Duration" />
+      </type>
+      <type>
+        <code value="Range" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Range" />
+      </type>
+      <type>
+        <code value="Period" />
+      </type>
+    </element>
+    <element id="Dosage.asNeeded[x]">
+      <path value="Dosage.asNeeded[x]" />
+      <definition value="TBD" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Dosage.site">
+      <path value="Dosage.site" />
+      <definition value="TBD" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Dosage.route">
+      <path value="Dosage.route" />
+      <definition value="TBD" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Dosage.method">
+      <path value="Dosage.method" />
+      <definition value="TBD" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Dosage.doseAndRate">
+      <path value="Dosage.doseAndRate" />
+      <definition value="TBD" />
+    </element>
+    <element id="Dosage.doseAndRate.dose[x]">
+      <path value="Dosage.doseAndRate.dose[x]" />
+      <type>
+        <code value="Range" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Range" />
+      </type>
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Dosage.maxDosePerPeriod">
+      <path value="Dosage.maxDosePerPeriod" />
+      <definition value="TBD" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Dosage.maxDosePerAdministration">
+      <path value="Dosage.maxDosePerAdministration" />
+      <definition value="TBD" />
+    </element>
+    <element id="Dosage.maxDosePerLifetime">
+      <path value="Dosage.maxDosePerLifetime" />
+      <definition value="TBD" />
+    </element>
+  </differential>
+</StructureDefinition>
