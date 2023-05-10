@@ -32,29 +32,6 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
   <derivation value="constraint" />
   <differential>
-    <element id="Organization.extension">
-      <path value="Organization.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
-    <element id="Organization.extension:hopitalClassification">
-      <path value="Organization.extension" />
-      <sliceName value="hopitalClassification" />
-      <short value="Hospital classification extension" />
-      <definition value="An extension to record the classification of a hospital as recorded by the Welsh Reference Data Service" />
-      <comment value="This extension only applies to Wales Organizations that are hospitals" />
-      <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-HospitalClassification" />
-      </type>
-    </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier" />
       <comment value="Identifiers for the organization SHOULD be populated if the data exists" />
