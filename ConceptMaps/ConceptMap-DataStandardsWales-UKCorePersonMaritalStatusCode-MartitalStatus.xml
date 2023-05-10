@@ -1,0 +1,170 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+    <id value="DataStandardsWales-UKCorePersonMaritalStatusCode-MartitalStatus"/>
+    <url value="https://fhir.standards.wales/ConceptMap/DataStandardsWales-UKCorePersonMaritalStatusCode-MartitalStatus"/>
+    <version value="0.2"/>
+    <name value="DataStandardsWalesUKCorePersonMaritalStatusCodeMartitalStatus"/>
+    <title value="Concept map UK Core Marital Status to Data Standards Wales Marital Status"/>
+    <status value="draft"/>
+    <description value="Maps concepts from UK Core Marital Status codes to Data Standards Wales Marital Status codes" />      
+    <sourceUri value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode"/>
+    <targetUri value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-MaritalStatus"/>    
+    <group>
+        <source value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>        
+        <target value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MaritalStatus"/>        
+        <element>
+            <code value="A"/>
+            <display value="Annulled"/>
+            <target>
+                <equivalence value="unmatched"/>
+            </target>
+        </element>
+        <element>
+            <code value="D"/>
+            <display value="Divorced"/>
+            <target>
+                <code value="31"/>
+                <display value="Divorced"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+        <element>
+            <code value="I"/>
+            <display value="Interlocutory"/>
+            <target>
+                <equivalence value="unmatched"/>
+            </target>
+        </element>
+        <element>
+            <code value="L"/>
+            <display value="Legally Separated"/>
+            <target>
+                <code value="51"/>
+                <display value="Separated"/>
+                <equivalence value="inexact"/>
+            </target>
+        </element>
+        <element>
+            <code value="M"/>
+            <display value="Married"/>
+            <target>
+                <code value="21"/>
+                <display value="Married"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+        <element>
+            <code value="P"/>
+            <display value="Polygamous"/>
+            <target>
+                <equivalence value="unmatched"/>
+            </target>
+        </element>
+        <element>
+            <code value="S"/>
+            <display value="Never Married"/>
+            <target>
+                <code value="11"/>
+                <display value="Single"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+        <element>
+            <code value="T"/>
+            <display value="Domestic partner"/>
+            <target>
+                <code value="12"/>
+                <display value="Cohabiting"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+        <element>
+            <code value="U"/>
+            <display value="unmarried"/>
+            <target>
+                <code value="11"/>
+                <display value="Single"/>
+                <equivalence value="inexact"/>
+            </target>
+        </element>
+        <element>
+            <code value="W"/>
+            <display value="Widowed"/>
+            <target>
+                <code value="41"/>
+                <display value="Widowed"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+    </group>    
+    <group>
+        <source value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusEngland"/>        
+        <target value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MaritalStatus"/>        
+        <element>
+            <code value="M"/>
+            <display value="Married/Civil Partner"/>
+           <target>
+                <code value="21"/>
+                <display value="Married"/>
+                <equivalence value="inexact"/>
+            </target>
+        </element>
+        <element>
+            <code value="D"/>
+            <display value="Divorced/Person whose Civil Partnership has been dissolved"/>
+            <target>
+                <code value="31"/>
+                <display value="Divorced"/>
+                <equivalence value="inexact"/>
+            </target>
+        </element>
+        <element>
+            <code value="W"/>
+            <display value="Widowed/Surviving Civil Partner"/>
+            <target>
+                <code value="41"/>
+                <display value="Widowed"/>
+                <equivalence value="inexact"/>
+            </target>
+        </element>
+        <element>
+            <code value="N"/>
+            <display value="Not disclosed"/>
+            <target>
+                <code value="91"/>
+                <display value="Not disclosed or unknown"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+        <element>
+            <code value="P"/>
+            <display value="Separated"/>
+            <target>
+                <code value="51"/>
+                <display value="Separated"/>			
+                <equivalence value="equal"/>
+            </target>
+        </element>
+        <element>
+            <code value="8"/>
+            <display value="Not applicable"/>
+            <target>
+                <code value="91"/>
+                <display value="Not disclosed or unknown"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+    </group>    
+    <group>
+        <source value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>        
+        <target value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MaritalStatus"/>        
+        <element>
+            <code value="UNK"/>
+            <display value="unknown"/>
+           <target>
+                <code value="91"/>
+                <display value="Not disclosed or unknown"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>        
+    </group> 
+</ConceptMap>
