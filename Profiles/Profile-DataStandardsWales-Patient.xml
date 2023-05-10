@@ -231,7 +231,7 @@
     <element id="Patient.name.prefix">
       <path value="Patient.name.prefix" />
       <binding>
-        <strength value="required" />
+        <strength value="preferred" />
         <description value="Data Standards Wales Title" />
         <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWalesTitle" />
       </binding>
