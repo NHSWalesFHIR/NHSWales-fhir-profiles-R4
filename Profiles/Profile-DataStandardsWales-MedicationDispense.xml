@@ -229,7 +229,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-MedicationDispenseType" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationSupplyType" />
       </binding>
     </element>
     <element id="MedicationDispense.type.coding.system">

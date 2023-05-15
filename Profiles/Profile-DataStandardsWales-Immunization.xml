@@ -54,7 +54,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-VaccinationProcedure" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-VaccinationProcedure" />
       </binding>
     </element>
     <element id="Immunization.identifier">
@@ -85,7 +85,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
-        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-ReasonImmunizationNotAdministered" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReasonImmunizationNotAdministered" />
       </binding>
     </element>
     <element id="Immunization.statusReason.coding">
@@ -328,7 +328,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="extensible" />
-        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-ImmunizationExplanationReason" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ImmunizationExplanationReason" />
       </binding>
     </element>
     <element id="Immunization.reasonCode.coding">
