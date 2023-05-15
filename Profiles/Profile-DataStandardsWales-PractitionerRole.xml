@@ -46,5 +46,9 @@
         <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-MainSpecialty" />
       </binding>
     </element>
+    <element id="PractitionerRole.telecom">
+      <path value="PractitionerRole.telecom" />
+      <mustSupport value="true" />
+    </element>
   </differential>
 </StructureDefinition>
