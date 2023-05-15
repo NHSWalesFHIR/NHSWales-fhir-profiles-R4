@@ -51,6 +51,18 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Location.type">
+      <path value="Location.type" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-LocationType" />
+      </binding>
+    </element>
+    <element id="Location.address">
+      <path value="Location.address" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Location.managingOrganization">
       <path value="Location.managingOrganization" />
       <type>
@@ -58,12 +70,37 @@
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
       </type>
     </element>
+    <element id="Location.managingOrganization.identifier">
+      <path value="Location.managingOrganization.identifier" />
+      <min value="1" />
+    </element>
+    <element id="Location.managingOrganization.identifier.system">
+      <path value="Location.managingOrganization.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="Location.managingOrganization.identifier.value">
+      <path value="Location.managingOrganization.identifier.value" />
+      <min value="1" />
+    </element>
     <element id="Location.partOf">
       <path value="Location.partOf" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Location.partOf.identifier">
+      <path value="Location.partOf.identifier" />
+      <min value="1" />
+    </element>
+    <element id="Location.partOf.identifier.system">
+      <path value="Location.partOf.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="Location.partOf.identifier.value">
+      <path value="Location.partOf.identifier.value" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

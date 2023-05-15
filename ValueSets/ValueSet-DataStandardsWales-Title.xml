@@ -1,1 +1,131 @@
-<ValueSet xmlns="http://hl7.org/fhir"><id value="ValueSet-DataStandardsWales-Title"/><text><status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Data Standards Wales Title</h2><tt>https://fhir.nhs.wales/ValueSet/DataStandardsWales-Title</tt></div></text><url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-Title"/><version value="1.0"/><name value="ValueSet_DataStandardsWales_Title"/><title value="Data Standards Wales Title"/><status value="draft"/><contact><telecom><system value="email"/></telecom></contact><compose><include><system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/><version value="3.0"/><concept><code value="Admr"/><display value="Admiral"/></concept><concept><code value="Baron"/><display value="Baron"/></concept><concept><code value="Brig"/><display value="Brigadier"/></concept><concept><code value="Bshp"/><display value="Bishop"/></concept><concept><code value="Can"/><display value="Canon"/></concept><concept><code value="Capt"/><display value="Captain"/></concept><concept><code value="Col"/><display value="Colonel"/></concept><concept><code value="Dame"/><display value="Dame"/></concept><concept><code value="Dr"/><display value="Doctor"/></concept><concept><code value="Ftr"/><display value="Father"/></concept><concept><code value="Lady"/><display value="Lady"/></concept><concept><code value="Lord"/><display value="Lord"/></concept><concept><code value="Miss"/><display value="Miss"/></concept><concept><code value="Mjr"/><display value="Major"/></concept><concept><code value="Mr"/><display value="Mr"/></concept><concept><code value="Mrs"/><display value="Mrs"/></concept><concept><code value="Ms"/><display value="Ms"/></concept><concept><code value="Mstr"/><display value="Master"/></concept><concept><code value="Mx"/><display value="Mx"/></concept><concept><code value="Prof"/><display value="Professor"/></concept><concept><code value="Rev"/><display value="Reverend"/></concept><concept><code value="Sgt"/><display value="Sergeant"/></concept><concept><code value="Sir"/><display value="Sir"/></concept><concept><code value="Sstr"/><display value="Sister"/></concept></include><include><system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/><version value="3.0"/><filter><property value="Status"/><op value="="/><value value="active"/></filter></include></compose></ValueSet>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="ValueSet-DataStandardsWales-Title"/>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <h2>Data Standards Wales Title</h2>
+            <tt>https://fhir.nhs.wales/ValueSet/DataStandardsWales-Title</tt>
+        </div>
+    </text>
+    <url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-Title"/>
+    <version value="1.0"/>
+    <name value="ValueSet_DataStandardsWales_Title"/>
+    <title value="Data Standards Wales Title"/>
+    <status value="draft"/>
+    <contact>
+        <telecom>
+            <system value="email"/>
+        </telecom>
+    </contact>
+    <compose>
+        <include>
+            <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+            <version value="3.0"/>
+            <concept>
+                <code value="Admr"/>
+                <display value="Admiral"/>
+            </concept>
+            <concept>
+                <code value="Baron"/>
+                <display value="Baron"/>
+            </concept>
+            <concept>
+                <code value="Brig"/>
+                <display value="Brigadier"/>
+            </concept>
+            <concept>
+                <code value="Bshp"/>
+                <display value="Bishop"/>
+            </concept>
+            <concept>
+                <code value="Can"/>
+                <display value="Canon"/>
+            </concept>
+            <concept>
+                <code value="Capt"/>
+                <display value="Captain"/>
+            </concept>
+            <concept>
+                <code value="Col"/>
+                <display value="Colonel"/>
+            </concept>
+            <concept>
+                <code value="Dame"/>
+                <display value="Dame"/>
+            </concept>
+            <concept>
+                <code value="Dr"/>
+                <display value="Doctor"/>
+            </concept>
+            <concept>
+                <code value="Ftr"/>
+                <display value="Father"/>
+            </concept>
+            <concept>
+                <code value="Lady"/>
+                <display value="Lady"/>
+            </concept>
+            <concept>
+                <code value="Lord"/>
+                <display value="Lord"/>
+            </concept>
+            <concept>
+                <code value="Miss"/>
+                <display value="Miss"/>
+            </concept>
+            <concept>
+                <code value="Mjr"/>
+                <display value="Major"/>
+            </concept>
+            <concept>
+                <code value="Mr"/>
+                <display value="Mr"/>
+            </concept>
+            <concept>
+                <code value="Mrs"/>
+                <display value="Mrs"/>
+            </concept>
+            <concept>
+                <code value="Ms"/>
+                <display value="Ms"/>
+            </concept>
+            <concept>
+                <code value="Mstr"/>
+                <display value="Master"/>
+            </concept>
+            <concept>
+                <code value="Mx"/>
+                <display value="Mx"/>
+            </concept>
+            <concept>
+                <code value="Prof"/>
+                <display value="Professor"/>
+            </concept>
+            <concept>
+                <code value="Rev"/>
+                <display value="Reverend"/>
+            </concept>
+            <concept>
+                <code value="Sgt"/>
+                <display value="Sergeant"/>
+            </concept>
+            <concept>
+                <code value="Sir"/>
+                <display value="Sir"/>
+            </concept>
+            <concept>
+                <code value="Sstr"/>
+                <display value="Sister"/>
+            </concept>
+        </include>
+        <include>
+            <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+            <version value="3.0"/>
+            <filter>
+                <property value="Status"/>
+                <op value="="/>
+                <value value="active"/>
+            </filter>
+        </include>
+    </compose>
+</ValueSet>
