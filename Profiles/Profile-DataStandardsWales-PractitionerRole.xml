@@ -42,9 +42,6 @@
       <definition value="A unique code identifying each Main Specialty designated by Royal Colleges" />
       <mustSupport value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="PractitionerSpecialty" />
-        </extension>
         <strength value="required" />
         <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-MainSpecialty" />
       </binding>
