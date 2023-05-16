@@ -9,7 +9,7 @@
 	</text>
 	<url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-Title"/>
 	<version value="1.0"/>
-	<name value="ValueSet_DataStandardsWales_Title"/>
+	<name value="DataStandardsWalesTitle"/>
 	<title value="Data Standards Wales Title"/>
 	<status value="draft"/>
 	<publisher value="NHS Wales"/>
