@@ -56,7 +56,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-MedicationRequestStatusReason" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/medicationrequest-status-reason" />
       </binding>
     </element>
     <element id="MedicationRequest.statusReason.coding">
@@ -291,7 +291,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-MedicationRequestCourseOfTherapyType" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCourseOfTherapy" />
       </binding>
     </element>
     <element id="MedicationRequest.courseOfTherapyType.coding">
