@@ -43,7 +43,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-MainSpecialty" />
+        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode" />
       </binding>
     </element>
     <element id="PractitionerRole.telecom">
