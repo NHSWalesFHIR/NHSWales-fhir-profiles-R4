@@ -5,7 +5,7 @@
 	<name value="DataStandardsWalesHL7AdministrativeGenderGenderIdentity"/>
 	<title value="Concept map HL7 Administrative Gender to Data Standards Wales Gender Identity"/>
 	<status value="draft"/>
-	<description value="Maps concepts from HL7 Administrative Gender codes to Data Standards Wales Gender Identitiy codes" />
+	<description value="Maps concepts from HL7 Administrative Gender codes to Data Standards Wales Gender Identity codes" />
 	<sourceUri value="http://hl7.org/fhir/administrative-gender"/>
 	<targetUri value="https://fhir.nhs.wales/ValueSet/DataStandardsWalesGender-Identity"/>
 	<group>
