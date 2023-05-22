@@ -28,10 +28,10 @@
     <medicationCodeableConcept>
         <coding>
             <system value="https://dmd.nhs.uk"/>
-            <code value="38268001" />
-            <display value="Ibuprofen"/>
+            <code value="329652003" />
+            <display value="Ibuprofen 200 mg tablets"/>
         </coding>
-        <text value="Ibuprofen"/>
+        <text value="Ibuprofen 200 mg tablets"/>
     </medicationCodeableConcept>
     <subject>
         <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper"/>
