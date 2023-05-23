@@ -132,7 +132,7 @@
       <path value="Immunization.patient" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Patient" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -164,7 +164,7 @@
       <definition value="The visit or admission or other contact between patient and healthcare provider the immunization was performed as part of." />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Encounter" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Encounter" />
       </type>
     </element>
     <element id="Immunization.encounter.type">
@@ -200,7 +200,7 @@
       <path value="Immunization.location" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Location" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -222,7 +222,7 @@
       <path value="Immunization.manufacturer" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Organization" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -293,9 +293,9 @@
       <path value="Immunization.performer.actor" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Organization" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-PractitionerRole" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
       </type>
     </element>
     <element id="Immunization.performer.actor.type">
