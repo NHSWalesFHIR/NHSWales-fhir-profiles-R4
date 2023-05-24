@@ -1,8 +1,8 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
     <id value="DataStandardsWales-UKCoreBirthSex-Sex"/>
     <url value="https://fhir.nhs.wales/ConceptMap/DataStandardsWales-UKCoreBirthSex-Sex"/>
-    <name value="DataStandardsWalesUKCoreBirthSexSex"/>
-    <title value="Concept map UK Core Birth Sex to Data Standards Wales Sex"/>
+    <name value="DataStandardsWales-ConceptMap-UKCoreBirthSex-to-Sex"/>
+    <title value="Data Standards Wales Concept Map from UK Core Birth Sex to Sex"/>
   <status value="draft" />
   <version value="0.1.0" />
   <date value="2023-05-24" />
