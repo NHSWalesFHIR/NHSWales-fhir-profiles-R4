@@ -1,0 +1,57 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="DataStandardsWales-GenderIdentity"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/valueset-sourceReference">
+		<valueUri value="http://www.nwisinformationstandards.wales.nhs.uk/sitesplus/documents/299/20200622-DSCN%202020%2006-Core%20Reference%20Data-d2-2.pdf"/>
+	</extension>
+	<url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-GenderIdentity"/>
+	<version value="1.0.1"/>
+    <name value="DataStandardsWalesGenderIdentity"/>
+	<title value="Data Standards Wales Gender Identity"/>
+	<status value="draft"/>
+	<date value="2020-09-24T00:00:00+01:00"/>
+	<publisher value="NHS Wales"/>
+	<contact>
+		<name value="Data Standards"/>
+		<telecom>
+			<system value="email"/>
+			<value value="data.standards@wales.nhs.uk"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="Gender identity is a person's sense of identification with either the male or female sex, as manifested in appearance, behaviour, and other aspects of a person's life."/>
+	<copyright value="© 2020 NHS Wales."/>
+	<compose>
+		<include>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-GenderIdentity"/>
+		</include>
+	</compose>
+    <expansion>
+        <timestamp value="2022-06-20T14:49:00+01:00" />
+        <total value="4" />
+        <offset value="0" />
+        <parameter>
+            <name value="version" />
+            <valueUri value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-GenderIdentity|1.0.0" />
+        </parameter>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-GenderIdentity" />
+			<code value="F"/>
+			<display value="Female"/>
+		</contains>	
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-GenderIdentity" />
+			<code value="M"/>
+			<display value="Male"/>
+		</contains>	
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-GenderIdentity" />
+			<code value="N"/>
+			<display value="Non-binary"/>
+		</contains>	
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-GenderIdentity" />
+			<code value="Z"/>
+			<display value="Not disclosed or unknown, e.g. for unborn baby "/>
+		</contains>	
+	</expansion>
+</ValueSet>
