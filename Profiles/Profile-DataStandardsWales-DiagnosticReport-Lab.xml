@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="DataStandardsWales-DiagnosticReport-Lab"/>
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-DiagnosticReport-Lab" />
   <name value="DataStandardsWalesDiagnosticReportLab" />
-  <title value="Data Standards Wales DiagnosticReport Profile for Laboratory Results" />
+  <title value="Data Standards Wales Diagnostic Report - Lab" />
   <status value="draft" />
-  <date value="2023-01-06" />
+  <version value="0.0.5" />
+  <date value="2023-05-24" />
+  <experimental value="true" />
+  <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />

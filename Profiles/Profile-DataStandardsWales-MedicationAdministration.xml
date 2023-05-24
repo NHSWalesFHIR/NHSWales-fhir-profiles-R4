@@ -3,9 +3,13 @@
   <id value="DataStandardsWales-MedicationAdministration" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationAdministration" />
   <name value="DataStandardsWalesMedicationAdministration" />
-  <title value="Data Standards Wales MedicationAdministration" />
+  <title value="Data Standards Wales Medication Administration" />
   <status value="draft" />
+  <version value="0.1.0" />
+  <date value="2023-05-24" />
+  <experimental value="false" />
   <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
   <description value="This profile defines the UK constraints and extensions on the International FHIR resource [MedicationAdministration](https://hl7.org/fhir/R4/MedicationAdministration.html)." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />

@@ -13,12 +13,14 @@
 		</div>
 	</text>
 	<url value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
-	<version value="3.0"/>
 	<name value="DataStandardsWalesTitle"/>
 	<title value="Data Standards Wales Title"/>
-	<status value="active"/>
-	<experimental value="false"/>
-	<publisher value="Digital Health and Care Wales"/>
+    <status value="draft" />
+    <version value="0.1.0" />
+    <date value="2023-05-24" />
+    <experimental value="false" />
+    <publisher value="NHS Wales" />
+    <copyright value="© 2023 NHS Wales." />
 	<contact>
 		<name value="Data Standards"/>
 		<telecom>
@@ -49,9 +51,9 @@
 		<type value="string"/>
 	</property>
 	<property>
+		<type value="string"/>
 		<code value="Status"/>
 		<description value="The status of the concept can be one of: draft | active | retired | unknown"/>
-		<type value="string"/>
 	</property>
 	<concept>
 		<code value="Admr"/>

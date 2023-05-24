@@ -1,10 +1,13 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-PTHB-PAS-Identifier"/> 
-  <name value="PTHB PAS Identifier"/> 
-  <status value="active"/> 
+  <name value="PTHB PAS Identifier"/>
   <kind value="identifier"/> 
-  <date value="2020-04-12"/> 
-  <publisher value="NHS Wales"/>
+  <status value="draft" />
+  <version value="0.1.0" />
+  <date value="2023-05-24" />
+  <experimental value="false" />
+  <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
   <responsible value="Powys Teaching Health Board"/> 
   <description value="This namespace indicates a Powys Teaching Health Board PAS patient identifier"/> 
   <usage value="Patient identity"/> 

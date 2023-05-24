@@ -1,10 +1,13 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
     <id value="DataStandardsWales-WRRS-Master-Report-identifier" />
     <name value="WRRS Master Report Identifier" />
-    <status value="draft" />
     <kind value="identifier" />
-    <date value="2021-11-10" />
-    <publisher value="NHS Wales" />
+  <status value="draft" />
+  <version value="0.1.0" />
+  <date value="2023-05-24" />
+  <experimental value="false" />
+  <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
     <contact>
         <name value="Data Standards" />
         <telecom>
