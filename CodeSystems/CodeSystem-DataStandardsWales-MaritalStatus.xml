@@ -2,13 +2,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="DataStandardsWales-MaritalStatus"/>
     <url value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MaritalStatus"/>	
-    <version value="1.0.0"/>
     <name value="DataStandardsWalesMaritalStatus"/>
 	<title value="Data Standards Wales Marital Status"/>
-	<status value="active"/>
-	<experimental value="true"/>
-	<date value="2023-10-05T15:57:00+01:00"/>
-    <publisher value="NHS Wales"/>
+  <status value="draft" />
+  <version value="0.1.0" />
+  <date value="2023-05-24" />
+  <experimental value="false" />
+  <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
 	<contact>
 		<name value="Data Standards"/>	
 		<telecom>
@@ -18,7 +19,6 @@
 		</telecom>
 	</contact>	
     <description value="Marital Status"/>
-    <copyright value="&#169; 2023 NHS Wales."/>
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>

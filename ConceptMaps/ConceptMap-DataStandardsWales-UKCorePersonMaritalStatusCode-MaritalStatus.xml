@@ -1,10 +1,14 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
     <id value="DataStandardsWales-UKCorePersonMaritalStatusCode-MaritalStatus"/>
     <url value="https://fhir.nhs.wales/ConceptMap/DataStandardsWales-UKCorePersonMaritalStatusCode-MaritalStatus"/>
-    <version value="0.2"/>
     <name value="DataStandardsWalesUKCorePersonMaritalStatusCodeMaritalStatus"/>
     <title value="Concept map UK Core Marital Status to Data Standards Wales Marital Status"/>
-    <status value="draft"/>
+  <status value="draft" />
+  <version value="0.1.0" />
+  <date value="2023-05-24" />
+  <experimental value="false" />
+  <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
     <description value="Maps concepts from UK Core Marital Status codes to Data Standards Wales Marital Status codes" />      
     <sourceUri value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode"/>
     <targetUri value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-MaritalStatus"/>    

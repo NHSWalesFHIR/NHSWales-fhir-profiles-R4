@@ -4,12 +4,14 @@
 		<valueUri value="http://www.nwisinformationstandards.wales.nhs.uk/sitesplus/documents/299/20200622-DSCN%202020%2006-Core%20Reference%20Data-d2-2.pdf"/>
 	</extension>
 	<url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-GenderIdentity"/>
-	<version value="1.0.1"/>
     <name value="DataStandardsWalesGenderIdentity"/>
 	<title value="Data Standards Wales Gender Identity"/>
-	<status value="draft"/>
-	<date value="2020-09-24T00:00:00+01:00"/>
-	<publisher value="NHS Wales"/>
+  <status value="draft" />
+  <version value="0.1.0" />
+  <date value="2023-05-24" />
+  <experimental value="false" />
+  <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
 	<contact>
 		<name value="Data Standards"/>
 		<telecom>
@@ -19,7 +21,6 @@
 		</telecom>
 	</contact>
 	<description value="Gender identity is a person's sense of identification with either the male or female sex, as manifested in appearance, behaviour, and other aspects of a person's life."/>
-	<copyright value="© 2020 NHS Wales."/>
 	<compose>
 		<include>
 			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-GenderIdentity"/>
