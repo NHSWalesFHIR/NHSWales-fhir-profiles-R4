@@ -3,8 +3,13 @@
   <id value="DataStandardsWales-Observation" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation" />
   <name value="DataStandardsWalesObservation" />
-  <title value="Data Standards Wales Observation Profile" />
+  <title value="Data Standards Wales Observation" />
   <status value="draft" />
+  <version value="0.0.5" />
+  <date value="2023-05-24" />
+  <experimental value="true" />
+  <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />

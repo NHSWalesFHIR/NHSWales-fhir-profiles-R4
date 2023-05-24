@@ -3,8 +3,13 @@
   <id value="DataStandardsWales-Endpoint" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Endpoint" />
   <name value="DataStandardsWalesEndpoint" />
-  <title value="Data Standards Wales Endpoint Profile" />
+  <title value="Data Standards Wales Endpoint" />
   <status value="draft" />
+  <version value="0.0.5" />
+  <date value="2023-05-24" />
+  <experimental value="true" />
+  <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />

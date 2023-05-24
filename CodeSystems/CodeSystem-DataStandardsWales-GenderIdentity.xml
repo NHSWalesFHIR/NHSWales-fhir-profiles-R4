@@ -1,0 +1,39 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="DataStandardsWales-GenderIdentity"/>
+    <url value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-GenderIdentity"/>	
+    <name value="DataStandardsWalesGenderIdentity"/>
+	<title value="Data Standards Wales Gender Identity"/>
+  <status value="draft" />
+  <version value="0.1.0" />
+  <date value="2023-05-24" />
+  <experimental value="false" />
+  <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
+	<contact>
+		<name value="Data Standards"/>	
+		<telecom>
+			<system value="email"/>
+			<value value="data.standards@wales.nhs.uk"/>
+			<use value="work"/>
+		</telecom>
+	</contact>	
+    <description value="Gender identity is a person's sense of identification with either the male or female sex, as manifested in appearance, behaviour, and other aspects of a person's life."/>
+    <caseSensitive value="true"/>
+    <content value="complete"/>
+    <concept>
+        <code value="F"/>
+        <display value="Female"/>
+    </concept>
+    <concept>
+        <code value="M"/>
+        <display value="Male"/>
+    </concept>
+    <concept>
+        <code value="N"/>
+        <display value="Non-binary"/>
+    </concept>	
+	<concept>
+        <code value="Z"/>
+        <display value="Not disclosed or unknown, e.g. for unborn baby "/>
+    </concept>    
+</CodeSystem>
