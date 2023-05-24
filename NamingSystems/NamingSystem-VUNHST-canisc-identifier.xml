@@ -9,7 +9,7 @@
   <publisher value="NHS Wales" />
   <copyright value="© 2023 NHS Wales." />
   <responsible value="Velindre University NHS Trust"/> 
-  <description value="This namespace indicates a Velindre Universtity NHS Trust Canisc (PAS) patient identifier"/> 
+  <description value="This namespace indicates a Velindre University NHS Trust Canisc (PAS) patient identifier"/> 
   <usage value="Patient Identity"/>
   <uniqueId> 
     <type value="uri"/> 
