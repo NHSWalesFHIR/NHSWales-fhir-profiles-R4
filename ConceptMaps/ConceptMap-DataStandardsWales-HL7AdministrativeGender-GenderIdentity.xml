@@ -1,7 +1,7 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
 	<id value="DataStandardsWales-HL7AdministrativeGender-GenderIdentity"/>
 	<url value="https://fhir.nhs.wales/ConceptMap/DataStandardsWales-HL7AdministrativeGender-GenderIdentity"/>
-	<name value="DataStandardsWales-ConceptMap-HL7AdministrativeGender-to-GenderIdentity"/>
+	<name value="DataStandardsWalesConceptMapHL7AdministrativeGenderToGenderIdentity"/>
 	<title value="Data Standards Wales Concept Map from HL7 Administrative Gender to Gender Identity"/>
   <status value="draft" />
   <version value="0.1.0" />
