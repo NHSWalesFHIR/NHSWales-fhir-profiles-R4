@@ -1,7 +1,7 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
     <id value="DataStandardsWales-MaritalStatus-UKCorePersonMaritalStatusCode"/>
     <url value="https://fhir.nhs.wales/ConceptMap/DataStandardsWales-MaritalStatus-UKCorePersonMaritalStatusCode"/>
-    <name value="DataStandardsWales-ConceptMap-MaritalStatus-to-UKCorePersonMaritalStatusCode"/>
+    <name value="DataStandardsWalesConceptMapMaritalStatusToUKCorePersonMaritalStatusCode"/>
     <title value="Data Standards Wales Concept Map from Marital Status to UK Core Person Marital Status Code"/>
   <status value="draft" />
   <version value="0.1.0" />
