@@ -1,5 +1,5 @@
 <List xmlns="http://hl7.org/fhir">
-    <!-- Scenario: Peter Piper's medicines list just after Ibruprofen is stopped during his impatient stay -->
+    <!-- Scenario: Peter Piper's medicines list just after Ibuprofen is stopped during his impatient stay -->
     <id value="Example-DataStandardsWales-List-Medications-Inpatient" />
     <status value="current" />
     <mode value="snapshot" />
@@ -27,7 +27,7 @@
     <entry>
         <item>
             <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Bendroflumethiazide-Inpatient"/>
-            <display value="Bendroflumethazide 2.5mg tablets - 1 tablet every morning"/>
+            <display value="Bendroflumethiazide 2.5mg tablets - 1 tablet every morning"/>
         </item>
     </entry>
     <entry>

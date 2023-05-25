@@ -16,7 +16,7 @@
 		<value value="99D1234E" />
 	</identifier>
 	<identifier>
-		<!-- namespace for non medical presciber identifiers is required --> 
+		<!-- namespace for non medical prescriber identifiers is required --> 
 		<system value="https://fhir.nhs.wales/Id/prescriber-code" />		
 		<value value="J222233" />
 	</identifier>
