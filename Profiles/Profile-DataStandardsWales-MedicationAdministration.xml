@@ -3,9 +3,13 @@
   <id value="DataStandardsWales-MedicationAdministration" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationAdministration" />
   <name value="DataStandardsWalesMedicationAdministration" />
-  <title value="Data Standards Wales MedicationAdministration" />
+  <title value="Data Standards Wales Medication Administration" />
   <status value="draft" />
+  <version value="0.1.0" />
+  <date value="2023-05-24" />
+  <experimental value="false" />
   <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
   <description value="This profile defines the UK constraints and extensions on the International FHIR resource [MedicationAdministration](https://hl7.org/fhir/R4/MedicationAdministration.html)." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
@@ -37,7 +41,7 @@
       <path value="MedicationAdministration.partOf" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-MedicationAdministration" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationAdministration" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
       </type>
     </element>
@@ -86,7 +90,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Medication" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Medication" />
       </type>
       <mustSupport value="true" />
       <binding>
@@ -98,7 +102,7 @@
       <path value="MedicationAdministration.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Patient" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
       </type>
       <mustSupport value="true" />
@@ -123,7 +127,7 @@
       <path value="MedicationAdministration.context" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Encounter" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Encounter" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-EpisodeOfCare" />
       </type>
     </element>
@@ -155,9 +159,9 @@
       <path value="MedicationAdministration.performer.actor" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-PractitionerRole" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Patient" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-PractitionerRole" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
       </type>
@@ -185,8 +189,8 @@
       <path value="MedicationAdministration.reasonReference" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Observation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-DiagnosticReport" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-DiagnosticReport" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
       </type>
     </element>
@@ -201,7 +205,7 @@
       <path value="MedicationAdministration.request" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-MedicationRequest" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationRequest" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -230,9 +234,9 @@
       <path value="MedicationAdministration.note.author[x]" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Patient" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Organization" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
       </type>
       <type>

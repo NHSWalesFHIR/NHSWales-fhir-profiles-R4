@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MedicationStatement xmlns="http://hl7.org/fhir">
-    <id value="Example-DataStandardsWales-MedicationStatement-Fentanyl-Inpatient" />
+    <id value="Example-DataStandardsWales-MedicationStatement-DurogesicDTrans-Inpatient" />
     <meta>
         <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
     </meta>
     <text>
         <status value="generated" />
-        <div xmlns="http://www.w3.org/1999/xhtml">Fentanyl 25 microgram/hour patch - Apply one patch every 72 hours</div>
+        <div xmlns="http://www.w3.org/1999/xhtml">Durogesic DTrans 25 micrograms/hour transdermal patches - Apply one patch every 72 hours</div>
     </text>
     <status value="active" />
     <category>
@@ -19,10 +19,10 @@
     <medicationCodeableConcept>
         <coding>
             <system value="https://dmd.nhs.uk"/>
-            <code value="36120011000001101" />
-            <display value="Fentanyl 25micrograms/hour transdermal patches">Fentanyl 25 microgram/hour patch - Apply one patch every 72 hours</display>
+            <code value="37354111000001103" />
+            <display value="Durogesic DTrans 25micrograms/hour transdermal patches">Durogesic DTrans 25 micrograms/hour transdermal patches - Apply one patch every 72 hours</display>
         </coding>      
-        <text value="Fentanyl 25micrograms/hour transdermal patches" />
+        <text value="Durogesic DTrans 25micrograms/hour transdermal patches" />
     </medicationCodeableConcept>
     <subject>
         <reference value="Patient/Example-DataStandardsWales-Patient-PeterPiper" />

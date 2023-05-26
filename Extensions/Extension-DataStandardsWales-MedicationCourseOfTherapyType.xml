@@ -2,13 +2,14 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-DataStandardsWales-MedicationCourseOfTherapyType" />
   <url value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType" />
-  <version value="1.0.0" />
   <name value="ExtensionDataStandardsWalesMedicationCourseOfTherapyType" />
   <title value="Extension Data Standards Wales Medication Course Of Therapy Type" />
   <status value="draft" />
-  <experimental value="true" />
-  <date value="2022-08-02" />
+  <version value="0.1.0" />
+  <date value="2023-05-24" />
+  <experimental value="false" />
   <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
   <contact>
     <name value="Data Standards" />
     <telecom>
@@ -20,7 +21,6 @@
   </contact>
   <description value="An extension to carry an indicator of the overall pattern of medication administration at the MedicationStatement level." />
   <purpose value="This extension carries an indicator of the overall pattern of medication administration at the MedicationStatement level - e.g. Repeat, Acute etc" />
-  <copyright value="© 2022 NHS Wales." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

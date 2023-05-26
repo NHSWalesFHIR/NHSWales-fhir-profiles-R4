@@ -4,12 +4,14 @@
 		<valueUri value="http://www.nwisinformationstandards.wales.nhs.uk/sitesplus/documents/299/20200622-DSCN%202020%2006-Core%20Reference%20Data-d2-2.pdf"/>
 	</extension>
 	<url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-Religion"/>
-	<version value="1.0.0"/>
 	<name value="DataStandardsWalesReligion"/>
 	<title value="Data Standards Wales Religion"/>
-	<status value="draft"/>
-	<date value="2023-01-04T00:00:00"/>
-	<publisher value="NHS Wales"/>
+    <status value="draft" />
+    <version value="0.1.0" />
+    <date value="2023-05-24" />
+    <experimental value="false" />
+    <publisher value="NHS Wales" />
+    <copyright value="© 2023 NHS Wales." />
 	<contact>
 		<name value="Data Standards"/>
 		<telecom>

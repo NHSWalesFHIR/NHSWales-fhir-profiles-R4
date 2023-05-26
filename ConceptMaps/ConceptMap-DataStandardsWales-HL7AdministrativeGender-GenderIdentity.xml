@@ -1,0 +1,55 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+	<id value="DataStandardsWales-HL7AdministrativeGender-GenderIdentity"/>
+	<url value="https://fhir.nhs.wales/ConceptMap/DataStandardsWales-HL7AdministrativeGender-GenderIdentity"/>
+	<name value="DataStandardsWalesConceptMapHL7AdministrativeGenderToGenderIdentity"/>
+	<title value="Data Standards Wales Concept Map from HL7 Administrative Gender to Gender Identity"/>
+  <status value="draft" />
+  <version value="0.1.0" />
+  <date value="2023-05-24" />
+  <experimental value="false" />
+  <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
+	<description value="Maps concepts from HL7 Administrative Gender codes to Data Standards Wales Gender Identity codes" />
+	<sourceUri value="http://hl7.org/fhir/administrative-gender"/>
+	<targetUri value="https://fhir.nhs.wales/ValueSet/DataStandardsWalesGender-Identity"/>
+	<group>
+		<source value="http://hl7.org/fhir/administrative-gender"/>
+		<target value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-GenderIdentity"/>		
+		<element>
+			<code value="male"/>
+			<display value="Male"/>
+			<target>
+				<code value="M"/>
+				<display value="Male"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="female"/>
+			<display value="Female"/>
+			<target>
+				<code value="F"/>
+				<display value="Female"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="other"/>
+			<display value="Other"/>
+			<target>
+				<code value="N"/>
+				<display value="Non-binary"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="unknown"/>
+			<display value="Unknown"/>
+			<target>
+				<code value="Z"/>
+				<display value="Not disclosed or unknown"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+</ConceptMap>

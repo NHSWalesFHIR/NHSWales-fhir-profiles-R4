@@ -18,8 +18,8 @@
     </category>
     <medicationCodeableConcept>
         <coding>
-            <system value="http://snomed.info/sct"/>
-            <code value="387517004"/>
+            <system value="https://dmd.nhs.uk"/>
+            <code value="777067000"/>
             <display value="Paracetamol"/>
         </coding>
         <text value="Paracetamol"/>

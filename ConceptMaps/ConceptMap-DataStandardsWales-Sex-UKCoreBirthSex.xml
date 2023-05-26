@@ -1,0 +1,59 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+    <id value="DataStandardsWales-Sex-UKCoreBirthSex"/>
+    <url value="https://fhir.nhs.wales/ConceptMap/DataStandardsWales-Sex-UKCoreBirthSex"/>
+    <name value="DataStandardsWalesConceptMapSexToUKCoreBirthSex"/>
+    <title value="Data Standards Wales Concept Map from Sex to UK Core Birth Sex"/>
+  <status value="draft" />
+  <version value="0.1.0" />
+  <date value="2023-05-24" />
+  <experimental value="false" />
+  <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
+    <description value="Maps concepts from Data Standards Wales Sex codes to UK Core Sex codes" />
+    <sourceUri value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-Sex"/>
+    <targetUri value="https://fhir.hl7.org.uk/ValueSet/UKCore-BirthSex"/>
+    <group>
+        <source value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Sex"/>    
+        <target value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+        <element>
+            <code value="Z"/>
+            <display value="Not disclosed or unknown"/>
+            <target>
+                <code value="UNK"/>
+                <display value="unknown"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+    </group>
+    <group>
+        <source value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Sex"/>
+        <target value="http://terminology.hl7.org/CodeSystem/v3-AdministrativeGender"/>
+        <element>
+            <code value="F"/>
+            <display value="Female"/>
+            <target>
+                <code value="F"/>
+                <display value="Female"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+        <element>
+            <code value="M"/>
+            <display value="Male"/>
+            <target>
+                <code value="M"/>
+                <display value="Male"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+        <element>
+            <code value="U"/>
+            <display value="Indeterminate"/>
+            <target>
+                <code value="UN"/>
+                <display value="Undifferentiated"/>
+                <equivalence value="wider"/>
+            </target>
+        </element>
+    </group>
+</ConceptMap>

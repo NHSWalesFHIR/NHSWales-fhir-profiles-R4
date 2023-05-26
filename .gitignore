@@ -1,5 +1,6 @@
-# ignore ALL .log files
-fhirpkg.lock.json/
+# ignore the following file(s)
+fhirpkg.lock.json
+*.lock.json
 
 # ignore ALL files in ANY directory named temp
 temp/
