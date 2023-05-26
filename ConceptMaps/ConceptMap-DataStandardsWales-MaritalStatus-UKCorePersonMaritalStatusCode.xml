@@ -1,0 +1,113 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+    <id value="DataStandardsWales-MaritalStatus-UKCorePersonMaritalStatusCode"/>
+    <url value="https://fhir.nhs.wales/ConceptMap/DataStandardsWales-MaritalStatus-UKCorePersonMaritalStatusCode"/>
+    <name value="DataStandardsWalesConceptMapMaritalStatusToUKCorePersonMaritalStatusCode"/>
+    <title value="Data Standards Wales Concept Map from Marital Status to UK Core Person Marital Status Code"/>
+  <status value="draft" />
+  <version value="0.1.0" />
+  <date value="2023-05-24" />
+  <experimental value="false" />
+  <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
+    <description value="Maps concepts from Data Standards Wales Marital Status codes to UK Core Marital Status codes" />    
+    <sourceUri value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-MaritalStatus"/>
+    <targetUri value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode"/>    
+    <group>
+        <source value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MaritalStatus"/>        
+        <target value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+        <element>
+            <code value="11"/>
+            <display value="Single"/>
+            <target>
+                <code value="S"/>
+                <display value="Never Married"/>
+                <equivalence value="equivalent"/>
+            </target>
+        </element>
+        <element>
+            <code value="12"/>
+            <display value="Cohabiting"/>+
+            <target>
+                <code value="T"/>
+                <display value="Domestic partner"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+        <element>
+            <code value="21"/>
+            <display value="Married"/>
+            <target>
+                <code value="M"/>
+                <display value="Married"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+        <element>
+            <code value="31"/>
+            <display value="Divorced"/>
+            <target>
+                <code value="D"/>
+                <display value="Divorced"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+        <element>
+            <code value="41"/>
+            <display value="Widowed"/>
+            <target>
+                <code value="W"/>
+                <display value="Widowed"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+    </group>
+    <group>
+        <source value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MaritalStatus"/>        
+        <target value=" https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>
+        <element>
+            <code value="22"/>
+            <display value="Civil Partner"/>
+            <target>
+                <code value="22"/>
+                <display value="Civil Partner"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>          
+        <element>
+            <code value="32"/>
+            <display value="Person whose Civil Partnership has been dissolved"/>
+            <target>
+                <code value="32"/>
+                <display value="Person whose Civil Partnership has been dissolved"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+        <element>
+            <code value="42"/>
+            <display value="Surviving Civil Partner"/>
+            <target>
+                <code value="42"/>
+                <display value="Surviving Civil Partner"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+        <element>
+            <code value="51"/>
+            <display value="Separated"/>
+            <target>
+                <code value="51"/>
+                <display value="Separated"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+        <element>
+            <code value="91"/>
+            <display value="Not disclosed or unknown"/>
+            <target>
+                <code value="91"/>
+                <display value="Not disclosed or unknown"/>
+                <equivalence value="equal"/>
+            </target>
+        </element>
+    </group>
+</ConceptMap>

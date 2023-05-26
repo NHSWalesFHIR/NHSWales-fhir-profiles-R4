@@ -56,7 +56,7 @@
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Fentanyl-Discharge"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-DurogesicDTrans-Discharge"/>
             <display value="..."/>
         </item>
     </entry>

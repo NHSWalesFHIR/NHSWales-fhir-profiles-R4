@@ -3,8 +3,13 @@
   <id value="DataStandardsWales-Practitioner" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
   <name value="DataStandardsWalesPractitioner" />
-  <title value="Data Standards Wales Practitioner Profile" />
+  <title value="Data Standards Wales Practitioner" />
   <status value="draft" />
+  <version value="0.1.0" />
+  <date value="2023-05-24" />
+  <experimental value="false" />
+  <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -77,6 +82,38 @@
     <element id="Practitioner.identifier:nmcNumber.system">
       <path value="Practitioner.identifier.system" />
       <fixedUri value="https://fhir.hl7.org.uk/Id/nmc-number" />
+    </element>
+    <element id="Practitioner.identifier:gphcCode">
+      <path value="Practitioner.identifier" />
+      <sliceName value="gphcCode" />
+      <short value="GPhC Code" />
+      <definition value="General Pharmaceutical Council identifier code" />
+      <max value="1" />
+    </element>
+    <element id="Practitioner.identifier:gphcCode.system">
+      <path value="Practitioner.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.hl7.org.uk/Id/gphc-number" />
+    </element>
+    <element id="Practitioner.identifier:gphcCode.value">
+      <path value="Practitioner.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Practitioner.identifier:sdsUserId">
+      <path value="Practitioner.identifier" />
+      <sliceName value="sdsUserId" />
+      <short value="SDS User ID" />
+      <definition value="Spine Directory Service User ID" />
+      <max value="1" />
+    </element>
+    <element id="Practitioner.identifier:sdsUserId.system">
+      <path value="Practitioner.identifier.system" />
+      <min value="1" />
+      <fixedUri value="&quot;https://fhir.nhs.uk/Id/sds-user-id&quot;" />
+    </element>
+    <element id="Practitioner.identifier:sdsUserId.value">
+      <path value="Practitioner.identifier.value" />
+      <min value="1" />
     </element>
     <element id="Practitioner.identifier:nadexIdentifier">
       <path value="Practitioner.identifier" />

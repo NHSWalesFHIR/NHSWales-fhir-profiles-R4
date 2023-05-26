@@ -5,7 +5,7 @@
     </meta>
     <text>
         <status value="generated" />
-        <div xmlns="http://www.w3.org/1999/xhtml">Bendroflumethazide 2.5mg tablets - 1 tablet every morning</div>
+        <div xmlns="http://www.w3.org/1999/xhtml">Bendroflumethiazide 2.5mg tablets - 1 tablet every morning</div>
     </text>
     <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType">
         <valueCoding>
@@ -44,6 +44,6 @@
         <display value="..." />
     </informationSource>
     <dosage>
-        <text value="Bendroflumethazide 2.5mg tablets - 1 tablet every morning" />
+        <text value="Bendroflumethiazide 2.5mg tablets - 1 tablet every morning" />
     </dosage>
 </MedicationStatement>

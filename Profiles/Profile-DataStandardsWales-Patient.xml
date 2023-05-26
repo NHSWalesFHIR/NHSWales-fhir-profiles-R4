@@ -3,8 +3,13 @@
   <id value="DataStandardsWales-Patient" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
   <name value="DataStandardsWalesPatient" />
-  <title value="Data Standards Wales Patient Profile" />
+  <title value="Data Standards Wales Patient" />
   <status value="draft" />
+  <version value="0.1.0" />
+  <date value="2023-05-24" />
+  <experimental value="false" />
+  <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -53,6 +58,24 @@
       <path value="Patient.extension.value[x]" />
       <min value="1" />
     </element>
+<<<<<<< HEAD
+=======
+    <element id="Patient.extension:occupation">
+      <path value="Patient.extension" />
+      <sliceName value="occupation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-Occupation" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Patient.extension:occupation.value[x]">
+      <path value="Patient.extension.value[x]" />
+      <min value="1" />
+    </element>
+>>>>>>> e21f7c7de9098256576d02a186e5eeab055e5864
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
       <requirements value="To be compliant, at least one identifier shall be provided to uniquely identify the patient." />

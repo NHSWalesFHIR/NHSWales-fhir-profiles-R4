@@ -3,8 +3,13 @@
   <id value="DataStandardsWales-Organization" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
   <name value="DataStandardsWalesOrganization" />
-  <title value="Data Standards Wales Organization Profile" />
+  <title value="Data Standards Wales Organization" />
   <status value="draft" />
+  <version value="0.1.0" />
+  <date value="2023-05-24" />
+  <experimental value="false" />
+  <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="v2" />
@@ -85,11 +90,48 @@
       <comment value="A status of the organization (i.e., whether is still active ) SHOULD be populated if the data exists.&#xD;&#xA;&#xD;&#xA;This active flag is not intended to be used to mark an organization as temporarily closed or under construction. Instead the Location(s) within the Organization should have the suspended status. If further details of the reason for the suspension are required, then an extension on this element should be used.&#xA;&#xA;This element is labeled as a modifier because it may be used to mark that the resource was created in error." />
       <mustSupport value="true" />
     </element>
+    <element id="Organization.type">
+      <path value="Organization.type" />
+      <binding>
+        <strength value="example" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/organization-type" />
+      </binding>
+    </element>
     <element id="Organization.name">
       <path value="Organization.name" />
+      <definition value="A name associated with the organization (e.g. ODS name)." />
       <comment value="Organization name SHALL be populated. If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches." />
       <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.telecom.value">
+      <path value="Organization.telecom.value" />
+      <min value="1" />
+    </element>
+    <element id="Organization.address">
+      <path value="Organization.address" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.partOf">
+      <path value="Organization.partOf" />
+      <definition value="The organization of which this organization forms a part.&#xD;&#xA;&#xD;&#xA;Recommended mandatory for primary care organisations.&#xD;&#xA;&#xD;&#xA;    &quot;partOf&quot;: {&#xD;&#xA;        &quot;reference&quot;: &quot;https://directory.spineservices.nhs.uk/R4/Organization/RR805&quot;,&#xD;&#xA;        &quot;identifier&quot;: {&#xD;&#xA;            &quot;system&quot;: &quot;https://fhir.nhs.uk/Id/ods-organization-code&quot;,&#xD;&#xA;            &quot;value&quot;: &quot;RR805&#xD;&#xA;        }" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Organization.partOf.identifier">
+      <path value="Organization.partOf.identifier" />
+      <min value="1" />
+    </element>
+    <element id="Organization.partOf.identifier.system">
+      <path value="Organization.partOf.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="Organization.partOf.identifier.value">
+      <path value="Organization.partOf.identifier.value" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="DataStandardsWales-Encounter"/>
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Encounter" />
   <name value="DataStandardsWalesEncounter" />
-  <title value="Data Standards Wales Encounter Profile" />
+  <title value="Data Standards Wales Encounter" />
   <status value="draft" />
+  <version value="0.0.5" />
+  <date value="2023-05-24" />
+  <experimental value="true" />
+  <publisher value="NHS Wales" />
+  <copyright value="© 2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />

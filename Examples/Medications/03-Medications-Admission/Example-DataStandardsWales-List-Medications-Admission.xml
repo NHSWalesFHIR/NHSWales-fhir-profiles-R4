@@ -29,7 +29,7 @@
     <entry>
         <item>
             <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Bendroflumethiazide-GP"/>
-            <display value="Bendroflumethazide 2.5mg tablets - 1 tablet every morning"/>
+            <display value="Bendroflumethiazide 2.5mg tablets - 1 tablet every morning"/>
         </item>
     </entry>
     <entry>
@@ -58,8 +58,8 @@
     </entry>
     <entry>
         <item>
-            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-Fentanyl-GP"/>
-            <display value="Fentanyl 25microgram/hour patch - Apply one patch every 72 hours"/>
+            <reference value="MedicationStatement/Example-DataStandardsWales-MedicationStatement-DurogesicDTrans-GP"/>
+            <display value="Durogesic DTrans 25 micrograms/hour transdermal patches - Apply one patch every 72 hours"/>
         </item>
     </entry>
     <entry>
