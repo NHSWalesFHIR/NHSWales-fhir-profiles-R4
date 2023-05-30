@@ -3,7 +3,6 @@
   <name value="ABUHB PAS Patient Identifier"/> 
   <kind value="identifier"/> 
   <status value="draft" />
-  <version value="0.1.0" />
   <date value="2023-05-24" />
   <experimental value="false" />
   <publisher value="NHS Wales" />
