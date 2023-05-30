@@ -21,7 +21,6 @@
 		</telecom>
 	</contact>
 	<description value="A SNOMED code used to describe a patient's religion."/>
-	<copyright value="© 2023 NHS Wales."/>
 	<compose>
 		<include>
 			<system value="http://snomed.info/sct"/>
