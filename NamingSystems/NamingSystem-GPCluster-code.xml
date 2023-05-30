@@ -3,11 +3,8 @@
   <name value="GP Cluster Code"/> 
   <kind value="identifier"/> 
   <status value="draft" />
-  <version value="0.1.0" />
   <date value="2023-05-24" />
-  <experimental value="false" />
   <publisher value="NHS Wales" />
-  <copyright value="© 2023 NHS Wales." />
   <responsible value="NHS Wales Informatics Service"/> 
   <description value="This namespace indicates a Wales GP Cluster code"/> 
   <usage value="Organization identity"/> 

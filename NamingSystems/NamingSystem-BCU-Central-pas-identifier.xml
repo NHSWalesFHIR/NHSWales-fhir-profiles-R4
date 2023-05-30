@@ -3,11 +3,8 @@
   <name value="BCUHB Central Pas Identifier"/> 
   <kind value="identifier"/> 
    <status value="draft" />
-  <version value="0.1.0" />
   <date value="2023-05-24" />
-  <experimental value="false" />
   <publisher value="NHS Wales" />
-  <copyright value="© 2023 NHS Wales." />
   <responsible value="Betsi Cadwaladr University Health Board"/> 
   <description value="This namespace indicates a Betsi Cadwaladr University Health Board Central PAS patient identifier"/> 
   <usage value="Patient identity"/> 

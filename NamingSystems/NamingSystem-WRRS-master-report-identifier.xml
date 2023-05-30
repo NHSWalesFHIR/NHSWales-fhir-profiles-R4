@@ -3,11 +3,8 @@
     <name value="WRRS Master Report Identifier" />
     <kind value="identifier" />
   <status value="draft" />
-  <version value="0.1.0" />
   <date value="2023-05-24" />
-  <experimental value="false" />
   <publisher value="NHS Wales" />
-  <copyright value="© 2023 NHS Wales." />
     <contact>
         <name value="Data Standards" />
         <telecom>

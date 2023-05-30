@@ -2,11 +2,8 @@
   <id value="DataStandardsWales-BCUHB-West-PAS-Identifier"/> 
   <name value="BCUHB West PAS Identifier"/> 
   <status value="draft" />
-  <version value="0.1.0" />
   <date value="2023-05-24" />
-  <experimental value="false" />
   <publisher value="NHS Wales" />
-  <copyright value="© 2023 NHS Wales." />
   <kind value="identifier"/> 
   <responsible value="Betsi Cadwaladr University Health Board"/> 
   <description value="This namespace indicates a Betsi Cadwaladr University Health Board West PAS patient identifier"/> 

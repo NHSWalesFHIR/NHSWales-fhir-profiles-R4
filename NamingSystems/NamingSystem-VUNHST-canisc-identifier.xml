@@ -3,11 +3,8 @@
   <name value="VUNHST Canisc Identifier"/> 
   <kind value="identifier"/> 
   <status value="draft" />
-  <version value="0.1.0" />
   <date value="2023-05-24" />
-  <experimental value="false" />
   <publisher value="NHS Wales" />
-  <copyright value="© 2023 NHS Wales." />
   <responsible value="Velindre University NHS Trust"/> 
   <description value="This namespace indicates a Velindre University NHS Trust Canisc (PAS) patient identifier"/> 
   <usage value="Patient Identity"/>
