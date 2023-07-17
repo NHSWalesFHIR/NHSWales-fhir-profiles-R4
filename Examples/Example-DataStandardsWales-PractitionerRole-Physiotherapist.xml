@@ -11,8 +11,8 @@
     </organization>
     <code>
         <coding>
-            <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
-            <code value="4041" />
+            <system value="http://snomed.info/sct" />
+            <code value="36682004" />
             <display value="Physiotherapist" />
         </coding>
     </code>

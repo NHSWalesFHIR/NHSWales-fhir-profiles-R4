@@ -11,14 +11,14 @@
     </organization>
     <code>
         <coding>
-            <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
-            <code value="1005" />
+            <system value="http://snomed.info/sct" />
+            <code value="768839008" />
             <display value="Consultant" />
         </coding>
     </code>
     <specialty>
         <coding>
-            <system value="https://data.standards.wales/CodeSystem/MainSpecialty" />
+            <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode" />
             <code value="430" />
             <display value="Geriatric Medicine" />
         </coding>
