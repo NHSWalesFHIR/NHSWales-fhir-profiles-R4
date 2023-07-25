@@ -11,9 +11,9 @@
     </organization>
     <code>
         <coding>
-            <system value="http://terminology.hl7.org/CodeSystem/practitioner-role" />
-            <code value="nurse" />
-            <display value="Nurse" />
+            <system value="http://snomed.info/sct" />
+            <code value="Nurse" />
+            <display value="106292003" />
         </coding>
     </code>
 	<telecom>
