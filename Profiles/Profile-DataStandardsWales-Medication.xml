@@ -17,14 +17,6 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Medication" />
   <derivation value="constraint" />
   <differential>
-    <element id="Medication.identifier.assigner">
-      <path value="Medication.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
-      </type>
-    </element>
     <element id="Medication.code">
       <path value="Medication.code" />
       <mustSupport value="true" />
