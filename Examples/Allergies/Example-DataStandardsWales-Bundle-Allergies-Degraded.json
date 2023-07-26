@@ -66,9 +66,9 @@
                 "valueCodeableConcept": {
                   "coding": [
                     {
-                      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus",
-                      "code": "number-present-and-verified",
-                      "display": "Number present and verified"
+                      "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusWales",
+                      "code": "01",
+                      "display": "Number present and traced"
                     }
                   ]
                 }
