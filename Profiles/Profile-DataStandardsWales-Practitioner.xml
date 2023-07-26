@@ -115,17 +115,6 @@
       <path value="Practitioner.identifier.value" />
       <min value="1" />
     </element>
-    <element id="Practitioner.identifier:nadexIdentifier">
-      <path value="Practitioner.identifier" />
-      <sliceName value="nadexIdentifier" />
-      <short value="NHS Wales NADEX user id" />
-      <definition value="NHS Wales NADEX user id" />
-      <max value="1" />
-    </element>
-    <element id="Practitioner.identifier:nadexIdentifier.system">
-      <path value="Practitioner.identifier.system" />
-      <fixedUri value="https://fhir.nhs.wales/Id/nadex-identifier" />
-    </element>
     <element id="Practitioner.name">
       <path value="Practitioner.name" />
       <min value="1" />

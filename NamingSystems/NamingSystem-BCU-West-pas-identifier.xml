@@ -6,7 +6,7 @@
   <publisher value="NHS Wales" />
   <kind value="identifier"/> 
   <responsible value="Betsi Cadwaladr University Health Board"/> 
-  <description value="This namespace indicates a Betsi Cadwaladr University Health Board West PAS patient identifier"/> 
+  <description value="This namespace indicates a Betsi Cadwaladr University Health Board West PAS patient identifier. All BCU PAS instances have been consolidated into one system and the BCU Central namespace is now the primary identifier."/> 
   <usage value="Patient identity"/> 
   <uniqueId> 
     <type value="uri"/> 
