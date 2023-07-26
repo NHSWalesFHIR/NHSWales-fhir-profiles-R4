@@ -18,13 +18,13 @@
                 <display value="Any other mixed background / multiple ethnic background " />
             </coding>
         </valueCodeableConcept>
-    </extension>    
-    <extension url="http://hl7.org/fhir/StructureDefinition/patient-religion">
+    </extension>
+    <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-Religion">
         <valueCodeableConcept>
             <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation" />
-                <code value="1021" />
-                <display value="Humanism" />
+                <system value="http://snomed.info/sct" />
+                <code value="344151000000101" />
+                <display value="Follower of Church of England" />
             </coding>
         </valueCodeableConcept>
     </extension>

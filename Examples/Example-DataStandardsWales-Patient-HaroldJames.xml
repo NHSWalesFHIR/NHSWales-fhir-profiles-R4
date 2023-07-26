@@ -16,12 +16,12 @@
             </coding>
         </valueCodeableConcept>
     </extension>  
-    <extension url="http://hl7.org/fhir/StructureDefinition/patient-religion">
+    <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-Religion">
         <valueCodeableConcept>
             <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation" />
-                <code value="1041" />
-                <display value="Roman Catholic Church" />
+                <system value="http://snomed.info/sct" />
+                <code value="160540005" />
+                <display value="Roman Catholic, follower of religion" />
             </coding>
         </valueCodeableConcept>
     </extension>

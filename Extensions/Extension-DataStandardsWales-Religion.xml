@@ -34,7 +34,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Religion" />
+      <fixedUri value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-Religion" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
