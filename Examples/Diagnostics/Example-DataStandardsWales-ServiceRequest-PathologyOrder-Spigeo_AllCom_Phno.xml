@@ -1,6 +1,6 @@
 <ServiceRequest
   xmlns="http://hl7.org/fhir">
-  <id value="Example-DataStandardsWales-ServiceRequest-PathologyOrder-Spigeo_AllCom_Phno" />
+  <id value="Example-DSW-ServiceRequest-PathologyOrder-SpigeoAllComPhno" />
   <meta>
     <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-ServiceRequest" />
     <security>

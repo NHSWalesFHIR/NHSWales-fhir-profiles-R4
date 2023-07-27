@@ -1,5 +1,5 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
-    <id value="Example-DataStandardsWales-MedicationStatement-Nifedipress-Discharge"/>
+    <id value="Example-DSW-MedicationStatement-Nifedipress-Discharge"/>
     <meta>
         <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
     </meta>
