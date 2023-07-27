@@ -20,6 +20,10 @@
     <active value="true" />    
     <name value="Amman/Gwendraeth GP Cluster" />
     <partOf>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+			<value value="CC201" />
+		</identifier>
         <reference value="Organization/Example-DataStandardsWales-Organization-HywelDda" />
         <display value="Hywel Dda University Local Health Board" />
     </partOf>

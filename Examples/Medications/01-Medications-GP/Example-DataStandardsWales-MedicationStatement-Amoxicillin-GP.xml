@@ -8,11 +8,13 @@
         <div xmlns="http://www.w3.org/1999/xhtml">Amoxicillin 500mg capsules, one capsule three times a day for 7 days</div>
     </text>
     <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType">
-        <valueCoding>
-            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
-            <code value="acute" />
-            <display value="Short course (acute) therapy" />
-        </valueCoding>
+        <valueCodeableConcept>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
+				<code value="acute" />
+				<display value="Short course (acute) therapy" />
+			</coding>
+        </valueCodeableConcept>
     </extension>
     <status value="active" />
     <category>

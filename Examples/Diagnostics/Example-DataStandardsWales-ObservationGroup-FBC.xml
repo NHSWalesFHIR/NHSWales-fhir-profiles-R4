@@ -17,6 +17,13 @@
         <value value="1000178" />
     </identifier>
     <status value="final" />
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+      <code value="laboratory" />
+      <display value="Laboratory" />
+    </coding>
+  </category>
     <code>
         <coding>
             <system value="https://fhir.nhs.wales/Id/wrrs-procedure-code" />

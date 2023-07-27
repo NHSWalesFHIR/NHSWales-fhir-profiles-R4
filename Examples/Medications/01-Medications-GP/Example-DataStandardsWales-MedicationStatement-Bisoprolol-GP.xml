@@ -8,12 +8,14 @@
         <div xmlns="http://www.w3.org/1999/xhtml">Bisoprolol 1.25mg tablets - 1 tablet every morning</div>
     </text>
     <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType">
-        <valueCoding>
-            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
-            <code value="continuous" />
-            <display value="Continuous long term therapy" />
-        </valueCoding>
-    </extension>    
+        <valueCodeableConcept>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
+				<code value="continuous" />
+				<display value="Continuous long term therapy" />
+			</coding>
+        </valueCodeableConcept>
+    </extension> 
     <status value="active" />
     <category>
         <coding>
