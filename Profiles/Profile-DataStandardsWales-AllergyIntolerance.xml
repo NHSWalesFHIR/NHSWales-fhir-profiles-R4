@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="DataStandardsWales-AllergyIntolerance"/>
+  <id value="DataStandardsWales-AllergyIntolerance" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-AllergyIntolerance" />
+  <version value="0.1.0" />
   <name value="DataStandardsWalesAllergyIntolerance" />
   <title value="Data Standards Wales Allergy Intolerance" />
   <status value="draft" />
-  <version value="0.1.0" />
-  <date value="2023-05-24" />
   <experimental value="false" />
+  <date value="2023-05-24" />
   <publisher value="NHS Wales" />
   <copyright value="© 2023 NHS Wales." />
   <fhirVersion value="4.0.1" />

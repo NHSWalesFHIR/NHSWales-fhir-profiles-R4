@@ -13,7 +13,7 @@
                 <coding>
                     <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusWales"/>
                     <code value="01"/>
-                    <display value="Number present and traced"/>
+                    <display value="Number present & traced"/>
                 </coding>
             </valueCodeableConcept>
         </extension>
