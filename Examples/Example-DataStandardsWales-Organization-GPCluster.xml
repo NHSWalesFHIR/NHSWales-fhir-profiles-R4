@@ -5,7 +5,7 @@
     </meta>
     <text>
         <status value="generated" />
-        <div xmlns="http://www.w3.org/1999/xhtml">Amman/Gwendraeth GP Cluster</div>
+        <div xmlns="http://www.w3.org/1999/xhtml">Amman Gwendraeth GP Cluster</div>
     </text>       
     <extension url="http://hl7.org/fhir/StructureDefinition/organization-period">
 		<valuePeriod>
@@ -18,8 +18,12 @@
         <value value="CC201" />
     </identifier>
     <active value="true" />    
-    <name value="Amman/Gwendraeth GP Cluster" />
+    <name value="Amman Gwendraeth GP Cluster" />
     <partOf>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+			<value value="7A2" />
+		</identifier>
         <reference value="Organization/Example-DataStandardsWales-Organization-HywelDda" />
         <display value="Hywel Dda University Local Health Board" />
     </partOf>

@@ -18,6 +18,7 @@
     <system value="https://fhir.nhs.wales/Id/wrrs-obx-identifier" />
     <value value="1001035" />
   </identifier>
+  <status value="final"/>
   <code>
     <coding>
       <system value="https://fhir.nhs.wales/Id/lims-test-code" />

@@ -1,6 +1,6 @@
 <Observation xmlns="http://hl7.org/fhir">
 	<meta>
-		<profile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Observation" />
+		<profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation" />
 	</meta>
 	<status value="final" />
 	<category>
