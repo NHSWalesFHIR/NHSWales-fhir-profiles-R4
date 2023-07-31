@@ -8,12 +8,14 @@
         <div xmlns="http://www.w3.org/1999/xhtml">Ramipril 2.5mg tablet - 1 tablet in the morning</div>
     </text>
     <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType">
-        <valueCoding>
-            <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
-            <code value="continuous" />
-            <display value="Continuous long term therapy" />
-        </valueCoding>
-    </extension>    
+        <valueCodeableConcept>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
+				<code value="continuous" />
+				<display value="Continuous long term therapy" />
+			</coding>
+        </valueCodeableConcept>
+    </extension> 
     <status value="active" />
     <category>
         <coding>

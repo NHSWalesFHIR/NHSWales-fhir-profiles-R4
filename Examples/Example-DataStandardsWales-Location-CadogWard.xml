@@ -1,3 +1,4 @@
+
 <Location xmlns="http://hl7.org/fhir">
     <id value="Example-DataStandardsWales-Location-CadogWard" />
     <meta>
@@ -13,10 +14,17 @@
     </identifier>
     <identifier>
         <system value="https://fhir.hduhb.nhs.wales/Id/pas-location-identifier" />
-        <value value="21057" />
+        <value value="21057-example" />
     </identifier>
+	<address>
+		<postalCode value="SA31 2AF" />
+	</address>
     <name value="Cadog Ward" />
     <managingOrganization>
+		<identifier>
+			<system value="https://fhir.hduhb.nhs.wales/Id/pas-location-identifier" />
+			<value value="2105-example" />
+		</identifier>
         <reference value="Organization/Example-DataStandardsWales-Organization-GlangwiliGeneralHospital" />
         <display value="Glangwili General Hospital" />
     </managingOrganization>

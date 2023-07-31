@@ -68,7 +68,7 @@
                     {
                       "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusWales",
                       "code": "01",
-                      "display": "Number present and traced"
+                      "display": "Number present & traced"
                     }
                   ]
                 }
