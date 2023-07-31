@@ -30,7 +30,11 @@
         <postalCode value="SA18 1EG" />        
     </address>    
     <partOf>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+			<value value="CC201" />
+		</identifier>
         <reference value="Organization/Example-DataStandardsWales-Organization-GPCluster" />
-        <display value="Amman/Gwendraeth GP Cluster" />
+        <display value="Amman Gwendraeth GP Cluster" />
     </partOf>
 </Organization>

@@ -34,7 +34,7 @@
     <partOf>
 		<identifier>
 			<system value="https://fhir.nhs.uk/Id/ods-organization-code" />
-			<value value="7A3CJ" />
+			<value value="7A3" />
 		</identifier>
         <reference value="Organization/Example-DataStandardsWales-Organization-SwanseaBay" />
         <display value="Swansea Bay University Local Health Board" />
