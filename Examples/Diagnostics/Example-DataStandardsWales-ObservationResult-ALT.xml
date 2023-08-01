@@ -55,13 +55,12 @@
 		<display value="JONES, Alice (NHS: 9912003444)" />
   </subject>
    <category>
-   <LaboratorySlice>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+	  <version value="4.3.0" />
       <code value="laboratory" />
       <display value="Laboratory" />
     </coding>
-	</LaboratorySlice>
   </category>
   <valueQuantity>
     <value value="34" />
