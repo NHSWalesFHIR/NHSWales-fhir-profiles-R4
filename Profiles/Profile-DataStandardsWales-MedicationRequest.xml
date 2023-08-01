@@ -14,7 +14,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="MedicationRequest" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationRequest" />
   <derivation value="constraint" />
   <differential>
     <element id="MedicationRequest.extension">
