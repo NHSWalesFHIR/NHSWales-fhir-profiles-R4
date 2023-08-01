@@ -6,7 +6,7 @@
   <date value="2023-05-24" />
   <publisher value="NHS Wales" />
   <responsible value="Betsi Cadwaladr University Health Board"/> 
-  <description value="This namespace indicates a Betsi Cadwaladr University Health Board Central PAS patient identifier"/> 
+  <description value="This namespace indicates a Betsi Cadwaladr University Health Board Central PAS patient identifier. All BCUHB PAS instances have been consolidated into one system and the BCUHB Central namespace is now the primary identifier."/> 
   <usage value="Patient identity"/> 
   <uniqueId> 
     <type value="uri"/> 

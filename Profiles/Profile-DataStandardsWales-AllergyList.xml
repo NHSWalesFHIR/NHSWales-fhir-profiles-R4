@@ -49,7 +49,7 @@
       <path value="List.encounter" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Encounter" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/UKCore-Encounter" />
       </type>
       <mustSupport value="true" />
     </element>

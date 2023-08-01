@@ -18,24 +18,24 @@
                 <display value="Any other mixed background / multiple ethnic background " />
             </coding>
         </valueCodeableConcept>
-    </extension>    
-    <extension url="http://hl7.org/fhir/StructureDefinition/patient-religion">
+    </extension>
+    <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-Religion" >
         <valueCodeableConcept>
             <coding>
-                <system value="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation" />
-                <code value="1021" />
-                <display value="Humanism" />
+                <system value="http://snomed.info/sct" />
+                <code value="344151000000101" />
+                <display value="Follower of Church of England" />
             </coding>
         </valueCodeableConcept>
     </extension>
-    <identifier>
+<identifier>
         <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
             <valueCodeableConcept>
                 <coding>
-                    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus" />
-                    <code value="number-present-and-verified" />
-                    <display value="Number present and verified" />
-                </coding>
+                    <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusWales"/>
+                    <code value="01"/>
+                    <display value="Number present & traced"/>
+				</coding>
             </valueCodeableConcept>
         </extension>
         <system value="https://fhir.nhs.uk/Id/nhs-number" />
