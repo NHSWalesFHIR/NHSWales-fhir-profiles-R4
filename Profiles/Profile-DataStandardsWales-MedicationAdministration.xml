@@ -15,7 +15,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="MedicationAdministration" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationAdministration" />
   <derivation value="constraint" />
   <differential>
     <element id="MedicationAdministration.identifier">
