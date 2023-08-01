@@ -56,12 +56,10 @@
   </subject>
    <category>
    <fixedCodeableConcept>
-    <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
 	  <version value="4.3.0" />
       <code value="laboratory" />
       <display value="Laboratory" />
-    </coding>
 	</fixedCodeableConcept>
   </category>
   <valueQuantity>
