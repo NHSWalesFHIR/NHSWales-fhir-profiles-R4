@@ -2,7 +2,7 @@
   <id value="DataStandardsWales-CTMUHB-PAS-Identifier"/> 
   <name value="CTMUHB PAS Identifier"/> 
   <kind value="identifier"/> 
-  <status value="draft" />
+  <status value="active" />
   <date value="2023-05-24" />
   <publisher value="NHS Wales" />
   <responsible value="Cwm Taf Morgannwg University Health Board"/> 

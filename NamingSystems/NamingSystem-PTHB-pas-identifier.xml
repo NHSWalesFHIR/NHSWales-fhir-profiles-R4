@@ -2,7 +2,7 @@
   <id value="DataStandardsWales-PTHB-PAS-Identifier"/> 
   <name value="PTHB PAS Identifier"/>
   <kind value="identifier"/> 
-  <status value="draft" />
+  <status value="active" />
   <date value="2023-05-24" />
   <publisher value="NHS Wales" />
   <responsible value="Powys Teaching Health Board"/> 

@@ -3,12 +3,12 @@
 	<url value="https://fhir.nhs.wales/ConceptMap/DataStandardsWales-HL7AdministrativeGender-GenderIdentity"/>
 	<name value="DataStandardsWalesConceptMapHL7AdministrativeGenderToGenderIdentity"/>
 	<title value="Data Standards Wales Concept Map from HL7 Administrative Gender to Gender Identity"/>
-  <status value="draft" />
-  <version value="0.1.0" />
+    <status value="active" />
+    <version value="1.0" />
   <date value="2023-05-24" />
   <experimental value="false" />
   <publisher value="NHS Wales" />
-  <copyright value="© 2023 NHS Wales." />
+  <copyright value="2023 NHS Wales." />
 	<description value="Maps concepts from HL7 Administrative Gender codes to Data Standards Wales Gender Identity codes" />
 	<sourceUri value="http://hl7.org/fhir/administrative-gender"/>
 	<targetUri value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-GenderIdentity"/>

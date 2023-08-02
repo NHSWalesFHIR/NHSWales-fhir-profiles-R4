@@ -1,7 +1,7 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-BCUHB-West-PAS-Identifier"/> 
   <name value="BCUHB West PAS Identifier"/> 
-  <status value="draft" />
+  <status value="active" />
   <date value="2023-05-24" />
   <publisher value="NHS Wales" />
   <kind value="identifier"/> 

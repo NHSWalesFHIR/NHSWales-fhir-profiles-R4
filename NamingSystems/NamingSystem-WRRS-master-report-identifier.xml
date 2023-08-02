@@ -2,7 +2,7 @@
     <id value="DataStandardsWales-WRRS-Master-Report-identifier" />
     <name value="WRRS Master Report Identifier" />
     <kind value="identifier" />
-  <status value="draft" />
+  <status value="active" />
   <date value="2023-05-24" />
   <publisher value="NHS Wales" />
     <contact>
