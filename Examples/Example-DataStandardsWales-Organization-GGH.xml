@@ -32,6 +32,10 @@
         <postalCode value="SA31 2AF" />
     </address>
     <partOf>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+			<value value="7A2" />
+		</identifier>
         <reference value="Organization/Example-DataStandardsWales-Organization-HywelDda" />
         <display value="Hywel Dda University Local Health Board" />
     </partOf>

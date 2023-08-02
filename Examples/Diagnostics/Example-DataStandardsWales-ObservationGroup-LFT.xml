@@ -19,6 +19,15 @@
     <value value="1000423" />
   </identifier>
   <status value="final" />
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/ValueSet/observation-category" />
+			<version value="4.3.0" />
+			<code value="laboratory" />
+			<display value="Laboratory" />
+		</coding>
+	</category>
+
   <code>
     <coding>
       <system value="https://fhir.nhs.wales/Id/wrrs-procedure-code" />

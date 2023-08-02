@@ -9,10 +9,17 @@
     </text>      
     <identifier>
         <system value="https://fhir.sbuhb.nhs.wales/Id/pas-location-identifier" />
-        <value value="60138" />
+        <value value="60138-example" />
     </identifier>
-    <name value="Ward E" />	
+    <name value="Ward E" />
+	<address>
+		<postalCode value="SA12 7BX" />
+	</address>
     <managingOrganization>
+		<identifier>
+			<system value="https://fhir.sbuhb.nhs.wales/Id/pas-location-identifier" />
+			<value value="6013-example" />
+		</identifier>
         <reference value="Organization/Example-DataStandardsWales-Organization-NeathPortTalbotHospital" />
         <display value="Neath Port Talbot Hospital" />
     </managingOrganization>

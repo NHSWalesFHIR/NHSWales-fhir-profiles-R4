@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="DataStandardsWales-AllergyIntolerance"/>
+  <id value="DataStandardsWales-AllergyIntolerance" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-AllergyIntolerance" />
   <name value="DataStandardsWalesAllergyIntolerance" />
   <title value="Data Standards Wales Allergy Intolerance" />
-  <status value="draft" />
-  <version value="0.1.0" />
-  <date value="2023-05-24" />
+  <version value="1.0" />
+  <status value="active" />
   <experimental value="false" />
+  <date value="2023-08-02" />
   <publisher value="NHS Wales" />
-  <copyright value="© 2023 NHS Wales." />
+  <copyright value="2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -54,7 +54,7 @@
       <path value="AllergyIntolerance.encounter" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Encounter" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/UKCore-Encounter" />
       </type>
       <mustSupport value="true" />
     </element>

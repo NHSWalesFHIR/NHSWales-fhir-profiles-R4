@@ -21,7 +21,7 @@
     </extension>
     <identifier>
         <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
-        <value value="7A2CJ" />
+        <value value="7A3CJ" />
     </identifier>
     <active value="true" />
     <name value="Neath Port Talbot Hospital" />
@@ -32,6 +32,10 @@
         <postalCode value="SA12 7BX" />
     </address>
     <partOf>
+		<identifier>
+			<system value="https://fhir.nhs.uk/Id/ods-organization-code" />
+			<value value="7A3" />
+		</identifier>
         <reference value="Organization/Example-DataStandardsWales-Organization-SwanseaBay" />
         <display value="Swansea Bay University Local Health Board" />
     </partOf>

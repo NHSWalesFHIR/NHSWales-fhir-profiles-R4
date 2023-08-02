@@ -1,6 +1,6 @@
 <Observation
   xmlns="http://hl7.org/fhir">
-  <id value="Example-DataStandardsWales-ObservationResult-FBC_WBC" />
+  <id value="Example-DataStandardsWales-ObservationResult-FBCWBC" />
   <meta>
     <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation-Lab" />
     <security>
@@ -18,6 +18,7 @@
     <system value="https://fhir.nhs.wales/Id/wrrs-obx-identifier" />
     <value value="1000485" />
   </identifier>
+  <status value="final"/>
   <code>
     <coding>
       <system value="https://fhir.nhs.wales/Id/lims-test-code" />
@@ -53,6 +54,14 @@
 		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
 		<display value="JONES, Alice (NHS: 9912003444)" />
   </subject>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/ValueSet/observation-category" />
+			<version value="4.3.0" />
+			<code value="laboratory" />
+			<display value="Laboratory" />
+		</coding>
+	</category>
   <valueQuantity>
     <value value="10.0" />
     <unit value="x10^9/L" />

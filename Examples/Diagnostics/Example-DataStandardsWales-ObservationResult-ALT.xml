@@ -18,6 +18,7 @@
     <system value="https://fhir.nhs.wales/Id/wrrs-obx-identifier" />
     <value value="1001035" />
   </identifier>
+  <status value="final"/>
   <code>
     <coding>
       <system value="https://fhir.nhs.wales/Id/lims-test-code" />
@@ -53,6 +54,14 @@
 		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
 		<display value="JONES, Alice (NHS: 9912003444)" />
   </subject>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/ValueSet/observation-category" />
+			<version value="4.3.0" />
+			<code value="laboratory" />
+			<display value="Laboratory" />
+		</coding>
+	</category>
   <valueQuantity>
     <value value="34" />
     <unit value="U/L" />

@@ -12,6 +12,7 @@
     <system value="https://fhir.hduhb.nhs.wales/Id/pacs-accession-number" />
     <value value="HDD633125" />
   </identifier>
+  <status value="available" />
   <subject>
 		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
 		<display value="JONES, Alice (NHS: 9912003444)" />

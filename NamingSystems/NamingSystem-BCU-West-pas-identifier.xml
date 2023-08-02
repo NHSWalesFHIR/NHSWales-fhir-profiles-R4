@@ -1,12 +1,12 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-BCUHB-West-PAS-Identifier"/> 
   <name value="BCUHB West PAS Identifier"/> 
-  <status value="draft" />
-  <date value="2023-05-24" />
+  <status value="active" />
+  <date value="2023-08-02" />
   <publisher value="NHS Wales" />
   <kind value="identifier"/> 
   <responsible value="Betsi Cadwaladr University Health Board"/> 
-  <description value="This namespace indicates a Betsi Cadwaladr University Health Board West PAS patient identifier"/> 
+  <description value="This namespace indicates a Betsi Cadwaladr University Health Board West PAS patient identifier. All BCUHB PAS instances have been consolidated into one system and the BCUHB Central namespace is now the primary identifier."/> 
   <usage value="Patient identity"/> 
   <uniqueId> 
     <type value="uri"/> 

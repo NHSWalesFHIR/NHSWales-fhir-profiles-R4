@@ -3,12 +3,12 @@
     <url value="https://fhir.nhs.wales/ConceptMap/DataStandardsWales-MaritalStatus-UKCorePersonMaritalStatusCode"/>
     <name value="DataStandardsWalesConceptMapMaritalStatusToUKCorePersonMaritalStatusCode"/>
     <title value="Data Standards Wales Concept Map from Marital Status to UK Core Person Marital Status Code"/>
-  <status value="draft" />
-  <version value="0.1.0" />
-  <date value="2023-05-24" />
+    <status value="active" />
+    <version value="1.0" />
+  <date value="2023-08-02" />
   <experimental value="false" />
   <publisher value="NHS Wales" />
-  <copyright value="© 2023 NHS Wales." />
+  <copyright value="2023 NHS Wales." />
     <description value="Maps concepts from Data Standards Wales Marital Status codes to UK Core Marital Status codes" />    
     <sourceUri value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-MaritalStatus"/>
     <targetUri value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode"/>    

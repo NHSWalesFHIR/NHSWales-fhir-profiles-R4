@@ -1,6 +1,6 @@
-<ServiceRequest 
+<ServiceRequest
   xmlns="http://hl7.org/fhir">
-  <id value="Example-DataStandardsWales-ServiceRequest-PathologyOrder-LFT_ACE" />
+  <id value="Example-DSW-ServiceRequest-PathologyOrder-FBCLFT" />
   <meta>
     <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-ServiceRequest" />
     <security>
@@ -11,23 +11,27 @@
   </meta>
   <text>
     <status value="generated" />
-    <div 
-      xmlns="http://www.w3.org/1999/xhtml">Liver function test, ACE</div>
+    <div
+      xmlns="http://www.w3.org/1999/xhtml">Full blood count, Liver function test</div>
   </text>
   <identifier>
-    <system value="https://fhir.nhs.wales/Id/wrrs-episode-number" />
-    <value value="5000152679" />
+    <system value="https://fhir.nhs.wales/Id/lims-procedure-code" />
+    <value value="FBC, LFT" />
   </identifier>
-  <basedOn>
-    <reference value="ServiceRequest/Example-DataStandardsWales-ServiceRequest-PathologyOrder-ParentRequest" />
-    <display value="LFT, ACE" />
-  </basedOn>
   <requisition>
     <system value="https://fhir.nhs.wales/Id/wrrs-request-identifier" />
-    <value value="111045162" />
+    <value value="111046774" />
   </requisition>
   <status value="completed" />
-  <intent value="filler-order" />
+  <intent value="order" />
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/servicerequest-category" />
+      <code value="108252007" />
+      <display value="Laboratory procedure" />
+    </coding>
+    <text value="Laboratory procedure" />
+  </category>
   <priority value="routine" />
   <code>
     <coding>
@@ -41,16 +45,20 @@
 		<reference value="Patient/Example-DataStandardsWales-Patient-AliceJones" />
 		<display value="JONES, Alice (NHS: 9912003444)" />
   </subject>
-  <authoredOn value="2021-10-20T07:25:11.507+00:00" />
+  <authoredOn value="2022-05-09T11:27:42.037+00:00" />
   <requester>
     <reference value="Practitioner/Example-DataStandardsWales-Practitioner-Consultant" />
     <display value="..." />
   </requester>
   <specimen>
-      <reference value="Specimen/Example-DataStandardsWales-Specimen-Serum" />
-      <display value="Serum" />
+    <reference value="Specimen/Example-DataStandardsWales-Specimen-Blood" />
+    <display value="Blood" />
+  </specimen>
+  <specimen>
+    <reference value="Specimen/Example-DataStandardsWales-Specimen-Serum" />
+    <display value="Serum" />
   </specimen>
   <note>
-    <text value="ghgfhgfhfg" />
+    <text value="Detail A,B,C" />
   </note>
 </ServiceRequest>

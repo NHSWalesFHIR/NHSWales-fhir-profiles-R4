@@ -1,0 +1,15 @@
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="DataStandardsWales-WRTS-Location-Identifier"/>
+  <name value="WRTS Location Identifier"/>
+  <status value="active"/>
+  <kind value="identifier"/>
+  <date value="2023-08-02" />
+  <publisher value="NHS Wales"/>
+  <responsible value="NHS Wales Informatics Service"/>
+  <usage value="Location Identifier"/>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="https://fhir.nhs.wales/Id/wrts-location-identifier"/>
+    <preferred value="true"/>
+  </uniqueId>
+</NamingSystem> 

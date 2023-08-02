@@ -11,9 +11,9 @@
     </organization>
     <code>
         <coding>
-            <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-JobRole" />
-            <code value="3005" />
-            <display value="Specialist Nurse Practitioner" />
+            <system value="http://terminology.hl7.org/CodeSystem/practitioner-role" />
+            <code value="nurse" />
+            <display value="Nurse" />
         </coding>
     </code>
 	<telecom>

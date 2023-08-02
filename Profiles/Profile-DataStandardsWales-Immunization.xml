@@ -9,12 +9,12 @@
   <date value="2023-05-24" />
   <experimental value="true" />
   <publisher value="NHS Wales" />
-  <copyright value="© 2023 NHS Wales." />
+  <copyright value="2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Immunization" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Immunization" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization" />
   <derivation value="constraint" />
   <differential>
     <element id="Immunization">
@@ -72,13 +72,6 @@
     <element id="Immunization.identifier.value">
       <path value="Immunization.identifier.value" />
       <min value="1" />
-    </element>
-    <element id="Immunization.identifier.assigner">
-      <path value="Immunization.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
     </element>
     <element id="Immunization.status">
       <path value="Immunization.status" />
@@ -156,13 +149,6 @@
       <path value="Immunization.patient.identifier.value" />
       <min value="1" />
     </element>
-    <element id="Immunization.patient.identifier.assigner">
-      <path value="Immunization.patient.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="Immunization.encounter">
       <path value="Immunization.encounter" />
       <definition value="The visit or admission or other contact between patient and healthcare provider the immunization was performed as part of." />
@@ -177,13 +163,6 @@
         <strength value="extensible" />
         <description value="A resource (or, for logical models, the URI of the logical model)." />
       </binding>
-    </element>
-    <element id="Immunization.encounter.identifier.assigner">
-      <path value="Immunization.encounter.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
     </element>
     <element id="Immunization.occurrence[x]">
       <path value="Immunization.occurrence[x]" />
@@ -236,13 +215,6 @@
         <strength value="extensible" />
         <description value="A resource (or, for logical models, the URI of the logical model)." />
       </binding>
-    </element>
-    <element id="Immunization.manufacturer.identifier.assigner">
-      <path value="Immunization.manufacturer.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
     </element>
     <element id="Immunization.manufacturer.display">
       <path value="Immunization.manufacturer.display" />
@@ -318,10 +290,10 @@
       <path value="Immunization.note.author[x]" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Practitioner" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Patient" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Organization" />
       </type>
       <type>
         <code value="string" />
@@ -357,8 +329,8 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-DiagnosticReport" />
       </type>
     </element>
     <element id="Immunization.reasonReference.type">
@@ -368,18 +340,11 @@
         <description value="A resource (or, for logical models, the URI of the logical model)." />
       </binding>
     </element>
-    <element id="Immunization.reasonReference.identifier.assigner">
-      <path value="Immunization.reasonReference.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="Immunization.reaction.detail">
       <path value="Immunization.reaction.detail" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Observation" />
       </type>
     </element>
     <element id="Immunization.reaction.detail.type">
@@ -413,13 +378,6 @@
         <strength value="extensible" />
         <description value="A resource (or, for logical models, the URI of the logical model)." />
       </binding>
-    </element>
-    <element id="Immunization.protocolApplied.authority.identifier.assigner">
-      <path value="Immunization.protocolApplied.authority.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
     </element>
     <element id="Immunization.protocolApplied.targetDisease">
       <path value="Immunization.protocolApplied.targetDisease" />

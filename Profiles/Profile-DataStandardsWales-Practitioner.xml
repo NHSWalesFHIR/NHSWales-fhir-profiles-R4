@@ -4,12 +4,12 @@
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
   <name value="DataStandardsWalesPractitioner" />
   <title value="Data Standards Wales Practitioner" />
-  <status value="draft" />
-  <version value="0.1.0" />
-  <date value="2023-05-24" />
+  <version value="1.0" />
+  <status value="active" />
   <experimental value="false" />
+  <date value="2023-08-02" />
   <publisher value="NHS Wales" />
-  <copyright value="© 2023 NHS Wales." />
+  <copyright value="2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -92,12 +92,7 @@
     </element>
     <element id="Practitioner.identifier:gphcCode.system">
       <path value="Practitioner.identifier.system" />
-      <min value="1" />
       <fixedUri value="https://fhir.hl7.org.uk/Id/gphc-number" />
-    </element>
-    <element id="Practitioner.identifier:gphcCode.value">
-      <path value="Practitioner.identifier.value" />
-      <min value="1" />
     </element>
     <element id="Practitioner.identifier:sdsUserId">
       <path value="Practitioner.identifier" />
@@ -108,28 +103,17 @@
     </element>
     <element id="Practitioner.identifier:sdsUserId.system">
       <path value="Practitioner.identifier.system" />
-      <min value="1" />
       <fixedUri value="&quot;https://fhir.nhs.uk/Id/sds-user-id&quot;" />
-    </element>
-    <element id="Practitioner.identifier:sdsUserId.value">
-      <path value="Practitioner.identifier.value" />
-      <min value="1" />
-    </element>
-    <element id="Practitioner.identifier:nadexIdentifier">
-      <path value="Practitioner.identifier" />
-      <sliceName value="nadexIdentifier" />
-      <short value="NHS Wales NADEX user id" />
-      <definition value="NHS Wales NADEX user id" />
-      <max value="1" />
-    </element>
-    <element id="Practitioner.identifier:nadexIdentifier.system">
-      <path value="Practitioner.identifier.system" />
-      <fixedUri value="https://fhir.nhs.wales/Id/nadex-identifier" />
     </element>
     <element id="Practitioner.name">
       <path value="Practitioner.name" />
       <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Practitioner.address.postalCode">
+      <path value="Practitioner.address.postalCode" />
+      <definition value="A postal code designating a region defined by the postal service.&#xD;&#xA;&#xD;&#xA;Format: 8 character alphanumeric&#xD;&#xA;The specific code format as specified by the Office of National statistics (ONS)&#xD;&#xA;&#xD;&#xA;Data description&#xD;&#xA;Unit postcode – 8 character version&#xD;&#xA;&#xD;&#xA;Range of codes/ Entity code&#xD;&#xA;AB1 Δ Δ 1AA - ZE99 Δ 9ZZ (maximum range)&#xD;&#xA;&#xD;&#xA;Comments&#xD;&#xA;2, 3 or 4-character outward code - left aligned;&#xD;&#xA;3-character inward code - right aligned;&#xD;&#xA;5th character always blank and&#xD;&#xA;3rd and 4th characters may be blank (Δ)&#xD;&#xA;&#xD;&#xA;This allows a space to be inserted to differentiate between the inward and outward segments of the code, enabling full use to be made of the Royal Mail postcode functionality." />
+      <requirements value="This guidance is based upon the published Data Standards Wales (DSW) recommendation for representing the postal code in systems.  While this is the preferred representation it is understood that some systems may not currently comply to the standard.  As such, this should be taken as guidance only. No software constraints have been placed on the data element to reject certain patterns therefore any string value sent is acceptable. However, it is best practice to follow the standard set out below for any new implementation or if a current system is being updated to conform to DSW standards.&#xD;&#xA;&#xD;&#xA;Please reference https://www.datadictionary.wales.nhs.uk/#!WordDocuments/informationspecification65.htm for full details on this data standard." />
     </element>
   </differential>
 </StructureDefinition>
