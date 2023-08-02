@@ -16,7 +16,7 @@
 	<name value="DataStandardsWalesTitle"/>
 	<title value="Data Standards Wales Title"/>
     <status value="active" />
-    <version value="1.0" />
+    <version value="1.0.0" />
     <date value="2023-08-02" />
     <experimental value="false" />
     <publisher value="NHS Wales" />
