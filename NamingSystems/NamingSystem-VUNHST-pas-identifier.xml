@@ -2,8 +2,8 @@
   <id value="DataStandardsWales-VUNHST-PAS-Identifier"/> 
   <name value="VUNHST PAS Identifier"/> 
   <kind value="identifier"/> 
-  <status value="draft" />
-  <date value="2023-08-04" />
+  <status value="active" />
+  <date value="2023-08-02" />
   <publisher value="NHS Wales" />
   <responsible value="Velindre University NHS Trust"/> 
   <description value="This namespace indicates a Velindre University NHS Trust PAS patient identifier"/> 

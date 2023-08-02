@@ -1,8 +1,8 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-BCUHB-West-PAS-Identifier"/> 
   <name value="BCUHB West PAS Identifier"/> 
-  <status value="draft" />
-  <date value="2023-05-24" />
+  <status value="active" />
+  <date value="2023-08-02" />
   <publisher value="NHS Wales" />
   <kind value="identifier"/> 
   <responsible value="Betsi Cadwaladr University Health Board"/> 

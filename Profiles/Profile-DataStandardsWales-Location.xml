@@ -4,12 +4,12 @@
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
   <name value="DataStandardsWalesLocation" />
   <title value="Data Standards Wales Location" />
-  <status value="draft" />
-  <version value="0.1.0" />
-  <date value="2023-05-24" />
+  <version value="1.0" />
+  <status value="active" />
+  <date value="2023-08-02" />
   <experimental value="false" />
   <publisher value="NHS Wales" />
-  <copyright value="© 2023 NHS Wales." />
+  <copyright value="2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
