@@ -262,7 +262,7 @@
       <binding>
         <strength value="extensible" />
         <description value="Data Standards Wales Title" />
-        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWalesTitle" />
+        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-Title" />
       </binding>
     </element>
     <element id="Patient.name.suffix">
