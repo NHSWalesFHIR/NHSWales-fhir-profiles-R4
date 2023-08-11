@@ -2,9 +2,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-MedicationDispense" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationDispense" />
-  <version value="1.0" />
   <name value="DataStandardsWalesMedicationDispense" />
   <title value="Data Standards Wales Medication Dispense" />
+  <version value="1.0.0" />
   <status value="active" />
   <experimental value="false" />
   <date value="2023-08-02" />

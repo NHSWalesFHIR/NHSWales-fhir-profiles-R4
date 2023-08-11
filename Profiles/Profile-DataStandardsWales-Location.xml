@@ -2,9 +2,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-Location" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
-  <version value="1.0" />
   <name value="DataStandardsWalesLocation" />
   <title value="Data Standards Wales Location" />
+  <version value="1.0.0" />
   <status value="active" />
   <experimental value="false" />
   <date value="2023-08-02" />
