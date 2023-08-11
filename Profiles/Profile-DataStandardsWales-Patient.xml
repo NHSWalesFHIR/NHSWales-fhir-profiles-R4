@@ -5,6 +5,7 @@
   <version value="1.0" />
   <name value="DataStandardsWalesPatient" />
   <title value="Data Standards Wales Patient" />
+  <version value="1.0.0" />
   <status value="active" />
   <experimental value="false" />
   <date value="2023-08-02" />
