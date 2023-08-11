@@ -2,15 +2,15 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-MedicationAdministration" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationAdministration" />
+  <version value="1.0" />
   <name value="DataStandardsWalesMedicationAdministration" />
   <title value="Data Standards Wales Medication Administration" />
-  <version value="1.0" />
   <status value="active" />
-  <date value="2023-08-02" />
   <experimental value="false" />
+  <date value="2023-08-02" />
   <publisher value="NHS Wales" />
-  <copyright value="2023 NHS Wales." />
   <description value="This profile defines the UK constraints and extensions on the International FHIR resource [MedicationAdministration](https://hl7.org/fhir/R4/MedicationAdministration.html)." />
+  <copyright value="2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -79,10 +79,6 @@
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Medication" />
       </type>
       <mustSupport value="true" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
-      </binding>
     </element>
     <element id="MedicationAdministration.subject">
       <path value="MedicationAdministration.subject" />
@@ -101,14 +97,6 @@
     <element id="MedicationAdministration.subject.identifier.value">
       <path value="MedicationAdministration.subject.identifier.value" />
       <min value="1" />
-    </element>
-    <element id="MedicationAdministration.context">
-      <path value="MedicationAdministration.context" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/UKCore-Encounter" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-EpisodeOfCare" />
-      </type>
     </element>
     <element id="MedicationAdministration.effective[x]">
       <path value="MedicationAdministration.effective[x]" />
@@ -147,8 +135,8 @@
       <path value="MedicationAdministration.reasonReference" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/UKCore-Observation" />
-        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/UKCore-DiagnosticReport" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-DiagnosticReport" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
       </type>
     </element>
@@ -159,13 +147,6 @@
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationRequest" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="MedicationAdministration.device">
-      <path value="MedicationAdministration.device" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
-      </type>
     </element>
     <element id="MedicationAdministration.note.author[x]">
       <path value="MedicationAdministration.note.author[x]" />
@@ -183,34 +164,6 @@
     <element id="MedicationAdministration.dosage">
       <path value="MedicationAdministration.dosage" />
       <mustSupport value="true" />
-    </element>
-    <element id="MedicationAdministration.dosage.site">
-      <path value="MedicationAdministration.dosage.site" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
-      </binding>
-    </element>
-    <element id="MedicationAdministration.dosage.route">
-      <path value="MedicationAdministration.dosage.route" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" />
-      </binding>
-    </element>
-    <element id="MedicationAdministration.dosage.method">
-      <path value="MedicationAdministration.dosage.method" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod" />
-      </binding>
-    </element>
-    <element id="MedicationAdministration.eventHistory">
-      <path value="MedicationAdministration.eventHistory" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance" />
-      </type>
     </element>
   </differential>
 </StructureDefinition>
