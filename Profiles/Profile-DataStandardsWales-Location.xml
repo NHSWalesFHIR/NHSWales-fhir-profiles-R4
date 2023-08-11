@@ -6,8 +6,8 @@
   <title value="Data Standards Wales Location" />
   <version value="1.0.0" />
   <status value="active" />
-  <date value="2023-08-02" />
   <experimental value="false" />
+  <date value="2023-08-02" />
   <publisher value="NHS Wales" />
   <copyright value="2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
@@ -55,13 +55,6 @@
       <comment value="Location name SHALL be populated. If the name of a location changes, consider putting the old name in the alias column so that it can still be located through searches." />
       <min value="1" />
       <mustSupport value="true" />
-    </element>
-    <element id="Location.type">
-      <path value="Location.type" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType" />
-      </binding>
     </element>
     <element id="Location.address">
       <path value="Location.address" />
