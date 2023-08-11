@@ -4,3 +4,4 @@ fhirpkg.lock.json
 
 # ignore ALL files in ANY directory named temp
 temp/
+.simplifier/quality.control.result.json

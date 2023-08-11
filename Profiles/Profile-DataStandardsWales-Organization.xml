@@ -6,8 +6,8 @@
   <title value="Data Standards Wales Organization" />
   <version value="1.0.0" />
   <status value="active" />
-  <date value="2023-08-02" />
   <experimental value="false" />
+  <date value="2023-08-02" />
   <publisher value="NHS Wales" />
   <copyright value="2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
@@ -66,13 +66,6 @@
       <path value="Organization.active" />
       <comment value="A status of the organization (i.e., whether is still active ) SHOULD be populated if the data exists.&#xD;&#xA;&#xD;&#xA;This active flag is not intended to be used to mark an organization as temporarily closed or under construction. Instead the Location(s) within the Organization should have the suspended status. If further details of the reason for the suspension are required, then an extension on this element should be used.&#xA;&#xA;This element is labeled as a modifier because it may be used to mark that the resource was created in error." />
       <mustSupport value="true" />
-    </element>
-    <element id="Organization.type">
-      <path value="Organization.type" />
-      <binding>
-        <strength value="example" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/organization-type" />
-      </binding>
     </element>
     <element id="Organization.name">
       <path value="Organization.name" />

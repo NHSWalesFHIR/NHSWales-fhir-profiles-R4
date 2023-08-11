@@ -6,8 +6,8 @@
   <title value="Data Standards Wales Medication Request" />
   <version value="1.0.0" />
   <status value="active" />
-  <date value="2023-08-02" />
   <experimental value="false" />
+  <date value="2023-08-02" />
   <publisher value="NHS Wales" />
   <copyright value="2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
@@ -32,10 +32,6 @@
       <path value="MedicationRequest.extension" />
       <sliceName value="medicationRepeatInformation" />
       <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicationRepeatInformation" />
-      </type>
       <mustSupport value="true" />
     </element>
     <element id="MedicationRequest.identifier">
@@ -52,7 +48,6 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/medicationrequest-status-reason" />
       </binding>
     </element>
     <element id="MedicationRequest.statusReason.coding">
@@ -81,10 +76,6 @@
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCategory" />
-      </binding>
     </element>
     <element id="MedicationRequest.reported[x]">
       <path value="MedicationRequest.reported[x]" />
@@ -111,10 +102,6 @@
         <aggregation value="bundled" />
       </type>
       <mustSupport value="true" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
-      </binding>
     </element>
     <element id="MedicationRequest.subject">
       <path value="MedicationRequest.subject" />
@@ -137,13 +124,6 @@
     <element id="MedicationRequest.subject.identifier.value">
       <path value="MedicationRequest.subject.identifier.value" />
       <min value="1" />
-    </element>
-    <element id="MedicationRequest.encounter">
-      <path value="MedicationRequest.encounter" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/UKCore-Encounter" />
-      </type>
     </element>
     <element id="MedicationRequest.authoredOn">
       <path value="MedicationRequest.authoredOn" />
@@ -198,7 +178,7 @@
       <path value="MedicationRequest.reasonReference" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/UKCore-Observation" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Observation" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
       </type>
     </element>
@@ -219,12 +199,9 @@
     </element>
     <element id="MedicationRequest.courseOfTherapyType">
       <path value="MedicationRequest.courseOfTherapyType" />
-      <short value="A course of therapy for a medication request" />
-      <definition value="The description of the course of therapy for a medication request." />
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationRequestCourseOfTherapy" />
       </binding>
     </element>
     <element id="MedicationRequest.courseOfTherapyType.coding">
@@ -272,25 +249,13 @@
     </element>
     <element id="MedicationRequest.substitution">
       <path value="MedicationRequest.substitution" />
-      <min value="1" />
       <mustSupport value="true" />
-    </element>
-    <element id="MedicationRequest.substitution.allowed[x]">
-      <path value="MedicationRequest.substitution.allowed[x]" />
-      <definition value="The purpose of this element is to allow the prescriber to dispense a different drug from what was prescribed." />
     </element>
     <element id="MedicationRequest.priorPrescription">
       <path value="MedicationRequest.priorPrescription" />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationRequest" />
-      </type>
-    </element>
-    <element id="MedicationRequest.eventHistory">
-      <path value="MedicationRequest.eventHistory" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance" />
       </type>
     </element>
   </differential>

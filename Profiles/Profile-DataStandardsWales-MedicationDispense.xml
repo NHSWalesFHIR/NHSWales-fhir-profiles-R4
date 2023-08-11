@@ -6,8 +6,8 @@
   <title value="Data Standards Wales Medication Dispense" />
   <version value="1.0.0" />
   <status value="active" />
-  <date value="2023-08-02" />
   <experimental value="false" />
+  <date value="2023-08-02" />
   <publisher value="NHS Wales" />
   <copyright value="2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
@@ -36,13 +36,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
-      </type>
-    </element>
-    <element id="MedicationDispense.partOf">
-      <path value="MedicationDispense.partOf" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Procedure" />
       </type>
     </element>
     <element id="MedicationDispense.status">
@@ -82,10 +75,6 @@
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Medication" />
       </type>
       <mustSupport value="true" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationCode" />
-      </binding>
     </element>
     <element id="MedicationDispense.subject">
       <path value="MedicationDispense.subject" />
@@ -116,7 +105,7 @@
       <path value="MedicationDispense.context" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/UKCore-Encounter" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-EpisodeOfCare" />
       </type>
     </element>
@@ -225,7 +214,6 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationSupplyType" />
       </binding>
     </element>
     <element id="MedicationDispense.type.coding.system">
@@ -317,34 +305,6 @@
       <path value="MedicationDispense.dosageInstruction" />
       <mustSupport value="true" />
     </element>
-    <element id="MedicationDispense.dosageInstruction.asNeeded[x]">
-      <path value="MedicationDispense.dosageInstruction.asNeeded[x]" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationPrecondition" />
-      </binding>
-    </element>
-    <element id="MedicationDispense.dosageInstruction.site">
-      <path value="MedicationDispense.dosageInstruction.site" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
-      </binding>
-    </element>
-    <element id="MedicationDispense.dosageInstruction.route">
-      <path value="MedicationDispense.dosageInstruction.route" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" />
-      </binding>
-    </element>
-    <element id="MedicationDispense.dosageInstruction.method">
-      <path value="MedicationDispense.dosageInstruction.method" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-MedicationDosageMethod" />
-      </binding>
-    </element>
     <element id="MedicationDispense.substitution.responsibleParty">
       <path value="MedicationDispense.substitution.responsibleParty" />
       <type>
@@ -365,13 +325,6 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
-      </type>
-    </element>
-    <element id="MedicationDispense.eventHistory">
-      <path value="MedicationDispense.eventHistory" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance" />
       </type>
     </element>
     <element id="MedicationDispense.eventHistory.identifier.assigner">

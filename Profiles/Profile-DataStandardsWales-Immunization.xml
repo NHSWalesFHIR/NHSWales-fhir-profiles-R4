@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-Immunization" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Immunization" />
+  <version value="0.0.5" />
   <name value="DataStandardsWalesImmunization" />
   <title value="Data Standards Wales Immunization" />
   <status value="draft" />
-  <version value="0.0.5" />
-  <date value="2023-05-24" />
   <experimental value="true" />
+  <date value="2023-05-24" />
   <publisher value="NHS Wales" />
   <copyright value="2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
@@ -17,15 +17,6 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Immunization" />
   <derivation value="constraint" />
   <differential>
-    <element id="Immunization">
-      <path value="Immunization" />
-      <constraint>
-        <key value="ukcore-imm-1" />
-        <severity value="error" />
-        <human value="If the immunization was not given then Immunization.status value SHALL = 'not-done', and the Immunization.statusReason SHALL be populated" />
-        <expression value="(status != 'not-done') or (status = 'not-done' and statusReason.exists())" />
-      </constraint>
-    </element>
     <element id="Immunization.extension">
       <path value="Immunization.extension" />
       <slicing>
@@ -41,20 +32,12 @@
       <path value="Immunization.extension" />
       <sliceName value="parentPresent" />
       <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ParentPresent" />
-      </type>
       <mustSupport value="false" />
     </element>
     <element id="Immunization.extension:vaccinationProcedure">
       <path value="Immunization.extension" />
       <sliceName value="vaccinationProcedure" />
       <min value="0" />
-      <type>
-        <code value="Extension" />
-        <profile value="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-VaccinationProcedure" />
-      </type>
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
@@ -80,10 +63,6 @@
     <element id="Immunization.statusReason">
       <path value="Immunization.statusReason" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ReasonImmunizationNotAdministered" />
-      </binding>
     </element>
     <element id="Immunization.statusReason.coding">
       <path value="Immunization.statusReason.coding" />
@@ -101,13 +80,6 @@
     <element id="Immunization.statusReason.coding.display">
       <path value="Immunization.statusReason.coding.display" />
       <min value="1" />
-    </element>
-    <element id="Immunization.vaccineCode">
-      <path value="Immunization.vaccineCode" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-VaccineCode" />
-      </binding>
     </element>
     <element id="Immunization.vaccineCode.coding">
       <path value="Immunization.vaccineCode.coding" />
@@ -133,13 +105,6 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Immunization.patient.type">
-      <path value="Immunization.patient.type" />
-      <binding>
-        <strength value="extensible" />
-        <description value="A resource (or, for logical models, the URI of the logical model)." />
-      </binding>
-    </element>
     <element id="Immunization.patient.identifier.system">
       <path value="Immunization.patient.identifier.system" />
       <min value="1" />
@@ -151,18 +116,10 @@
     </element>
     <element id="Immunization.encounter">
       <path value="Immunization.encounter" />
-      <definition value="The visit or admission or other contact between patient and healthcare provider the immunization was performed as part of." />
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Encounter" />
       </type>
-    </element>
-    <element id="Immunization.encounter.type">
-      <path value="Immunization.encounter.type" />
-      <binding>
-        <strength value="extensible" />
-        <description value="A resource (or, for logical models, the URI of the logical model)." />
-      </binding>
     </element>
     <element id="Immunization.occurrence[x]">
       <path value="Immunization.occurrence[x]" />
@@ -187,20 +144,6 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Immunization.location.type">
-      <path value="Immunization.location.type" />
-      <binding>
-        <strength value="extensible" />
-        <description value="A resource (or, for logical models, the URI of the logical model)." />
-      </binding>
-    </element>
-    <element id="Immunization.location.identifier.assigner">
-      <path value="Immunization.location.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="Immunization.manufacturer">
       <path value="Immunization.manufacturer" />
       <type>
@@ -208,13 +151,6 @@
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Immunization.manufacturer.type">
-      <path value="Immunization.manufacturer.type" />
-      <binding>
-        <strength value="extensible" />
-        <description value="A resource (or, for logical models, the URI of the logical model)." />
-      </binding>
     </element>
     <element id="Immunization.manufacturer.display">
       <path value="Immunization.manufacturer.display" />
@@ -232,7 +168,7 @@
       <path value="Immunization.site" />
       <mustSupport value="true" />
       <binding>
-        <strength value="preferred" />
+        <strength value="extensible" />
         <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-BodySite" />
       </binding>
     </element>
@@ -252,10 +188,6 @@
     <element id="Immunization.route">
       <path value="Immunization.route" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-SubstanceOrProductAdministrationRoute" />
-      </binding>
     </element>
     <element id="Immunization.doseQuantity">
       <path value="Immunization.doseQuantity" />
@@ -302,10 +234,6 @@
     <element id="Immunization.reasonCode">
       <path value="Immunization.reasonCode" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="https://fhir.hl7.org.uk/ValueSet/UKCore-ImmunizationExplanationReason" />
-      </binding>
     </element>
     <element id="Immunization.reasonCode.coding">
       <path value="Immunization.reasonCode.coding" />
@@ -333,13 +261,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-DiagnosticReport" />
       </type>
     </element>
-    <element id="Immunization.reasonReference.type">
-      <path value="Immunization.reasonReference.type" />
-      <binding>
-        <strength value="extensible" />
-        <description value="A resource (or, for logical models, the URI of the logical model)." />
-      </binding>
-    </element>
     <element id="Immunization.reaction.detail">
       <path value="Immunization.reaction.detail" />
       <type>
@@ -347,37 +268,9 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Observation" />
       </type>
     </element>
-    <element id="Immunization.reaction.detail.type">
-      <path value="Immunization.reaction.detail.type" />
-      <binding>
-        <strength value="extensible" />
-        <description value="A resource (or, for logical models, the URI of the logical model)." />
-      </binding>
-    </element>
-    <element id="Immunization.reaction.detail.identifier.assigner">
-      <path value="Immunization.reaction.detail.identifier.assigner" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
     <element id="Immunization.protocolApplied">
       <path value="Immunization.protocolApplied" />
       <mustSupport value="true" />
-    </element>
-    <element id="Immunization.protocolApplied.authority">
-      <path value="Immunization.protocolApplied.authority" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization" />
-      </type>
-    </element>
-    <element id="Immunization.protocolApplied.authority.type">
-      <path value="Immunization.protocolApplied.authority.type" />
-      <binding>
-        <strength value="extensible" />
-        <description value="A resource (or, for logical models, the URI of the logical model)." />
-      </binding>
     </element>
     <element id="Immunization.protocolApplied.targetDisease">
       <path value="Immunization.protocolApplied.targetDisease" />
