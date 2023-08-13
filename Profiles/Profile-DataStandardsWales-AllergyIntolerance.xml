@@ -2,9 +2,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-AllergyIntolerance" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-AllergyIntolerance" />
+  <version value="1.0.0" />
   <name value="DataStandardsWalesAllergyIntolerance" />
   <title value="Data Standards Wales Allergy Intolerance" />
-  <version value="1.0.0" />
   <status value="active" />
   <experimental value="false" />
   <date value="2023-08-02" />
@@ -52,10 +52,6 @@
     </element>
     <element id="AllergyIntolerance.encounter">
       <path value="AllergyIntolerance.encounter" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/UKCore-Encounter" />
-      </type>
       <mustSupport value="true" />
     </element>
     <element id="AllergyIntolerance.recordedDate">

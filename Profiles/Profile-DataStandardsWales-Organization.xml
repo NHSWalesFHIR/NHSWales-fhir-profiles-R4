@@ -2,9 +2,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-Organization" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
+  <version value="1.0.0" />
   <name value="DataStandardsWalesOrganization" />
   <title value="Data Standards Wales Organization" />
-  <version value="1.0.0" />
   <status value="active" />
   <experimental value="false" />
   <date value="2023-08-02" />
@@ -89,6 +89,10 @@
     <element id="Organization.partOf">
       <path value="Organization.partOf" />
       <definition value="The organization of which this organization forms a part.&#xD;&#xA;&#xD;&#xA;Recommended mandatory for primary care organisations.&#xD;&#xA;&#xD;&#xA;    &quot;partOf&quot;: {&#xD;&#xA;        &quot;reference&quot;: &quot;https://directory.spineservices.nhs.uk/R4/Organization/RR805&quot;,&#xD;&#xA;        &quot;identifier&quot;: {&#xD;&#xA;            &quot;system&quot;: &quot;https://fhir.nhs.uk/Id/ods-organization-code&quot;,&#xD;&#xA;            &quot;value&quot;: &quot;RR805&#xD;&#xA;        }" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="Organization.partOf.identifier">
