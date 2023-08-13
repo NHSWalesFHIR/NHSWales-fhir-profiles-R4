@@ -2,9 +2,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-PractitionerRole" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-PractitionerRole" />
+  <version value="1.0.0" />
   <name value="DataStandardsWalesPractitionerRole" />
   <title value="Data Standards Wales Practitioner Role" />
-  <version value="1.0.0" />
   <status value="active" />
   <experimental value="false" />
   <date value="2023-08-02" />
@@ -49,6 +49,13 @@
       <binding>
         <strength value="required" />
       </binding>
+    </element>
+    <element id="PractitionerRole.location">
+      <path value="PractitionerRole.location" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
+      </type>
     </element>
     <element id="PractitionerRole.telecom">
       <path value="PractitionerRole.telecom" />
