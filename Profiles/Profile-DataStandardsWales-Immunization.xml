@@ -222,10 +222,10 @@
       <path value="Immunization.note.author[x]" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Practitioner" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Patient" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Organization" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
       </type>
       <type>
         <code value="string" />
@@ -257,15 +257,15 @@
       <type>
         <code value="Reference" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Condition" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Observation" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-DiagnosticReport" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-DiagnosticReport" />
       </type>
     </element>
     <element id="Immunization.reaction.detail">
       <path value="Immunization.reaction.detail" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/DataStandardsWales-Observation" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Observation" />
       </type>
     </element>
     <element id="Immunization.protocolApplied">
