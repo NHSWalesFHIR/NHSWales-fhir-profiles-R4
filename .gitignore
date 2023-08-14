@@ -1,7 +1,9 @@
 # ignore the following file(s)
 fhirpkg.lock.json
 *.lock.json
-.simplifier/quality.control.result.json
+quality.control.result.json
 
 # ignore ALL files in ANY directory named temp
 temp/
+.simplifier/
+.git/
