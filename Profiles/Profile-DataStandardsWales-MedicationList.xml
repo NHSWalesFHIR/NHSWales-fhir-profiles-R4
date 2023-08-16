@@ -86,7 +86,7 @@
       <path value="List.entry.item" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://fhir.nhs.uk/StructureDefinition/DataStandardsWales-MedicationStatement" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationStatement" />
       </type>
     </element>
   </differential>
