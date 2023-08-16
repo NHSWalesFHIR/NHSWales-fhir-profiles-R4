@@ -60,6 +60,19 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="List.note.author[x]">
+      <path value="List.note.author[x]" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
+      </type>
+      <type>
+        <code value="string" />
+      </type>
+    </element>
     <element id="List.entry.item">
       <path value="List.entry.item" />
       <type>
