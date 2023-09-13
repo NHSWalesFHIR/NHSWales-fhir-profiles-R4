@@ -1,0 +1,39 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <id value="DataStandardsWales-MessageEvents-PatientMedicationList" />
+    <url value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MessageEvents-PatientMedicationsList" />
+    <name value="DataStandardsWalesMessageEventsPatientMedicationsList" />
+    <title value="Data Standards Wales Message Events to Communicate a Patient's Medications List" />
+    <status value="draft" />
+    <experimental value="true" />
+    <publisher value="NHS Wales" />
+    <contact>
+        <name value="Data Standards" />
+        <telecom>
+            <system value="email" />
+            <value value="data.standards@wales.nhs.uk" />
+            <use value="work" />
+        </telecom>
+    </contact>
+    <description value="A CodeSystem used for message events surrounding patient medications. Developed for use by NHS Wales Digital Medicines Transformation Programme to support the Shared Medicines Record" />    <copyright value="&#169; 2023 NHS Wales." />
+    <content value="complete" />
+    <count value="4" />
+    <concept>
+        <code value="admission" />
+        <display value="Medicines on admission" />
+        <definition value="Message to communicate a patient's medicines on admission" />
+    </concept>
+    <concept>
+        <code value="transfer" />
+        <display value="Medicines on inpatient transfer" />
+        <definition value="Message to communicate a patient's medicines on inpatient transfer (hospital to hospital/system to system)" />
+    <concept>
+        <code value="discharge" />
+        <display value="Medicines on discharge" />
+        <definition value="Message to communicate a patient's medicines on discharge" />
+    </concept>
+    <concept>
+        <code value="outpatient" />
+        <display value="Outpatient medications" />
+        <definition value="Message to communicate a patient's medicines prescribed in outpatients (involves prescribing or medicines review actions)" />
+    </concept>
+</CodeSystem>
