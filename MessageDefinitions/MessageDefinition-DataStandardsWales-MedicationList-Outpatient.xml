@@ -17,7 +17,7 @@
     </contact>
     <description value="Message to communicate medicines prescribed in outpatients (involves prescribing or medicines review actions)" />
     <eventCoding>
-        <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MessageEvents-PatientMedicationsList" />
+        <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MessageEvents-PatientMedicationList" />
         <code value="outpatient" />
         <display value="Outpatient medications" />
     </eventCoding>

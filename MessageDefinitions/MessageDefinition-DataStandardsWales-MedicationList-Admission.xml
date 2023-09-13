@@ -17,9 +17,9 @@
     </contact>
     <description value="Message to communcate a patient's medication list on admission to secondary care." />
     <eventCoding>
-        <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MessageEvents-PatientMedicationsList" />
-        <code value="Admission" />
-        <display value="Medicines on admission" />
+        <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MessageEvents-PatientMedicationList" />
+        <code value="patientMedicationList-admission" />
+        <display value="Patient's medication list on admission" />
     </eventCoding>
     <focus>
         <code value="List" />

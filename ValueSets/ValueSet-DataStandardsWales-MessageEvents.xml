@@ -1,5 +1,5 @@
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="DataStandardsWales-MessageEvents-Medicines" />
+    <id value="DataStandardsWales-MessageEvents" />
     <url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-MessageEvents" />
     <name value="DataStandardsWalesMessageEvents" />
     <title value="Data Standards Wales Message Events" />
@@ -18,7 +18,7 @@
     <copyright value="&#169; 2023 NHS Wales." />
     <compose>
         <include>
-            <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MessageEvents-PatientMedicationsList" />
+            <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MessageEvents-PatientMedicationList" />
         </include>
     </compose>
     <compose>

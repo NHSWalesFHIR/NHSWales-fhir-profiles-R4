@@ -17,9 +17,9 @@
     </contact>
     <description value="Message to communicate a patient's medication list on inpatient transfer (hospital to hospital/system to system)" />
     <eventCoding>
-        <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MessageEvents-PatientMedicationsList" />
-        <code value="transfer" />
-        <display value="Medicines on inpatient transfer" />
+        <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MessageEvents-PatientMedicationList" />
+        <code value="patientMedicationList-transfer" />
+        <display value="Patient's medication list on inpatient transfer" />
     </eventCoding>
     <focus>
         <code value="List" />

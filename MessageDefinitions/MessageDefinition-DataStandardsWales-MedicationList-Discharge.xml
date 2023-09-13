@@ -17,9 +17,9 @@
     </contact>
     <description value="Message to communcate a patient's medication list on discharge from secondary care." />
     <eventCoding>
-        <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MessageEvents-PatientMedicationsList" />
-        <code value="discharge" />
-        <display value="Medicines on discharge" />
+        <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MessageEvents-PatientMedicationList" />
+        <code value="patientMedicationList-transfer" />
+        <display value="Patient's medication list on discharge" />
     </eventCoding>
     <focus>
         <code value="List" />

@@ -18,21 +18,21 @@
     <content value="complete" />
     <count value="4" />
     <concept>
-        <code value="admission" />
+        <code value="patientMedicationList-admission" />
         <display value="Medicines on admission" />
         <definition value="Message to communicate a patient's medicines on admission" />
     </concept>
     <concept>
-        <code value="transfer" />
+        <code value="patientMedicationList-transfer" />
         <display value="Medicines on inpatient transfer" />
         <definition value="Message to communicate a patient's medicines on inpatient transfer (hospital to hospital/system to system)" />
     <concept>
-        <code value="discharge" />
+        <code value="patientMedicationList-discharge" />
         <display value="Medicines on discharge" />
         <definition value="Message to communicate a patient's medicines on discharge" />
     </concept>
     <concept>
-        <code value="outpatient" />
+        <code value="patientMedicationList-outpatient" />
         <display value="Outpatient medications" />
         <definition value="Message to communicate a patient's medicines prescribed in outpatients (involves prescribing or medicines review actions)" />
     </concept>
