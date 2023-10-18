@@ -58,7 +58,7 @@
     </element>
     <element id="Location.address">
       <path value="Location.address" />
-      <min value="1" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Location.managingOrganization">
