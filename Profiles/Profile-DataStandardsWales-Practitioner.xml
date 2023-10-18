@@ -103,7 +103,7 @@
     </element>
     <element id="Practitioner.identifier:sdsUserId.system">
       <path value="Practitioner.identifier.system" />
-      <fixedUri value="&quot;https://fhir.nhs.uk/Id/sds-user-id&quot;" />
+      <fixedUri value="https://fhir.nhs.uk/Id/sds-user-id" />
     </element>
     <element id="Practitioner.name">
       <path value="Practitioner.name" />
