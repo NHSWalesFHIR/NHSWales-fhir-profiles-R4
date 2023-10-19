@@ -12,13 +12,6 @@
             <start value="2009-10-01" />
         </valuePeriod>
     </extension>
-    <extension url="https://fhir.nhs.wales/StructureDefinition/Extension-HospitalClassification">
-        <valueCoding>
-            <system value="https://fhir.nhs.wales/CodeSystem/HospitalClassification" />
-            <code value="A" />
-            <display value="Acute hospital" />
-        </valueCoding>
-    </extension>
     <identifier>
         <system value="https://fhir.nhs.uk/Id/ods-organization-code" />
         <value value="7A3CJ" />
