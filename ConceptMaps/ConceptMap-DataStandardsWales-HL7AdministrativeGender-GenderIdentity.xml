@@ -7,8 +7,7 @@
     <status value="active" />
    <experimental value="false" />
   <date value="2023-08-02" />
-  
-  <publisher value="NHS Wales" />
+    <publisher value="NHS Wales" />
 <description value="Maps concepts from HL7 Administrative Gender codes to Data Standards Wales Gender Identity codes" />	
   <copyright value="2023 NHS Wales." />
 	<sourceUri value="http://hl7.org/fhir/administrative-gender"/>
