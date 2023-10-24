@@ -1,8 +1,8 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
     <id value="DataStandardsWales-LIMS-identifier" />
     <name value="DataStandardsWales LIMS Identifier" />
-    <kind value="identifier" />
-  <status value="active" />
+	 <status value="active" />
+    <kind value="identifier" /> 
   <date value="2023-08-02" />
   <publisher value="NHS Wales" />
     <contact>
