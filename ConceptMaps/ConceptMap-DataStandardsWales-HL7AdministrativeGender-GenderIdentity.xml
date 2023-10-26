@@ -10,7 +10,7 @@
     <publisher value="NHS Wales" />
 <description value="Maps concepts from HL7 Administrative Gender codes to Data Standards Wales Gender Identity codes" />	
   <copyright value="2023 NHS Wales." />
-	<sourceUri value="http://hl7.org/fhir/administrative-gender"/>
+	<sourceUri value="http://hl7.org/fhir/ValueSet/administrative-gender"/>
 	<targetUri value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-GenderIdentity"/>
 	<group>
 		<source value="http://hl7.org/fhir/administrative-gender"/>
