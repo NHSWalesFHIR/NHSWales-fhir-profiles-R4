@@ -2,9 +2,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-MedicationDispense" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-MedicationDispense" />
+  <version value="1.0.0" />
   <name value="DataStandardsWalesMedicationDispense" />
   <title value="Data Standards Wales Medication Dispense" />
-  <version value="1.0.0" />
   <status value="active" />
   <experimental value="false" />
   <date value="2023-08-02" />
@@ -19,7 +19,6 @@
   <differential>
     <element id="MedicationDispense.identifier">
       <path value="MedicationDispense.identifier" />
-      <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
@@ -108,6 +107,7 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Encounter" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-EpisodeOfCare" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.context.identifier.assigner">
       <path value="MedicationDispense.context.identifier.assigner" />
@@ -125,7 +125,6 @@
     </element>
     <element id="MedicationDispense.performer">
       <path value="MedicationDispense.performer" />
-      <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
@@ -140,10 +139,6 @@
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson" />
         <targetProfile value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
       </type>
-    </element>
-    <element id="MedicationDispense.performer.actor.reference">
-      <path value="MedicationDispense.performer.actor.reference" />
-      <min value="1" />
     </element>
     <element id="MedicationDispense.performer.actor.identifier.system">
       <path value="MedicationDispense.performer.actor.identifier.system" />
@@ -182,13 +177,8 @@
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
       </type>
     </element>
-    <element id="MedicationDispense.location.display">
-      <path value="MedicationDispense.location.display" />
-      <min value="1" />
-    </element>
     <element id="MedicationDispense.authorizingPrescription">
       <path value="MedicationDispense.authorizingPrescription" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
@@ -198,8 +188,12 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="MedicationDispense.authorizingPrescription.reference">
-      <path value="MedicationDispense.authorizingPrescription.reference" />
+    <element id="MedicationDispense.authorizingPrescription.identifier.system">
+      <path value="MedicationDispense.authorizingPrescription.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.authorizingPrescription.identifier.value">
+      <path value="MedicationDispense.authorizingPrescription.identifier.value" />
       <min value="1" />
     </element>
     <element id="MedicationDispense.authorizingPrescription.identifier.assigner">
@@ -229,22 +223,6 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="MedicationDispense.quantity.value">
-      <path value="MedicationDispense.quantity.value" />
-      <min value="1" />
-    </element>
-    <element id="MedicationDispense.quantity.unit">
-      <path value="MedicationDispense.quantity.unit" />
-      <min value="1" />
-    </element>
-    <element id="MedicationDispense.quantity.system">
-      <path value="MedicationDispense.quantity.system" />
-      <min value="1" />
-    </element>
-    <element id="MedicationDispense.quantity.code">
-      <path value="MedicationDispense.quantity.code" />
-      <min value="1" />
-    </element>
     <element id="MedicationDispense.daysSupply">
       <path value="MedicationDispense.daysSupply" />
       <mustSupport value="true" />
@@ -273,7 +251,6 @@
     </element>
     <element id="MedicationDispense.receiver">
       <path value="MedicationDispense.receiver" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
