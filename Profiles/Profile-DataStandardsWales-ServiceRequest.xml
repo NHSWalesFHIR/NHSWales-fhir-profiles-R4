@@ -6,8 +6,8 @@
   <name value="DataStandardsWalesServiceRequest" />
   <title value="Data Standards Wales Service Request" />
   <status value="draft" />
-  <date value="2023-05-24" />
   <experimental value="true" />
+  <date value="2023-05-24" />
   <publisher value="NHS Wales" />
   <copyright value="2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
