@@ -50,9 +50,9 @@
 		<type value="string"/>
 	</property>
 	<property>
-		<type value="string"/>
 		<code value="Status"/>
 		<description value="The status of the concept can be one of: draft | active | retired | unknown"/>
+		<type value="string"/>
 	</property>
 	<concept>
 		<code value="Admr"/>
