@@ -2,10 +2,10 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-ServiceRequest" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-ServiceRequest" />
+  <version value="0.0.5" />
   <name value="DataStandardsWalesServiceRequest" />
   <title value="Data Standards Wales Service Request" />
   <status value="draft" />
-  <version value="0.0.5" />
   <date value="2023-05-24" />
   <experimental value="true" />
   <publisher value="NHS Wales" />
