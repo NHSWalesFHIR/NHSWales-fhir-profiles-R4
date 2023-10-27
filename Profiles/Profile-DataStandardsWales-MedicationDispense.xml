@@ -109,6 +109,14 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="MedicationDispense.context.identifier.system">
+      <path value="MedicationDispense.context.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationDispense.context.identifier.value">
+      <path value="MedicationDispense.context.identifier.value" />
+      <min value="1" />
+    </element>
     <element id="MedicationDispense.context.identifier.assigner">
       <path value="MedicationDispense.context.identifier.assigner" />
       <type>
