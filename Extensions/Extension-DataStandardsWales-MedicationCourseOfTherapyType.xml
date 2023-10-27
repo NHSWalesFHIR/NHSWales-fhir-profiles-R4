@@ -53,7 +53,7 @@
       <binding>
         <strength value="required" />
         <description value="Medication course of therapy type" />
-        <valueSet value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy" />
+        <valueSet value="http://terminology.hl7.org/ValueSet/medicationrequest-course-of-therapy" />
       </binding>
     </element>
   </differential>
