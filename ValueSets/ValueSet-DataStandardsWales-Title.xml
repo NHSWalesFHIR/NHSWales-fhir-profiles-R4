@@ -28,7 +28,7 @@
 	<compose>
 		<include>
 			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
-			<version value="3.0"/>
+			<version value="1.0.0"/>
 			<concept>
 				<code value="Admr"/>
 				<display value="Admiral"/>
@@ -128,7 +128,7 @@
 		</include>
 		<include>
 			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
-			<version value="3.0"/>
+			<version value="1.0.0"/>
 			<filter>
 				<property value="Status"/>
 				<op value="="/>
