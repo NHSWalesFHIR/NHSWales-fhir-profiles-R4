@@ -1,8 +1,8 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-GPCluster-Code"/> 
-  <name value="GP Cluster Code"/> 
-  <kind value="identifier"/> 
-  <status value="active" />
+  <name value="GPClusterCode"/> 
+   <status value="active" />
+  <kind value="identifier"/>  
   <date value="2023-08-02" />
   <publisher value="NHS Wales" />
   <responsible value="NHS Wales Informatics Service"/> 

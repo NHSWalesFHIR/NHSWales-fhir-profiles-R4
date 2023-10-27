@@ -1,8 +1,8 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-PTHB-PAS-Identifier"/> 
-  <name value="PTHB PAS Identifier"/>
-  <kind value="identifier"/> 
-  <status value="active" />
+  <name value="PTHBPASIdentifier"/>
+   <status value="active" />
+  <kind value="identifier"/>  
   <date value="2023-08-02" />
   <publisher value="NHS Wales" />
   <responsible value="Powys Teaching Health Board"/> 
