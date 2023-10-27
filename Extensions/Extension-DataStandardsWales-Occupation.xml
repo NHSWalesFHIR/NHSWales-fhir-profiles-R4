@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
- 
   <id value="Extension-DataStandardsWales-Occupation"/>
   <url value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-Occupation" />
+  <version value="1.0.0" />
   <name value="ExtensionDataStandardsWalesOccupation" />
   <title value="Extension Data Standards Wales Occupation" />
-    <status value="active" />
-    <version value="1.0.0" />
-  <date value="2023-08-02" />
+  <status value="active" />
   <experimental value="false" />
+  <date value="2023-08-02" />
   <publisher value="NHS Wales" />
-  <copyright value="2023 NHS Wales." />
-  
   <contact>
     <name value="Data Standards" />
     <telecom>
@@ -22,6 +19,7 @@
     </telecom>
   </contact>
   <description value="An extension to carry a code to indicate the patient's occupation." />
+  <copyright value="2023 NHS Wales." />
   <purpose value="An extension to carry a SNOMED code used indicate the patient's occupation." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
