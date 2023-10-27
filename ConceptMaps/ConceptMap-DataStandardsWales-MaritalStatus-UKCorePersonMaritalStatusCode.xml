@@ -26,7 +26,7 @@
         </element>
         <element>
             <code value="12"/>
-            <display value="Cohabiting"/>+
+            <display value="Cohabiting"/>
             <target>
                 <code value="T"/>
                 <display value="Domestic partner"/>
@@ -63,7 +63,7 @@
     </group>
     <group>
         <source value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-MaritalStatus"/>        
-        <target value=" https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>
+        <target value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales"/>
         <element>
             <code value="22"/>
             <display value="Civil Partner"/>
