@@ -34,7 +34,7 @@
       <min value="1" />
       <max value="1" />
       <fixedCodeableConcept>
-        <coding>
+        <coding> <!--fix required here, valueset is invalid in this context and would need to be codesystsm-->
           <system value="http://hl7.org/fhir/ValueSet/observation-category" />
           <version value="4.3.0" />
           <code value="laboratory" />

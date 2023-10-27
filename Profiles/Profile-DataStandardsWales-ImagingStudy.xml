@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-ImagingStudy" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-ImagingStudy" />
+  <version value="0.0.5" />
   <name value="DataStandardsWalesImagingStudy" />
   <title value="Data Standards Wales Imaging Study" />
   <status value="draft" />
-  <version value="0.0.5" />
-  <date value="2023-05-24" />
   <experimental value="true" />
+  <date value="2023-05-24" />
   <publisher value="NHS Wales" />
   <copyright value="2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
