@@ -19,8 +19,8 @@
     </telecom>
   </contact>
   <description value="An extension to carry an indicator of the overall pattern of medication administration at the MedicationStatement level." />
-  <copyright value="2023 NHS Wales." />
   <purpose value="This extension carries an indicator of the overall pattern of medication administration at the MedicationStatement level - e.g. Repeat, Acute etc" />
+  <copyright value="2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />

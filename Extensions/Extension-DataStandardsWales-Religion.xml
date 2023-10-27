@@ -19,8 +19,8 @@
     </telecom>
   </contact>
   <description value="An extension to carry a code to indicate the patient's religion." />
-  <copyright value="2023 NHS Wales." />
   <purpose value="An extension to carry a SNOMED code used indicate the patient's religion." />
+  <copyright value="2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
