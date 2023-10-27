@@ -95,10 +95,6 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Organization.partOf.identifier">
-      <path value="Organization.partOf.identifier" />
-      <min value="1" />
-    </element>
     <element id="Organization.partOf.identifier.system">
       <path value="Organization.partOf.identifier.system" />
       <min value="1" />
