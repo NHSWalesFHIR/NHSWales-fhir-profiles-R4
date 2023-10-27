@@ -2,9 +2,9 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-Location" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
+  <version value="1.0.0" />
   <name value="DataStandardsWalesLocation" />
   <title value="Data Standards Wales Location" />
-  <version value="1.0.0" />
   <status value="active" />
   <experimental value="false" />
   <date value="2023-08-02" />
@@ -58,7 +58,6 @@
     </element>
     <element id="Location.address">
       <path value="Location.address" />
-      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Location.managingOrganization">
@@ -67,10 +66,7 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
       </type>
-    </element>
-    <element id="Location.managingOrganization.identifier">
-      <path value="Location.managingOrganization.identifier" />
-      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Location.managingOrganization.identifier.system">
       <path value="Location.managingOrganization.identifier.system" />
@@ -87,10 +83,6 @@
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Location.partOf.identifier">
-      <path value="Location.partOf.identifier" />
-      <min value="1" />
     </element>
     <element id="Location.partOf.identifier.system">
       <path value="Location.partOf.identifier.system" />
