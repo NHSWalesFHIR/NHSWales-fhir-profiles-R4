@@ -169,6 +169,7 @@
         <code value="Reference" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.location.identifier.system">
       <path value="MedicationDispense.location.identifier.system" />
@@ -265,6 +266,7 @@
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
         <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Practitioner" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationDispense.receiver.identifier.assigner">
       <path value="MedicationDispense.receiver.identifier.assigner" />
