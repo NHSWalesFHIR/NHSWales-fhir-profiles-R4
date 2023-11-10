@@ -8,12 +8,12 @@
 		</div>
 	</text>
 	<url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-Title"/>
-	<version value="1.0.0"/>
+	<version value="1.0.1"/>
 	<name value="DataStandardsWalesTitle"/>
 	<title value="Data Standards Wales Title"/>
 	<status value="active"/>
 	<experimental value="false"/>
-	<date value="2023-08-02"/>
+	<date value="2023-11-10"/>
 	<publisher value="NHS Wales"/>
 	<contact>
 		<name value="Data Standards"/>
