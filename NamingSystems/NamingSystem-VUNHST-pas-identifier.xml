@@ -1,9 +1,9 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-VUNHST-PAS-Identifier"/> 
-  <name value="VUNHST PAS Identifier"/> 
-  <kind value="identifier"/> 
+  <name value="VUNHSTPASIdentifier"/> 
   <status value="active" />
-  <date value="2023-08-02" />
+  <kind value="identifier"/>   
+  <date value="2023-11-10" />
   <publisher value="NHS Wales" />
   <responsible value="Velindre University NHS Trust"/> 
   <description value="This namespace indicates a Velindre University NHS Trust PAS patient identifier"/> 
@@ -15,7 +15,7 @@
   </uniqueId>
   <uniqueId> 
     <type value="oid"/> 
-    <value value="2.16.840.1.113883.2.1.8.1.5.131"/>     
+    <value value="2.16.840.1.113883.2.1.8.1.5.310"/>     
   </uniqueId>
   <uniqueId> 
     <type value="other"/> 
