@@ -1,9 +1,9 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-CAVUHB-PAS-Identifier"/> 
-  <name value="CAVUHB PAS Identifier"/> 
-  <kind value="identifier"/> 
+  <name value="CAVUHBPASIdentifier"/> 
   <status value="active" />
-  <date value="2023-08-02" />
+  <kind value="identifier"/>   
+  <date value="2023-11-10" />
   <publisher value="NHS Wales" />
   <responsible value="Carfiff and Vale University Health Board"/> 
   <description value="This namespace indicates a Cardiff and Vale University Health Board PAS patient identifier"/> 

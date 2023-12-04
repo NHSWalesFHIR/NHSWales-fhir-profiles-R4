@@ -4,14 +4,13 @@
 		<valueUri value="http://www.nwisinformationstandards.wales.nhs.uk/sitesplus/documents/299/20200622-DSCN%202020%2006-Core%20Reference%20Data-d2-2.pdf"/>
 	</extension>
 	<url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-Sex"/>
-    <name value="DataStandardsWalesSex"/>
+	 <version value="1.0.1" />
+    <name value="DataStandardsWalesSex"/>											   
 	<title value="Data Standards Wales Sex"/>
   <status value="active" />
-  <version value="1.0.0" />
-    <date value="2023-08-02" />
-    <experimental value="false" />
+   <experimental value="false" />
+    <date value="2023-11-10" />
     <publisher value="NHS Wales" />
-    <copyright value="2023 NHS Wales." />
 	<contact>
 		<name value="Data Standards"/>
 		<telecom>
@@ -21,6 +20,7 @@
 		</telecom>
 	</contact>
 	<description value="Sex"/>
+	  <copyright value="2023 NHS Wales." />								   
 	<compose>
 		<include>
 			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Sex"/>
@@ -52,7 +52,7 @@
 		<contains>
 			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Sex" />
 			<code value="Z"/>
-			<display value="Not disclosed or unknown, e.g. for unborn baby "/>
+			<display value="Not disclosed or unknown, e.g. for unborn baby"/>
 		</contains>	
 	</expansion>
 </ValueSet>

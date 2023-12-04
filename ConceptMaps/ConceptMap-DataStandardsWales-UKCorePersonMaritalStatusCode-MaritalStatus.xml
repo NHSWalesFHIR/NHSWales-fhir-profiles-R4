@@ -1,15 +1,15 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
     <id value="DataStandardsWales-UKCorePersonMaritalStatusCode-MaritalStatus"/>
     <url value="https://fhir.nhs.wales/ConceptMap/DataStandardsWales-UKCorePersonMaritalStatusCode-MaritalStatus"/>
+    <version value="1.0.0" />
     <name value="DataStandardsWalesConceptMapUKCorePersonMaritalStatusCodeToMaritalStatus"/>
     <title value="Data Standards Wales Concept Map from UKCore Person Marital Status Code to Marital Status"/>
-    <status value="active" />
-    <version value="1.0.0" />
-  <date value="2023-08-02" />
+    <status value="active" />    
   <experimental value="false" />
+  <date value="2023-08-02" />  
   <publisher value="NHS Wales" />
-  <copyright value="2023 NHS Wales." />
-    <description value="Maps concepts from UK Core Marital Status codes to Data Standards Wales Marital Status codes" />      
+<description value="Maps concepts from UK Core Marital Status codes to Data Standards Wales Marital Status codes" />      
+  <copyright value="2023 NHS Wales." />    
     <sourceUri value="https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode"/>
     <targetUri value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-MaritalStatus"/>    
     <group>

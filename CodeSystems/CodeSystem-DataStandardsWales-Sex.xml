@@ -2,14 +2,13 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
     <id value="DataStandardsWales-Sex"/>
     <url value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Sex"/>	
+    <version value="1.0.1" />
     <name value="DataStandardsWalesSex"/>
 	<title value="Data Standards Wales Sex"/>
     <status value="active" />
-    <version value="1.0.0" />
-    <date value="2023-08-02" />
     <experimental value="false" />
+    <date value="2023-11-10" />
     <publisher value="NHS Wales" />
-    <copyright value="2023 NHS Wales." />
 	<contact>
 		<name value="Data Standards"/>	
 		<telecom>
@@ -19,6 +18,7 @@
 		</telecom>
 	</contact>	
     <description value="Sex"/>
+    <copyright value="2023 NHS Wales." />
     <caseSensitive value="true"/>
     <content value="complete"/>
     <concept>
@@ -35,6 +35,6 @@
     </concept>	
 	<concept>
         <code value="Z"/>
-        <display value="Not disclosed or unknown, e.g. for unborn baby "/>
+        <display value="Not disclosed or unknown, e.g. for unborn baby"/>
     </concept>    
 </CodeSystem>

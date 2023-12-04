@@ -1,9 +1,9 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-ABUHB-PAS-PatientIdentifier"/> 
-  <name value="ABUHB PAS Patient Identifier"/> 
-  <kind value="identifier"/> 
+  <name value="ABUHBPASPatientIdentifier"/> 
   <status value="active" />
-  <date value="2023-08-02" />
+  <kind value="identifier"/>   
+  <date value="2023-11-10" />
   <publisher value="NHS Wales" />
   <responsible value="Aneurin Bevan University Health Board"/>
   <description value="This namespace indicates an Aneurin Bevan University Health Board PAS patient identifier"/> 

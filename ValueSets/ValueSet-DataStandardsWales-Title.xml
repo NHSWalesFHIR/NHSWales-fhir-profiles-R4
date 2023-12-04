@@ -8,124 +8,26 @@
 		</div>
 	</text>
 	<url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-Title"/>
+	<version value="1.0.1"/>
 	<name value="DataStandardsWalesTitle"/>
 	<title value="Data Standards Wales Title"/>
-  <status value="active" />
-  <version value="1.0.0" />
-    <date value="2023-08-02" />
-    <experimental value="false" />
-    <publisher value="NHS Wales" />
-    <copyright value="2023 NHS Wales." />
+	<status value="active"/>
+	<experimental value="false"/>
+	<date value="2023-11-10"/>
+	<publisher value="NHS Wales"/>
 	<contact>
+		<name value="Data Standards"/>
 		<telecom>
 			<system value="email"/>
 			<value value="data.standards@wales.nhs.uk"/>
+			<use value="work"/>
 		</telecom>
 	</contact>
+	<description value="Title"/>
+	<copyright value="2023 NHS Wales."/>
 	<compose>
 		<include>
 			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
-			<version value="3.0"/>
-			<concept>
-				<code value="Admr"/>
-				<display value="Admiral"/>
-			</concept>
-			<concept>
-				<code value="Baron"/>
-				<display value="Baron"/>
-			</concept>
-			<concept>
-				<code value="Brig"/>
-				<display value="Brigadier"/>
-			</concept>
-			<concept>
-				<code value="Bshp"/>
-				<display value="Bishop"/>
-			</concept>
-			<concept>
-				<code value="Can"/>
-				<display value="Canon"/>
-			</concept>
-			<concept>
-				<code value="Capt"/>
-				<display value="Captain"/>
-			</concept>
-			<concept>
-				<code value="Col"/>
-				<display value="Colonel"/>
-			</concept>
-			<concept>
-				<code value="Dame"/>
-				<display value="Dame"/>
-			</concept>
-			<concept>
-				<code value="Dr"/>
-				<display value="Doctor"/>
-			</concept>
-			<concept>
-				<code value="Ftr"/>
-				<display value="Father"/>
-			</concept>
-			<concept>
-				<code value="Lady"/>
-				<display value="Lady"/>
-			</concept>
-			<concept>
-				<code value="Lord"/>
-				<display value="Lord"/>
-			</concept>
-			<concept>
-				<code value="Miss"/>
-				<display value="Miss"/>
-			</concept>
-			<concept>
-				<code value="Mjr"/>
-				<display value="Major"/>
-			</concept>
-			<concept>
-				<code value="Mr"/>
-				<display value="Mr"/>
-			</concept>
-			<concept>
-				<code value="Mrs"/>
-				<display value="Mrs"/>
-			</concept>
-			<concept>
-				<code value="Ms"/>
-				<display value="Ms"/>
-			</concept>
-			<concept>
-				<code value="Mstr"/>
-				<display value="Master"/>
-			</concept>
-			<concept>
-				<code value="Mx"/>
-				<display value="Mx"/>
-			</concept>
-			<concept>
-				<code value="Prof"/>
-				<display value="Professor"/>
-			</concept>
-			<concept>
-				<code value="Rev"/>
-				<display value="Reverend"/>
-			</concept>
-			<concept>
-				<code value="Sgt"/>
-				<display value="Sergeant"/>
-			</concept>
-			<concept>
-				<code value="Sir"/>
-				<display value="Sir"/>
-			</concept>
-			<concept>
-				<code value="Sstr"/>
-				<display value="Sister"/>
-			</concept>
-		</include>
-		<include>
-			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
-			<version value="3.0"/>
 			<filter>
 				<property value="Status"/>
 				<op value="="/>
@@ -133,4 +35,133 @@
 			</filter>
 		</include>
 	</compose>
+	<expansion>
+		<timestamp value="2023-08-02T00:00:00+01:00"/>
+		<total value="11"/>
+		<offset value="0"/>
+		<parameter>
+			<name value="version"/>
+			<valueUri value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title|1.0.0"/>
+		</parameter>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Admr"/>
+			<display value="Admiral"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Baron"/>
+			<display value="Baron"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Brig"/>
+			<display value="Brigadier"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Bshp"/>
+			<display value="Bishop"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Can"/>
+			<display value="Canon"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Capt"/>
+			<display value="Captain"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Col"/>
+			<display value="Colonel"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Dame"/>
+			<display value="Dame"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Dr"/>
+			<display value="Doctor"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Ftr"/>
+			<display value="Father"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Lady"/>
+			<display value="Lady"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Lord"/>
+			<display value="Lord"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Miss"/>
+			<display value="Miss"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Mjr"/>
+			<display value="Major"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Mr"/>
+			<display value="Mr"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Mrs"/>
+			<display value="Mrs"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Ms"/>
+			<display value="Ms"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Mstr"/>
+			<display value="Master"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Mx"/>
+			<display value="Mx"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Prof"/>
+			<display value="Professor"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Rev"/>
+			<display value="Reverend"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Sgt"/>
+			<display value="Sergeant"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Sir"/>
+			<display value="Sir"/>
+		</contains>
+		<contains>
+			<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-Title"/>
+			<code value="Sstr"/>
+			<display value="Sister"/>
+		</contains>
+	</expansion>
 </ValueSet>
