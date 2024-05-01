@@ -1,0 +1,26 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="DataStandardsWales-ProvenanceActivity"/>
+	<url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-ProvenanceActivity"/>
+    <version value="0.0.5" />
+    <name value="ValueSetDataStandardsWalesProvenanceActivity"/>
+	<title value="Data Standards Wales Provenance Activity"/>
+    <status value="draft" />
+    <experimental value="true" />
+	<date value="2023-05-24" />
+    <publisher value="NHS Wales" />
+	<contact>
+		<name value="Data Standards"/>
+		<telecom>
+			<system value="email"/>
+			<value value="data.standards@wales.nhs.uk"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="A set of activity codes for NHS Wales Provenance profile"/>
+	<copyright value="2023 NHS Wales." />
+	<compose>
+		<include>
+			<system value="http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle"/>
+		</include>
+	</compose>
+</ValueSet>

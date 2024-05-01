@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-DataStandardsWales-DemographicsAsRecorded" />
+  <url value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-DemographicsAsRecorded" />
+  <version value="1.0.0" />
+  <name value="ExtensionDataStandardsWalesDemographicsAsRecorded" />
+  <title value="Extension Data Standards Wales Demographics As Recorded" />
+  <status value="draft" />
+  <publisher value="NHS Wales" />
+  <contact>
+    <name value="Data Standards" />
+    <telecom>
+      <system value="email" />
+      <value value="data.standards@wales.nhs.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="An extension to carry the demographics details that were present as at the time of the care record change" />
+  <purpose value="An extension to carry the demographics details that were present as at the time of the care record change" />
+  <copyright value="2023 NHS Wales" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Provenance" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="Demographics as recorded" />
+      <definition value="Demographics details recorded as at the time of the care record change" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:Address">
+      <path value="Extension.extension" />
+      <sliceName value="Address" />
+    </element>
+    <element id="Extension.extension:Address.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="Address" />
+    </element>
+    <element id="Extension.extension:Address.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <short value="Address as at time of care record change" />
+      <definition value="The address of the patient as at the time of the care record change" />
+      <type>
+        <code value="Address" />
+      </type>
+    </element>
+    <element id="Extension.extension:Gender">
+      <path value="Extension.extension" />
+      <sliceName value="Gender" />
+      <short value="Gender as at time of record change" />
+      <definition value="Gender as at time of record change" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:Gender.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="Gender" />
+    </element>
+    <element id="Extension.extension:Gender.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <short value="male | female | other | unknown" />
+      <definition value="Administrative Gender - the gender that the patient is considered to have for administration and record keeping purposes." />
+      <type>
+        <code value="code" />
+      </type>
+    </element>
+    <element id="Extension.extension:Name">
+      <path value="Extension.extension" />
+      <sliceName value="Name" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:Name.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="Name" />
+    </element>
+    <element id="Extension.extension:Name.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <short value="Name as at time of record change" />
+      <definition value="Name as at time of record change" />
+      <type>
+        <code value="HumanName" />
+      </type>
+    </element>
+    <element id="Extension.extension:DOB">
+      <path value="Extension.extension" />
+      <sliceName value="DOB" />
+      <short value="Date of Birth as at time of record change" />
+      <definition value="Date of Birth as at time of record change" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:DOB.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="DOB" />
+    </element>
+    <element id="Extension.extension:DOB.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:PAS-Identifier">
+      <path value="Extension.extension" />
+      <sliceName value="PAS-Identifier" />
+      <short value="PAS Identifier as at time of record change" />
+      <definition value="PAS Identifier as at time of record change" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:PAS-Identifier.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="PAS-Identifier" />
+    </element>
+    <element id="Extension.extension:PAS-Identifier.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Identifier" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://example.org/fhir/StructureDefinition/ExtensionDataStandardsWalesDemographicsAsRecorded" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
