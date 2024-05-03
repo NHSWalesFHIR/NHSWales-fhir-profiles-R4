@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-DataStandardsWales-DemographicsAsRecorded" />
   <url value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-DemographicsAsRecorded" />
-  <version value="1.0.0" />
+  <version value="0.0.1" />
   <name value="ExtensionDataStandardsWalesDemographicsAsRecorded" />
   <title value="Extension Data Standards Wales Demographics As Recorded" />
   <status value="draft" />
@@ -39,6 +39,8 @@
     <element id="Extension.extension:Address">
       <path value="Extension.extension" />
       <sliceName value="Address" />
+      <short value="Address as at time of record change" />
+      <definition value="Address as at time of record change" />
     </element>
     <element id="Extension.extension:Address.url">
       <path value="Extension.extension.url" />
@@ -58,6 +60,11 @@
       <short value="Gender as at time of record change" />
       <definition value="Gender as at time of record change" />
       <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="The gender of a person used for administrative purposes." />
+        <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1" />
+      </binding>
     </element>
     <element id="Extension.extension:Gender.url">
       <path value="Extension.extension.url" />
@@ -74,6 +81,8 @@
     <element id="Extension.extension:Name">
       <path value="Extension.extension" />
       <sliceName value="Name" />
+      <short value="Name as at time of record change" />
+      <definition value="name as at time of record change" />
       <max value="1" />
     </element>
     <element id="Extension.extension:Name.url">
