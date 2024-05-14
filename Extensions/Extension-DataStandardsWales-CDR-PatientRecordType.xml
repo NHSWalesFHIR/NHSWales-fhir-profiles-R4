@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-DataStandardsWales-CdrPatientRecordType" />
+  <url value="https://fhir.nhs.wales/StructureDefinition/ExtensionDataStandardsWalesCdrPatientRecordType" />
+  <version value="0.0.1" />
+  <name value="ExtensionDataStandardsWalesCdrPatientRecordType" />
+  <status value="draft" />
+  <publisher value="NHS Wales" />
+  <contact>
+    <name value="Data Standards" />
+    <telecom>
+      <system value="email" />
+      <value value="data.standards@wales.nhs.uk" />
+      <use value="work" />
+      <rank value="1" />
+    </telecom>
+  </contact>
+  <description value="An extension to carry an indicator for the type of patient record" />
+  <copyright value="2024 NHS Wales" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Patient" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <short value="An extension to carry an indicator for the type of patient record" />
+      <definition value="An extension to carry an indicator for the type of patient record" />
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://fhir.nhs.wales/StructureDefinition/ExtensionDataStandardsWalesCdrPatientRecordType" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="code" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

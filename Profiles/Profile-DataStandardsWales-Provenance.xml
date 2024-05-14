@@ -15,7 +15,7 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance" />
   <derivation value="constraint" />
   <differential>
-    <element id="Provenance.extension:DemographicsAsRecorded">
+    <element id="Provenance.extension:extensionDataStandardsWalesDemographicsAsRecorded">
       <path value="Provenance.extension" />
       <sliceName value="extensionDataStandardsWalesDemographicsAsRecorded" />
       <type>
