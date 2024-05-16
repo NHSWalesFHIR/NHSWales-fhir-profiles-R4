@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-Patient" />
-  <meta>
-    <tag>
-      <system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-CDR-PatientRecordType" />
-      <code value="gold" />
-    </tag>
-  </meta>
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
   <version value="1.0.0" />
   <name value="DataStandardsWalesPatient" />
@@ -67,7 +61,16 @@
       <path value="Patient.extension.value[x]" />
       <min value="1" />
     </element>
-    <element id="Patient.extension:CdrSourceTimestamp">
+    <element id="Patient.extension:CdrPatientRecordType">
+      <path value="Patient.extension" />
+      <sliceName value="CdrPatientRecordType" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/ExtensionDataStandardsWalesCdrPatientRecordType" />
+      </type>
+      <isModifier value="false" />
+    </element>
+	<element id="Patient.extension:CdrSourceTimestamp">
       <path value="Patient.extension" />
       <sliceName value="CdrSourceTimestamp" />
       <type>
