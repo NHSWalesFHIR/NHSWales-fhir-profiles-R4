@@ -4,6 +4,7 @@
   <url value="https://fhir.nhs.wales/StructureDefinition/ExtensionDataStandardsWalesCdrPatientRecordType" />
   <version value="0.0.1" />
   <name value="ExtensionDataStandardsWalesCdrPatientRecordType" />
+  <title value="Extension Data Standards Wales CDR Patient Record Type" />
   <status value="draft" />
   <publisher value="NHS Wales" />
   <contact>
