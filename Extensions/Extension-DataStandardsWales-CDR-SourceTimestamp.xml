@@ -32,8 +32,8 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Pattern of medication administration" />
-      <definition value="An extension to support communication of the pattern of medication administration at the MedicationStatement level." />
+      <short value="An extension to carry a timestamp for when a record has been updated" />
+      <definition value="An extension to carry a timestamp for when a record has been updated in the underlying source system" />
       <max value="1" />
     </element>
     <element id="Extension.url">
