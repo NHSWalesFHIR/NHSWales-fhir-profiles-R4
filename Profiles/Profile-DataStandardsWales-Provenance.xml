@@ -6,6 +6,7 @@
   <name value="DataStandardsWalesProvenance" />
   <title value="Data Standards Wales Provenance" />
   <status value="draft" />
+  <experimental value="true" />
   <publisher value="NHS Wales" />
   <copyright value="2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
@@ -24,12 +25,28 @@
       </type>
       <isModifier value="false" />
     </element>
+    <element id="Provenance.target">
+      <path value="Provenance.target" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.recorded">
+      <path value="Provenance.recorded" />
+      <mustSupport value="true" />
+    </element>
     <element id="Provenance.activity">
       <path value="Provenance.activity" />
       <binding>
         <strength value="extensible" />
         <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-ProvenanceActivity" />
       </binding>
+    </element>
+    <element id="Provenance.agent">
+      <path value="Provenance.agent" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.signature">
+      <path value="Provenance.signature" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>

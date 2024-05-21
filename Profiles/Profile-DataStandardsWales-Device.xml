@@ -3,7 +3,7 @@
   <id value="DataStandardsWales-Device" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Device" />
   <name value="DataStandardsWalesDevice" />
-  <status value="active" />
+  <status value="draft" />
   <experimental value="true" />
   <date value="2024-05-20" />
   <publisher value="NHS Wales" />
@@ -41,6 +41,14 @@
     <element id="Device.identifier:applicationInstanceId.value">
       <path value="Device.identifier.value" />
       <min value="1" />
+    </element>
+    <element id="Device.status">
+      <path value="Device.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.type">
+      <path value="Device.type" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
