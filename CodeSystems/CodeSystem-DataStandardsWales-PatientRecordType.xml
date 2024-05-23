@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="DataStandardsWales-PatientRecordType"/>
+	<url value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-PatientRecordType"/>
+    <version value="0.0.1" />
+	<name value="DataStandardsWalesPatientRecordType"/>
+	<title value="Data Standards Wales Patient Record Type"/>
+    <status value="draft" />
+    <experimental value="true" />	
+    <date value="2024-05-23" />
+    <publisher value="NHS Wales" />
+	<contact>
+		<name value="Data Standards"/>	
+		<telecom>
+			<system value="email"/>
+			<value value="data.standards@wales.nhs.uk"/>
+			<use value="work"/>
+		</telecom>
+	</contact>	
+	<description value="A set of codes used to identify the record type of a patient within the CDR"/>
+    <copyright value="2024 NHS Wales." />
+	<caseSensitive value="true"/>
+	<content value="complete"/>
+	<concept>
+		<code value="gold"/>
+		<display value="Gold"/>
+		<definition value="Patient records are sourced from the Welsh Demographics Service, and this index of patient records is kept up to date via the messaging feeds sent from the service. These patient records contain an NHS number as their primary identifier but may also include PAS number identifiers."/>
+	</concept>	
+	<concept>
+		<code value="silver"/>
+		<display value="Silver"/>
+		<definition value="patient records are those that are not sourced from the Welsh Demographic Service. These patient records will only contain a single PAS identifier and are synchronised with the PAS patient records via the appropriate demographic message flows from Welsh PASs."/>
+	</concept>			
+</CodeSystem>
