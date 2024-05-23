@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="DataStandardsWales-Provenance" />
+  <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Provenance" />
+  <version value="0.0.1" />
+  <name value="DataStandardsWalesProvenance" />
+  <title value="Data Standards Wales Provenance" />
+  <status value="draft" />
+  <experimental value="true" />
+  <publisher value="NHS Wales" />
+  <copyright value="2023 NHS Wales." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Provenance" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Provenance" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Provenance.extension:extensionDataStandardsWalesDemographicsAsRecorded">
+      <path value="Provenance.extension" />
+      <sliceName value="extensionDataStandardsWalesDemographicsAsRecorded" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-DemographicsAsRecorded" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Provenance.target">
+      <path value="Provenance.target" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.recorded">
+      <path value="Provenance.recorded" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.activity">
+      <path value="Provenance.activity" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-ProvenanceActivity" />
+      </binding>
+    </element>
+    <element id="Provenance.agent">
+      <path value="Provenance.agent" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.signature">
+      <path value="Provenance.signature" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

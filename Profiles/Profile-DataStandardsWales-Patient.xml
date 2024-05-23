@@ -2,12 +2,12 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-Patient" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="DataStandardsWalesPatient" />
   <title value="Data Standards Wales Patient" />
   <status value="active" />
   <experimental value="false" />
-  <date value="2023-08-02" />
+  <date value="2024-05-24" />
   <publisher value="NHS Wales" />
   <copyright value="2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
@@ -66,6 +66,25 @@
     <element id="Patient.extension:occupation.value[x]">
       <path value="Patient.extension.value[x]" />
       <min value="1" />
+    </element>
+    <element id="Patient.extension:cdrPatientRecordType">
+      <path value="Patient.extension" />
+      <sliceName value="cdrPatientRecordType" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-CDRPatientRecordType" />
+      </type>
+      <isModifier value="false" />
+    </element>
+    <element id="Patient.extension:cdrSourceTimestamp">
+      <path value="Patient.extension" />
+      <sliceName value="cdrSourceTimestamp" />
+	  <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-CDRSourceTimestamp" />
+      </type>
+      <isModifier value="false" />
     </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />

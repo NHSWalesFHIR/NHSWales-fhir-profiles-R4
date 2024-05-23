@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="DataStandardsWales-Device" />
+  <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Device" />
+  <name value="DataStandardsWalesDevice" />
+  <title value="Data Standards Wales Device" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2024-05-20" />
+  <publisher value="NHS Wales" />
+  <copyright value="2024 NHS Wales." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Device" />
+  <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Device" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Device.identifier">
+      <path value="Device.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Device.identifier:applicationInstanceId">
+      <path value="Device.identifier" />
+      <sliceName value="applicationInstanceId" />
+      <short value="The Id of the application instance used" />
+      <definition value="The Id of the application instance used" />
+      <requirements value="Systems are almost always assigned specific numerical identifiers." />
+      <max value="1" />
+    </element>
+    <element id="Device.identifier:applicationInstanceId.system">
+      <path value="Device.identifier.system" />
+      <min value="1" />
+      <fixedUri value="https://fhir.nhs.wales/Id/application-instance-identifier" />
+    </element>
+    <element id="Device.identifier:applicationInstanceId.value">
+      <path value="Device.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Device.status">
+      <path value="Device.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Device.type">
+      <path value="Device.type" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
