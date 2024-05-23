@@ -37,13 +37,14 @@
       <definition value="An extension to carry a timestamp for when a record has been updated in the underlying source system" />
       <max value="1" />
     </element>
+	<element id="Extension.extension">
+		<path value="Extension.extension" />
+		<min value="0" />
+		<max value="0" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
       <fixedUri value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-CDR-SourceTimestamp" />
-    </element>
-	<element id="Extension.extension">
-		<path value="Extension.extension" />
-		<max value="0" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
