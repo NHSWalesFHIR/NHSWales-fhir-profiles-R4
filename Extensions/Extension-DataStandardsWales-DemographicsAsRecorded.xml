@@ -77,6 +77,11 @@
       <type>
         <code value="code" />
       </type>
+      <binding>
+        <strength value="required" />
+        <description value="The gender of a person used for administrative purposes." />
+        <valueSet value="http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1" />
+      </binding>
     </element>
     <element id="Extension.extension:Name">
       <path value="Extension.extension" />
