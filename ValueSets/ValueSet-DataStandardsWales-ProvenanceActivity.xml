@@ -16,7 +16,7 @@
       <use value="work" />
     </telecom>
   </contact>
-  <description value="A set of activity codes for NHS Wales Provenance profile" />
+  <description value="A set of activity codes for NHS Wales Provenance profile which have been copied from the FHIR R5 release" />
   <copyright value="2023 NHS Wales." />
   <compose>
     <include> 
