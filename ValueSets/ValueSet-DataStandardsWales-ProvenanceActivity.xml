@@ -2,7 +2,7 @@
   <id value="DataStandardsWales-ProvenanceActivity" />
   <url value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-ProvenanceActivity" />
   <version value="0.0.5" />
-  <name value="ValueSetDataStandardsWalesProvenanceActivity" />
+  <name value="DataStandardsWalesProvenanceActivity" />
   <title value="Data Standards Wales Provenance Activity" />
   <status value="draft" />
   <experimental value="true" />
