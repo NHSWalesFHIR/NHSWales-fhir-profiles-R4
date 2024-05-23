@@ -44,6 +44,11 @@
       <type>
         <code value="code" />
       </type>
+      <binding>
+        <strength value="required" />
+        <description value="gold | silver" />
+        <valueSet value="https://fhir.nhs.wales/ValueSet/DataStandardsWales-PatientRecordType" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
