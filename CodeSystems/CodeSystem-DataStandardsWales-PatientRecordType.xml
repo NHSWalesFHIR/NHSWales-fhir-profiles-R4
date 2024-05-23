@@ -4,7 +4,7 @@
 	<url value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-PatientRecordType"/>
     <version value="0.0.1" />
 	<name value="DataStandardsWalesPatientRecordType"/>
-	<title value="Data Standards Wales WRRS Patient Record Type"/>
+	<title value="Data Standards Wales Patient Record Type"/>
     <status value="draft" />
     <experimental value="true" />	
     <date value="2024-05-23" />

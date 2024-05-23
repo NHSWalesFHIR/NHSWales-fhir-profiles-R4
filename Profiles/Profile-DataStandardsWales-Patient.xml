@@ -69,19 +69,19 @@
     </element>
     <element id="Patient.extension:cdrPatientRecordType">
       <path value="Patient.extension" />
-      <sliceName value="CdrPatientRecordType" />
+      <sliceName value="cdrPatientRecordType" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.wales/StructureDefinition/ExtensionDataStandardsWalesCdrPatientRecordType" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-CDRPatientRecordType" />
       </type>
       <isModifier value="false" />
     </element>
     <element id="Patient.extension:cdrSourceTimestamp">
       <path value="Patient.extension" />
-      <sliceName value="CdrSourceTimestamp" />
+      <sliceName value="cdrSourceTimestamp" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-CDR-SourceTimestamp" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-CDRSourceTimestamp" />
       </type>
       <isModifier value="false" />
     </element>

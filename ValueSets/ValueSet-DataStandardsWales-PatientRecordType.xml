@@ -17,7 +17,7 @@
     </telecom>
   </contact>
   <description value="A set of codes used to identify the record type of a patient within the CDR" />
-  <copyright value="2023 NHS Wales." />
+  <copyright value="2024 NHS Wales." />
   <compose>
 	<include>
 		<system value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-PatientRecordType"/>
