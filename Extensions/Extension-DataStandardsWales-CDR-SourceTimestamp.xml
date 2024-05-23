@@ -38,7 +38,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.wales/CodeSystem/DataStandardsWales-CDR-SourceTimestamp" />
+      <fixedUri value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-CDRSourceTimestamp" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
