@@ -7,7 +7,7 @@
   <title value="Data Standards Wales Patient" />
   <status value="active" />
   <experimental value="false" />
-  <date value="2023-08-02" />
+  <date value="2024-05-24" />
   <publisher value="NHS Wales" />
   <copyright value="2023 NHS Wales." />
   <fhirVersion value="4.0.1" />
@@ -17,9 +17,21 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
   <derivation value="constraint" />
   <differential>
+    <element id="Patient.extension">
+      <path value="Patient.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
     <element id="Patient.extension:ethnicCategory">
       <path value="Patient.extension" />
       <sliceName value="ethnicCategory" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Patient.extension:religion">
@@ -27,6 +39,7 @@
       <sliceName value="religion" />
       <short value="Patient religion" />
       <definition value="A code to indicate the patient's religion" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -42,6 +55,7 @@
     <element id="Patient.extension:occupation">
       <path value="Patient.extension" />
       <sliceName value="occupation" />
+      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -292,14 +306,6 @@
     <element id="Patient.address">
       <path value="Patient.address" />
       <mustSupport value="true" />
-    </element>
-    <element id="Patient.address.extension:addressKey">
-      <path value="Patient.address.extension" />
-      <sliceName value="addressKey" />
-    </element>
-    <element id="Patient.address.extension:addressKey.extension">
-      <path value="Patient.address.extension.extension" />
-      <min value="2" />
     </element>
     <element id="Patient.address.postalCode">
       <path value="Patient.address.postalCode" />
