@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-DataStandardsWales-CDR-SourceTimestamp" />
-  <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-CDRSourceTimestamp" />
+  <url value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-CDRSourceTimestamp" />
   <version value="0.0.1" />
   <name value="ExtensionDataStandardsWalesCdrSourceTimestamp" />
   <title value="Extension Data Standards Wales CDR Source Timestamp" />
