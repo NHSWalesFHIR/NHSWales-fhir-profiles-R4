@@ -3,6 +3,7 @@
   <id value="DataStandardsWales-Device" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Device" />
   <name value="DataStandardsWalesDevice" />
+  <title value="Data Standards Wales Device" />
   <status value="draft" />
   <experimental value="true" />
   <date value="2024-05-20" />
