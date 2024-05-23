@@ -40,8 +40,8 @@
       <fixedUri value="https://fhir.nhs.wales/StructureDefinition/ExtensionDataStandardsWalesCdrPatientRecordType" />
     </element>
 	<element id="Extension.extension">
-            <path value="Extension.extension" />
-            <max value="0" />
+		<path value="Extension.extension" />
+		<max value="0" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
