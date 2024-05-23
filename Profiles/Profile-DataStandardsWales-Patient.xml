@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="DataStandardsWales-Patient" />
   <url value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
-  <version value="1.0.0" />
+  <version value="1.1.0" />
   <name value="DataStandardsWalesPatient" />
   <title value="Data Standards Wales Patient" />
   <status value="active" />
@@ -17,14 +17,6 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient" />
   <derivation value="constraint" />
   <differential>
-    <element id="Patient.extension:deathNotificationStatus">
-      <path value="Patient.extension" />
-      <sliceName value="deathNotificationStatus" />
-    </element>
-    <element id="Patient.extension:deathNotificationStatus.extension">
-      <path value="Patient.extension.extension" />
-      <min value="1" />
-    </element>
     <element id="Patient.extension:ethnicCategory">
       <path value="Patient.extension" />
       <sliceName value="ethnicCategory" />
@@ -70,7 +62,7 @@
       </type>
       <isModifier value="false" />
     </element>
-	<element id="Patient.extension:CdrSourceTimestamp">
+    <element id="Patient.extension:CdrSourceTimestamp">
       <path value="Patient.extension" />
       <sliceName value="CdrSourceTimestamp" />
       <type>
