@@ -37,7 +37,6 @@
     </element>
 	<element id="Extension.extension">
 		<path value="Extension.extension" />
-		<min value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

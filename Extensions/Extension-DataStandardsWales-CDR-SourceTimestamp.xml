@@ -35,7 +35,6 @@
       <path value="Extension" />
       <short value="An extension to carry a timestamp for when a record has been updated" />
       <definition value="An extension to carry a timestamp for when a record has been updated in the underlying source system" />
-      <max value="1" />
     </element>
 	<element id="Extension.extension">
 		<path value="Extension.extension" />
