@@ -67,7 +67,7 @@
       <path value="Patient.extension.value[x]" />
       <min value="1" />
     </element>
-    <element id="Patient.extension:CdrPatientRecordType">
+    <element id="Patient.extension:cdrPatientRecordType">
       <path value="Patient.extension" />
       <sliceName value="CdrPatientRecordType" />
       <type>
@@ -76,7 +76,7 @@
       </type>
       <isModifier value="false" />
     </element>
-    <element id="Patient.extension:CdrSourceTimestamp">
+    <element id="Patient.extension:cdrSourceTimestamp">
       <path value="Patient.extension" />
       <sliceName value="CdrSourceTimestamp" />
       <type>

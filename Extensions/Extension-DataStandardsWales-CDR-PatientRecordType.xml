@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-DataStandardsWales-CdrPatientRecordType" />
-  <url value="https://fhir.nhs.wales/StructureDefinition/ExtensionDataStandardsWalesCdrPatientRecordType" />
+  <id value="Extension-DataStandardsWales-CDRPatientRecordType" />
+  <url value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-CDRPatientRecordType" />
   <version value="0.0.1" />
-  <name value="ExtensionDataStandardsWalesCdrPatientRecordType" />
+  <name value="ExtensionDataStandardsWalesCDRPatientRecordType" />
   <title value="Extension Data Standards Wales CDR Patient Record Type" />
   <status value="draft" />
+  <date value="2024-05-23" />
   <publisher value="NHS Wales" />
   <contact>
     <name value="Data Standards" />
