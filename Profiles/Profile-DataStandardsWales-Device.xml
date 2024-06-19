@@ -43,6 +43,13 @@
       <path value="Device.identifier.value" />
       <min value="1" />
     </element>
+    <element id="Device.identifier:applicationInstanceId.assigner">
+      <path value="Device.identifier.assigner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
+      </type>
+    </element>
     <element id="Device.status">
       <path value="Device.status" />
       <mustSupport value="true" />
@@ -50,6 +57,27 @@
     <element id="Device.type">
       <path value="Device.type" />
       <mustSupport value="true" />
+    </element>
+    <element id="Device.patient">
+      <path value="Device.patient" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Patient" />
+      </type>
+    </element>
+    <element id="Device.owner">
+      <path value="Device.owner" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Organization" />
+      </type>
+    </element>
+    <element id="Device.location">
+      <path value="Device.location" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
