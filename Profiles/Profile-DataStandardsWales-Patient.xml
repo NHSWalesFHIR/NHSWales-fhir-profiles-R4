@@ -72,7 +72,7 @@
       <sliceName value="cdrPatientRecordType" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-CDRPatientRecordType" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-CDR-PatientRecordType" />
       </type>
       <isModifier value="false" />
     </element>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Extension-DataStandardsWales-CDRPatientRecordType" />
-  <url value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-CDRPatientRecordType" />
+  <id value="Extension-DataStandardsWales-CDR-PatientRecordType" />
+  <url value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-CDR-PatientRecordType" />
   <version value="0.0.1" />
   <name value="ExtensionDataStandardsWalesCDRPatientRecordType" />
   <title value="Extension Data Standards Wales CDR Patient Record Type" />
@@ -37,7 +37,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-CDRPatientRecordType" />
+      <fixedUri value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-CDR-PatientRecordType" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
