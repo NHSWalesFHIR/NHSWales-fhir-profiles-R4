@@ -70,6 +70,7 @@
     <element id="Patient.extension:cdrPatientRecordType">
       <path value="Patient.extension" />
       <sliceName value="cdrPatientRecordType" />
+	  <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-CDR-PatientRecordType" />
