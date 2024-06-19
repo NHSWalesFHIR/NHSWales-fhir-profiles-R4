@@ -83,7 +83,7 @@
 	  <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-CDRSourceTimestamp" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-CDR-SourceTimestamp" />
       </type>
       <isModifier value="false" />
     </element>
