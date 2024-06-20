@@ -102,18 +102,18 @@
         <code value="HumanName" />
       </type>
     </element>
-    <element id="Extension.extension:DOB">
+    <element id="Extension.extension:birthDate">
       <path value="Extension.extension" />
-      <sliceName value="DOB" />
+      <sliceName value="birthDate" />
       <short value="Date of Birth as at time of record change" />
       <definition value="Date of Birth as at time of record change" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:DOB.url">
+    <element id="Extension.extension:birthDate.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="DOB" />
+      <fixedUri value="birthDate" />
     </element>
-    <element id="Extension.extension:DOB.value[x]">
+    <element id="Extension.extension:birthDate.value[x]">
       <path value="Extension.extension.value[x]" />
       <type>
         <code value="dateTime" />
