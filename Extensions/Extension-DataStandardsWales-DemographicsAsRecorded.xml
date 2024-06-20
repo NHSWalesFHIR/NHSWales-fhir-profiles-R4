@@ -44,7 +44,7 @@
     </element>
     <element id="Extension.extension:Address.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="Address" />
+      <fixedUri value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-CDR-demographicsAsRecorded-address" />
     </element>
     <element id="Extension.extension:Address.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -68,7 +68,7 @@
     </element>
     <element id="Extension.extension:Gender.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="Gender" />
+      <fixedUri value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-CDR-demographicsAsRecorded-gender" />
     </element>
     <element id="Extension.extension:Gender.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -92,7 +92,7 @@
     </element>
     <element id="Extension.extension:Name.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="Name" />
+      <fixedUri value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-CDR-demographicsAsRecorded-name" />
     </element>
     <element id="Extension.extension:Name.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -111,7 +111,7 @@
     </element>
     <element id="Extension.extension:birthDate.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="birthDate" />
+      <fixedUri value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-CDR-demographicsAsRecorded-birthDate" />
     </element>
     <element id="Extension.extension:birthDate.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -128,7 +128,7 @@
     </element>
     <element id="Extension.extension:PAS-Identifier.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="PAS-Identifier" />
+      <fixedUri value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-CDR-demographicsAsRecorded-pas-identifier" />
     </element>
     <element id="Extension.extension:PAS-Identifier.value[x]">
       <path value="Extension.extension.value[x]" />
