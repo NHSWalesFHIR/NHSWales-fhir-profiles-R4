@@ -138,7 +138,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="https://example.org/fhir/StructureDefinition/ExtensionDataStandardsWalesDemographicsAsRecorded" />
+      <fixedUri value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-demographicsAsRecorded" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
