@@ -17,17 +17,17 @@
   <baseDefinition value="https://fhir.hl7.org.uk/StructureDefinition/UKCore-MedicationStatement" />
   <derivation value="constraint" />
   <differential>
-    <element id="MedicationStatement.extension">
-      <path value="MedicationStatement.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <min value="0" />
-    </element>
+	<element id="MedicationStatement.extension">
+	  <path value="MedicationStatement.extension" />
+	  <slicing>
+		<discriminator>
+			<type value="value" />
+			<path value="url" />
+		</discriminator>
+		<rules value="open" />
+	  </slicing>
+	  <min value="0" />
+	</element>
     <element id="MedicationStatement.extension:medicationCourseOfTherapyType">
       <path value="MedicationStatement.extension" />
       <sliceName value="medicationCourseOfTherapyType" />
@@ -35,7 +35,7 @@
       <definition value="An extension to carry an indicator of the overall pattern of medication administration at the MedicationStatement level." />
       <comment value="An extension to carry an indicator of the overall pattern of medication administration at the MedicationStatement level." />
       <min value="0" />
-      <type>
+	  <type>
         <code value="Extension" />
         <profile value="https://fhir.nhs.wales/StructureDefinition/Extension-DataStandardsWales-MedicationCourseOfTherapyType" />
       </type>
@@ -112,6 +112,12 @@
     </element>
     <element id="MedicationStatement.dosage">
       <path value="MedicationStatement.dosage" />
+      <short value="How the medication is/was taken or should be taken" />
+      <definition value="Indicates how the medication is/was taken or should be taken by the patient." />
+      <type>
+        <code value="Dosage" />
+        <profile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Dosage" />
+      </type>
       <mustSupport value="true" />
     </element>
   </differential>
