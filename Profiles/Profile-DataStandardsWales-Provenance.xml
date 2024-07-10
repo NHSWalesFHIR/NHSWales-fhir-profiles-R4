@@ -33,6 +33,13 @@
       <path value="Provenance.recorded" />
       <mustSupport value="true" />
     </element>
+    <element id="Provenance.location">
+      <path value="Provenance.location" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.nhs.wales/StructureDefinition/DataStandardsWales-Location" />
+      </type>
+    </element>
     <element id="Provenance.activity">
       <path value="Provenance.activity" />
       <binding>
