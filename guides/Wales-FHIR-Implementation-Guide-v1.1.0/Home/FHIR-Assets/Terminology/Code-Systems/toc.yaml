@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: CodeSystem-DataStandardsWales-GenderIdentity
+  filename: CodeSystem-DataStandardsWales-GenderIdentity.page.md
+- name: CodeSystem-DataStandardsWales-MaritalStatus
+  filename: CodeSystem-DataStandardsWales-MaritalStatus.page.md
+- name: CodeSystem-DataStandardsWales-PatientRecordType
+  filename: CodeSystem-DataStandardsWales-PatientRecordType.page.md
+- name: CodeSystem-DataStandardsWales-Sex
+  filename: CodeSystem-DataStandardsWales-Sex.page.md
+- name: CodeSystem-DataStandardsWales-Title
+  filename: CodeSystem-DataStandardsWales-Title.page.md
+- name: CodeSystem-DataStandardsWales-WrrsTaskType
+  filename: CodeSystem-DataStandardsWales-WrrsTaskType.page.md

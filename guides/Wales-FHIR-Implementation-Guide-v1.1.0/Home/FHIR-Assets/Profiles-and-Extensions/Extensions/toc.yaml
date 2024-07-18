@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: Extension-DataStandardsWales-MedicationCourseOfTherapyType
+  filename: Extension-DataStandardsWales-MedicationCourseOfTherapyType.page.md
+- name: Extension-DataStandardsWales-Occupation
+  filename: Extension-DataStandardsWales-Occupation.page.md
+- name: Extension-DataStandardsWales-Religion
+  filename: Extension-DataStandardsWales-Religion.page.md
+- name: Extension-DataStandardsWales-DemographicsAsRecorded
+  filename: Extension-DataStandardsWales-DemographicsAsRecorded.page.md
+- name: Extension-DataStandardsWales-CDR-SourceTimestamp
+  filename: Extension-DataStandardsWales-CDR-SourceTimeStamp.page.md
+- name: Extension-DataStandardsWales-CDR-PatientRecordType
+  filename: Extension-DataStandardsWales-CDR-PatientRecordType.page.md

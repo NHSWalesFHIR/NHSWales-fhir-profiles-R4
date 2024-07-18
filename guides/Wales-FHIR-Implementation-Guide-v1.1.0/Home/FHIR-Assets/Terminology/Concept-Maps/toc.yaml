@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: ConceptMap-DataStandardsWales-HL7AdministrativeGender-GenderIdentity
+  filename: ConceptMap-DataStandardsWales-HL7AdministrativeGender-GenderIdentity.page.md
+- name: ConceptMap-DataStandardsWales-GenderIdentity-HL7AdministrativeGender
+  filename: ConceptMap-DataStandardsWales-GenderIdentity-HL7AdministrativeGender.page.md
+- name: ConceptMap-DataStandardsWales-UKCorePersonMaritalStatusCode-MaritalStatus
+  filename: ConceptMap-DataStandardsWales-UKCorePersonMaritalStatusCode-MaritalStatus.page.md
+- name: ConceptMap-DataStandardsWales-MaritalStatus-UKCorePersonMaritalStatusCode
+  filename: ConceptMap-DataStandardsWales-MaritalStatus-UKCorePersonMaritalStatusCode.page.md
+- name: ConceptMap-DataStandardsWales-UKCoreBirthSex-Sex
+  filename: ConceptMap-DataStandardsWales-UKCoreBirthSex-Sex.page.md
+- name: ConceptMap-DataStandardsWales-Sex-UKCoreBirthSex
+  filename: ConceptMap-DataStandardsWales-Sex-UKCoreBirthSex.page.md

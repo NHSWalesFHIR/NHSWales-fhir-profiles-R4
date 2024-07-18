@@ -1,0 +1,4 @@
+- name: Example-DataStandardsWales-List-Medications-Outpatient
+  filename: Example-DataStandardsWales-List-Medications-Outpatient.page.md
+- name: Example-DataStandardsWales-MedicationStatement-Enbrel-Outpatient
+  filename: Example-DataStandardsWales-MedicationStatement-Enbrel-Outpatient.page.md

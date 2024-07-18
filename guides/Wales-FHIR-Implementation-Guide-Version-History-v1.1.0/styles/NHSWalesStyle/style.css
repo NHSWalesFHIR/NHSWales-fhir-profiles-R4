@@ -1,0 +1,219 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 100%;
+    background-color: #E8EAEF
+}
+
+/* body .content{
+  min-height: 60% !important;
+} */
+body header {
+    background-color: #21305f;
+}
+
+body header .title {
+    font-size: 24px;
+    padding-top: 23px;
+    color: white;
+}
+
+body header .title a {
+    color: white;
+    text-decoration: none;
+}
+
+body header .nhswales-logo {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+body header .fhir-logo {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+body header .fhir-logo-size {
+    width: 350px;
+}
+
+body header .navbar-default {
+    text-align: center;
+    background-color: #21305f;
+    color: white
+}
+
+.nav {
+    text-align: center;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    border-bottom: 3px solid #F8CA4D;
+}
+
+.nav.navbar-nav li a {
+    color: white;
+}
+
+.nav.nav-stacked {
+    margin-top: 20px;
+    border-top: 1px dotted #F8CA4D;
+    border-bottom: 1px dotted #F8CA4D;
+}
+
+.nav.nav-stacked li a {
+    text-align: left;
+}
+
+table.regular{
+    background-color: #FBF9F9;
+}
+
+body .main{
+  width: 100%;
+  margin: 0;
+  background-color: white;
+}
+
+body .content {
+    overflow: hidden;
+    min-height: 600px;
+    position: relative;
+    height: auto !important;
+    margin-bottom: -155px;
+    padding-bottom: 155px;
+}
+
+body footer {
+    background-color: #E8EAEF;
+    color: #101B42;
+    min-height: 19%;
+    padding-top: 20px;
+    border-top: 2px solid #97AAC0;
+    width:100%;
+    position:relative;
+    bottom:0;
+    left:0;
+    padding-bottom: 15px;
+}
+
+@media (min-width: 550px) {
+    
+    body header .nhswales-logo {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    body header .hl7-logo {
+        display: none;
+    }
+    body footer .logo {
+        justify-content: center;
+        text-align: center;
+    }
+
+    body footer .links {
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+    
+    /* .nav.navbar-nav li .dropdown-menu li a {
+        color: #F8CA4D;
+        text-align: centre;
+    } */
+}
+
+@media (max-width: 767px){
+    .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: 275px;
+        margin-top: 0;
+        border: 0;
+        box-shadow: none;
+        background-color: #F8CA4D;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav.navbar-nav li .dropdown-menu li a {
+        color: #21305f;
+    }
+ }
+
+@media (min-width: 992px) { 
+    
+    body header .hl7-logo {
+        display: block;
+        text-align: right;
+        margin-top: 23px;
+    }
+    
+    body footer .logo {
+        float: left;
+    }
+    
+    body footer .links {
+        padding-top: 5px;
+        float:right;
+        text-align: right;
+    }
+
+    .nav.navbar-nav li .dropdown-menu li a {
+        color: #21305f;
+    }
+
+}
+
+div.warning {
+    display: block;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    border-width: 1px;
+    border-style: solid;
+    color: #8a6d3b;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+div.warning {
+    display: block;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    border-width: 1px;
+    border-style: solid;
+    color: #8a6d3b;
+    padding: 15px;
+    border-radius: 4px;
+}
+span.url {
+    background-color: #f9f2f4;
+    color: #c7254e;
+    border-radius: 4px;
+}
+
+.tab-wrap{ margin:0 auto;}
+.tab-wrap .tab-head{ text-align:left; display:table; padding-left: 0px;}
+.tab-wrap *{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+.tab-wrap .tablink{display:table-cell;border-bottom:3px solid transparent;padding:5px 8px;color:rgba(0,0,0,0.87); cursor:pointer;}
+.tab-wrap .tablink:hover{color: #59BFD9 }
+.tab-wrap .tablink.tab-active{border-color:#59BFD9; color:#0D91BD;}
+.tab-wrap .tab-main{border:1px solid rgba(0,0,0,0.1); padding:0 20px 20px; }
+.tab-wrap .tabcontent{display:none;padding-top:20px; font-size:15px; color:rgba(0,0,0, 0.87);}
+.tab-wrap .tabcontent.active{display:block}

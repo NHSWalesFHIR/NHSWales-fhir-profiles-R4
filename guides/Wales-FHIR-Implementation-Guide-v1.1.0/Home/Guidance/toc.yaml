@@ -1,0 +1,10 @@
+- name: Administrative Data
+  filename: Administrative-Data
+- name: Allergy
+  filename: Allergy
+- name: Diagnostic Reports
+  filename: Diagnostic-Reports
+- name: Medications
+  filename: Medications
+- name: Sensitive Data
+  filename: Sensitive-Data

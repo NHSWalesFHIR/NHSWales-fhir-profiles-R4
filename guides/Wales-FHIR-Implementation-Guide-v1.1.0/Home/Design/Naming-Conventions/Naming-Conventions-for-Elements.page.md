@@ -1,0 +1,3 @@
+### {{page-title}}
+
+The fields within a profile that store information are called elements. Any core element name is unchangeable and is dictated by HL7 and UK Core depending on who created the element.  We can however create our own which will always follow the [camelCase](https://en.wikipedia.org/wiki/Camel_case) naming convention like inherited elements already do.  This also applies to any custom extensions that we may create.

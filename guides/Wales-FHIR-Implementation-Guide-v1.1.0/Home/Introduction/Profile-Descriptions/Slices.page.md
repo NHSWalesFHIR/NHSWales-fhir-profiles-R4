@@ -1,0 +1,2 @@
+### {{page-title}}
+This section provides information on [slices](https://hl7.org/fhir/R4/profiling.html#slicing) defined within the profile. This section is typically used to define one or more identifiers that can be used within the FHIR resource, e.g. NHS numbers and hospital PAS identifiers.

@@ -1,0 +1,6 @@
+- name: Example-DataStandardsWales-List-Medications-Admission
+  filename: Example-DataStandardsWales-List-Medications-Admission.page.md
+- name: Example-DataStandardsWales-MedicationStatement-Parace.-Admission
+  filename: Example-DataStandardsWales-MedicationStatement-Parace.-Admission.page.md
+- name: Example-DataStandardsWales-MedicationStatement-Ibupro.-Admission
+  filename: Example-DataStandardsWales-MedicationStatement-Ibupro.-Admission.page.md

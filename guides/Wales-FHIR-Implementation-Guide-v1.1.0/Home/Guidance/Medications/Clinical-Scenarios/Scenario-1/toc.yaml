@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.page.md
+- name: Introduction
+  filename: Introduction.page.md
+- name: GP Record
+  filename: GP-Record.page.md
+- name: Rheumatology Clinic
+  filename: Rheumatology-Clinic.page.md
+- name: Medicines on Admission
+  filename: Medicines-on-Admission.page.md
+- name: Inpatient Medication
+  filename: Inpatient-Medication.page.md
+- name: Discharge Summary
+  filename: Discharge-SUmmary.page.md

@@ -1,0 +1,2 @@
+### {{page-title}}
+This section provides an overview of the FHIR resource being profiled. Links are provided to the UK Core and base profiles from which the Data Standards Wales profile is derived. The guidance provided within this section and sections below is in addition to the guidance provided within [UK Core](https://simplifier.net/guide/UK-Core-Implementation-Guide/Home?version=current) and will not be unnecessarily repeated. 

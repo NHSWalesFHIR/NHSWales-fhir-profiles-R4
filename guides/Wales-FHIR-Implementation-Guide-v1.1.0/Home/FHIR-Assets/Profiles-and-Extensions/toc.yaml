@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: Profiles
+  filename: Profiles
+- name: Extensions
+  filename: Extensions

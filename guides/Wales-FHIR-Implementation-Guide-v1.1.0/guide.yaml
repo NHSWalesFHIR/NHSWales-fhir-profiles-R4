@@ -1,0 +1,5 @@
+title: Wales FHIR Implementation Guide DEV
+description: FHIR profiles and guidance for implementers in Wales
+version: 1.1.0
+style-root: project
+style-name: NHSWalesStyle
